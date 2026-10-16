@@ -1,0 +1,22 @@
+# Site settings for 30adigitalmarketing.com
+# After editing this file, GitHub rebuilds the site automatically.
+
+title: 30A Digital Marketing
+url: "https://30adigitalmarketing.com"
+baseurl: ""
+lang: en
+
+# Blog posts live at /insights/post-name/ (no dates in the address)
+permalink: /insights/:title/
+
+# Builds sitemap.xml automatically
+plugins:
+  - jekyll-sitemap
+
+# Files that are for us, not for the public website
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- assign page_title = page.seo_title | default: page.title -%}
+  {%- if page.seo_title -%}
+    <title>{{ page.seo_title | escape }}</title>
+  {%- elsif page.title and page.url != "/" -%}
+    <title>{{ page.title | escape }} | {{ site.title }}</title>
+  {%- else -%}
+    <title>{{ site.title }}</title>
+  {%- endif -%}
+  {%- assign page_desc = page.description | default: "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast." -%}
+  <meta name="description" content="{{ page_desc | escape }}">
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+  {%- if page.placeholder or page.noindex %}
+  <meta name="robots" content="noindex, follow">
+  {%- endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.seo_title | default: page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+  <meta property="og:image" content="{{ site.url }}/images/dusk-beach-1200.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#1D3035">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}/",
+    "description": "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast.",
+    "areaServed": ["30A", "Santa Rosa Beach", "Destin", "South Walton", "Emerald Coast"]
+  }
+  </script>
+</head>
+<body class="{{ page.body_class }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include header.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

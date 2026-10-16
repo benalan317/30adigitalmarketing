@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="inner-page">
+  <header class="page-hero">
+    {%- if page.eyebrow %}
+    <span class="eyebrow">{{ page.eyebrow }}</span>
+    {%- endif %}
+    <h1>{{ page.h1 | default: page.title }}</h1>
+    {%- assign lede = page.lede | default: page.blurb -%}
+    {%- if lede %}
+    <p class="lede">{{ lede }}</p>
+    {%- endif %}
+  </header>
+
+  <div class="page-body">
+    {{ content }}
+
+    {%- if page.placeholder %}
+    <p class="placeholder-note">This page is being written. In the meantime, the fastest way to get answers is a free strategy call.</p>
+    {%- endif %}
+  </div>
+
+  {%- if page.related %}
+  <aside class="related" aria-label="Keep exploring">
+    <h2 class="eyebrow">Keep exploring</h2>
+    <ul>
+      {%- for u in page.related %}
+        {%- assign p = site.pages | where: "url", u | first %}
+        {%- if p %}
+      <li><a href="{{ p.url }}">{{ p.name | default: p.title }}</a></li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+  </aside>
+  {%- endif %}
+
+  {%- unless page.no_cta %}
+  {% include cta.html %}
+  {%- endunless %}
+</article>

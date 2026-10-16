@@ -1,0 +1,18 @@
+{%- comment -%}
+  Lists every page in a group as a linked card.
+  Use:  {% include card-list.html group="services" %}
+{%- endcomment -%}
+{%- assign cards = site.pages | where: "group", include.group | sort: "order" -%}
+<ul class="card-list">
+  {%- for c in cards %}
+  <li>
+    <a href="{{ c.url }}">
+      <span class="card-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <span class="card-title">{{ c.name | default: c.title }}</span>
+      {%- if c.blurb %}
+      <span class="card-blurb">{{ c.blurb }}</span>
+      {%- endif %}
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

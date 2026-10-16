@@ -1,0 +1,53 @@
+{%- comment -%}
+  Shared footer. The service and industry lists build themselves from the pages' front matter
+  (group: services / group: industries), so adding a page there adds it here.
+{%- endcomment -%}
+{%- assign footer_services = site.pages | where: "group", "services" | sort: "order" -%}
+{%- assign footer_industries = site.pages | where: "group", "industries" | sort: "order" -%}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="/" aria-label="30A Digital Marketing, home">
+        <span class="brand-mark">30A</span>
+        <span class="brand-sub">Digital Marketing</span>
+      </a>
+      <p>Search strategy, digital authority and AI-era visibility for ambitious businesses along 30A and the Gulf Coast.</p>
+      {%- comment -%} Add email and LinkedIn here once they exist. {%- endcomment %}
+    </div>
+
+    <nav class="footer-col" aria-label="Expertise">
+      <h2>Expertise</h2>
+      <ul>
+        {%- for s in footer_services %}
+        <li><a href="{{ s.url }}">{{ s.name | default: s.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Industries">
+      <h2>Industries</h2>
+      <ul>
+        {%- for i in footer_industries %}
+        <li><a href="{{ i.url }}">{{ i.name | default: i.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/approach/">Approach</a></li>
+        <li><a href="/plans/">Plans &amp; Pricing</a></li>
+        <li><a href="/plans/website-buildout/">Website Buildout</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/insights/">Insights</a></li>
+        <li><a href="/strategy-call/">Book a Strategy Call</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-legal">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  </div>
+</footer>

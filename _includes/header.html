@@ -1,0 +1,28 @@
+{%- comment -%}
+  Shared top menu. Edit it here and every page updates.
+  Pages with `header_style: overlay` in their front matter (the homepage) place the menu over the photo.
+{%- endcomment -%}
+<header class="site-header{% if page.header_style == 'overlay' %} is-overlay{% endif %}" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="30A Digital Marketing, home">
+      <span class="brand-mark">30A</span>
+      <span class="brand-sub">Digital Marketing</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav-left site-nav-right">
+      <span class="menu-toggle-label">Menu</span>
+    </button>
+
+    <nav class="nav-left" id="site-nav-left" aria-label="Main">
+      <a href="/services/">Expertise</a>
+      <a href="/industries/">Industries</a>
+      <a href="/approach/">Approach</a>
+    </nav>
+
+    <div class="nav-right" id="site-nav-right">
+      <a href="/insights/">Insights</a>
+      <a href="/about/">About</a>
+      <a class="btn-outline" href="/strategy-call/">Book a Strategy Call</a>
+    </div>
+  </div>
+</header>
