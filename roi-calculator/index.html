@@ -1,0 +1,799 @@
+---
+layout: page
+title: ROI Calculator
+seo_title: "Marketing ROI Calculator | 30A Digital Marketing"
+description: "Free marketing ROI calculator for Gulf Coast businesses. See how many new customers, leads and sales it takes for a monthly marketing plan to pay off."
+eyebrow: Resources
+h1: Marketing ROI calculator
+lede: "Pick your industry and enter a few numbers. You'll see how many new customers it takes for a plan to pay for itself, checked against the work you can take on and the market you can win."
+body_class: page-tool
+related:
+  - /plans/
+  - /approach/
+  - /services/seo/
+---
+{% comment %}
+PAGE BRIEF (ROI calculator)
+Primary keyword: marketing roi calculator
+Related keywords: seo roi calculator, marketing break-even calculator, how many customers to break even on marketing, digital marketing roi
+Purpose: lead-generation tool. Visitor picks an industry, sees break-even customers and leads for each plan,
+checked against their spare capacity and the customers they think they can win. Every result points to the strategy call.
+Links in: Plans, Website Buildout, Approach, footer, homepage plans teaser, each industry page
+  (link to /roi-calculator/#<industry-slug> to open that industry, e.g. /roi-calculator/#home-services).
+Prices live in the script near the top: PLANS (4,000 / 7,000 / 10,000) and BUILDOUT (10,000).
+Status: approved. Public and in the sitemap.
+{% endcomment %}
+{% raw %}
+<p class="roi-answer">A marketing ROI calculator shows how much new business an investment has to bring in before it pays for itself. This one counts gross profit rather than revenue, waits for results to start, and checks the answer against how much work you can take on and how many customers your market can give you.</p>
+
+<style>
+/* ROI calculator. Styles are scoped to .roi so they never affect the rest of the site.
+   Colours and fonts come from the site's :root settings in assets/css/style.css,
+   with the same values as fallbacks. */
+.page-tool .page-body { max-width: 1240px; }
+.roi {
+  --r-ink: var(--ink, #1D3035);
+  --r-muted: var(--muted, #44565A);
+  --r-rule: var(--rule, #CFC3AA);
+  --r-bg: var(--oyster, #F4F0E7);
+  --r-field: #FFFDF8;
+  --r-panel: #EAE3D3;
+  --r-accent: var(--accent, #C66D54);
+  --r-good: #2F6B4F;
+  --r-warn: #8F6312;
+  --r-bad: #A3412E;
+  --r-display: var(--display, 'Cormorant Garamond', Georgia, serif);
+  --r-display-weight: var(--display-weight, 300);
+  --r-body: var(--body, 'Jost', system-ui, sans-serif);
+  color: var(--r-ink);
+  font-family: var(--r-body);
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  gap: 56px;
+  align-items: start;
+  margin: 8px 0 96px;
+}
+.roi *, .roi *::before, .roi *::after { box-sizing: border-box; }
+.roi-inputs { display: flex; flex-direction: column; gap: 48px; min-width: 0; }
+.roi fieldset { border: 0; border-top: 1px solid var(--r-rule); margin: 0; padding: 28px 0 0; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+.roi legend { padding: 0; float: left; width: 100%; display: flex; align-items: baseline; gap: 14px; }
+.roi legend + * { clear: both; }
+.roi-step { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; color: var(--r-accent); }
+.roi-legend-text { font-family: var(--r-display); font-weight: var(--r-display-weight); font-size: 30px; line-height: 1.15; }
+.roi-intro { margin: 0; font-size: 15px; font-weight: 300; line-height: 1.65; color: var(--r-muted); max-width: 60ch; }
+
+/* Plan cards */
+.roi-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.roi-choice { position: relative; display: block; cursor: pointer; }
+.roi-choice input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.roi-choice-body { display: flex; flex-direction: column; gap: 6px; min-height: 100%; padding: 18px 16px; border: 1px solid var(--r-rule); background: var(--r-field); transition: border-color .15s, background-color .15s; }
+.roi-choice input:checked + .roi-choice-body { border-color: var(--r-ink); background: var(--r-ink); color: var(--r-bg); }
+.roi-choice input:focus-visible + .roi-choice-body { outline: 2px solid var(--r-accent); outline-offset: 3px; }
+.roi-choice-name { font-size: 11px; font-weight: 500; letter-spacing: 2.6px; text-transform: uppercase; }
+.roi-choice-price { font-family: var(--r-display); font-weight: var(--r-display-weight); font-size: 30px; line-height: 1; font-variant-numeric: lining-nums; }
+.roi-choice-price small { font-family: var(--r-body); font-size: 13px; font-weight: 300; }
+.roi-choice-note { font-size: 13px; font-weight: 300; opacity: .85; }
+
+.roi-check { display: flex; gap: 14px; align-items: flex-start; padding: 16px; border: 1px dashed var(--r-rule); cursor: pointer; }
+.roi-check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--r-ink); flex: none; }
+.roi-check strong { display: block; font-weight: 500; font-size: 15px; }
+.roi-check span span { display: block; font-size: 13px; font-weight: 300; color: var(--r-muted); line-height: 1.55; margin-top: 2px; }
+
+.roi-seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--r-rule); background: var(--r-field); }
+.roi-seg label { position: relative; cursor: pointer; }
+.roi-seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.roi-seg span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; font-size: 14px; }
+.roi-seg input:checked + span { background: var(--r-ink); color: var(--r-bg); }
+.roi-seg input:focus-visible + span { outline: 2px solid var(--r-accent); outline-offset: 2px; }
+
+/* Fields */
+.roi-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px; }
+.roi-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.roi-field.is-wide { grid-column: 1 / -1; }
+.roi-label { font-size: 14px; font-weight: 500; line-height: 1.35; }
+.roi-hint { font-size: 12.5px; font-weight: 300; line-height: 1.5; color: var(--r-muted); }
+.roi-box { display: flex; align-items: stretch; border: 1px solid var(--r-rule); background: var(--r-field); min-height: 46px; }
+.roi-box:focus-within { border-color: var(--r-ink); box-shadow: 0 0 0 1px var(--r-ink); }
+.roi-affix { display: inline-flex; align-items: center; padding: 0 12px; font-size: 14px; color: var(--r-muted); background: transparent; }
+.roi-box input, .roi-select { flex: 1; min-width: 0; width: 100%; border: 0; background: transparent; color: var(--r-ink); font: 400 16px var(--r-body); padding: 0 12px; font-variant-numeric: tabular-nums; }
+.roi-box .roi-affix + input { padding-left: 0; }
+.roi-box input:focus, .roi-select:focus { outline: none; }
+.roi-select { appearance: none; -webkit-appearance: none; padding-right: 40px; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%; background-size: 5px 5px; background-repeat: no-repeat; }
+.roi-modes { display: flex; flex-wrap: wrap; gap: 8px; }
+.roi-modes label { position: relative; cursor: pointer; }
+.roi-modes input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.roi-modes span { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 1px solid var(--r-rule); font-size: 14px; background: var(--r-field); }
+.roi-modes input:checked + span { border-color: var(--r-ink); background: var(--r-ink); color: var(--r-bg); }
+.roi-modes input:focus-visible + span { outline: 2px solid var(--r-accent); outline-offset: 2px; }
+.roi-subhead { grid-column: 1 / -1; margin: 6px 0 -6px; font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; color: var(--r-muted); }
+
+/* Results */
+.roi-results { position: sticky; top: 24px; background: var(--r-panel); padding: 36px 32px 32px; display: flex; flex-direction: column; gap: 28px; min-width: 0; scroll-margin-top: 24px; }
+.roi-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; margin: 0; }
+.roi-headline { margin: 0; font-family: var(--r-display); font-weight: var(--r-display-weight); font-size: clamp(34px, 3.4vw, 46px); line-height: 1.08; text-wrap: balance; }
+.roi-headline em { font-style: italic; }
+.roi-sub { margin: 0; font-size: 15px; font-weight: 300; line-height: 1.65; }
+.roi-status { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 6px 12px; font-size: 12px; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase; color: #fff; background: var(--r-good); }
+.roi-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.roi-status.is-warn { background: var(--r-warn); }
+.roi-status.is-bad { background: var(--r-bad); }
+.roi-status.is-muted { background: var(--r-muted); }
+.roi-meters { display: flex; flex-direction: column; gap: 18px; }
+.roi-meter-top { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; margin-bottom: 7px; }
+.roi-meter-top span:last-child { font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+.roi-track { position: relative; height: 8px; background: rgba(29,48,53,.12); }
+.roi-fill { position: absolute; inset: 0 auto 0 0; background: var(--r-ink); transition: width .25s ease; }
+.roi-fill.is-over { background: var(--r-bad); }
+.roi-meter-note { font-size: 12.5px; font-weight: 300; color: var(--r-muted); margin-top: 6px; }
+.roi-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--r-rule); }
+.roi-figure { padding: 16px 0; border-bottom: 1px solid var(--r-rule); min-width: 0; }
+.roi-figure:nth-child(odd) { padding-right: 14px; }
+.roi-figure:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--r-rule); }
+.roi-figure dt { font-size: 12px; font-weight: 400; color: var(--r-muted); line-height: 1.4; }
+.roi-figure dd { margin: 4px 0 0; font-family: var(--r-display); font-weight: 400; font-size: 26px; line-height: 1.1; font-variant-numeric: lining-nums tabular-nums; overflow-wrap: anywhere; }
+.roi-figure dd small { display: block; font-family: var(--r-body); font-size: 12px; font-weight: 300; color: var(--r-muted); margin-top: 3px; }
+.roi-table-wrap { overflow-x: auto; }
+.roi-table { width: 100%; border-collapse: collapse; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.roi-table caption { text-align: left; font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; padding-bottom: 10px; }
+.roi-table th, .roi-table td { padding: 10px 8px; border-bottom: 1px solid var(--r-rule); text-align: right; white-space: nowrap; }
+.roi-table th:first-child, .roi-table td:first-child { text-align: left; padding-left: 0; white-space: normal; }
+.roi-table th:last-child, .roi-table td:last-child { padding-right: 0; }
+.roi-table thead th { font-size: 11.5px; font-weight: 500; color: var(--r-muted); }
+.roi-table .is-neg { color: var(--r-bad); }
+.roi-table .is-pos { color: var(--r-good); font-weight: 500; }
+.roi-actions { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; }
+.roi-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 26px; background: var(--r-ink); color: var(--r-bg); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; border: 0; cursor: pointer; }
+.roi-btn:hover { background: var(--r-muted); color: var(--r-bg); }
+.roi-link { background: none; border: 0; padding: 0; min-height: 44px; color: var(--r-ink); font: 500 12px var(--r-body); letter-spacing: 2.4px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 6px; cursor: pointer; }
+.roi-fine { margin: 0; font-size: 12px; font-weight: 300; line-height: 1.6; color: var(--r-muted); }
+.roi-copy-area { width: 100%; min-height: 160px; font: 13px/1.5 var(--r-body); border: 1px solid var(--r-rule); background: var(--r-field); color: var(--r-ink); padding: 10px; }
+
+/* Phone summary bar */
+.roi-dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background: var(--ink, #1D3035); color: var(--oyster, #F4F0E7); font-family: var(--body, 'Jost', system-ui, sans-serif); font-size: 14px; }
+.roi-dock a { color: var(--oyster, #F4F0E7); font-size: 11px; font-weight: 500; letter-spacing: 2.2px; text-transform: uppercase; text-underline-offset: 5px; white-space: nowrap; }
+.roi-dock strong { font-weight: 500; }
+
+@media (max-width: 980px) {
+  .roi { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .roi-results { position: static; }
+  .roi-dock.is-on { display: flex; }
+}
+@media (max-width: 620px) {
+  .roi-plans { grid-template-columns: minmax(0, 1fr); }
+  .roi-choice-body { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+  .roi-choice-note { flex-basis: 100%; }
+  .roi-grid { grid-template-columns: minmax(0, 1fr); }
+  .roi-results { padding: 28px 20px 24px; }
+  .roi-figure dd { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) { .roi-fill, .roi-choice-body { transition: none; } }
+
+/* Copy above and below the calculator */
+.roi-answer { max-width: 62ch; margin: 0 0 56px; font-size: 18px; font-weight: 300; line-height: 1.7; }
+.roi-explain { max-width: 720px; display: flex; flex-direction: column; gap: 18px; padding-top: 56px; border-top: 1px solid var(--rule, #CFC3AA); }
+.roi-explain h2 { margin: 24px 0 0; font-family: var(--display, 'Cormorant Garamond', Georgia, serif); font-weight: var(--display-weight, 300); font-size: clamp(30px, 3vw, 40px); line-height: 1.15; text-wrap: balance; }
+.roi-explain h2:first-child { margin-top: 0; }
+.roi-explain h3 { margin: 10px 0 -8px; font-family: var(--body, 'Jost', system-ui, sans-serif); font-size: 17px; font-weight: 500; line-height: 1.4; }
+.roi-explain p, .roi-explain li { margin: 0; font-size: 16px; font-weight: 300; line-height: 1.75; }
+.roi-explain ol { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 12px; }
+.roi-explain strong { font-weight: 500; }
+</style>
+
+<div class="roi" id="roi">
+  <form class="roi-inputs" id="roi-form" novalidate>
+    <fieldset>
+      <legend><span class="roi-step">01</span><span class="roi-legend-text">Your plan</span></legend>
+      <p class="roi-intro">Choose a monthly level. Every plan is scoped to your business, so these are the starting prices, with no binding contract.</p>
+      <div class="roi-plans" role="radiogroup" aria-label="Monthly plan" id="roi-plans"></div>
+      <label class="roi-check" for="roi-buildout">
+        <input type="checkbox" id="roi-buildout" name="buildout">
+        <span><strong>Add a Website Buildout ($10,000, one time)</strong><span>A new site or redesign for service businesses. It is a separate offer, so leave it off if you only want a monthly plan.</span></span>
+      </label>
+      <div class="roi-grid">
+        <div class="roi-field">
+          <span class="roi-label" id="roi-horizon-label">Time frame to measure</span>
+          <div class="roi-seg" role="radiogroup" aria-labelledby="roi-horizon-label">
+            <label><input type="radio" name="horizon" id="roi-h12" value="12" checked><span>12 months</span></label>
+            <label><input type="radio" name="horizon" id="roi-h24" value="24"><span>24 months</span></label>
+            <label><input type="radio" name="horizon" id="roi-h36" value="36"><span>36 months</span></label>
+          </div>
+        </div>
+        <div class="roi-field">
+          <label class="roi-label" for="roi-ramp">Months before new inquiries start</label>
+          <div class="roi-box"><input type="number" id="roi-ramp" inputmode="numeric" min="0" max="24" step="1" value="4"><span class="roi-affix">months</span></div>
+          <span class="roi-hint">Search work takes time to index and rank. Most SEO programs need four to six months before results are significant.</span>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="roi-step">02</span><span class="roi-legend-text">Your business</span></legend>
+      <div class="roi-field is-wide">
+        <label class="roi-label" for="roi-industry">Industry</label>
+        <div class="roi-box"><select class="roi-select" id="roi-industry"></select></div>
+      </div>
+      <div class="roi-field is-wide" id="roi-mode-wrap">
+        <span class="roi-label" id="roi-mode-label">What counts as a new customer?</span>
+        <div class="roi-modes" role="radiogroup" aria-labelledby="roi-mode-label" id="roi-modes"></div>
+      </div>
+      <div class="roi-grid" id="roi-fields"></div>
+      <p class="roi-fine">Starting values are examples drawn from industry sources and typical figures. Replace them with your own numbers for a real answer.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="roi-step">03</span><span class="roi-legend-text">Your limits</span></legend>
+      <p class="roi-intro">Growth only pays if you can serve it and the market is there to win. These two numbers keep the result honest.</p>
+      <div class="roi-grid" id="roi-limits"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="roi-step">04</span><span class="roi-legend-text">How to count value</span></legend>
+      <div class="roi-field is-wide">
+        <span class="roi-label" id="roi-basis-label">Value each new customer by</span>
+        <div class="roi-seg" role="radiogroup" aria-labelledby="roi-basis-label">
+          <label><input type="radio" name="basis" id="roi-basis-first" value="first" checked><span>First-year profit</span></label>
+          <label><input type="radio" name="basis" id="roi-basis-life" value="life"><span>Lifetime profit</span></label>
+        </div>
+        <span class="roi-hint">First-year profit is the cautious view. Lifetime profit includes repeat business and referrals, some of which arrives after the time frame ends.</span>
+      </div>
+    </fieldset>
+  </form>
+
+  <section class="roi-results" id="roi-results" aria-live="polite" aria-label="Your results">
+    <p class="roi-eyebrow" id="roi-r-eyebrow">Your break-even point</p>
+    <h2 class="roi-headline" id="roi-r-headline">&nbsp;</h2>
+    <p class="roi-sub" id="roi-r-sub"></p>
+    <span class="roi-status" id="roi-r-status"></span>
+    <div class="roi-meters" id="roi-r-meters"></div>
+    <dl class="roi-figures" id="roi-r-figures"></dl>
+    <div class="roi-table-wrap"><table class="roi-table" id="roi-r-table"></table></div>
+    <div class="roi-actions">
+      <a class="roi-btn" href="/strategy-call/">Pressure-test these numbers</a>
+      <button type="button" class="roi-link" id="roi-copy">Copy my numbers</button>
+    </div>
+    <textarea class="roi-copy-area" id="roi-copy-area" readonly hidden aria-label="Your numbers as text"></textarea>
+    <p class="roi-fine">Estimates only, based on the numbers you enter. Gross profit is revenue minus direct costs. We don't guarantee rankings, AI mentions or sales; on a free strategy call we check these assumptions against your market.</p>
+  </section>
+</div>
+
+<div class="roi-dock" id="roi-dock" aria-hidden="true">
+  <span id="roi-dock-text"></span>
+  <a href="#roi-results">See results</a>
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById('roi');
+  if (!root) return;
+
+  var PLANS = [
+    { id: 'lantern', name: 'Lantern', price: 4000, note: 'Building foundations' },
+    { id: 'beacon', name: 'Beacon', price: 7000, note: 'Competing for the market' },
+    { id: 'lighthouse', name: 'Lighthouse', price: 10000, note: 'Leading the market' }
+  ];
+  var BUILDOUT = 10000;
+
+  function F(k, label, kind, def, hint) { return { k: k, label: label, kind: kind, def: def, hint: hint || '' }; }
+  var MARGIN_HINT = 'Revenue left after direct costs such as labor, materials or cost of goods.';
+
+  // Each mode says what a "new customer" is and how much one is worth.
+  // value(v) returns first-year revenue, lifetime revenue, gross margin (0-1) and optional monthly savings.
+  function repeatValue(v) {
+    var yearly = v.price * v.perYear;
+    return { first: yearly * Math.min(1, v.years), life: yearly * v.years, margin: v.margin / 100 };
+  }
+  function oneoffValue(v) {
+    return { first: v.price, life: v.price * (1 + v.future), margin: v.margin / 100 };
+  }
+  var FUTURE_HINT = 'Repeat sales plus referrals. 0.5 means one extra sale for every two customers.';
+
+  var INDUSTRIES = [
+    { id: 'vacation-rentals', name: 'Vacation rentals & property management', modes: [
+      { id: 'owners', label: 'New homeowners under management', unit: ['homeowner', 'homeowners'], lead: ['owner inquiry', 'owner inquiries'],
+        close: 20, closeLabel: 'Share of owner inquiries that sign', cycle: 2,
+        capLabel: 'More homes you could take on each month', cap: 3, market: 24,
+        fields: [
+          F('rent', 'Gross rental revenue per home per year', 'money', 60000),
+          F('fee', 'Your management fee', 'pct', 25, 'Along 30A, managers commonly charge 25–35% of gross rental revenue.'),
+          F('margin', 'Profit you keep on fee revenue', 'pct', 40, 'After housekeeping, staff and software costs you carry.'),
+          F('years', 'Years a homeowner typically stays', 'yrs', 5)
+        ],
+        value: function (v) { var y = v.rent * v.fee / 100; return { first: y * Math.min(1, v.years), life: y * v.years, margin: v.margin / 100 }; } },
+      { id: 'guests', label: 'Direct guest bookings', unit: ['booking', 'bookings'], lead: ['visit to your booking pages', 'visits to your booking pages'],
+        close: 2, closeLabel: 'Share of visits that book', cycle: 1,
+        capLabel: 'More bookings your calendar could take each month', cap: 10, market: 120,
+        fields: [
+          F('booking', 'Average booking value', 'money', 3200),
+          F('share', 'Your share of each booking', 'pct', 30, 'Use 100% for homes you own, or your management fee for homes you manage.'),
+          F('margin', 'Profit you keep on that share', 'pct', 50),
+          F('repeat', 'Future stays from each direct guest', 'num', 0.3, 'Guests who book direct come back more often than platform guests.'),
+          F('moved', 'Platform bookings you would move to direct each month', 'num', 4, 'Optional. Leave at 0 to ignore fee savings.'),
+          F('fee', 'Platform fee you would avoid on each', 'pct', 15, 'Count only fees your company pays. Vrbo, for example, charges about 8% in total on its pay-per-booking plan.')
+        ],
+        value: function (v) { var f = v.booking * v.share / 100; return { first: f, life: f * (1 + v.repeat), margin: v.margin / 100, savings: v.moved * v.booking * v.fee / 100 }; } }
+    ] },
+    { id: 'luxury-real-estate', name: 'Luxury real estate & developers', modes: [
+      { id: 'brokerage', label: 'Closed sales (brokerages and agents)', unit: ['closed sale', 'closed sales'], lead: ['qualified buyer or seller lead', 'qualified buyer or seller leads'],
+        close: 3, closeLabel: 'Share of leads that close', cycle: 4,
+        capLabel: 'More closings your team could handle each month', cap: 2, market: 12,
+        fields: [
+          F('price', 'Average sale price', 'money', 1500000),
+          F('commission', 'Commission on your side of the deal', 'pct', 2.8, 'A 2026 agent survey put average listing-side commission near 2.9% and buyer-side near 2.8%.'),
+          F('keep', 'Share your company keeps after agent splits', 'pct', 30, 'Use 100% if you are the agent and keep your full side.'),
+          F('future', 'Future sales from each client', 'num', 0.3, FUTURE_HINT)
+        ],
+        value: function (v) { var c = v.price * v.commission / 100; return { first: c, life: c * (1 + v.future), margin: v.keep / 100 }; } },
+      { id: 'developer', label: 'Lot or home sales (developers)', unit: ['sale', 'sales'], lead: ['qualified buyer lead', 'qualified buyer leads'],
+        close: 2, closeLabel: 'Share of leads that buy', cycle: 6,
+        capLabel: 'More sales your inventory supports each month', cap: 2, market: 18,
+        fields: [
+          F('price', 'Average sale price', 'money', 1200000),
+          F('margin', 'Gross margin on each sale', 'pct', 18, MARGIN_HINT),
+          F('future', 'Referral sales from each buyer', 'num', 0.1, FUTURE_HINT)
+        ],
+        value: oneoffValue }
+    ] },
+    { id: 'hotels-resorts', name: 'Boutique hotels, inns & resorts', modes: [
+      { id: 'direct', label: 'Direct room bookings', unit: ['stay', 'stays'], lead: ['visit to your booking pages', 'visits to your booking pages'],
+        close: 2, closeLabel: 'Share of visits that book', cycle: 1,
+        capLabel: 'More stays you could fill each month', cap: 40, market: 400,
+        fields: [
+          F('adr', 'Average nightly rate', 'money', 320),
+          F('nights', 'Average nights per stay', 'num', 3),
+          F('extra', 'On-property spend per stay (dining, spa, extras)', 'money', 250),
+          F('margin', 'Profit on each extra stay (flow-through)', 'pct', 55, 'The share of revenue from an extra stay that reaches profit.'),
+          F('repeat', 'Future stays from each direct guest', 'num', 0.3, 'One 2026 report found 30–40% repeat booking for hotels with strong direct programs, against 5–8% for guests won through booking sites.'),
+          F('moved', 'Booking-site stays you would move to direct each month', 'num', 15, 'Optional. Leave at 0 to ignore commission savings.'),
+          F('fee', 'Commission you would avoid on each', 'pct', 18, 'Booking.com commonly charges 15–18% and Expedia 18–22%.')
+        ],
+        value: function (v) {
+          var s = v.adr * v.nights + v.extra;
+          return { first: s, life: s * (1 + v.repeat), margin: v.margin / 100, savings: v.moved * v.adr * v.nights * v.fee / 100 };
+        } },
+      { id: 'groups', label: 'Group and event bookings', unit: ['group booking', 'group bookings'], lead: ['group inquiry', 'group inquiries'],
+        close: 20, closeLabel: 'Share of inquiries that book', cycle: 3,
+        capLabel: 'More group events you could host each month', cap: 2, market: 20,
+        fields: [
+          F('price', 'Average revenue per group', 'money', 25000),
+          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
+          F('future', 'Future bookings from each group', 'num', 0.5, FUTURE_HINT)
+        ],
+        value: oneoffValue }
+    ] },
+    { id: 'wedding-venues', name: 'Wedding & event venues and planners', modes: [
+      { id: 'venue', label: 'Booked weddings and events (venues)', unit: ['booked wedding', 'booked weddings'], lead: ['inquiry', 'inquiries'],
+        close: 10, closeLabel: 'Share of inquiries that book', cycle: 2,
+        capLabel: 'More open dates you could fill each month', cap: 2, market: 20,
+        fields: [
+          F('price', 'Average revenue per wedding', 'money', 28000),
+          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
+          F('future', 'Referral bookings from each wedding', 'num', 0.2, FUTURE_HINT)
+        ],
+        value: oneoffValue },
+      { id: 'planner', label: 'Booked clients (planners)', unit: ['booked client', 'booked clients'], lead: ['inquiry', 'inquiries'],
+        close: 20, closeLabel: 'Share of inquiries that book', cycle: 2,
+        capLabel: 'More clients you could take on each month', cap: 2, market: 18,
+        fields: [
+          F('price', 'Average planning fee', 'money', 9000),
+          F('margin', 'Gross margin', 'pct', 60, MARGIN_HINT),
+          F('future', 'Referral clients from each wedding', 'num', 0.5, FUTURE_HINT)
+        ],
+        value: oneoffValue }
+    ] },
+    { id: 'golf-courses', name: 'Golf courses & clubs', modes: [
+      { id: 'members', label: 'New members', unit: ['new member', 'new members'], lead: ['membership inquiry', 'membership inquiries'],
+        close: 25, closeLabel: 'Share of inquiries that join', cycle: 2,
+        capLabel: 'More members you could take each month', cap: 4, market: 30,
+        fields: [
+          F('init', 'Initiation fee', 'money', 15000),
+          F('dues', 'Annual dues', 'money', 9600),
+          F('spend', 'Other spend per member per year (dining, pro shop)', 'money', 3000),
+          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT),
+          F('years', 'Years a member typically stays', 'yrs', 8, 'One industry study put the average member lifecycle at about 12 seasons. We start lower to stay cautious.')
+        ],
+        value: function (v) { var y = v.dues + v.spend; return { first: v.init + y * Math.min(1, v.years), life: v.init + y * v.years, margin: v.margin / 100 }; } },
+      { id: 'outings', label: 'Outings and tournaments', unit: ['outing', 'outings'], lead: ['outing inquiry', 'outing inquiries'],
+        close: 25, closeLabel: 'Share of inquiries that book', cycle: 3,
+        capLabel: 'More outings your calendar could take each month', cap: 3, market: 20,
+        fields: [
+          F('price', 'Average revenue per outing', 'money', 12000),
+          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
+          F('future', 'Return outings from each organizer', 'num', 1, 'Annual events often come back. 1 means each organizer books once more.')
+        ],
+        value: oneoffValue },
+      { id: 'rounds', label: 'New regular golfers (tee times)', unit: ['new golfer', 'new golfers'], lead: ['visit to your tee-time pages', 'visits to your tee-time pages'],
+        close: 5, closeLabel: 'Share of visits that book', cycle: 0,
+        capLabel: 'More golfers your tee sheet could absorb each month', cap: 60, market: 600,
+        fields: [
+          F('price', 'Revenue per round (green fee, cart, food)', 'money', 110),
+          F('perYear', 'Rounds per golfer per year', 'num', 4),
+          F('years', 'Years a golfer keeps playing your course', 'yrs', 2),
+          F('margin', 'Gross margin', 'pct', 60, MARGIN_HINT)
+        ],
+        value: repeatValue }
+    ] },
+    { id: 'family-entertainment', name: 'Family entertainment & attractions', modes: [
+      { id: 'visits', label: 'Visiting groups', unit: ['visiting group', 'visiting groups'], lead: ['website visit', 'website visits'],
+        close: 5, closeLabel: 'Share of website visitors who come in', cycle: 0,
+        capLabel: 'More groups you could serve each month', cap: 400, market: 4000,
+        fields: [
+          F('price', 'Average spend per group visit', 'money', 85),
+          F('perYear', 'Visits per group per year', 'num', 1.5),
+          F('years', 'Years a local family keeps coming', 'yrs', 2),
+          F('margin', 'Gross margin', 'pct', 65, MARGIN_HINT)
+        ],
+        value: repeatValue },
+      { id: 'parties', label: 'Parties and group events', unit: ['party booking', 'party bookings'], lead: ['party inquiry', 'party inquiries'],
+        close: 35, closeLabel: 'Share of inquiries that book', cycle: 0,
+        capLabel: 'More parties you could host each month', cap: 20, market: 200,
+        fields: [
+          F('price', 'Average revenue per party', 'money', 450),
+          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT),
+          F('future', 'Future parties from each booking', 'num', 0.5, FUTURE_HINT)
+        ],
+        value: oneoffValue }
+    ] },
+    { id: 'lifestyle-brands', name: 'Lifestyle & experience brands', modes: [
+      { id: 'ecommerce', label: 'Online shop customers', unit: ['new customer', 'new customers'], lead: ['shop visit', 'shop visits'],
+        close: 2, closeLabel: 'Share of visits that buy', cycle: 0,
+        capLabel: 'More orders you could fulfil each month', cap: 500, market: 5000,
+        fields: [
+          F('price', 'Average order value', 'money', 95),
+          F('perYear', 'Orders per customer per year', 'num', 1.8),
+          F('years', 'Years a customer keeps buying', 'yrs', 3),
+          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT)
+        ],
+        value: repeatValue },
+      { id: 'trips', label: 'Charters, dives and tours', unit: ['trip booking', 'trip bookings'], lead: ['booking inquiry', 'booking inquiries'],
+        close: 30, closeLabel: 'Share of inquiries that book', cycle: 1,
+        capLabel: 'More trips you could run each month', cap: 20, market: 150,
+        fields: [
+          F('price', 'Average trip price', 'money', 1400),
+          F('margin', 'Gross margin (after fuel, crew, gear)', 'pct', 50),
+          F('future', 'Future trips from each booking', 'num', 0.4, FUTURE_HINT)
+        ],
+        value: oneoffValue }
+    ] },
+    { id: 'wellness-aesthetics', name: 'Health, wellness & aesthetics', modes: [
+      { id: 'patients', label: 'New patients or clients', unit: ['new patient', 'new patients'], lead: ['consultation request', 'consultation requests'],
+        close: 30, closeLabel: 'Share of requests that become patients', cycle: 1,
+        capLabel: 'More new patients your schedule could take each month', cap: 15, market: 150,
+        fields: [
+          F('price', 'Average revenue per visit', 'money', 450),
+          F('perYear', 'Visits per patient per year', 'num', 4),
+          F('years', 'Years a patient stays with you', 'yrs', 3),
+          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT)
+        ],
+        value: repeatValue },
+      { id: 'members', label: 'Memberships (concierge medicine)', unit: ['new member', 'new members'], lead: ['membership inquiry', 'membership inquiries'],
+        close: 15, closeLabel: 'Share of inquiries that join', cycle: 2,
+        capLabel: 'More members your practice could take each month', cap: 5, market: 40, fixed: { perYear: 1 },
+        fields: [
+          F('price', 'Annual membership fee', 'money', 4000),
+          F('years', 'Years a member stays', 'yrs', 4),
+          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+        ],
+        value: repeatValue }
+    ] },
+    { id: 'professional-services', name: 'Professional services', modes: [
+      { id: 'law', label: 'New legal clients', unit: ['new client', 'new clients'], lead: ['consultation request', 'consultation requests'],
+        close: 20, closeLabel: 'Share of consultations that retain you', cycle: 1,
+        capLabel: 'More matters your team could take each month', cap: 4, market: 40,
+        fields: [
+          F('price', 'Average fees per matter', 'money', 12000),
+          F('margin', 'Margin after the cost of staff time', 'pct', 45),
+          F('future', 'Future matters from each client', 'num', 0.5, FUTURE_HINT)
+        ],
+        value: oneoffValue },
+      { id: 'wealth', label: 'New wealth management clients', unit: ['new client', 'new clients'], lead: ['introductory meeting request', 'introductory meeting requests'],
+        close: 25, closeLabel: 'Share of meetings that become clients', cycle: 3,
+        capLabel: 'More households your advisors could take each month', cap: 3, market: 20,
+        fields: [
+          F('assets', 'Assets brought by an average new client', 'money', 1500000),
+          F('fee', 'Your annual advisory fee', 'pct', 0.92, 'Cerulli expected average 2026 fees near 0.92% for $1.5M clients, falling for larger accounts.'),
+          F('margin', 'Margin after advisor and service costs', 'pct', 35),
+          F('years', 'Years a client typically stays', 'yrs', 12, 'Advisory clients tend to stay a long time. At 95% yearly retention, the average client stays about 20 years.')
+        ],
+        value: function (v) { var y = v.assets * v.fee / 100; return { first: y * Math.min(1, v.years), life: y * v.years, margin: v.margin / 100 }; } }
+    ] },
+    { id: 'home-services', name: 'Home services & contractors', modes: [
+      { id: 'jobs', label: 'Project jobs (roofing, remodeling, builds)', unit: ['won job', 'won jobs'], lead: ['quote request', 'quote requests'],
+        close: 30, closeLabel: 'Share of quotes you win', cycle: 1,
+        capLabel: 'More jobs your crews could take on each month', cap: 6, market: 60,
+        fields: [
+          F('price', 'Average job value', 'money', 8500),
+          F('margin', 'Gross margin', 'pct', 40, MARGIN_HINT),
+          F('future', 'Future jobs from each customer', 'num', 0.5, FUTURE_HINT)
+        ],
+        value: oneoffValue },
+      { id: 'service', label: 'Recurring service (pool, lawn, HVAC plans)', unit: ['new account', 'new accounts'], lead: ['quote request', 'quote requests'],
+        close: 35, closeLabel: 'Share of quotes you win', cycle: 0,
+        capLabel: 'More accounts your routes could take each month', cap: 20, market: 200, fixed: { perYear: 1 },
+        fields: [
+          F('price', 'Average revenue per account per year', 'money', 1200),
+          F('years', 'Years an account stays', 'yrs', 5),
+          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+        ],
+        value: repeatValue }
+    ] },
+    { id: 'other', name: 'Another kind of business', modes: [
+      { id: 'general', label: 'New customers', unit: ['new customer', 'new customers'], lead: ['lead', 'leads'],
+        close: 20, closeLabel: 'Share of leads that become customers', cycle: 1,
+        capLabel: 'More customers you could serve each month', cap: 5, market: 40,
+        fields: [
+          F('price', 'Average sale', 'money', 5000),
+          F('perYear', 'Purchases per customer per year', 'num', 1),
+          F('years', 'Years a customer keeps buying', 'yrs', 3),
+          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+        ],
+        value: repeatValue }
+    ] }
+  ];
+
+  var $ = function (id) { return document.getElementById(id); };
+  var money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  var whole = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+  var dec1 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 });
+  var store = {}; // remembered values per industry/mode while the page is open
+
+  var state = { plan: 'lantern', industry: INDUSTRIES[0].id, mode: {} };
+
+  // Plan cards
+  $('roi-plans').innerHTML = PLANS.map(function (p) {
+    return '<label class="roi-choice"><input type="radio" name="plan" id="roi-plan-' + p.id + '" value="' + p.id + '"' + (p.id === state.plan ? ' checked' : '') + '>' +
+      '<span class="roi-choice-body"><span class="roi-choice-name">' + p.name + '</span>' +
+      '<span class="roi-choice-price">' + money.format(p.price) + '<small> / month</small></span>' +
+      '<span class="roi-choice-note">' + p.note + '</span></span></label>';
+  }).join('');
+
+  $('roi-industry').innerHTML = INDUSTRIES.map(function (i) { return '<option value="' + i.id + '">' + i.name + '</option>'; }).join('');
+
+  var fromHash = (location.hash || '').replace('#', '');
+  if (INDUSTRIES.some(function (i) { return i.id === fromHash; })) state.industry = fromHash;
+  try {
+    var q = new URLSearchParams(location.search).get('industry');
+    if (q && INDUSTRIES.some(function (i) { return i.id === q; })) state.industry = q;
+  } catch (e) {}
+  $('roi-industry').value = state.industry;
+
+  function industry() { return INDUSTRIES.filter(function (i) { return i.id === state.industry; })[0]; }
+  function mode() {
+    var ind = industry(); var id = state.mode[ind.id] || ind.modes[0].id;
+    return ind.modes.filter(function (m) { return m.id === id; })[0];
+  }
+  function key() { return state.industry + '/' + mode().id; }
+  function saved(k, def) { var s = store[key()]; return s && s[k] != null ? s[k] : def; }
+
+  function fieldHTML(id, label, kind, value, hint, wide) {
+    var pre = kind === 'money' ? '<span class="roi-affix">$</span>' : '';
+    var suf = kind === 'pct' ? '<span class="roi-affix">%</span>' : kind === 'yrs' ? '<span class="roi-affix">years</span>' : kind === 'month' ? '<span class="roi-affix">a month</span>' : kind === 'year' ? '<span class="roi-affix">a year</span>' : kind === 'months' ? '<span class="roi-affix">months</span>' : '';
+    var step = kind === 'money' ? (value >= 10000 ? '1000' : value >= 1000 ? '100' : '1') : kind === 'pct' ? (value < 5 ? '0.1' : '1') : (value % 1 ? '0.1' : '1');
+    return '<div class="roi-field' + (wide ? ' is-wide' : '') + '"><label class="roi-label" for="' + id + '">' + label + '</label>' +
+      '<div class="roi-box">' + pre + '<input type="number" inputmode="decimal" min="0" step="' + step + '" id="' + id + '" data-k="' + id.replace('roi-f-', '') + '" value="' + value + '">' + suf + '</div>' +
+      (hint ? '<span class="roi-hint">' + hint + '</span>' : '') + '</div>';
+  }
+
+  function renderIndustry() {
+    var ind = industry(), m = mode();
+    $('roi-mode-wrap').hidden = ind.modes.length < 2;
+    $('roi-modes').innerHTML = ind.modes.map(function (x) {
+      return '<label><input type="radio" name="mode" id="roi-mode-' + ind.id + '-' + x.id + '" value="' + x.id + '"' + (x.id === m.id ? ' checked' : '') + '><span>' + x.label + '</span></label>';
+    }).join('');
+    var html = m.fields.map(function (f) { return fieldHTML('roi-f-' + f.k, f.label, f.kind, saved(f.k, f.def), f.hint); }).join('');
+    html += '<p class="roi-subhead">Turning interest into ' + m.unit[1] + '</p>';
+    html += fieldHTML('roi-f-close', m.closeLabel, 'pct', saved('close', m.close), 'Use your own figure if you track it. Faster replies and follow-up raise this more than anything else.');
+    html += fieldHTML('roi-f-cycle', 'Months from first contact to a sale', 'months', saved('cycle', m.cycle), 'Long decisions push results later, which leaves less time inside your time frame.');
+    $('roi-fields').innerHTML = html;
+    $('roi-limits').innerHTML =
+      fieldHTML('roi-f-cap', m.capLabel, 'month', saved('cap', m.cap), 'Think about staff, crews, rooms, dates or inventory. This is extra work on top of what you do today.') +
+      fieldHTML('roi-f-market', 'New ' + m.unit[1] + ' you think you could realistically win in a year', 'year', saved('market', m.market), 'Your honest estimate of the customers in your market you could take from competitors or reach for the first time.');
+    compute();
+  }
+
+  function read() {
+    var v = {};
+    root.querySelectorAll('input[data-k]').forEach(function (el) {
+      var n = parseFloat(el.value); v[el.getAttribute('data-k')] = isFinite(n) && n >= 0 ? n : 0;
+    });
+    store[key()] = Object.assign({}, store[key()] || {}, v);
+    var fixed = mode().fixed || {};
+    Object.keys(fixed).forEach(function (k) { v[k] = fixed[k]; });
+    return v;
+  }
+
+  function plural(n, m) { return Math.round(n) === 1 ? m.unit[0] : m.unit[1]; }
+  function leadWord(n, m) { return Math.round(n) === 1 ? m.lead[0] : m.lead[1]; }
+
+  var last = null;
+
+  function compute() {
+    var m = mode(), v = read();
+    var plan = PLANS.filter(function (p) { return p.id === (root.querySelector('input[name="plan"]:checked') || {}).value; })[0] || PLANS[0];
+    var H = parseInt((root.querySelector('input[name="horizon"]:checked') || {}).value, 10) || 12;
+    var ramp = Math.max(0, parseFloat($('roi-ramp').value) || 0);
+    var build = $('roi-buildout').checked;
+    var basis = (root.querySelector('input[name="basis"]:checked') || {}).value || 'first';
+
+    var val = m.value(v);
+    var perCustomerRevenue = basis === 'life' ? val.life : val.first;
+    var gp = perCustomerRevenue * val.margin;
+    var investment = plan.price * H + (build ? BUILDOUT : 0);
+    var startMonth = ramp + v.cycle;
+    var productive = Math.max(0, H - startMonth);
+    var savings = (val.savings || 0) * Math.max(0, H - ramp);
+    var netCost = Math.max(0, investment - savings);
+    var close = v.close / 100;
+
+    var r = { m: m, plan: plan, H: H, build: build, basis: basis, gp: gp, investment: investment, savings: savings, productive: productive, startMonth: startMonth };
+    r.need = gp > 0 ? Math.ceil(netCost / gp) : Infinity;
+    if (netCost === 0) r.need = 0;
+    r.perMonth = productive > 0 ? r.need / productive : Infinity;
+    r.leads = close > 0 ? Math.ceil(r.need / close) : Infinity;
+    r.leadsPerMonth = productive > 0 ? r.leads / productive : Infinity;
+    r.capTotal = v.cap * productive;
+    r.mktTotal = v.market * productive / 12;
+    r.reach = Math.min(r.capTotal, r.mktTotal);
+    r.binding = r.capTotal <= r.mktTotal ? 'capacity' : 'market';
+    last = r;
+    render(r);
+  }
+
+  function statusFor(r) {
+    if (r.gp <= 0) return { cls: 'is-muted', text: 'Check your numbers' };
+    if (r.productive <= 0) return { cls: 'is-muted', text: 'Needs a longer time frame' };
+    if (r.need === 0) return { cls: '', text: 'Savings cover the cost' };
+    var ratio = r.reach > 0 ? r.need / r.reach : Infinity;
+    if (ratio <= 0.5) return { cls: '', text: 'Comfortably within reach' };
+    if (ratio <= 1) return { cls: 'is-warn', text: 'Within reach, with little room' };
+    return { cls: 'is-bad', text: 'Beyond your current limits' };
+  }
+
+  function meter(label, total, need, m) {
+    var pctUsed = total > 0 ? need / total : Infinity;
+    var w = Math.min(1, isFinite(pctUsed) ? pctUsed : 1) * 100;
+    var right = total > 0 ? (isFinite(pctUsed) ? whole.format(Math.round(pctUsed * 100)) + '% used' : 'Over') : 'None entered';
+    return '<div><div class="roi-meter-top"><span>' + label + '</span><span>' + right + '</span></div>' +
+      '<div class="roi-track"><div class="roi-fill' + (pctUsed > 1 ? ' is-over' : '') + '" style="width:' + w.toFixed(1) + '%"></div></div>' +
+      '<div class="roi-meter-note">' + whole.format(Math.floor(total)) + ' ' + plural(Math.floor(total), m) + ' available in that window</div></div>';
+  }
+
+  function render(r) {
+    var m = r.m, s = statusFor(r);
+    var headline, sub;
+    if (r.gp <= 0) {
+      headline = 'Enter a value for each new ' + m.unit[0] + '.';
+      sub = 'The calculator needs a price and a margin above zero to work out a break-even point.';
+    } else if (r.productive <= 0) {
+      headline = 'Results would start after month ' + dec1.format(r.startMonth) + '.';
+      sub = 'That leaves no time inside a ' + r.H + '-month window. Choose a longer time frame, or check the months before inquiries start and the months to a sale.';
+    } else if (r.need === 0) {
+      headline = 'Fee savings alone cover the plan.';
+      sub = 'Moving bookings to direct saves more than the engagement costs over ' + r.H + ' months, before counting any new ' + m.unit[1] + '.';
+    } else {
+      headline = 'You break even at <em>' + whole.format(r.need) + ' ' + plural(r.need, m) + '</em>.';
+      sub = 'That is about ' + dec1.format(r.perMonth) + ' a month from month ' + dec1.format(r.startMonth + 1) + ' to month ' + r.H +
+        ', which takes roughly ' + whole.format(Math.ceil(r.leadsPerMonth)) + ' ' + leadWord(Math.ceil(r.leadsPerMonth), m) + ' a month at your conversion rate.';
+    }
+    $('roi-r-headline').innerHTML = headline;
+    $('roi-r-sub').textContent = sub;
+    var st = $('roi-r-status'); st.className = 'roi-status ' + s.cls; st.textContent = s.text;
+
+    var ok = r.gp > 0 && r.productive > 0;
+    $('roi-r-meters').hidden = !ok || r.need === 0;
+    if (ok) {
+      $('roi-r-meters').innerHTML =
+        meter('Against your spare capacity', r.capTotal, r.need, m) +
+        meter('Against what you could win', r.mktTotal, r.need, m) +
+        (r.need > 0 ? '<div class="roi-meter-note">' + (r.binding === 'capacity' ? 'Your capacity is the tighter limit.' : 'Your market estimate is the tighter limit.') + '</div>' : '');
+    }
+
+    var figs = [
+      ['Total investment', money.format(r.investment), r.plan.name + ' for ' + r.H + ' months' + (r.build ? ' plus the buildout' : '')],
+      ['Profit per ' + m.unit[0], r.gp > 0 ? money.format(r.gp) : '–', r.basis === 'life' ? 'Lifetime gross profit' : 'First-year gross profit'],
+      [cap(m.lead[1]) + ' needed', isFinite(r.leads) ? whole.format(r.leads) : '–', 'In total, to break even'],
+      ['Most you can pay to win one', r.gp > 0 ? money.format(r.gp) : '–', 'Any lower cost is profit']
+    ];
+    if (r.savings > 0) figs[3] = ['Fee savings counted', money.format(r.savings), 'From moving bookings to direct'];
+    $('roi-r-figures').innerHTML = figs.map(function (f) {
+      return '<div class="roi-figure"><dt>' + f[0] + '</dt><dd>' + f[1] + '<small>' + f[2] + '</small></dd></div>';
+    }).join('');
+
+    var table = $('roi-r-table');
+    if (ok && r.reach > 0) {
+      table.hidden = false;
+      var rows = [[0.25, 'A quarter of your reach'], [0.5, 'Half of your reach'], [1, 'All of your reach']].map(function (x) {
+        var c = Math.floor(r.reach * x[0]);
+        var ret = c * r.gp + r.savings - r.investment;
+        var roi = ret / r.investment;
+        var cls = ret >= 0 ? 'is-pos' : 'is-neg';
+        return '<tr><td>' + x[1] + '</td><td>' + whole.format(c) + '</td><td class="' + cls + '">' + (ret < 0 ? '−' : '') + money.format(Math.abs(ret)) + '</td><td class="' + cls + '">' + (roi < 0 ? '−' : '') + whole.format(Math.abs(roi * 100)) + '%</td></tr>';
+      }).join('');
+      table.innerHTML = '<caption>If you win…</caption><thead><tr><th scope="col">Scenario</th><th scope="col">' + cap(m.unit[1]) + '</th><th scope="col">Net return</th><th scope="col">ROI</th></tr></thead><tbody>' + rows + '</tbody>';
+    } else {
+      table.hidden = true; table.innerHTML = '';
+    }
+
+    $('roi-dock-text').innerHTML = ok && r.need > 0 ? 'Break even at <strong>' + whole.format(r.need) + ' ' + plural(r.need, m) + '</strong>' : s.text;
+  }
+
+  function cap(t) { return t.charAt(0).toUpperCase() + t.slice(1); }
+
+  function summary() {
+    var r = last; if (!r) return '';
+    var ind = industry(), m = r.m, v = store[key()] || {};
+    var lines = [
+      '30A Digital Marketing ROI calculator',
+      'Industry: ' + ind.name + ' (' + m.label + ')',
+      'Plan: ' + r.plan.name + ', ' + money.format(r.plan.price) + '/month for ' + r.H + ' months' + (r.build ? ', plus Website Buildout' : ''),
+      'Total investment: ' + money.format(r.investment),
+      'Profit per ' + m.unit[0] + ' (' + (r.basis === 'life' ? 'lifetime' : 'first year') + '): ' + money.format(r.gp),
+      'Break-even: ' + (isFinite(r.need) ? whole.format(r.need) + ' ' + plural(r.need, m) : 'not reachable with these inputs'),
+      cap(m.lead[1]) + ' needed: ' + (isFinite(r.leads) ? whole.format(r.leads) : 'n/a'),
+      'Spare capacity: ' + whole.format(v.cap || 0) + ' a month; market estimate: ' + whole.format(v.market || 0) + ' a year',
+      'Status: ' + statusFor(r).text
+    ];
+    return lines.join('\n');
+  }
+
+  $('roi-copy').addEventListener('click', function () {
+    var text = summary(), area = $('roi-copy-area'), btn = this;
+    function fallback() { area.hidden = false; area.value = text; area.focus(); area.select(); btn.textContent = 'Select and copy the text below'; }
+    try {
+      navigator.clipboard.writeText(text).then(function () { area.hidden = true; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy my numbers'; }, 2000); }, fallback);
+    } catch (e) { fallback(); }
+  });
+
+  root.addEventListener('input', function (e) { if (e.target.id !== 'roi-industry') compute(); });
+  root.addEventListener('change', function (e) {
+    if (e.target.id === 'roi-industry') { state.industry = e.target.value; renderIndustry(); return; }
+    if (e.target.name === 'mode') { read(); state.mode[state.industry] = e.target.value; renderIndustry(); return; }
+    compute();
+  });
+  $('roi-form').addEventListener('submit', function (e) { e.preventDefault(); });
+
+  // Phone summary bar: shown while the results panel is off screen.
+  var dock = $('roi-dock');
+  if ('IntersectionObserver' in window) {
+    var seen = { form: false, results: false };
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { seen[en.target.id === 'roi-results' ? 'results' : 'form'] = en.isIntersecting; });
+      var on = seen.form && !seen.results;
+      dock.classList.toggle('is-on', on); dock.setAttribute('aria-hidden', on ? 'false' : 'true');
+    });
+    io.observe($('roi-form')); io.observe($('roi-results'));
+  }
+
+  renderIndustry();
+})();
+</script>
+
+<section class="roi-explain">
+  <h2>How the ROI calculator works</h2>
+  <ol>
+    <li><strong>Cost.</strong> Your monthly plan for the time frame you choose, plus the Website Buildout if you add it.</li>
+    <li><strong>Value of one new customer.</strong> Your price, any repeat business or referrals, and your gross margin give the profit one new customer brings you.</li>
+    <li><strong>Break-even.</strong> The cost divided by that profit is the number of new customers you need. Divided by your conversion rate, it becomes the number of leads, inquiries or visits you need.</li>
+    <li><strong>Timing.</strong> Nothing is counted until inquiries start and your usual sales cycle has run, so the work has to pay back in the months that remain.</li>
+    <li><strong>Reality check.</strong> The break-even number is set against the extra work you can take on and the customers you think you can win. A plan only makes sense if both have room for it.</li>
+  </ol>
+
+  <h2>What the result tells you</h2>
+  <p>If break-even uses less than half of your spare capacity and your market estimate, the plan has room to pay for itself several times over. If it uses most of either, the plan can work but leaves little margin for a slow start. If it goes past either limit, a smaller plan, a longer time frame or more capacity will change the picture, and that is worth knowing before you spend anything.</p>
+
+  <h2>Questions about marketing ROI</h2>
+  <h3>Why does the calculator use gross profit instead of revenue?</h3>
+  <p>Revenue overstates the return. A $10,000 job with a 40% margin leaves $4,000 to pay for marketing, so that is the number that has to cover the plan.</p>
+  <h3>How long does SEO take to pay for itself?</h3>
+  <p>Most SEO programs take four to six months to show significant results, and businesses with long sales cycles, such as real estate or weddings, see revenue later still. That is why you can set when inquiries start and how long a sale takes. A 24- or 36-month view usually tells a fairer story than 12.</p>
+  <h3>Should I use first-year or lifetime profit?</h3>
+  <p>Start with first-year profit. If the plan pays for itself on that basis, repeat business and referrals are upside. Lifetime profit is useful when customers stay for years, as homeowners, members and advisory clients often do.</p>
+  <h3>What if the result says the target is beyond my limits?</h3>
+  <p>It usually means the plan is too large for your current capacity or market, not that marketing can't work for you. Try a smaller plan or a longer time frame, or bring the numbers to a strategy call and we'll look at where the gap is.</p>
+  <h3>Are these numbers a forecast?</h3>
+  <p>No. They show what would have to be true for the work to pay off, using numbers you enter. We don't promise rankings, AI mentions or sales. On a free strategy call we test your assumptions against search demand and competition in your market.</p>
+</section>
+{% endraw %}

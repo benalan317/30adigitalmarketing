@@ -1,23 +1,33 @@
 ---
 layout: page
 title: "Expertise"
-h1: "Expertise"
 seo_title: "Digital Marketing Services | 30A Digital Marketing"
 description: "Six services for established Gulf Coast businesses: SEO, AI search visibility, digital authority, brand strategy, content and AI systems."
 eyebrow: "Expertise"
+h1: "Digital marketing services for the Gulf Coast"
 lede: "Six ways we help established businesses be found and chosen online."
-placeholder: true
-sitemap: false
 related:
   - /plans/
   - /approach/
 ---
 {% comment %}
 PAGE BRIEF
-Primary keyword: seo services (hub)
+Primary keyword: digital marketing services (hub; the SEO page keeps seo services)
 Purpose: Overview of all six services, with a callout to the Website Buildout.
 {% endcomment %}
 
+Our digital marketing services cover the whole path from being found to being chosen: search, AI visibility, reputation, brand, content and the AI systems behind your team. We run them as one program, so each one makes the others work harder.
+
 {% include card-list.html group="services" %}
+
+## How our digital marketing services fit together
+
+- **Be found.** SEO and AI search visibility put you in front of customers when they search or ask an AI tool.
+- **Be trusted.** Digital authority and reputation earn the reviews, coverage and links that make people believe you. Brand strategy makes sure everyone hears one clear message.
+- **Be chosen.** Content and sales assets help a ready buyer decide, and AI systems help your team answer faster and more consistently.
+
+## Where most businesses start
+
+Every monthly plan includes work across SEO, AI search visibility, digital authority and content, weighted to what your business needs most. Brand strategy is quoted as a separate project, and AI systems are scoped to your business. Your free strategy call shows which matters most for you.
 
 Need a new site or a redesign first? See the [Website Buildout](/plans/website-buildout/).
