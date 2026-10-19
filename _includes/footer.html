@@ -19,7 +19,7 @@
       <h2>Expertise</h2>
       <ul>
         {%- for s in footer_services %}
-        <li><a href="{{ s.url }}">{{ s.name | default: s.title }}</a></li>
+        <li><a href="{{ s.url }}">{{ s.title | escape }}</a></li>
         {%- endfor %}
       </ul>
     </nav>
@@ -28,7 +28,7 @@
       <h2>Industries</h2>
       <ul>
         {%- for i in footer_industries %}
-        <li><a href="{{ i.url }}">{{ i.name | default: i.title }}</a></li>
+        <li><a href="{{ i.url }}">{{ i.title | escape }}</a></li>
         {%- endfor %}
       </ul>
     </nav>
@@ -49,6 +49,6 @@
   </div>
 
   <div class="footer-legal">
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}. All rights reserved.</p>
   </div>
 </footer>

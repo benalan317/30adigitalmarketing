@@ -47,7 +47,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, Website 
     {%- for s in flagship %}
     <a class="column" href="{{ s.url }}">
       <span class="num">0{{ forloop.index }}</span>
-      <h3>{{ s.name | default: s.title }}</h3>
+      <h3>{{ s.title | escape }}</h3>
       <p>{{ s.blurb }}</p>
     </a>
     {%- endfor %}
@@ -58,7 +58,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, Website 
   <h2>Built for the businesses that make the coast what it is.</h2>
   <ul>
     {%- for i in home_industries %}
-    <li><a href="{{ i.url }}">{{ i.name | default: i.title }}</a></li>
+    <li><a href="{{ i.url }}">{{ i.title | escape }}</a></li>
     {%- endfor %}
   </ul>
   <a class="link-caps" href="/industries/">All industries</a>

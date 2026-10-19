@@ -28,7 +28,7 @@ layout: default
       {%- for u in page.related %}
         {%- assign p = site.pages | where: "url", u | first %}
         {%- if p %}
-      <li><a href="{{ p.url }}">{{ p.name | default: p.title }}</a></li>
+      <li><a href="{{ p.url }}">{{ p.title | escape }}</a></li>
         {%- endif %}
       {%- endfor %}
     </ul>

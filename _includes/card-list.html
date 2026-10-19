@@ -8,7 +8,7 @@
   <li>
     <a href="{{ c.url }}">
       <span class="card-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-      <span class="card-title">{{ c.name | default: c.title }}</span>
+      <span class="card-title">{{ c.title | escape }}</span>
       {%- if c.blurb %}
       <span class="card-blurb">{{ c.blurb }}</span>
       {%- endif %}
