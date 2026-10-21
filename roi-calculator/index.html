@@ -2,10 +2,10 @@
 layout: page
 title: ROI Calculator
 seo_title: "Marketing ROI Calculator | 30A Digital Marketing"
-description: "Free marketing ROI calculator for Gulf Coast businesses. See how many new customers, leads and sales it takes for a monthly marketing plan to pay off."
+description: "Free marketing ROI calculator for Gulf Coast businesses. See how many new customers a monthly marketing plan needs to pay for itself."
 eyebrow: Resources
 h1: Marketing ROI calculator
-lede: "Pick your industry and enter a few numbers. You'll see how many new customers it takes for a plan to pay for itself, checked against the work you can take on and the market you can win."
+lede: "See how many new customers a marketing plan needs to pay for itself. Pick your business, get an answer in seconds, and change any number to match yours."
 body_class: page-tool
 related:
   - /plans/
@@ -16,15 +16,16 @@ related:
 PAGE BRIEF (ROI calculator)
 Primary keyword: marketing roi calculator
 Related keywords: seo roi calculator, marketing break-even calculator, how many customers to break even on marketing, digital marketing roi
-Purpose: lead-generation tool. Visitor picks an industry, sees break-even customers and leads for each plan,
-checked against their spare capacity and the customers they think they can win. Every result points to the strategy call.
+Purpose: lead-generation tool. Visitor picks an industry and immediately sees how many new customers a plan needs to pay for itself,
+checked against how much extra work they can take on and how many customers they could win. Every result points to the strategy call.
 Links in: Plans, Website Buildout, Approach, footer, homepage plans teaser, each industry page
   (link to /roi-calculator/#<industry-slug> to open that industry, e.g. /roi-calculator/#home-services).
 Prices live in the script near the top: PLANS (4,000 / 7,000 / 10,000) and BUILDOUT (10,000).
-Status: approved. Public and in the sitemap.
+Rewritten Oct 21, 2026 in plain language: typical numbers are pre-filled, four simple questions are shown, and the industry
+details sit behind "Change the details behind these numbers". Status: draft for owner review of the new version.
 {% endcomment %}
 {% raw %}
-<p class="roi-answer">A marketing ROI calculator shows how much new business an investment has to bring in before it pays for itself. This one counts gross profit rather than revenue, waits for results to start, and checks the answer against how much work you can take on and how many customers your market can give you.</p>
+<p class="roi-answer">A marketing ROI calculator shows how many new customers it takes for your marketing to pay for itself. Digital marketing strategies typically take six months or more to mature and pay off, so this calculator builds that wait into the answer. Pick your type of business to see a result based on typical numbers, then change any number to match your own.</p>
 
 <style>
 /* ROI calculator. Styles are scoped to .roi so they never affect the rest of the site.
@@ -181,82 +182,87 @@ Status: approved. Public and in the sitemap.
 .roi-explain p, .roi-explain li { margin: 0; font-size: 16px; font-weight: 300; line-height: 1.75; }
 .roi-explain ol { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 12px; }
 .roi-explain strong { font-weight: 500; }
+
+/* Added in the plain-language rewrite (Oct 21, 2026) */
+.roi [hidden] { display: none !important; }
+.roi-more { border-top: 1px solid var(--r-rule); padding-top: 14px; }
+.roi-more summary { cursor: pointer; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; list-style: none; text-decoration: underline; text-underline-offset: 6px; }
+.roi-more summary::-webkit-details-marker { display: none; }
+.roi-more summary::after { content: "+"; display: inline-block; font-size: 16px; line-height: 1; text-decoration: none; }
+.roi-more[open] summary::after { content: "\2212"; }
+.roi-more summary:focus-visible { outline: 2px solid var(--r-accent); outline-offset: 3px; }
+.roi-more-body { display: flex; flex-direction: column; gap: 24px; padding-top: 18px; }
+.roi-figure:nth-child(odd):last-child { grid-column: 1 / -1; padding-right: 0; }
+.roi-table td:first-child small { display: block; font-size: 12px; font-weight: 300; color: var(--r-muted); }
 </style>
 
 <div class="roi" id="roi">
   <form class="roi-inputs" id="roi-form" novalidate>
     <fieldset>
-      <legend><span class="roi-step">01</span><span class="roi-legend-text">Your plan</span></legend>
-      <p class="roi-intro">Choose a monthly level. Every plan is scoped to your business, so these are the starting prices, with no binding contract.</p>
-      <div class="roi-plans" role="radiogroup" aria-label="Monthly plan" id="roi-plans"></div>
-      <label class="roi-check" for="roi-buildout">
-        <input type="checkbox" id="roi-buildout" name="buildout">
-        <span><strong>Add a Website Buildout ($10,000, one time)</strong><span>A new site or redesign for service businesses. It is a separate offer, so leave it off if you only want a monthly plan.</span></span>
-      </label>
-      <div class="roi-grid">
-        <div class="roi-field">
-          <span class="roi-label" id="roi-horizon-label">Time frame to measure</span>
-          <div class="roi-seg" role="radiogroup" aria-labelledby="roi-horizon-label">
-            <label><input type="radio" name="horizon" id="roi-h12" value="12" checked><span>12 months</span></label>
-            <label><input type="radio" name="horizon" id="roi-h24" value="24"><span>24 months</span></label>
-            <label><input type="radio" name="horizon" id="roi-h36" value="36"><span>36 months</span></label>
-          </div>
-        </div>
-        <div class="roi-field">
-          <label class="roi-label" for="roi-ramp">Months before new inquiries start</label>
-          <div class="roi-box"><input type="number" id="roi-ramp" inputmode="numeric" min="0" max="24" step="1" value="4"><span class="roi-affix">months</span></div>
-          <span class="roi-hint">Search work takes time to index and rank. Most SEO programs need four to six months before results are significant.</span>
-        </div>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend><span class="roi-step">02</span><span class="roi-legend-text">Your business</span></legend>
+      <legend><span class="roi-step">01</span><span class="roi-legend-text">Your business</span></legend>
       <div class="roi-field is-wide">
-        <label class="roi-label" for="roi-industry">Industry</label>
+        <label class="roi-label" for="roi-industry">What kind of business do you run?</label>
         <div class="roi-box"><select class="roi-select" id="roi-industry"></select></div>
       </div>
       <div class="roi-field is-wide" id="roi-mode-wrap">
-        <span class="roi-label" id="roi-mode-label">What counts as a new customer?</span>
+        <span class="roi-label" id="roi-mode-label">What kind of new customer do you want?</span>
         <div class="roi-modes" role="radiogroup" aria-labelledby="roi-mode-label" id="roi-modes"></div>
       </div>
-      <div class="roi-grid" id="roi-fields"></div>
-      <p class="roi-fine">Starting values are examples drawn from industry sources and typical figures. Replace them with your own numbers for a real answer.</p>
+      <p class="roi-intro">We start with typical numbers for this kind of business, so you get an answer right away. Change any number to match yours.</p>
     </fieldset>
 
     <fieldset>
-      <legend><span class="roi-step">03</span><span class="roi-legend-text">Your limits</span></legend>
-      <p class="roi-intro">Growth only pays if you can serve it and the market is there to win. These two numbers keep the result honest.</p>
-      <div class="roi-grid" id="roi-limits"></div>
-    </fieldset>
-
-    <fieldset>
-      <legend><span class="roi-step">04</span><span class="roi-legend-text">How to count value</span></legend>
+      <legend><span class="roi-step">02</span><span class="roi-legend-text">Your plan</span></legend>
+      <p class="roi-intro">Pick a monthly plan. Each one is built around your business, with no binding contract.</p>
+      <div class="roi-plans" role="radiogroup" aria-label="Monthly plan" id="roi-plans"></div>
+      <label class="roi-check" for="roi-buildout">
+        <input type="checkbox" id="roi-buildout" name="buildout">
+        <span><strong>Also include a Website Buildout ($10,000, one time)</strong><span>A new website or a redesign for service businesses. It is a separate offer, so leave this unticked if you only want a monthly plan.</span></span>
+      </label>
       <div class="roi-field is-wide">
-        <span class="roi-label" id="roi-basis-label">Value each new customer by</span>
-        <div class="roi-seg" role="radiogroup" aria-labelledby="roi-basis-label">
-          <label><input type="radio" name="basis" id="roi-basis-first" value="first" checked><span>First-year profit</span></label>
-          <label><input type="radio" name="basis" id="roi-basis-life" value="life"><span>Lifetime profit</span></label>
+        <span class="roi-label" id="roi-horizon-label">How long do you want to measure?</span>
+        <div class="roi-seg" role="radiogroup" aria-labelledby="roi-horizon-label">
+          <label><input type="radio" name="horizon" id="roi-h12" value="12" checked><span>12 months</span></label>
+          <label><input type="radio" name="horizon" id="roi-h24" value="24"><span>24 months</span></label>
+          <label><input type="radio" name="horizon" id="roi-h36" value="36"><span>36 months</span></label>
         </div>
-        <span class="roi-hint">First-year profit is the cautious view. Lifetime profit includes repeat business and referrals, some of which arrives after the time frame ends.</span>
+        <span class="roi-hint">Digital marketing strategies typically take six months or more to mature and pay off. Over 24 or 36 months you see the full return. 12 months is the strictest test.</span>
       </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="roi-step">03</span><span class="roi-legend-text">Your numbers</span></legend>
+      <p class="roi-intro">Use your own figures where you know them. Where you don't, keep ours and see how the answer changes.</p>
+      <div class="roi-grid" id="roi-core"></div>
+      <details class="roi-more" id="roi-more">
+        <summary>Change the details behind these numbers</summary>
+        <div class="roi-more-body">
+          <label class="roi-check" for="roi-repeat">
+            <input type="checkbox" id="roi-repeat" name="repeat">
+            <span><strong>Count repeat business and referrals too</strong><span>Tick this if customers keep paying you or send friends over time. It uses the "years" and "extra sales" numbers below. Leave it unticked for the cautious view, which counts only the first year.</span></span>
+          </label>
+          <div class="roi-grid" id="roi-fields"></div>
+          <div><button type="button" class="roi-link" id="roi-reset">Reset to typical numbers</button></div>
+        </div>
+      </details>
     </fieldset>
   </form>
 
   <section class="roi-results" id="roi-results" aria-live="polite" aria-label="Your results">
-    <p class="roi-eyebrow" id="roi-r-eyebrow">Your break-even point</p>
+    <p class="roi-eyebrow">Your result</p>
     <h2 class="roi-headline" id="roi-r-headline">&nbsp;</h2>
     <p class="roi-sub" id="roi-r-sub"></p>
     <span class="roi-status" id="roi-r-status"></span>
     <div class="roi-meters" id="roi-r-meters"></div>
     <dl class="roi-figures" id="roi-r-figures"></dl>
     <div class="roi-table-wrap"><table class="roi-table" id="roi-r-table"></table></div>
+    <p class="roi-fine" id="roi-r-tablenote" hidden>"Left over" is your profit after paying for the plan. "Back per $1" is the profit you earn for every $1 you spend.</p>
     <div class="roi-actions">
-      <a class="roi-btn" href="/strategy-call/">Pressure-test these numbers</a>
-      <button type="button" class="roi-link" id="roi-copy">Copy my numbers</button>
+      <a class="roi-btn" href="/strategy-call/">Check these numbers on a free call</a>
+      <button type="button" class="roi-link" id="roi-copy">Copy these results</button>
     </div>
-    <textarea class="roi-copy-area" id="roi-copy-area" readonly hidden aria-label="Your numbers as text"></textarea>
-    <p class="roi-fine">Estimates only, based on the numbers you enter. Gross profit is revenue minus direct costs. We don't guarantee rankings, AI mentions or sales; on a free strategy call we check these assumptions against your market.</p>
+    <textarea class="roi-copy-area" id="roi-copy-area" readonly hidden aria-label="Your results as text"></textarea>
+    <p class="roi-fine">These are estimates based on the numbers you enter, not guarantees. No one can promise rankings, AI mentions or sales. On a free strategy call, we test your numbers against real search demand and competition in your market.</p>
   </section>
 </div>
 
@@ -278,10 +284,13 @@ Status: approved. Public and in the sitemap.
   var BUILDOUT = 10000;
 
   function F(k, label, kind, def, hint) { return { k: k, label: label, kind: kind, def: def, hint: hint || '' }; }
-  var MARGIN_HINT = 'Revenue left after direct costs such as labor, materials or cost of goods.';
+  var PROFIT_HINT = 'What is left of each sale after the direct costs of doing the work, such as labor, materials or products. If you are unsure, keep our estimate.';
+  var FUTURE_HINT = 'Repeat business and referrals. For example, 0.5 means one extra sale for every two customers.';
+  function PM(def, label, hint) { return F('margin', label || 'Share of each sale that is profit', 'pct', def, hint || PROFIT_HINT); }
+  function FU(def, label, hint) { return F('future', label || 'Extra sales later from each customer', 'num', def, hint || FUTURE_HINT); }
 
-  // Each mode says what a "new customer" is and how much one is worth.
-  // value(v) returns first-year revenue, lifetime revenue, gross margin (0-1) and optional monthly savings.
+  // Each kind of customer says what a "new customer" is and how much one is worth.
+  // value(v) returns first-year revenue, lifetime revenue, the share that is profit (0-1) and, optionally, monthly fee savings.
   function repeatValue(v) {
     var yearly = v.price * v.perYear;
     return { first: yearly * Math.min(1, v.years), life: yearly * v.years, margin: v.margin / 100 };
@@ -289,246 +298,223 @@ Status: approved. Public and in the sitemap.
   function oneoffValue(v) {
     return { first: v.price, life: v.price * (1 + v.future), margin: v.margin / 100 };
   }
-  var FUTURE_HINT = 'Repeat sales plus referrals. 0.5 means one extra sale for every two customers.';
 
   var INDUSTRIES = [
     { id: 'vacation-rentals', name: 'Vacation rentals & property management', modes: [
-      { id: 'owners', label: 'New homeowners under management', unit: ['homeowner', 'homeowners'], lead: ['owner inquiry', 'owner inquiries'],
-        close: 20, closeLabel: 'Share of owner inquiries that sign', cycle: 2,
-        capLabel: 'More homes you could take on each month', cap: 3, market: 24,
+      { id: 'owners', label: 'New homeowners to manage', unit: ['homeowner', 'homeowners'], lead: ['owner inquiry', 'owner inquiries'],
+        close: 20, cycle: 2, capLabel: 'How many more homes could you take on each month?', cap: 3, market: 24,
         fields: [
-          F('rent', 'Gross rental revenue per home per year', 'money', 60000),
-          F('fee', 'Your management fee', 'pct', 25, 'Along 30A, managers commonly charge 25–35% of gross rental revenue.'),
-          F('margin', 'Profit you keep on fee revenue', 'pct', 40, 'After housekeeping, staff and software costs you carry.'),
+          F('rent', 'Rent a typical home earns in a year', 'money', 60000, 'Total rental income, before any fees are taken out.'),
+          F('fee', 'Your management fee', 'pct', 25, 'As a share of the rent. Along 30A, managers commonly charge 25–35%.'),
+          F('margin', 'Share of your fee that is profit', 'pct', 40, 'What is left after housekeeping, staff and software costs.'),
           F('years', 'Years a homeowner typically stays', 'yrs', 5)
         ],
         value: function (v) { var y = v.rent * v.fee / 100; return { first: y * Math.min(1, v.years), life: y * v.years, margin: v.margin / 100 }; } },
       { id: 'guests', label: 'Direct guest bookings', unit: ['booking', 'bookings'], lead: ['visit to your booking pages', 'visits to your booking pages'],
-        close: 2, closeLabel: 'Share of visits that book', cycle: 1,
-        capLabel: 'More bookings your calendar could take each month', cap: 10, market: 120,
+        close: 2, cycle: 1, capLabel: 'How many more bookings could your calendar take each month?', cap: 10, market: 120,
         fields: [
           F('booking', 'Average booking value', 'money', 3200),
           F('share', 'Your share of each booking', 'pct', 30, 'Use 100% for homes you own, or your management fee for homes you manage.'),
-          F('margin', 'Profit you keep on that share', 'pct', 50),
-          F('repeat', 'Future stays from each direct guest', 'num', 0.3, 'Guests who book direct come back more often than platform guests.'),
-          F('moved', 'Platform bookings you would move to direct each month', 'num', 4, 'Optional. Leave at 0 to ignore fee savings.'),
-          F('fee', 'Platform fee you would avoid on each', 'pct', 15, 'Count only fees your company pays. Vrbo, for example, charges about 8% in total on its pay-per-booking plan.')
+          F('margin', 'Share of your cut that is profit', 'pct', 50, PROFIT_HINT),
+          F('repeat', 'Extra stays later from each direct guest', 'num', 0.3, 'Guests who book direct come back more often than booking-site guests.'),
+          F('moved', 'Bookings a month you could move from booking sites to your own website', 'num', 4, 'Optional. Leave at 0 if you do not want to count fee savings.'),
+          F('fee', 'Booking-site fee you would save on each', 'pct', 15, 'Count only fees your company pays. Vrbo, for example, charges about 8% in total on its pay-per-booking plan.')
         ],
         value: function (v) { var f = v.booking * v.share / 100; return { first: f, life: f * (1 + v.repeat), margin: v.margin / 100, savings: v.moved * v.booking * v.fee / 100 }; } }
     ] },
     { id: 'luxury-real-estate', name: 'Luxury real estate & developers', modes: [
-      { id: 'brokerage', label: 'Closed sales (brokerages and agents)', unit: ['closed sale', 'closed sales'], lead: ['qualified buyer or seller lead', 'qualified buyer or seller leads'],
-        close: 3, closeLabel: 'Share of leads that close', cycle: 4,
-        capLabel: 'More closings your team could handle each month', cap: 2, market: 12,
+      { id: 'brokerage', label: 'Closed sales (brokerages and agents)', unit: ['sale', 'sales'], lead: ['qualified buyer or seller lead', 'qualified buyer or seller leads'],
+        close: 3, cycle: 4, capLabel: 'How many more sales could your team close each month?', cap: 2, market: 12,
         fields: [
           F('price', 'Average sale price', 'money', 1500000),
-          F('commission', 'Commission on your side of the deal', 'pct', 2.8, 'A 2026 agent survey put average listing-side commission near 2.9% and buyer-side near 2.8%.'),
-          F('keep', 'Share your company keeps after agent splits', 'pct', 30, 'Use 100% if you are the agent and keep your full side.'),
-          F('future', 'Future sales from each client', 'num', 0.3, FUTURE_HINT)
+          F('commission', 'Commission you earn on each sale', 'pct', 2.8, 'A 2026 agent survey put average listing-side commission near 2.9% and buyer-side near 2.8%.'),
+          F('keep', 'Share of the commission your company keeps after paying agents', 'pct', 30, 'Use 100% if you are the agent and keep your full side.'),
+          FU(0.3)
         ],
         value: function (v) { var c = v.price * v.commission / 100; return { first: c, life: c * (1 + v.future), margin: v.keep / 100 }; } },
       { id: 'developer', label: 'Lot or home sales (developers)', unit: ['sale', 'sales'], lead: ['qualified buyer lead', 'qualified buyer leads'],
-        close: 2, closeLabel: 'Share of leads that buy', cycle: 6,
-        capLabel: 'More sales your inventory supports each month', cap: 2, market: 18,
+        close: 2, cycle: 6, capLabel: 'How many more sales could your inventory support each month?', cap: 2, market: 18,
         fields: [
           F('price', 'Average sale price', 'money', 1200000),
-          F('margin', 'Gross margin on each sale', 'pct', 18, MARGIN_HINT),
-          F('future', 'Referral sales from each buyer', 'num', 0.1, FUTURE_HINT)
+          PM(18),
+          FU(0.1, 'Extra sales later from each buyer (referrals)')
         ],
         value: oneoffValue }
     ] },
     { id: 'hotels-resorts', name: 'Boutique hotels, inns & resorts', modes: [
       { id: 'direct', label: 'Direct room bookings', unit: ['stay', 'stays'], lead: ['visit to your booking pages', 'visits to your booking pages'],
-        close: 2, closeLabel: 'Share of visits that book', cycle: 1,
-        capLabel: 'More stays you could fill each month', cap: 40, market: 400,
+        close: 2, cycle: 1, capLabel: 'How many more stays could you fill each month?', cap: 40, market: 400,
         fields: [
           F('adr', 'Average nightly rate', 'money', 320),
           F('nights', 'Average nights per stay', 'num', 3),
-          F('extra', 'On-property spend per stay (dining, spa, extras)', 'money', 250),
-          F('margin', 'Profit on each extra stay (flow-through)', 'pct', 55, 'The share of revenue from an extra stay that reaches profit.'),
-          F('repeat', 'Future stays from each direct guest', 'num', 0.3, 'One 2026 report found 30–40% repeat booking for hotels with strong direct programs, against 5–8% for guests won through booking sites.'),
-          F('moved', 'Booking-site stays you would move to direct each month', 'num', 15, 'Optional. Leave at 0 to ignore commission savings.'),
-          F('fee', 'Commission you would avoid on each', 'pct', 18, 'Booking.com commonly charges 15–18% and Expedia 18–22%.')
+          F('extra', 'Extra spend per stay (dining, spa, other)', 'money', 250),
+          F('margin', 'Share of each extra stay that is profit', 'pct', 55, 'The part of an extra stay’s income that ends up as profit.'),
+          F('repeat', 'Extra stays later from each direct guest', 'num', 0.3, 'One 2026 report found 30–40% repeat booking for hotels with strong direct programs, against 5–8% for guests won through booking sites.'),
+          F('moved', 'Stays a month you could move from booking sites to your own website', 'num', 15, 'Optional. Leave at 0 if you do not want to count commission savings.'),
+          F('fee', 'Commission you would save on each', 'pct', 18, 'Booking.com commonly charges 15–18% and Expedia 18–22%.')
         ],
         value: function (v) {
           var s = v.adr * v.nights + v.extra;
           return { first: s, life: s * (1 + v.repeat), margin: v.margin / 100, savings: v.moved * v.adr * v.nights * v.fee / 100 };
         } },
       { id: 'groups', label: 'Group and event bookings', unit: ['group booking', 'group bookings'], lead: ['group inquiry', 'group inquiries'],
-        close: 20, closeLabel: 'Share of inquiries that book', cycle: 3,
-        capLabel: 'More group events you could host each month', cap: 2, market: 20,
+        close: 20, cycle: 3, capLabel: 'How many more group events could you host each month?', cap: 2, market: 20,
         fields: [
           F('price', 'Average revenue per group', 'money', 25000),
-          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
-          F('future', 'Future bookings from each group', 'num', 0.5, FUTURE_HINT)
+          PM(45),
+          FU(0.5, 'Extra bookings later from each group')
         ],
         value: oneoffValue }
     ] },
     { id: 'wedding-venues', name: 'Wedding & event venues and planners', modes: [
-      { id: 'venue', label: 'Booked weddings and events (venues)', unit: ['booked wedding', 'booked weddings'], lead: ['inquiry', 'inquiries'],
-        close: 10, closeLabel: 'Share of inquiries that book', cycle: 2,
-        capLabel: 'More open dates you could fill each month', cap: 2, market: 20,
+      { id: 'venue', label: 'Booked weddings and events (venues)', unit: ['wedding', 'weddings'], lead: ['inquiry', 'inquiries'],
+        close: 10, cycle: 2, capLabel: 'How many more open dates could you fill each month?', cap: 2, market: 20,
         fields: [
           F('price', 'Average revenue per wedding', 'money', 28000),
-          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
-          F('future', 'Referral bookings from each wedding', 'num', 0.2, FUTURE_HINT)
+          PM(45),
+          FU(0.2, 'Extra bookings from referrals after each wedding')
         ],
         value: oneoffValue },
-      { id: 'planner', label: 'Booked clients (planners)', unit: ['booked client', 'booked clients'], lead: ['inquiry', 'inquiries'],
-        close: 20, closeLabel: 'Share of inquiries that book', cycle: 2,
-        capLabel: 'More clients you could take on each month', cap: 2, market: 18,
+      { id: 'planner', label: 'Booked clients (planners)', unit: ['client', 'clients'], lead: ['inquiry', 'inquiries'],
+        close: 20, cycle: 2, capLabel: 'How many more clients could you take on each month?', cap: 2, market: 18,
         fields: [
           F('price', 'Average planning fee', 'money', 9000),
-          F('margin', 'Gross margin', 'pct', 60, MARGIN_HINT),
-          F('future', 'Referral clients from each wedding', 'num', 0.5, FUTURE_HINT)
+          PM(60),
+          FU(0.5, 'Extra clients later from each wedding (referrals)')
         ],
         value: oneoffValue }
     ] },
     { id: 'golf-courses', name: 'Golf courses & clubs', modes: [
-      { id: 'members', label: 'New members', unit: ['new member', 'new members'], lead: ['membership inquiry', 'membership inquiries'],
-        close: 25, closeLabel: 'Share of inquiries that join', cycle: 2,
-        capLabel: 'More members you could take each month', cap: 4, market: 30,
+      { id: 'members', label: 'New members', unit: ['member', 'members'], lead: ['membership inquiry', 'membership inquiries'],
+        close: 25, cycle: 2, capLabel: 'How many more members could you take on each month?', cap: 4, market: 30,
         fields: [
           F('init', 'Initiation fee', 'money', 15000),
           F('dues', 'Annual dues', 'money', 9600),
-          F('spend', 'Other spend per member per year (dining, pro shop)', 'money', 3000),
-          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT),
+          F('spend', 'Other spending per member each year (dining, pro shop)', 'money', 3000),
+          PM(50),
           F('years', 'Years a member typically stays', 'yrs', 8, 'One industry study put the average member lifecycle at about 12 seasons. We start lower to stay cautious.')
         ],
         value: function (v) { var y = v.dues + v.spend; return { first: v.init + y * Math.min(1, v.years), life: v.init + y * v.years, margin: v.margin / 100 }; } },
       { id: 'outings', label: 'Outings and tournaments', unit: ['outing', 'outings'], lead: ['outing inquiry', 'outing inquiries'],
-        close: 25, closeLabel: 'Share of inquiries that book', cycle: 3,
-        capLabel: 'More outings your calendar could take each month', cap: 3, market: 20,
+        close: 25, cycle: 3, capLabel: 'How many more outings could your calendar take each month?', cap: 3, market: 20,
         fields: [
           F('price', 'Average revenue per outing', 'money', 12000),
-          F('margin', 'Gross margin', 'pct', 45, MARGIN_HINT),
-          F('future', 'Return outings from each organizer', 'num', 1, 'Annual events often come back. 1 means each organizer books once more.')
+          PM(45),
+          FU(1, 'Return outings from each organizer', 'Annual events often come back. 1 means each organizer books once more.')
         ],
         value: oneoffValue },
-      { id: 'rounds', label: 'New regular golfers (tee times)', unit: ['new golfer', 'new golfers'], lead: ['visit to your tee-time pages', 'visits to your tee-time pages'],
-        close: 5, closeLabel: 'Share of visits that book', cycle: 0,
-        capLabel: 'More golfers your tee sheet could absorb each month', cap: 60, market: 600,
+      { id: 'rounds', label: 'New regular golfers (tee times)', unit: ['golfer', 'golfers'], lead: ['visit to your tee-time pages', 'visits to your tee-time pages'],
+        close: 5, cycle: 0, capLabel: 'How many more golfers could your tee sheet handle each month?', cap: 60, market: 600,
         fields: [
           F('price', 'Revenue per round (green fee, cart, food)', 'money', 110),
-          F('perYear', 'Rounds per golfer per year', 'num', 4),
+          F('perYear', 'Rounds per golfer each year', 'num', 4),
           F('years', 'Years a golfer keeps playing your course', 'yrs', 2),
-          F('margin', 'Gross margin', 'pct', 60, MARGIN_HINT)
+          PM(60)
         ],
         value: repeatValue }
     ] },
     { id: 'family-entertainment', name: 'Family entertainment & attractions', modes: [
       { id: 'visits', label: 'Visiting groups', unit: ['visiting group', 'visiting groups'], lead: ['website visit', 'website visits'],
-        close: 5, closeLabel: 'Share of website visitors who come in', cycle: 0,
-        capLabel: 'More groups you could serve each month', cap: 400, market: 4000,
+        close: 5, cycle: 0, capLabel: 'How many more groups could you serve each month?', cap: 400, market: 4000,
         fields: [
           F('price', 'Average spend per group visit', 'money', 85),
-          F('perYear', 'Visits per group per year', 'num', 1.5),
+          F('perYear', 'Visits per group each year', 'num', 1.5),
           F('years', 'Years a local family keeps coming', 'yrs', 2),
-          F('margin', 'Gross margin', 'pct', 65, MARGIN_HINT)
+          PM(65)
         ],
         value: repeatValue },
       { id: 'parties', label: 'Parties and group events', unit: ['party booking', 'party bookings'], lead: ['party inquiry', 'party inquiries'],
-        close: 35, closeLabel: 'Share of inquiries that book', cycle: 0,
-        capLabel: 'More parties you could host each month', cap: 20, market: 200,
+        close: 35, cycle: 0, capLabel: 'How many more parties could you host each month?', cap: 20, market: 200,
         fields: [
           F('price', 'Average revenue per party', 'money', 450),
-          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT),
-          F('future', 'Future parties from each booking', 'num', 0.5, FUTURE_HINT)
+          PM(55),
+          FU(0.5, 'Extra parties later from each booking')
         ],
         value: oneoffValue }
     ] },
     { id: 'lifestyle-brands', name: 'Lifestyle & experience brands', modes: [
-      { id: 'ecommerce', label: 'Online shop customers', unit: ['new customer', 'new customers'], lead: ['shop visit', 'shop visits'],
-        close: 2, closeLabel: 'Share of visits that buy', cycle: 0,
-        capLabel: 'More orders you could fulfil each month', cap: 500, market: 5000,
+      { id: 'ecommerce', label: 'Online shop customers', unit: ['customer', 'customers'], lead: ['shop visit', 'shop visits'],
+        close: 2, cycle: 0, capLabel: 'How many more new customers could you serve each month?', cap: 500, market: 5000,
         fields: [
           F('price', 'Average order value', 'money', 95),
-          F('perYear', 'Orders per customer per year', 'num', 1.8),
+          F('perYear', 'Orders per customer each year', 'num', 1.8),
           F('years', 'Years a customer keeps buying', 'yrs', 3),
-          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT)
+          PM(55)
         ],
         value: repeatValue },
       { id: 'trips', label: 'Charters, dives and tours', unit: ['trip booking', 'trip bookings'], lead: ['booking inquiry', 'booking inquiries'],
-        close: 30, closeLabel: 'Share of inquiries that book', cycle: 1,
-        capLabel: 'More trips you could run each month', cap: 20, market: 150,
+        close: 30, cycle: 1, capLabel: 'How many more trips could you run each month?', cap: 20, market: 150,
         fields: [
           F('price', 'Average trip price', 'money', 1400),
-          F('margin', 'Gross margin (after fuel, crew, gear)', 'pct', 50),
-          F('future', 'Future trips from each booking', 'num', 0.4, FUTURE_HINT)
+          PM(50, 'Share of each trip that is profit', 'What is left after fuel, crew and gear.'),
+          FU(0.4, 'Extra trips later from each booking')
         ],
         value: oneoffValue }
     ] },
     { id: 'wellness-aesthetics', name: 'Health, wellness & aesthetics', modes: [
-      { id: 'patients', label: 'New patients or clients', unit: ['new patient', 'new patients'], lead: ['consultation request', 'consultation requests'],
-        close: 30, closeLabel: 'Share of requests that become patients', cycle: 1,
-        capLabel: 'More new patients your schedule could take each month', cap: 15, market: 150,
+      { id: 'patients', label: 'New patients or clients', unit: ['patient', 'patients'], lead: ['consultation request', 'consultation requests'],
+        close: 30, cycle: 1, capLabel: 'How many more new patients could your schedule take each month?', cap: 15, market: 150,
         fields: [
-          F('price', 'Average revenue per visit', 'money', 450),
-          F('perYear', 'Visits per patient per year', 'num', 4),
+          F('price', 'Average spend per visit', 'money', 450),
+          F('perYear', 'Visits per patient each year', 'num', 4),
           F('years', 'Years a patient stays with you', 'yrs', 3),
-          F('margin', 'Gross margin', 'pct', 55, MARGIN_HINT)
+          PM(55)
         ],
         value: repeatValue },
-      { id: 'members', label: 'Memberships (concierge medicine)', unit: ['new member', 'new members'], lead: ['membership inquiry', 'membership inquiries'],
-        close: 15, closeLabel: 'Share of inquiries that join', cycle: 2,
-        capLabel: 'More members your practice could take each month', cap: 5, market: 40, fixed: { perYear: 1 },
+      { id: 'members', label: 'Memberships (concierge medicine)', unit: ['member', 'members'], lead: ['membership inquiry', 'membership inquiries'],
+        close: 15, cycle: 2, capLabel: 'How many more members could your practice take on each month?', cap: 5, market: 40, fixed: { perYear: 1 },
         fields: [
           F('price', 'Annual membership fee', 'money', 4000),
           F('years', 'Years a member stays', 'yrs', 4),
-          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+          PM(50)
         ],
         value: repeatValue }
     ] },
     { id: 'professional-services', name: 'Professional services', modes: [
-      { id: 'law', label: 'New legal clients', unit: ['new client', 'new clients'], lead: ['consultation request', 'consultation requests'],
-        close: 20, closeLabel: 'Share of consultations that retain you', cycle: 1,
-        capLabel: 'More matters your team could take each month', cap: 4, market: 40,
+      { id: 'law', label: 'New legal clients', unit: ['client', 'clients'], lead: ['consultation request', 'consultation requests'],
+        close: 20, cycle: 1, capLabel: 'How many more matters could your team take on each month?', cap: 4, market: 40,
         fields: [
           F('price', 'Average fees per matter', 'money', 12000),
-          F('margin', 'Margin after the cost of staff time', 'pct', 45),
-          F('future', 'Future matters from each client', 'num', 0.5, FUTURE_HINT)
+          PM(45, 'Share of your fees that is profit', 'What is left after the cost of staff time.'),
+          FU(0.5, 'Extra matters later from each client')
         ],
         value: oneoffValue },
-      { id: 'wealth', label: 'New wealth management clients', unit: ['new client', 'new clients'], lead: ['introductory meeting request', 'introductory meeting requests'],
-        close: 25, closeLabel: 'Share of meetings that become clients', cycle: 3,
-        capLabel: 'More households your advisors could take each month', cap: 3, market: 20,
+      { id: 'wealth', label: 'New wealth management clients', unit: ['client', 'clients'], lead: ['introductory meeting request', 'introductory meeting requests'],
+        close: 25, cycle: 3, capLabel: 'How many more client households could your advisors take on each month?', cap: 3, market: 20,
         fields: [
-          F('assets', 'Assets brought by an average new client', 'money', 1500000),
-          F('fee', 'Your annual advisory fee', 'pct', 0.92, 'Cerulli expected average 2026 fees near 0.92% for $1.5M clients, falling for larger accounts.'),
-          F('margin', 'Margin after advisor and service costs', 'pct', 35),
+          F('assets', 'Money an average new client invests with you', 'money', 1500000),
+          F('fee', 'Your yearly fee, as a share of that money', 'pct', 0.92, 'Cerulli expected average 2026 fees near 0.92% for $1.5M clients, falling for larger accounts.'),
+          F('margin', 'Share of your fee that is profit', 'pct', 35, 'What is left after advisor and service costs.'),
           F('years', 'Years a client typically stays', 'yrs', 12, 'Advisory clients tend to stay a long time. At 95% yearly retention, the average client stays about 20 years.')
         ],
         value: function (v) { var y = v.assets * v.fee / 100; return { first: y * Math.min(1, v.years), life: y * v.years, margin: v.margin / 100 }; } }
     ] },
     { id: 'home-services', name: 'Home services & contractors', modes: [
-      { id: 'jobs', label: 'Project jobs (roofing, remodeling, builds)', unit: ['won job', 'won jobs'], lead: ['quote request', 'quote requests'],
-        close: 30, closeLabel: 'Share of quotes you win', cycle: 1,
-        capLabel: 'More jobs your crews could take on each month', cap: 6, market: 60,
+      { id: 'jobs', label: 'Project jobs (roofing, remodeling, builds)', unit: ['job', 'jobs'], lead: ['quote request', 'quote requests'],
+        close: 30, cycle: 1, capLabel: 'How many more jobs could your crews take on each month?', cap: 6, market: 60,
         fields: [
           F('price', 'Average job value', 'money', 8500),
-          F('margin', 'Gross margin', 'pct', 40, MARGIN_HINT),
-          F('future', 'Future jobs from each customer', 'num', 0.5, FUTURE_HINT)
+          PM(40),
+          FU(0.5, 'Extra jobs later from each customer')
         ],
         value: oneoffValue },
-      { id: 'service', label: 'Recurring service (pool, lawn, HVAC plans)', unit: ['new account', 'new accounts'], lead: ['quote request', 'quote requests'],
-        close: 35, closeLabel: 'Share of quotes you win', cycle: 0,
-        capLabel: 'More accounts your routes could take each month', cap: 20, market: 200, fixed: { perYear: 1 },
+      { id: 'service', label: 'Recurring service (pool, lawn, HVAC plans)', unit: ['account', 'accounts'], lead: ['quote request', 'quote requests'],
+        close: 35, cycle: 0, capLabel: 'How many more accounts could your routes take on each month?', cap: 20, market: 200, fixed: { perYear: 1 },
         fields: [
-          F('price', 'Average revenue per account per year', 'money', 1200),
+          F('price', 'Average revenue per account each year', 'money', 1200),
           F('years', 'Years an account stays', 'yrs', 5),
-          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+          PM(50)
         ],
         value: repeatValue }
     ] },
     { id: 'other', name: 'Another kind of business', modes: [
-      { id: 'general', label: 'New customers', unit: ['new customer', 'new customers'], lead: ['lead', 'leads'],
-        close: 20, closeLabel: 'Share of leads that become customers', cycle: 1,
-        capLabel: 'More customers you could serve each month', cap: 5, market: 40,
+      { id: 'general', label: 'New customers', unit: ['customer', 'customers'], lead: ['inquiry', 'inquiries'],
+        close: 20, cycle: 1, capLabel: 'How many more customers could you serve each month?', cap: 5, market: 40,
         fields: [
           F('price', 'Average sale', 'money', 5000),
-          F('perYear', 'Purchases per customer per year', 'num', 1),
+          F('perYear', 'Purchases per customer each year', 'num', 1),
           F('years', 'Years a customer keeps buying', 'yrs', 3),
-          F('margin', 'Gross margin', 'pct', 50, MARGIN_HINT)
+          PM(50)
         ],
         value: repeatValue }
     ] }
@@ -538,9 +524,9 @@ Status: approved. Public and in the sitemap.
   var money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
   var whole = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
   var dec1 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 });
-  var store = {}; // remembered values per industry/mode while the page is open
+  var store = {}; // remembered values per kind of customer while the page is open
 
-  var state = { plan: 'lantern', industry: INDUSTRIES[0].id, mode: {} };
+  var state = { plan: 'lantern', industry: INDUSTRIES[0].id, mode: {}, ramp: 4 };
 
   // Plan cards
   $('roi-plans').innerHTML = PLANS.map(function (p) {
@@ -566,14 +552,17 @@ Status: approved. Public and in the sitemap.
     return ind.modes.filter(function (m) { return m.id === id; })[0];
   }
   function key() { return state.industry + '/' + mode().id; }
-  function saved(k, def) { var s = store[key()]; return s && s[k] != null ? s[k] : def; }
+  function entry() { var k = key(); return store[k] || (store[k] = { v: {}, manual: null, worked: null }); }
+  function saved(k, def) { var s = entry().v; return s[k] != null ? s[k] : def; }
 
+  var SUFFIX = { pct: '%', yrs: 'years', months: 'months', of100: 'out of 100' };
   function fieldHTML(id, label, kind, value, hint, wide) {
     var pre = kind === 'money' ? '<span class="roi-affix">$</span>' : '';
-    var suf = kind === 'pct' ? '<span class="roi-affix">%</span>' : kind === 'yrs' ? '<span class="roi-affix">years</span>' : kind === 'month' ? '<span class="roi-affix">a month</span>' : kind === 'year' ? '<span class="roi-affix">a year</span>' : kind === 'months' ? '<span class="roi-affix">months</span>' : '';
+    var suf = SUFFIX[kind] ? '<span class="roi-affix">' + SUFFIX[kind] + '</span>' : '';
     var step = kind === 'money' ? (value >= 10000 ? '1000' : value >= 1000 ? '100' : '1') : kind === 'pct' ? (value < 5 ? '0.1' : '1') : (value % 1 ? '0.1' : '1');
+    var dk = id.indexOf('roi-f-') === 0 ? ' data-k="' + id.slice(6) + '"' : '';
     return '<div class="roi-field' + (wide ? ' is-wide' : '') + '"><label class="roi-label" for="' + id + '">' + label + '</label>' +
-      '<div class="roi-box">' + pre + '<input type="number" inputmode="decimal" min="0" step="' + step + '" id="' + id + '" data-k="' + id.replace('roi-f-', '') + '" value="' + value + '">' + suf + '</div>' +
+      '<div class="roi-box">' + pre + '<input type="number" inputmode="decimal" min="0" step="' + step + '" id="' + id + '"' + dk + ' value="' + value + '">' + suf + '</div>' +
       (hint ? '<span class="roi-hint">' + hint + '</span>' : '') + '</div>';
   }
 
@@ -583,23 +572,32 @@ Status: approved. Public and in the sitemap.
     $('roi-modes').innerHTML = ind.modes.map(function (x) {
       return '<label><input type="radio" name="mode" id="roi-mode-' + ind.id + '-' + x.id + '" value="' + x.id + '"' + (x.id === m.id ? ' checked' : '') + '><span>' + x.label + '</span></label>';
     }).join('');
-    var html = m.fields.map(function (f) { return fieldHTML('roi-f-' + f.k, f.label, f.kind, saved(f.k, f.def), f.hint); }).join('');
-    html += '<p class="roi-subhead">Turning interest into ' + m.unit[1] + '</p>';
-    html += fieldHTML('roi-f-close', m.closeLabel, 'pct', saved('close', m.close), 'Use your own figure if you track it. Faster replies and follow-up raise this more than anything else.');
-    html += fieldHTML('roi-f-cycle', 'Months from first contact to a sale', 'months', saved('cycle', m.cycle), 'Long decisions push results later, which leaves less time inside your time frame.');
-    $('roi-fields').innerHTML = html;
-    $('roi-limits').innerHTML =
-      fieldHTML('roi-f-cap', m.capLabel, 'month', saved('cap', m.cap), 'Think about staff, crews, rooms, dates or inventory. This is extra work on top of what you do today.') +
-      fieldHTML('roi-f-market', 'New ' + m.unit[1] + ' you think you could realistically win in a year', 'year', saved('market', m.market), 'Your honest estimate of the customers in your market you could take from competitors or reach for the first time.');
+
+    // The four questions that are always visible.
+    $('roi-core').innerHTML =
+      '<div class="roi-field is-wide"><label class="roi-label" for="roi-profit">Profit from one new ' + m.unit[0] + '</label>' +
+      '<div class="roi-box"><span class="roi-affix">$</span><input type="number" inputmode="decimal" min="0" step="any" id="roi-profit"></div>' +
+      '<span class="roi-hint" id="roi-profit-hint"></span></div>' +
+      fieldHTML('roi-f-close', 'Out of every 100 ' + m.lead[1] + ', how many become ' + m.unit[1] + '?', 'of100', saved('close', m.close), 'Use your own figure if you track it. Fast replies and good follow-up typically raise it.') +
+      fieldHTML('roi-f-cap', m.capLabel, 'plain', saved('cap', m.cap), 'Think about staff, crews, rooms, dates or stock. This is extra work on top of what you handle today.') +
+      fieldHTML('roi-f-market', 'How many new ' + m.unit[1] + ' could you realistically win in a year?', 'plain', saved('market', m.market), 'Your honest guess at how many customers in your market you could win from competitors or reach for the first time.', true);
+
+    // The details behind the numbers, tucked away until wanted.
+    $('roi-fields').innerHTML =
+      '<p class="roi-subhead">About each new ' + m.unit[0] + '</p>' +
+      m.fields.map(function (f) { return fieldHTML('roi-f-' + f.k, f.label, f.kind, saved(f.k, f.def), f.hint); }).join('') +
+      '<p class="roi-subhead">Timing</p>' +
+      fieldHTML('roi-f-cycle', 'How long does a sale usually take?', 'months', saved('cycle', m.cycle), 'Months from a customer’s first contact to a sale. Longer decisions push results later.') +
+      fieldHTML('roi-ramp', 'How many months until new inquiries start coming in?', 'months', state.ramp, 'We start at 4 months. Inquiries come first and sales follow, so most strategies take six months or more to mature and pay off. Change this if you know your own timing.');
     compute();
   }
 
   function read() {
-    var v = {};
+    var e = entry(), v = {};
     root.querySelectorAll('input[data-k]').forEach(function (el) {
       var n = parseFloat(el.value); v[el.getAttribute('data-k')] = isFinite(n) && n >= 0 ? n : 0;
     });
-    store[key()] = Object.assign({}, store[key()] || {}, v);
+    e.v = Object.assign({}, e.v, v);
     var fixed = mode().fixed || {};
     Object.keys(fixed).forEach(function (k) { v[k] = fixed[k]; });
     return v;
@@ -607,20 +605,30 @@ Status: approved. Public and in the sitemap.
 
   function plural(n, m) { return Math.round(n) === 1 ? m.unit[0] : m.unit[1]; }
   function leadWord(n, m) { return Math.round(n) === 1 ? m.lead[0] : m.lead[1]; }
+  function cap(t) { return t.charAt(0).toUpperCase() + t.slice(1); }
 
   var last = null;
 
   function compute() {
-    var m = mode(), v = read();
+    var m = mode(), v = read(), e = entry();
     var plan = PLANS.filter(function (p) { return p.id === (root.querySelector('input[name="plan"]:checked') || {}).value; })[0] || PLANS[0];
     var H = parseInt((root.querySelector('input[name="horizon"]:checked') || {}).value, 10) || 12;
-    var ramp = Math.max(0, parseFloat($('roi-ramp').value) || 0);
+    var ramp = Math.max(0, parseFloat(($('roi-ramp') || {}).value) || 0);
     var build = $('roi-buildout').checked;
-    var basis = (root.querySelector('input[name="basis"]:checked') || {}).value || 'first';
+    var repeat = $('roi-repeat').checked;
 
+    // Profit from one new customer: worked out from the details, unless the visitor typed their own.
     var val = m.value(v);
-    var perCustomerRevenue = basis === 'life' ? val.life : val.first;
-    var gp = perCustomerRevenue * val.margin;
+    var worked = (repeat ? val.life : val.first) * val.margin;
+    if (e.worked !== worked) { e.worked = worked; e.manual = null; }
+    var gp = e.manual != null ? e.manual : worked;
+    var pi = $('roi-profit');
+    if (pi && document.activeElement !== pi) pi.value = Math.round(gp * 100) / 100;
+    var ph = $('roi-profit-hint');
+    if (ph) ph.textContent = (e.manual != null
+      ? 'This is the number you entered. Change the details below and we will work it out again.'
+      : 'Worked out from our typical figures (see \u201cChange the details\u201d below). Type your own number if you know it.') + ' Profit means what you keep after the direct costs of the work.';
+
     var investment = plan.price * H + (build ? BUILDOUT : 0);
     var startMonth = ramp + v.cycle;
     var productive = Math.max(0, H - startMonth);
@@ -628,7 +636,7 @@ Status: approved. Public and in the sitemap.
     var netCost = Math.max(0, investment - savings);
     var close = v.close / 100;
 
-    var r = { m: m, plan: plan, H: H, build: build, basis: basis, gp: gp, investment: investment, savings: savings, productive: productive, startMonth: startMonth };
+    var r = { m: m, v: v, plan: plan, H: H, build: build, repeat: repeat, gp: gp, investment: investment, savings: savings, productive: productive, startMonth: startMonth };
     r.need = gp > 0 ? Math.ceil(netCost / gp) : Infinity;
     if (netCost === 0) r.need = 0;
     r.perMonth = productive > 0 ? r.need / productive : Infinity;
@@ -647,36 +655,37 @@ Status: approved. Public and in the sitemap.
     if (r.productive <= 0) return { cls: 'is-muted', text: 'Needs a longer time frame' };
     if (r.need === 0) return { cls: '', text: 'Savings cover the cost' };
     var ratio = r.reach > 0 ? r.need / r.reach : Infinity;
-    if (ratio <= 0.5) return { cls: '', text: 'Comfortably within reach' };
-    if (ratio <= 1) return { cls: 'is-warn', text: 'Within reach, with little room' };
-    return { cls: 'is-bad', text: 'Beyond your current limits' };
+    if (ratio <= 0.5) return { cls: '', text: 'Well within your limits' };
+    if (ratio <= 1) return { cls: 'is-warn', text: 'Within your limits, but tight' };
+    return { cls: 'is-bad', text: 'Beyond your limits' };
   }
 
-  function meter(label, total, need, m) {
-    var pctUsed = total > 0 ? need / total : Infinity;
-    var w = Math.min(1, isFinite(pctUsed) ? pctUsed : 1) * 100;
-    var right = total > 0 ? (isFinite(pctUsed) ? whole.format(Math.round(pctUsed * 100)) + '% used' : 'Over') : 'None entered';
+  function meter(label, total, need, note) {
+    var used = total > 0 ? need / total : Infinity;
+    var w = Math.min(1, isFinite(used) ? used : 1) * 100;
+    var right = total <= 0 ? 'Nothing entered' : used > 1 ? 'More than you said' : used * 100 < 1 ? 'Needs under 1% of it' : 'Needs ' + whole.format(Math.round(used * 100)) + '% of it';
     return '<div><div class="roi-meter-top"><span>' + label + '</span><span>' + right + '</span></div>' +
-      '<div class="roi-track"><div class="roi-fill' + (pctUsed > 1 ? ' is-over' : '') + '" style="width:' + w.toFixed(1) + '%"></div></div>' +
-      '<div class="roi-meter-note">' + whole.format(Math.floor(total)) + ' ' + plural(Math.floor(total), m) + ' available in that window</div></div>';
+      '<div class="roi-track"><div class="roi-fill' + (used > 1 ? ' is-over' : '') + '" style="width:' + w.toFixed(1) + '%"></div></div>' +
+      '<div class="roi-meter-note">' + note + '</div></div>';
   }
 
   function render(r) {
     var m = r.m, s = statusFor(r);
     var headline, sub;
     if (r.gp <= 0) {
-      headline = 'Enter a value for each new ' + m.unit[0] + '.';
-      sub = 'The calculator needs a price and a margin above zero to work out a break-even point.';
+      headline = 'Add the profit from one new ' + m.unit[0] + '.';
+      sub = 'We need a number above zero to work out how many customers it takes.';
     } else if (r.productive <= 0) {
-      headline = 'Results would start after month ' + dec1.format(r.startMonth) + '.';
-      sub = 'That leaves no time inside a ' + r.H + '-month window. Choose a longer time frame, or check the months before inquiries start and the months to a sale.';
+      headline = 'No sales would arrive within ' + r.H + ' months.';
+      sub = 'Sales would only start after about month ' + dec1.format(r.startMonth) + '. Choose a longer time frame, or check the timing numbers under “Change the details”.';
     } else if (r.need === 0) {
-      headline = 'Fee savings alone cover the plan.';
-      sub = 'Moving bookings to direct saves more than the engagement costs over ' + r.H + ' months, before counting any new ' + m.unit[1] + '.';
+      headline = 'Your fee savings alone cover the plan.';
+      sub = 'Moving bookings to your own website would save more than the plan costs over ' + r.H + ' months, before counting any new ' + m.unit[1] + '.';
     } else {
-      headline = 'You break even at <em>' + whole.format(r.need) + ' ' + plural(r.need, m) + '</em>.';
-      sub = 'That is about ' + dec1.format(r.perMonth) + ' a month from month ' + dec1.format(r.startMonth + 1) + ' to month ' + r.H +
-        ', which takes roughly ' + whole.format(Math.ceil(r.leadsPerMonth)) + ' ' + leadWord(Math.ceil(r.leadsPerMonth), m) + ' a month at your conversion rate.';
+      headline = 'It takes <em>' + whole.format(r.need) + ' new ' + plural(r.need, m) + '</em> to pay for this plan.';
+      sub = 'Over ' + r.H + ' months you would spend ' + money.format(r.investment) + '. Each new ' + m.unit[0] + ' brings you about ' + money.format(Math.round(r.gp)) + ' in profit, so ' + whole.format(r.need) + ' cover the cost. ' +
+        'We count sales from month ' + dec1.format(r.startMonth + 1) + ', after inquiries start and a typical sale closes. From then on, that is about ' + dec1.format(r.perMonth) + ' new ' + plural(r.perMonth, m) + ' a month, which takes about ' +
+        whole.format(Math.ceil(r.leadsPerMonth)) + ' ' + leadWord(Math.ceil(r.leadsPerMonth), m) + ' a month.';
     }
     $('roi-r-headline').innerHTML = headline;
     $('roi-r-sub').textContent = sub;
@@ -685,56 +694,59 @@ Status: approved. Public and in the sitemap.
     var ok = r.gp > 0 && r.productive > 0;
     $('roi-r-meters').hidden = !ok || r.need === 0;
     if (ok) {
+      var P = dec1.format(r.productive);
       $('roi-r-meters').innerHTML =
-        meter('Against your spare capacity', r.capTotal, r.need, m) +
-        meter('Against what you could win', r.mktTotal, r.need, m) +
-        (r.need > 0 ? '<div class="roi-meter-note">' + (r.binding === 'capacity' ? 'Your capacity is the tighter limit.' : 'Your market estimate is the tighter limit.') + '</div>' : '');
+        meter('Work you can take on', r.capTotal, r.need,
+          'You said ' + whole.format(r.v.cap) + ' more a month. Over the ' + P + ' months after sales begin, that is room for about ' + whole.format(Math.floor(r.capTotal)) + ' ' + plural(Math.floor(r.capTotal), m) + '.') +
+        meter('Customers you could win', r.mktTotal, r.need,
+          'You said ' + whole.format(r.v.market) + ' a year. Over the ' + P + ' months after sales begin, that is about ' + whole.format(Math.floor(r.mktTotal)) + ' ' + plural(Math.floor(r.mktTotal), m) + '.') +
+        (r.need > 0 ? '<div class="roi-meter-note">' + (r.binding === 'capacity' ? 'The work you can take on is the tighter limit.' : 'The number of customers you could win is the tighter limit.') + '</div>' : '');
     }
 
     var figs = [
-      ['Total investment', money.format(r.investment), r.plan.name + ' for ' + r.H + ' months' + (r.build ? ' plus the buildout' : '')],
-      ['Profit per ' + m.unit[0], r.gp > 0 ? money.format(r.gp) : '–', r.basis === 'life' ? 'Lifetime gross profit' : 'First-year gross profit'],
-      [cap(m.lead[1]) + ' needed', isFinite(r.leads) ? whole.format(r.leads) : '–', 'In total, to break even'],
-      ['Most you can pay to win one', r.gp > 0 ? money.format(r.gp) : '–', 'Any lower cost is profit']
+      ['What you would spend', money.format(r.investment), r.plan.name + ' for ' + r.H + ' months' + (r.build ? ', plus the Website Buildout' : '')],
+      ['Profit from one new ' + m.unit[0], r.gp > 0 ? money.format(Math.round(r.gp)) : '–', r.repeat ? 'Including repeat business and referrals' : 'From the first year'],
+      [cap(m.lead[1]) + ' you would need', isFinite(r.leads) ? whole.format(r.leads) : '–', 'In total, to cover the cost']
     ];
-    if (r.savings > 0) figs[3] = ['Fee savings counted', money.format(r.savings), 'From moving bookings to direct'];
+    if (r.savings > 0) figs.push(['Booking fees you would save', money.format(r.savings), 'From moving bookings to your own website']);
     $('roi-r-figures').innerHTML = figs.map(function (f) {
       return '<div class="roi-figure"><dt>' + f[0] + '</dt><dd>' + f[1] + '<small>' + f[2] + '</small></dd></div>';
     }).join('');
 
-    var table = $('roi-r-table');
+    var table = $('roi-r-table'), note = $('roi-r-tablenote');
     if (ok && r.reach > 0) {
-      table.hidden = false;
-      var rows = [[0.25, 'A quarter of your reach'], [0.5, 'Half of your reach'], [1, 'All of your reach']].map(function (x) {
+      table.hidden = false; note.hidden = false;
+      var rows = [[0.25, 'A quarter of them'], [0.5, 'Half of them'], [1, 'All of them']].map(function (x) {
         var c = Math.floor(r.reach * x[0]);
-        var ret = c * r.gp + r.savings - r.investment;
-        var roi = ret / r.investment;
+        var back = c * r.gp + r.savings;
+        var ret = back - r.investment;
         var cls = ret >= 0 ? 'is-pos' : 'is-neg';
-        return '<tr><td>' + x[1] + '</td><td>' + whole.format(c) + '</td><td class="' + cls + '">' + (ret < 0 ? '−' : '') + money.format(Math.abs(ret)) + '</td><td class="' + cls + '">' + (roi < 0 ? '−' : '') + whole.format(Math.abs(roi * 100)) + '%</td></tr>';
+        return '<tr><td>' + x[1] + '<small>' + whole.format(c) + ' ' + plural(c, m) + '</small></td>' +
+          '<td class="' + cls + '">' + (ret < 0 ? '−' : '') + money.format(Math.abs(ret)) + '</td>' +
+          '<td class="' + cls + '">$' + (back / r.investment).toFixed(2) + '</td></tr>';
       }).join('');
-      table.innerHTML = '<caption>If you win…</caption><thead><tr><th scope="col">Scenario</th><th scope="col">' + cap(m.unit[1]) + '</th><th scope="col">Net return</th><th scope="col">ROI</th></tr></thead><tbody>' + rows + '</tbody>';
+      table.innerHTML = '<caption>If you win some of the ' + whole.format(Math.floor(r.reach)) + ' ' + plural(Math.floor(r.reach), m) + ' you could get…</caption>' +
+        '<thead><tr><th scope="col">If you win</th><th scope="col">Left over</th><th scope="col">Back per $1</th></tr></thead><tbody>' + rows + '</tbody>';
     } else {
-      table.hidden = true; table.innerHTML = '';
+      table.hidden = true; table.innerHTML = ''; note.hidden = true;
     }
 
-    $('roi-dock-text').innerHTML = ok && r.need > 0 ? 'Break even at <strong>' + whole.format(r.need) + ' ' + plural(r.need, m) + '</strong>' : s.text;
+    $('roi-dock-text').innerHTML = ok && r.need > 0 ? 'Pays for itself at <strong>' + whole.format(r.need) + ' ' + plural(r.need, m) + '</strong>' : s.text;
   }
-
-  function cap(t) { return t.charAt(0).toUpperCase() + t.slice(1); }
 
   function summary() {
     var r = last; if (!r) return '';
-    var ind = industry(), m = r.m, v = store[key()] || {};
+    var ind = industry(), m = r.m;
     var lines = [
       '30A Digital Marketing ROI calculator',
-      'Industry: ' + ind.name + ' (' + m.label + ')',
-      'Plan: ' + r.plan.name + ', ' + money.format(r.plan.price) + '/month for ' + r.H + ' months' + (r.build ? ', plus Website Buildout' : ''),
-      'Total investment: ' + money.format(r.investment),
-      'Profit per ' + m.unit[0] + ' (' + (r.basis === 'life' ? 'lifetime' : 'first year') + '): ' + money.format(r.gp),
-      'Break-even: ' + (isFinite(r.need) ? whole.format(r.need) + ' ' + plural(r.need, m) : 'not reachable with these inputs'),
+      'Business: ' + ind.name + ' (' + m.label + ')',
+      'Plan: ' + r.plan.name + ', ' + money.format(r.plan.price) + ' a month for ' + r.H + ' months' + (r.build ? ', plus the Website Buildout' : ''),
+      'Total spend: ' + money.format(r.investment),
+      'Profit from one new ' + m.unit[0] + (r.repeat ? ' (with repeat business)' : ' (first year)') + ': ' + money.format(Math.round(r.gp)),
+      'Pays for itself at: ' + (isFinite(r.need) ? whole.format(r.need) + ' new ' + plural(r.need, m) : 'not reachable with these numbers'),
       cap(m.lead[1]) + ' needed: ' + (isFinite(r.leads) ? whole.format(r.leads) : 'n/a'),
-      'Spare capacity: ' + whole.format(v.cap || 0) + ' a month; market estimate: ' + whole.format(v.market || 0) + ' a year',
-      'Status: ' + statusFor(r).text
+      'Extra work I can take on: ' + whole.format(r.v.cap) + ' a month; customers I could win: ' + whole.format(r.v.market) + ' a year',
+      'Result: ' + statusFor(r).text
     ];
     return lines.join('\n');
   }
@@ -743,11 +755,19 @@ Status: approved. Public and in the sitemap.
     var text = summary(), area = $('roi-copy-area'), btn = this;
     function fallback() { area.hidden = false; area.value = text; area.focus(); area.select(); btn.textContent = 'Select and copy the text below'; }
     try {
-      navigator.clipboard.writeText(text).then(function () { area.hidden = true; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy my numbers'; }, 2000); }, fallback);
+      navigator.clipboard.writeText(text).then(function () { area.hidden = true; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy these results'; }, 2000); }, fallback);
     } catch (e) { fallback(); }
   });
 
-  root.addEventListener('input', function (e) { if (e.target.id !== 'roi-industry') compute(); });
+  $('roi-reset').addEventListener('click', function () { delete store[key()]; renderIndustry(); });
+
+  root.addEventListener('input', function (e) {
+    var t = e.target;
+    if (t.id === 'roi-industry') return;
+    if (t.id === 'roi-profit') { var n = parseFloat(t.value); entry().manual = isFinite(n) && n >= 0 ? n : 0; }
+    if (t.id === 'roi-ramp') state.ramp = Math.max(0, parseFloat(t.value) || 0);
+    compute();
+  });
   root.addEventListener('change', function (e) {
     if (e.target.id === 'roi-industry') { state.industry = e.target.value; renderIndustry(); return; }
     if (e.target.name === 'mode') { read(); state.mode[state.industry] = e.target.value; renderIndustry(); return; }
@@ -774,26 +794,29 @@ Status: approved. Public and in the sitemap.
 <section class="roi-explain">
   <h2>How the ROI calculator works</h2>
   <ol>
-    <li><strong>Cost.</strong> Your monthly plan for the time frame you choose, plus the Website Buildout if you add it.</li>
-    <li><strong>Value of one new customer.</strong> Your price, any repeat business or referrals, and your gross margin give the profit one new customer brings you.</li>
-    <li><strong>Break-even.</strong> The cost divided by that profit is the number of new customers you need. Divided by your conversion rate, it becomes the number of leads, inquiries or visits you need.</li>
-    <li><strong>Timing.</strong> Nothing is counted until inquiries start and your usual sales cycle has run, so the work has to pay back in the months that remain.</li>
-    <li><strong>Reality check.</strong> The break-even number is set against the extra work you can take on and the customers you think you can win. A plan only makes sense if both have room for it.</li>
+    <li><strong>You pick your business.</strong> We fill in typical numbers for that kind of business, so you see an answer straight away.</li>
+    <li><strong>You pick a plan and a time frame.</strong> The cost is the monthly price times the number of months, plus the Website Buildout if you add it.</li>
+    <li><strong>We work out what one new customer is worth.</strong> That is the profit you keep from one new customer, not the total sale.</li>
+    <li><strong>We divide the cost by that profit.</strong> The answer is how many new customers pay for the plan. Using the share of inquiries that become customers, we then show how many inquiries that takes.</li>
+    <li><strong>We build in the wait.</strong> Digital marketing strategies typically take six months or more to mature and pay off, and some sales take months to close. We count a customer only after inquiries have started and a typical sale has closed, so the plan has to pay for itself in the months that remain.</li>
+    <li><strong>We check that it is realistic.</strong> We compare the answer with how much extra work you can take on and how many customers you could win. A plan only makes sense if there is room for both.</li>
   </ol>
 
-  <h2>What the result tells you</h2>
-  <p>If break-even uses less than half of your spare capacity and your market estimate, the plan has room to pay for itself several times over. If it uses most of either, the plan can work but leaves little margin for a slow start. If it goes past either limit, a smaller plan, a longer time frame or more capacity will change the picture, and that is worth knowing before you spend anything.</p>
+  <h2>What the result means</h2>
+  <p><strong>Well within your limits</strong> means paying for the plan takes less than half of the extra work you can take on and less than half of the customers you could win. <strong>Within your limits, but tight</strong> means it takes more than half of one of them, which leaves little room if results arrive slowly. <strong>Beyond your limits</strong> means the plan needs more than you said you can handle or win. A smaller plan, a longer time frame or more capacity changes that, and it is better to know before you spend anything.</p>
 
   <h2>Questions about marketing ROI</h2>
-  <h3>Why does the calculator use gross profit instead of revenue?</h3>
-  <p>Revenue overstates the return. A $10,000 job with a 40% margin leaves $4,000 to pay for marketing, so that is the number that has to cover the plan.</p>
+  <h3>Which numbers should I use?</h3>
+  <p>Use your own wherever you know them, such as your average sale, your profit and the share of inquiries you turn into customers. Where you don't, keep our typical figures and see how the answer changes when you adjust them.</p>
+  <h3>Why does the calculator use profit instead of sales?</h3>
+  <p>Sales overstate the return. A $10,000 job with a 40% profit share leaves $4,000 to pay for marketing, so that is the number that has to cover the plan.</p>
   <h3>How long does SEO take to pay for itself?</h3>
-  <p>Most SEO programs take four to six months to show significant results, and businesses with long sales cycles, such as real estate or weddings, see revenue later still. That is why you can set when inquiries start and how long a sale takes. A 24- or 36-month view usually tells a fairer story than 12.</p>
-  <h3>Should I use first-year or lifetime profit?</h3>
-  <p>Start with first-year profit. If the plan pays for itself on that basis, repeat business and referrals are upside. Lifetime profit is useful when customers stay for years, as homeowners, members and advisory clients often do.</p>
-  <h3>What if the result says the target is beyond my limits?</h3>
-  <p>It usually means the plan is too large for your current capacity or market, not that marketing can't work for you. Try a smaller plan or a longer time frame, or bring the numbers to a strategy call and we'll look at where the gap is.</p>
-  <h3>Are these numbers a forecast?</h3>
-  <p>No. They show what would have to be true for the work to pay off, using numbers you enter. We don't promise rankings, AI mentions or sales. On a free strategy call we test your assumptions against search demand and competition in your market.</p>
+  <p>Digital marketing strategies typically reach maturity and pay off after six months or more. Rankings and authority take time to build, and businesses with long sales, such as real estate or weddings, see revenue later still. That is why you can set when inquiries start and how long a sale takes. A 12-month view is the strictest test. A 24- or 36-month view shows what the strategy can do once it has matured.</p>
+  <h3>Should I count repeat business and referrals?</h3>
+  <p>Start without them. If the plan pays for itself on first-year profit alone, repeat business and referrals are a bonus. Turn them on when your customers stay for years, as homeowners, members and long-term clients often do.</p>
+  <h3>What if the result says the plan is beyond my limits?</h3>
+  <p>It means this plan asks for more than your business can handle or win today. A smaller plan, a longer time frame or more capacity changes that. Bring your numbers to a strategy call and we'll find where the gap is.</p>
+  <h3>Is this a forecast?</h3>
+  <p>No. It is not a forecast or a guarantee. It shows what would have to be true for the work to pay off, using the numbers you enter. No one can promise rankings, AI mentions or sales. On a free strategy call, we test your numbers against real search demand and competition in your market.</p>
 </section>
 {% endraw %}
