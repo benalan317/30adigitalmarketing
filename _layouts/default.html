@@ -35,16 +35,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  {%- comment -%}
+    Structured data (schema.org). The homepage carries the full description of the business;
+    every other page carries a short reference to the same organization.
+    Deliberately "Organization", not "LocalBusiness": we are a remote agency with no public street address.
+    [OPEN] Add "sameAs" (LinkedIn and other profile URLs) to the Organization when those profiles exist.
+  {%- endcomment -%}
+  {%- if page.url == "/" %}
+  {%- assign schema_services = site.pages | where: "group", "services" | sort: "order" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "{{ site.title }}",
-    "url": "{{ site.url }}/",
-    "description": "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast.",
-    "areaServed": ["30A", "Santa Rosa Beach", "Destin", "South Walton", "Emerald Coast"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}/",
+        "name": {{ site.title | jsonify }},
+        "publisher": { "@id": "{{ site.url }}/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization",
+        "name": {{ site.title | jsonify }},
+        "legalName": "30A Digital Marketing LLC",
+        "url": "{{ site.url }}/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/icon-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "{{ site.url }}/images/dusk-beach-1200.jpg",
+        "description": "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast.",
+        "founder": { "@type": "Person", "name": "Ben Slaughter" },
+        "areaServed": ["30A", "Santa Rosa Beach", "Destin", "South Walton", "Emerald Coast"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services",
+          "itemListElement": [
+            {%- for s in schema_services %}
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": {{ s.title | jsonify }},
+                "url": "{{ s.url | prepend: site.url }}"{% if s.description %},
+                "description": {{ s.description | jsonify }}{% endif %}
+              }
+            }{% unless forloop.last %},{% endunless %}
+            {%- endfor %}
+          ]
+        }
+      }
+    ]
   }
   </script>
+  {%- else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}/",
+    "logo": "{{ site.url }}/icon-512.png"
+  }
+  </script>
+  {%- endif %}
   {%- if site.google_analytics_id %}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
