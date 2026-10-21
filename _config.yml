@@ -12,6 +12,9 @@ permalink: /insights/:title/
 # Google Search Console ownership proof (a public code, not a password). Keep it in place.
 google_site_verification: "KBaAAdaAzGmsn8_J8tLGFFQKIzGNaxU3mCLegUAXVl8"
 
+# Google Analytics. Currently OFF. To turn on, delete the "#" and the space at the start of the next line.
+# google_analytics_id: "G-S8BG7ZJ2PZ"
+
 # Builds sitemap.xml automatically
 plugins:
   - jekyll-sitemap
