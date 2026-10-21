@@ -248,3 +248,7 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
   .footer-inner { grid-template-columns: 1fr; }
   .hero-content { padding-top: 120px; padding-bottom: 56px; }
 }
+
+/* Google Calendar booking embed on /strategy-call/ */
+.booking-embed { margin: 24px 0 32px; }
+.booking-embed iframe { display: block; width: 100%; min-height: 640px; border: 0; }
