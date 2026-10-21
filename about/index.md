@@ -6,8 +6,6 @@ description: "A growth partner for established Gulf Coast businesses, led by a m
 eyebrow: "About"
 h1: "About 30A Digital Marketing"
 lede: "A growth partner for businesses that depend on being found and chosen online."
-noindex: true
-sitemap: false
 related:
   - /services/
   - /industries/
