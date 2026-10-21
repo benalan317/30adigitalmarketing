@@ -57,7 +57,7 @@ We use current AI tools for research, analysis and first drafts, so more of your
 
 ## How we work together
 
-You'll have one point of contact, a monthly report, a quarterly meeting and a shared plan you can see at any time. We work remotely and meet by video, with deep roots on the Gulf Coast and regular time in the area.
+You'll have one point of contact, a monthly report, a quarterly meeting and a shared plan you can see at any time. We are a remote-native agency and meet by video, with deep roots on the Gulf Coast.
 
 ## What we need from you
 

@@ -13,7 +13,7 @@ related:
 {% comment %}
 PAGE BRIEF
 Primary keyword: 30a digital marketing
-Purpose: Experience, Gulf Coast connection, how we work remotely. Waiting on: credentials, how to reference the other agency, how to describe being remote.
+Purpose: Experience, Gulf Coast connection, how we work remotely. Decisions (Oct 21, 2026): founder Ben Slaughter, 5 years, legal name ends in LLC, other agency not mentioned, no claim of living in the area (the owner covers location on discovery calls). Still [OPEN]: credentials, LinkedIn, headshot.
 {% endcomment %}
 
 30A Digital Marketing is a search and digital growth partner for established businesses on 30A and the Gulf Coast. We bring SEO, AI search visibility and digital authority together in one strategy-led monthly program.
@@ -22,14 +22,17 @@ Purpose: Experience, Gulf Coast connection, how we work remotely. Waiting on: cr
 
 The coast is full of businesses that do excellent work and are hard to find online. Their websites are dated, their expertise doesn't come across, and the customers who should choose them choose someone else. We started 30A Digital Marketing to close that gap.
 
-{% comment %}
-HELD BACK until the owner answers (these paragraphs contain the open items):
-  Why we started, paragraph 2 (confirm wording):
-  "Our connection to the coast is personal. We have family in the area and come back every year, so we know its people, its seasons and how its customers decide."
+Our connection to the coast is personal. We have family roots on the Gulf Coast, and that is why we built this agency around the businesses that give it its character.
 
-  Experience beyond the coast (needs founder name, years of experience, up to three credentials):
-  "30A Digital Marketing is led by [Name], who has spent [years] growing regional and national brands through search and content. [Up to three credentials, brands or results that can be named.]"
-  "That experience matters here. Many coastal businesses compete for customers who live hundreds of miles away, against national brands with national budgets. We bring the methods those brands use, scaled to your business."
+## Who leads the work
+
+30A Digital Marketing LLC is led by Ben Slaughter, who has spent five years growing brands through search and content.
+
+That experience matters here. Many coastal businesses compete for customers who live hundreds of miles away, against national brands with national budgets. We bring the methods those brands use, scaled to your business.
+
+{% comment %}
+[OPEN] Up to three credentials, brands or results that can be named (owner skipped for now). Add only facts the owner supplies.
+[OPEN] LinkedIn URL and headshot (owner skipped for now).
 {% endcomment %}
 
 ## What makes us different
@@ -44,9 +47,9 @@ HELD BACK until the owner answers (these paragraphs contain the open items):
 
 Vacation rental and property managers, real estate brokerages and developers, boutique hotels and resorts, wedding venues, golf courses, family attractions, lifestyle and experience brands, wellness and aesthetics practices, professional firms, and home services and contractors.
 
-## Remote by design, rooted on the coast
+## Remote-native, with the coast at our core
 
-We work remotely, which keeps our overhead low and our attention on your account. Meetings happen by video, and we spend time on the coast every year. Read more about [how we work](/approach/).
+We are a remote-native agency, and we use that to your advantage. It keeps our overhead low and our attention on your account, and it gives us the freedom to travel often. Meetings happen by video, so where we are never gets in the way of the work. Read more about [how we work](/approach/).
 
 ## What we don't do
 
