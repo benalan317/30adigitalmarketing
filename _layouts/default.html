@@ -17,6 +17,9 @@
   {%- if page.placeholder or page.noindex %}
   <meta name="robots" content="noindex, follow">
   {%- endif %}
+  {%- if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {%- endif %}
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title }}">

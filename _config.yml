@@ -9,6 +9,9 @@ lang: en
 # Blog posts live at /insights/post-name/ (no dates in the address)
 permalink: /insights/:title/
 
+# Google Search Console ownership proof (a public code, not a password). Keep it in place.
+google_site_verification: "KBaAAdaAzGmsn8_J8tLGFFQKIzGNaxU3mCLegUAXVl8"
+
 # Builds sitemap.xml automatically
 plugins:
   - jekyll-sitemap
