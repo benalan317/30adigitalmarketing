@@ -69,6 +69,9 @@ What usually decides the right level:
 - How much your own team can take on.
 - How much you can budget.
 
+<div class="plan-row" markdown="1">
+<img src="/images/plans/30a-plan-website-buildout-4x3-640.webp" srcset="/images/plans/30a-plan-website-buildout-4x3-640.webp 640w, /images/plans/30a-plan-website-buildout-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of architectural blueprints and drafting tools on a table beside a coastal home under construction.">
+<div class="plan-text" markdown="1">
 ## One-time: the Website Buildout, $10,000
 
 For service businesses that need a new site or a redesign. It includes the site, 10 optimized pages, a clear path from visitor to inquiry, and your business accounts set up. It stands on its own: buy it alone, before a monthly plan, after one, or alongside one. [See what the Website Buildout includes](/plans/website-buildout/).
@@ -76,6 +79,9 @@ For service businesses that need a new site or a redesign. It includes the site,
 <div class="plan-row" markdown="1">
 <img src="/images/plans/30a-plan-compass-4x3-640.webp" srcset="/images/plans/30a-plan-compass-4x3-640.webp 640w, /images/plans/30a-plan-compass-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a brass navigation compass resting on a coastal map with the Gulf in the background.">
 <div class="plan-text" markdown="1">
+</div>
+</div>
+
 ## Do it yourself: Compass, $5,000 setup plus $500 a month
 
 For small businesses that want to run their own SEO content. We build a workflow trained on your brand, connect your tools, train you to use it, and recalibrate it every month. You review and publish. It covers content creation, needs an existing website, and tools are billed to you separately. [See how Compass works](/plans/diy-seo/).

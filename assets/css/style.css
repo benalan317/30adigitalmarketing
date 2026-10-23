@@ -351,6 +351,10 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
   .plans-levels img { width: 24vw; height: 24vw; max-width: 160px; max-height: 160px; }
 }
 
+.submenu li a.has-thumb { flex-direction: row; align-items: center; gap: 14px; }
+.submenu-thumb { flex: none; width: 44px; height: 44px; object-fit: cover; }
+.submenu-text { display: flex; flex-direction: column; gap: 2px; }
+
 .related { max-width: 900px; margin: 0 auto; padding: 0 var(--gutter) 96px; text-align: center; }
 .related ul { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 32px; }
 .related a { display: inline-block; padding: 8px 0; font-size: 15px; font-weight: 300; text-decoration: none; border-bottom: 1px solid var(--rule); }

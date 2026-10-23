@@ -10,6 +10,8 @@ related:
   - /approach/
   - /industries/home-services/
   - /industries/professional-services/
+lead_image: "30a-plan-website-buildout-4x3"
+lead_alt: "Textured gouache illustration of architectural blueprints and drafting tools on a table beside a coastal home under construction."
 ---
 {% comment %}
 PAGE BRIEF
