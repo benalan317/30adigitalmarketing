@@ -7,8 +7,8 @@ eyebrow: "Plans & Pricing"
 h1: "SEO pricing and monthly plans"
 lede: "Three independent ways to work with us: a monthly plan, a one-time Website Buildout, or Compass, a DIY SEO workflow we build for you."
 related:
-  - /services/
   - /industries/
+  - /about/
 ---
 {% comment %}
 PAGE BRIEF
@@ -20,6 +20,8 @@ Purpose: Three offers side by side: the three monthly levels (Lantern $4,000 / B
 Our SEO pricing is public. Monthly plans cost $4,000, $7,000 or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
 
 ## Monthly plans
+
+A monthly plan is a level of effort applied to your brand and spread across the [services](/services/) that move visibility the most: SEO, AI search visibility, digital authority and content, weighted to your market. Higher levels bring more depth, speed and strategy time to that work.
 
 ### Lantern: $4,000 a month
 

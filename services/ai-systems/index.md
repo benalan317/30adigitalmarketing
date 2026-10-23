@@ -3,7 +3,7 @@ layout: page
 title: "AI Systems for Business"
 seo_title: "Internal AI Assistant Services | 30A Digital Marketing"
 description: "Internal AI assistants that answer your team's questions from your own documents, policies and past work. Private, practical AI for Gulf Coast businesses."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "Internal AI assistants built on what your company knows"
 lede: "A private assistant that answers your team's questions from your own documents, so the right answer is a question away, not a phone call to the one person who knows."
 blurb: "Back-end AI that organizes what your company knows, so your team works faster and sees more."

@@ -11,7 +11,7 @@ PAGE BRIEF (homepage)
 Primary keyword: digital marketing agency 30a
 Related keywords: marketing agency 30a, 30a digital marketing, Santa Rosa Beach SEO, Destin SEO, Emerald Coast SEO
 Purpose: positioning, three flagship services, industries, plans teaser, strategy call.
-Links out to: three flagship services, Industries hub, Plans, Approach, Website Buildout (small link only).
+Links out to: three flagship services, Industries hub, Plans, Approach, ROI calculator (hero link), Website Buildout and Compass (small links only).
 {% endcomment %}
 {%- assign flagship = site.pages | where: "flagship", true | sort: "order" -%}
 {%- assign home_industries = site.pages | where: "group", "industries" | sort: "order" -%}
@@ -30,7 +30,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, Website 
     <p>A digital marketing agency for ambitious businesses along 30A and the Gulf Coast: search strategy, digital authority and AI-era visibility.</p>
     <div class="hero-actions">
       <a class="btn-solid" href="/strategy-call/">Book a Strategy Call</a>
-      <a class="link-caps" href="/services/">Explore our expertise</a>
+      <a class="link-caps" href="/roi-calculator/">See what it takes to pay off</a>
     </div>
   </div>
 </section>
@@ -42,7 +42,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, Website 
   <a class="link-caps" href="/approach/">Our approach</a>
 </section>
 
-<section class="columns" aria-label="Expertise">
+<section class="columns" aria-label="Services">
   <div class="columns-inner">
     {%- for s in flagship %}
     <a class="column" href="{{ s.url }}">

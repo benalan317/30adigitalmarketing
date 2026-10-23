@@ -3,7 +3,7 @@ layout: page
 title: "AI Search Visibility"
 seo_title: "AI Search Visibility (GEO & AEO) | 30A Digital Marketing"
 description: "AI search visibility for Gulf Coast businesses: generative engine optimization (GEO) and answer engine optimization (AEO) so ChatGPT and Google AI cite you."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "AI search visibility services for Gulf Coast businesses"
 lede: "Generative engine optimization (GEO) and answer engine optimization (AEO) that help ChatGPT, Google AI Overviews and Perplexity find, trust and recommend you."
 blurb: "Clear, consistent information that AI-assisted search can understand, trust and reference."

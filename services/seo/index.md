@@ -3,7 +3,7 @@ layout: page
 title: "Search Strategy & SEO"
 seo_title: "SEO Services for the Gulf Coast | 30A Digital Marketing"
 description: "SEO services for 30A and Gulf Coast businesses: technical SEO, local SEO and content built to win inquiries. Start with a free SEO audit."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "SEO services for businesses on 30A and the Gulf Coast"
 lede: "Technical SEO, site architecture and content built around what your customers search for, measured by the inquiries and bookings it brings in."
 blurb: "Site architecture, technical SEO and content built around what your customers actually search for."

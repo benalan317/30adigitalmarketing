@@ -69,13 +69,78 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .site-header a { text-decoration: none; color: inherit; }
 .site-header a:hover { opacity: .7; }
 .nav-left, .nav-right {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px;
-  font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px;
+  font-size: 12px; font-weight: 500; letter-spacing: 2.2px; text-transform: uppercase;
 }
 .nav-left { grid-column: 1; grid-row: 1; justify-self: start; }
 .nav-right { grid-column: 3; grid-row: 1; justify-self: end; }
-.nav-left a, .nav-right a { display: inline-flex; align-items: center; min-height: 44px; }
+.nav-link, .nav-item > a, .nav-right .btn-outline { display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; }
 .nav-right .btn-outline { padding: 0 20px; }
+
+/* Dropdowns (Services, Plans, About) */
+.nav-item { position: relative; display: flex; align-items: center; }
+.submenu-toggle {
+  position: relative; width: 22px; height: 44px; padding: 0; margin-left: 2px;
+  background: none; border: 0; color: inherit; cursor: pointer;
+}
+.submenu-toggle::after {
+  content: ""; position: absolute; left: 6px; top: 17px; width: 6px; height: 6px;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg); transition: transform .15s;
+}
+.nav-item.is-open > .submenu-toggle::after { transform: rotate(225deg); top: 20px; }
+.submenu {
+  display: none; position: absolute; top: 100%; left: -20px; z-index: 30;
+  min-width: 300px; padding: 14px 0 10px;
+  background: var(--ink); color: var(--oyster);
+  border: 1px solid rgba(244,240,231,.18);
+  font-size: 14px; font-weight: 300; letter-spacing: .3px; text-transform: none;
+  box-shadow: 0 18px 40px rgba(18,26,30,.25);
+}
+.submenu-right { left: auto; right: -20px; min-width: 260px; }
+.submenu ul { list-style: none; margin: 0; padding: 0; }
+.submenu li a, .submenu-all {
+  display: flex; flex-direction: column; gap: 2px; padding: 9px 24px; min-height: 0;
+  white-space: normal;
+}
+.submenu li a:hover, .submenu-all:hover { opacity: 1; background: rgba(244,240,231,.08); }
+.submenu-label {
+  margin: 8px 24px 4px; font-size: 10px; font-weight: 500;
+  letter-spacing: 3px; text-transform: uppercase; opacity: .6;
+}
+.submenu ul + .submenu-label { margin-top: 14px; }
+.submenu-title { font-size: 15px; font-weight: 400; }
+.submenu-note { font-size: 13px; opacity: .72; }
+.submenu-all {
+  margin-top: 8px; padding-top: 14px; border-top: 1px solid rgba(244,240,231,.18);
+  font-size: 11px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase;
+}
+@media (min-width: 1280px) {
+  .nav-item:hover > .submenu,
+  .nav-item:focus-within > .submenu,
+  .nav-item.is-open > .submenu { display: block; }
+}
+
+/* Slightly tighter spacing on mid-size laptop screens so the full menu stays on one line */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .header-inner { gap: 16px 24px; }
+  .nav-left, .nav-right { gap: 4px 16px; letter-spacing: 1.8px; }
+  .nav-right .btn-outline { padding: 0 16px; }
+}
+
+/* ROI Calculator: the highlighted item */
+.site-header .nav-calc { gap: 9px; text-decoration: none; }
+.nav-calc-label {
+  text-decoration: underline; text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px; text-underline-offset: 8px;
+}
+.site-header .nav-calc:hover { opacity: 1; }
+.site-header .nav-calc:hover .nav-calc-label { text-decoration-color: currentColor; }
+.nav-tag {
+  display: inline-block; padding: 3px 7px 2px;
+  background: var(--accent); color: #fff;
+  font-size: 9px; font-weight: 500; letter-spacing: 1.8px; line-height: 1.2;
+}
 .brand {
   grid-column: 2; grid-row: 1;
   display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -84,8 +149,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .brand-sub { font-size: 9px; font-weight: 500; letter-spacing: 3.6px; text-transform: uppercase; }
 .menu-toggle { display: none; }
 
-/* Phone menu */
-@media (max-width: 960px) {
+/* Phone menu (also used on narrow laptop windows, where the full menu would not fit) */
+@media (max-width: 1279px) {
   :root { --gutter: 24px; }
   .header-inner { grid-template-columns: 1fr auto; padding-top: 16px; padding-bottom: 16px; }
   .brand { grid-column: 1; grid-row: 1; align-items: flex-start; }
@@ -98,13 +163,29 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   }
   .nav-left, .nav-right {
     display: none; grid-column: 1 / -1; grid-row: auto;
-    flex-direction: column; align-items: flex-start; justify-self: stretch; gap: 0;
+    flex-direction: column; align-items: stretch; justify-self: stretch; gap: 0;
   }
   .site-header.is-open { background: var(--ink); color: var(--oyster); border-bottom: 0; }
   .site-header.is-open .nav-left, .site-header.is-open .nav-right { display: flex; }
   .site-header.is-open .nav-right { padding-bottom: 12px; }
-  .site-header.is-open .nav-left a, .site-header.is-open .nav-right a { min-height: 48px; }
-  .site-header.is-open .nav-right .btn-outline { margin-top: 8px; }
+  .site-header.is-open .nav-link, .site-header.is-open .nav-item > a { min-height: 48px; }
+  .site-header.is-open .nav-right .btn-outline { margin-top: 8px; align-self: flex-start; }
+  /* The calculator goes first so it is the first thing in the opened menu */
+  .nav-calc { order: -1; align-self: flex-start; margin-bottom: 4px; }
+  /* Lists open in place when the small arrow is tapped */
+  .nav-item { flex-wrap: wrap; }
+  .nav-item > a { flex: 1 1 auto; }
+  .submenu-toggle { width: 48px; height: 48px; margin: 0; }
+  .submenu-toggle::after { left: 21px; top: 20px; }
+  .nav-item.is-open > .submenu-toggle::after { top: 23px; }
+  .submenu {
+    position: static; flex: 1 1 100%; min-width: 0; padding: 4px 0 8px 16px;
+    background: none; border: 0; box-shadow: none;
+  }
+  .nav-item.is-open > .submenu { display: block; }
+  .submenu li a, .submenu-all { padding-left: 0; padding-right: 0; }
+  .submenu-label { margin-left: 0; margin-right: 0; }
+  .submenu-all { border-top: 0; margin-top: 4px; padding-top: 9px; }
 }
 
 /* ---------- Homepage ---------- */

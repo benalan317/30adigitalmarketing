@@ -3,7 +3,7 @@ layout: page
 title: "Brand Strategy & Analysis"
 seo_title: "Brand Strategy Services | 30A Digital Marketing"
 description: "Brand strategy services for Gulf Coast businesses: positioning, competitor analysis and messaging that set you apart. Start with a free brand review."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "Brand strategy services for Gulf Coast businesses"
 lede: "Positioning, competitor analysis and messaging that give your website, listings and sales conversations one clear point of view."
 blurb: "Positioning, competitor analysis and messaging that give every channel a clear point of view."

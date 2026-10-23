@@ -3,7 +3,7 @@ layout: page
 title: "Digital Authority & Reputation"
 seo_title: "Digital PR & Link Building | 30A Digital Marketing"
 description: "Digital PR, link building and online reputation management for Gulf Coast businesses: earned media, credible listings and community presence."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "Digital PR services and link building for Gulf Coast businesses"
 lede: "Earned media, editorial backlinks, credible listings and a strong review reputation: the off-site SEO that gives people, search engines and AI tools reasons to choose you."
 blurb: "Earned media, credible listings and community presence that give people reasons to choose you."

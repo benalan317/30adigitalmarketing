@@ -3,7 +3,7 @@ layout: page
 title: "Content & Sales Assets"
 seo_title: "Content Marketing Services | 30A Digital Marketing"
 description: "Content marketing services that win business: SEO content strategy, case studies, proposals, newsletters and thought leadership, written for your buyers."
-eyebrow: "Expertise"
+eyebrow: "Services"
 h1: "Content marketing services that help buyers say yes"
 lede: "SEO content, case studies, proposals, newsletters and thought leadership, written in your voice for the moments when a customer is deciding."
 blurb: "Case studies, proposals, newsletters and thought leadership that help serious buyers say yes."

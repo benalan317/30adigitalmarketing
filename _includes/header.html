@@ -1,7 +1,17 @@
 {%- comment -%}
   Shared top menu. Edit it here and every page updates.
   Pages with `header_style: overlay` in their front matter (the homepage) place the menu over the photo.
+
+  Layout (Oct 23): Services and Plans sit side by side on the left (what we do / how you buy it),
+  followed by Industries and the ROI Calculator (highlighted with an accent underline and a "Free" tag).
+  Insights, About and the "Book a Strategy Call" button sit on the right.
+
+  The Services list builds itself from each service page's front matter (group: services, flagship: true).
+  The Plans list is written out by hand below. Update the buildout price here if it ever changes.
 {%- endcomment -%}
+{%- assign nav_services = site.pages | where: "group", "services" | sort: "order" -%}
+{%- assign nav_flagship = nav_services | where: "flagship", true -%}
+{%- assign nav_more = nav_services | where_exp: "p", "p.flagship != true" -%}
 <header class="site-header{% if page.header_style == 'overlay' %} is-overlay{% endif %}" id="site-header">
   <div class="header-inner">
     <a class="brand" href="/" aria-label="30A Digital Marketing, home">
@@ -14,14 +24,58 @@
     </button>
 
     <nav class="nav-left" id="site-nav-left" aria-label="Main">
-      <a href="/services/">Expertise</a>
-      <a href="/industries/">Industries</a>
-      <a href="/approach/">Approach</a>
+      <div class="nav-item has-submenu">
+        <a href="/services/">Services</a>
+        <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-services" aria-label="Show the services list"></button>
+        <div class="submenu" id="submenu-services">
+          <p class="submenu-label">Search &amp; visibility</p>
+          <ul>
+            {%- for s in nav_flagship %}
+            <li><a href="{{ s.url }}">{{ s.title | escape }}</a></li>
+            {%- endfor %}
+          </ul>
+          <p class="submenu-label">Strategy &amp; systems</p>
+          <ul>
+            {%- for s in nav_more %}
+            <li><a href="{{ s.url }}">{{ s.title | escape }}</a></li>
+            {%- endfor %}
+          </ul>
+          <a class="submenu-all" href="/services/">All services</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-submenu">
+        <a href="/plans/">Plans</a>
+        <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-plans" aria-label="Show the plans list"></button>
+        <div class="submenu" id="submenu-plans">
+          <ul>
+            <li><a href="/plans/"><span class="submenu-title">Monthly plans</span><span class="submenu-note">Lantern, Beacon and Lighthouse.</span></a></li>
+            <li><a href="/plans/website-buildout/"><span class="submenu-title">Website Buildout</span><span class="submenu-note">One-time, $10,000. New site or redesign.</span></a></li>
+            <li><a href="/plans/diy-seo/"><span class="submenu-title">Compass</span><span class="submenu-note">A DIY SEO workflow we build for you.</span></a></li>
+          </ul>
+          <a class="submenu-all" href="/plans/">Compare all plans</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="/industries/">Industries</a>
+
+      <a class="nav-link nav-calc" href="/roi-calculator/"><span class="nav-calc-label">ROI Calculator</span><span class="nav-tag">Free</span></a>
     </nav>
 
     <div class="nav-right" id="site-nav-right">
-      <a href="/insights/">Insights</a>
-      <a href="/about/">About</a>
+      <a class="nav-link" href="/insights/">Insights</a>
+
+      <div class="nav-item has-submenu">
+        <a href="/about/">About</a>
+        <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-about" aria-label="Show the about list"></button>
+        <div class="submenu submenu-right" id="submenu-about">
+          <ul>
+            <li><a href="/about/"><span class="submenu-title">About us</span></a></li>
+            <li><a href="/approach/"><span class="submenu-title">Our approach</span><span class="submenu-note">How an engagement works.</span></a></li>
+          </ul>
+        </div>
+      </div>
+
       <a class="btn-outline" href="/strategy-call/">Book a Strategy Call</a>
     </div>
   </div>
