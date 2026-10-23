@@ -12,7 +12,7 @@
 {%- assign nav_services = site.pages | where: "group", "services" | sort: "order" -%}
 {%- assign nav_flagship = nav_services | where: "flagship", true -%}
 {%- assign nav_more = nav_services | where_exp: "p", "p.flagship != true" -%}
-<header class="site-header{% if page.header_style == 'overlay' %} is-overlay{% endif %}" id="site-header">
+<header class="site-header{% if page.header_style == 'overlay' or page.hero_image %} is-overlay{% endif %}" id="site-header">
   <div class="header-inner">
     <a class="brand" href="/" aria-label="30A Digital Marketing, home">
       <span class="brand-mark">30A</span>

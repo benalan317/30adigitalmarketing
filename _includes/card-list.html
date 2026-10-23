@@ -5,8 +5,16 @@
 {%- assign cards = site.pages | where: "group", include.group | sort: "order" -%}
 <ul class="card-list">
   {%- for c in cards %}
-  <li>
+  <li{% if c.card_image %} class="has-photo"{% endif %}>
     <a href="{{ c.url }}">
+      {%- if c.card_image %}
+      <img class="card-photo"
+           src="/images/industries/{{ c.card_image }}.webp"
+           srcset="/images/industries/{{ c.card_image }}-640.webp 640w, /images/industries/{{ c.card_image }}.webp 1200w"
+           sizes="(min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw"
+           width="1200" height="900" loading="lazy" alt="">
+      <span class="card-shade" aria-hidden="true"></span>
+      {%- endif %}
       <span class="card-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
       <span class="card-title">{{ c.title | escape }}</span>
       {%- if c.blurb %}

@@ -9,6 +9,8 @@ lede: "Ten kinds of business that depend on being found and chosen online."
 related:
   - /services/
   - /plans/
+banner_image: "30a-industries-overview-hero"
+banner_alt: "Gouache illustration of a 30A-inspired coastal village with pastel cottages, white stucco arches, boutique storefronts and Gulf views."
 ---
 {% comment %}
 PAGE BRIEF

@@ -2,16 +2,47 @@
 layout: default
 ---
 <article class="inner-page">
+  {%- assign lede = page.lede | default: page.blurb -%}
+  {%- if page.hero_image %}
+  <header class="page-hero page-hero-photo">
+    <img class="page-hero-img"
+         src="/images/industries/{{ page.hero_image }}.webp"
+         srcset="/images/industries/{{ page.hero_image }}-900.webp 900w, /images/industries/{{ page.hero_image }}.webp 1672w"
+         sizes="100vw" width="1672" height="941"
+         fetchpriority="high"
+         alt="{{ page.hero_alt | escape }}">
+    <div class="page-hero-shade" aria-hidden="true"></div>
+    <div class="page-hero-text">
+      {%- if page.eyebrow %}
+      <span class="eyebrow">{{ page.eyebrow }}</span>
+      {%- endif %}
+      <h1>{{ page.h1 | default: page.title }}</h1>
+      {%- if lede %}
+      <p class="lede">{{ lede }}</p>
+      {%- endif %}
+    </div>
+  </header>
+  {%- else %}
   <header class="page-hero">
     {%- if page.eyebrow %}
     <span class="eyebrow">{{ page.eyebrow }}</span>
     {%- endif %}
     <h1>{{ page.h1 | default: page.title }}</h1>
-    {%- assign lede = page.lede | default: page.blurb -%}
     {%- if lede %}
     <p class="lede">{{ lede }}</p>
     {%- endif %}
   </header>
+  {%- endif %}
+
+  {%- if page.banner_image %}
+  <div class="page-banner">
+    <img src="/images/industries/{{ page.banner_image }}.webp"
+         srcset="/images/industries/{{ page.banner_image }}-1200.webp 1200w, /images/industries/{{ page.banner_image }}.webp 2304w"
+         sizes="100vw" width="2304" height="393"
+         fetchpriority="high"
+         alt="{{ page.banner_alt | escape }}">
+  </div>
+  {%- endif %}
 
   <div class="page-body">
     {{ content }}

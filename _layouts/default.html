@@ -26,7 +26,11 @@
   <meta property="og:title" content="{{ page.seo_title | default: page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page_desc | escape }}">
   <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+  {%- if page.hero_image %}
+  <meta property="og:image" content="{{ site.url }}/images/industries/{{ page.hero_image }}.webp">
+  {%- else %}
   <meta property="og:image" content="{{ site.url }}/images/dusk-beach-1200.jpg">
+  {%- endif %}
   <meta name="twitter:card" content="summary_large_image">
 
   <meta name="theme-color" content="#1D3035">

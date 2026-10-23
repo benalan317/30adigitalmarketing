@@ -288,6 +288,49 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
 .card-blurb { font-size: 15px; font-weight: 300; line-height: 1.7; color: var(--muted); }
 .card-list a:hover .card-title { text-decoration: underline; text-underline-offset: 6px; }
 
+/* Industry hero photo: full-width image, text over a dark gradient */
+.page-hero-photo {
+  position: relative; overflow: hidden; max-width: none; margin: 0; padding: 0;
+  color: var(--oyster); background: var(--ink);
+  min-height: clamp(520px, 72vh, 720px);
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; gap: 0; text-align: left;
+}
+.page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.page-hero-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(18,26,30,.62) 0%, rgba(18,26,30,.18) 22%, rgba(18,26,30,.22) 42%, rgba(18,26,30,.62) 72%, rgba(18,26,30,.86) 100%);
+}
+.page-hero-text {
+  position: relative; width: 100%; max-width: 1360px; margin: 0 auto;
+  padding: 160px var(--gutter) 64px;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
+}
+.page-hero-photo h1 { max-width: 920px; font-size: clamp(36px, 4.8vw, 64px); text-shadow: 0 2px 24px rgba(18,26,30,.35); }
+.page-hero-photo .lede { max-width: 640px; color: var(--oyster); text-shadow: 0 1px 16px rgba(18,26,30,.5); }
+.page-hero-photo .eyebrow { color: var(--oyster); }
+
+/* Industries overview: panoramic banner under the heading */
+.page-banner { width: 100%; margin: 0 0 56px; background: var(--rule); }
+.page-banner img { display: block; width: 100%; height: auto; aspect-ratio: 2304 / 393; object-fit: cover; }
+
+/* Industry cards with a photo behind the text */
+.card-list li.has-photo { border-top: 0; }
+.card-list li.has-photo a {
+  position: relative; overflow: hidden; justify-content: flex-end; min-height: 360px;
+  padding: 28px 28px 30px; color: var(--oyster); background: var(--ink);
+}
+.card-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.card-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(18,26,30,.08) 0%, rgba(18,26,30,.28) 40%, rgba(18,26,30,.86) 100%);
+}
+.card-list li.has-photo a > span:not(.card-shade) { position: relative; }
+.card-list li.has-photo .card-blurb { color: var(--oyster); opacity: .92; }
+.card-list li.has-photo a:hover { color: var(--oyster); }
+.card-list li.has-photo a:hover .card-photo { transform: scale(1.04); }
+.card-list li.has-photo .card-num, .card-list li.has-photo .card-title { text-shadow: 0 1px 14px rgba(18,26,30,.45); }
+@media (prefers-reduced-motion: reduce) { .card-photo { transition: none; } .card-list li.has-photo a:hover .card-photo { transform: none; } }
+
 .related { max-width: 900px; margin: 0 auto; padding: 0 var(--gutter) 96px; text-align: center; }
 .related ul { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 32px; }
 .related a { display: inline-block; padding: 8px 0; font-size: 15px; font-weight: 300; text-decoration: none; border-bottom: 1px solid var(--rule); }
@@ -324,10 +367,16 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
   .footer-inner { grid-template-columns: 1fr 1fr; padding-top: 64px; }
   .footer-brand { grid-column: 1 / -1; }
   .page-hero { padding-top: 72px; }
+  .page-hero-photo { padding-top: 0; }
 }
 @media (max-width: 560px) {
   .footer-inner { grid-template-columns: 1fr; }
   .hero-content { padding-top: 120px; padding-bottom: 56px; }
+  .page-hero-text { padding: 140px var(--gutter) 40px; }
+  .page-hero-photo { min-height: 560px; }
+  .page-banner { margin-bottom: 40px; }
+  .page-banner img { aspect-ratio: 16 / 7; object-position: 50% 50%; }
+  .card-list li.has-photo a { min-height: 300px; }
 }
 
 /* Google Calendar booking embed on /strategy-call/ */

@@ -13,6 +13,10 @@ related:
   - /industries/hotels-resorts/
   - /industries/golf-courses/
   - /services/content/
+hero_image: "30a-wedding-event-venues-hero"
+hero_alt: "Gouache illustration of an elegant 30A-inspired wedding venue with white ceremony chairs, a floral arch and the Gulf beyond."
+card_image: "30a-wedding-event-venues-card"
+card_alt: "Gouache illustration of an elegant 30A-inspired wedding venue with white ceremony chairs, a floral arch and the Gulf beyond."
 ---
 {% comment %}
 PAGE BRIEF
