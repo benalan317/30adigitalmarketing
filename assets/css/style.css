@@ -331,6 +331,26 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
 .card-list li.has-photo .card-num, .card-list li.has-photo .card-title { text-shadow: 0 1px 14px rgba(18,26,30,.45); }
 @media (prefers-reduced-motion: reduce) { .card-photo { transition: none; } .card-list li.has-photo a:hover .card-photo { transform: none; } }
 
+/* Plans: image beside each plan, lead image on Compass, level tiles on the homepage */
+.page-body h2, .page-body h3 { clear: both; }
+.plan-row { display: grid; grid-template-columns: 300px 1fr; gap: 32px; align-items: start; margin: 40px 0; }
+.plan-row img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.plan-row .plan-text > :first-child { margin-top: 0; }
+.plan-row .plan-text > :last-child { margin-bottom: 0; }
+.lead-figure { max-width: 520px; margin: 0 auto 64px; padding: 0 var(--gutter); }
+.lead-figure img { display: block; width: 100%; height: auto; }
+.plans-levels { list-style: none; margin: 8px 0 4px; padding: 0; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.plans-levels a { display: flex; flex-direction: column; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.plans-levels img { display: block; width: 160px; height: 160px; object-fit: cover; }
+.plans-levels span { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; }
+.plans-levels a:hover { color: var(--oyster); }
+.plans-levels a:hover span { text-decoration: underline; text-underline-offset: 6px; }
+@media (max-width: 640px) {
+  .plan-row { grid-template-columns: 1fr; gap: 20px; }
+  .plans-levels { gap: 14px; }
+  .plans-levels img { width: 24vw; height: 24vw; max-width: 160px; max-height: 160px; }
+}
+
 .related { max-width: 900px; margin: 0 auto; padding: 0 var(--gutter) 96px; text-align: center; }
 .related ul { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 32px; }
 .related a { display: inline-block; padding: 8px 0; font-size: 15px; font-weight: 300; text-decoration: none; border-bottom: 1px solid var(--rule); }

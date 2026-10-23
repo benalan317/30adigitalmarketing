@@ -10,6 +10,8 @@ related:
   - /services/content/
   - /services/seo/
   - /approach/
+lead_image: "30a-plan-compass-4x3"
+lead_alt: "Textured gouache illustration of a brass navigation compass resting on a coastal map with the Gulf in the background."
 ---
 {% comment %}
 PAGE BRIEF

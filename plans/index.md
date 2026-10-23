@@ -23,17 +23,32 @@ Our SEO pricing is public. Monthly plans cost $4,000, $7,000 or $10,000 a month,
 
 A monthly plan is a level of effort applied to your brand and spread across the [services](/services/) that move visibility the most: SEO, AI search visibility, digital authority and content, weighted to your market. Higher levels bring more depth, speed and strategy time to that work.
 
+<div class="plan-row" markdown="1">
+<img src="/images/plans/30a-plan-lantern-4x3-640.webp" srcset="/images/plans/30a-plan-lantern-4x3-640.webp 640w, /images/plans/30a-plan-lantern-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a glowing lantern on a white coastal porch overlooking the Gulf at sunset.">
+<div class="plan-text" markdown="1">
 ### Lantern: $4,000 a month
 
 For newer or smaller businesses getting the foundations right: a site search engines and AI understand, accurate listings and services, and the first searches worth winning.
+</div>
+</div>
 
+<div class="plan-row" markdown="1">
+<img src="/images/plans/30a-plan-beacon-4x3-640.webp" srcset="/images/plans/30a-plan-beacon-4x3-640.webp 640w, /images/plans/30a-plan-beacon-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a medium-sized glowing nautical beacon mounted on a white wooden boat at sunset along the Florida Gulf Coast.">
+<div class="plan-text" markdown="1">
 ### Beacon: $7,000 a month
 
 For businesses ready to compete: more content, some off-site authority building, and visibility in AI answers as well as search results.
+</div>
+</div>
 
+<div class="plan-row" markdown="1">
+<img src="/images/plans/30a-plan-lighthouse-4x3-640.webp" srcset="/images/plans/30a-plan-lighthouse-4x3-640.webp 640w, /images/plans/30a-plan-lighthouse-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a tall white lighthouse shining above coastal dunes beside the Gulf at sunset.">
+<div class="plan-text" markdown="1">
 ### Lighthouse: $10,000 a month
 
 For businesses that want to lead their market: the full program across search, AI visibility, digital PR and reputation, at a faster pace and with more strategy time.
+</div>
+</div>
 
 **Every plan includes:**
 
@@ -58,9 +73,14 @@ What usually decides the right level:
 
 For service businesses that need a new site or a redesign. It includes the site, 10 optimized pages, a clear path from visitor to inquiry, and your business accounts set up. It stands on its own: buy it alone, before a monthly plan, after one, or alongside one. [See what the Website Buildout includes](/plans/website-buildout/).
 
+<div class="plan-row" markdown="1">
+<img src="/images/plans/30a-plan-compass-4x3-640.webp" srcset="/images/plans/30a-plan-compass-4x3-640.webp 640w, /images/plans/30a-plan-compass-4x3.webp 1448w" sizes="(min-width: 640px) 300px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a brass navigation compass resting on a coastal map with the Gulf in the background.">
+<div class="plan-text" markdown="1">
 ## Do it yourself: Compass, $5,000 setup plus $500 a month
 
 For small businesses that want to run their own SEO content. We build a workflow trained on your brand, connect your tools, train you to use it, and recalibrate it every month. You review and publish. It covers content creation, needs an existing website, and tools are billed to you separately. [See how Compass works](/plans/diy-seo/).
+</div>
+</div>
 
 ## Why our prices are public
 
