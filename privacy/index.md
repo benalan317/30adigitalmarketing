@@ -12,7 +12,7 @@ sitemap: false
 PAGE BRIEF
 Primary keyword: (legal)
 Purpose: Privacy policy for a static site with no forms. Information comes from email, Google Calendar booking, and Google Analytics (switched on via google_analytics_id in _config.yml).
-Legal name: 30A Digital Marketing LLC. Contact email is interim (benalan317@gmail.com); swap for hello@30adigitalmarketing.com later.
+Legal name: 30A Digital Marketing LLC. Contact email: hello@30adigitalmarketing.com (Google Workspace).
 NEEDS REVIEW by a qualified lawyer before relying on it. [OPEN] state of formation and mailing address, if you want them listed.
 {% endcomment %}
 
@@ -64,4 +64,4 @@ If we change this policy we will update the effective date above.
 ## Contact us
 
 30A Digital Marketing LLC  
-Email: [benalan317@gmail.com](mailto:benalan317@gmail.com)
+Email: [hello@30adigitalmarketing.com](mailto:hello@30adigitalmarketing.com)

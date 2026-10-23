@@ -12,7 +12,7 @@ sitemap: false
 {% comment %}
 PAGE BRIEF
 Primary keyword: (conversion page)
-Purpose: Destination for every call-to-action button. Booking method: Google Calendar booking page (embed code lives in _includes/booking-embed.html). Contact email: benalan317@gmail.com (interim; swap for hello@30adigitalmarketing.com when Google Workspace is set up).
+Purpose: Destination for every call-to-action button. Booking method: Google Calendar booking page (embed code lives in _includes/booking-embed.html). Contact email: hello@30adigitalmarketing.com (Google Workspace).
 {% endcomment %}
 {%- capture booking_embed %}{% include booking-embed.html %}{% endcapture -%}
 {%- assign booking_embed = booking_embed | strip -%}
@@ -30,9 +30,9 @@ Pick a time that suits you. You'll get a calendar invitation by email once you'v
 {{ booking_embed }}
 </div>
 
-Prefer to write first? Email [benalan317@gmail.com](mailto:benalan317@gmail.com).
+Prefer to write first? Email [hello@30adigitalmarketing.com](mailto:hello@30adigitalmarketing.com).
 {%- else -%}
-Online booking is being set up. In the meantime, email [benalan317@gmail.com](mailto:benalan317@gmail.com) with your business name, your website and a couple of times that suit you, and we'll confirm a time.
+Online booking is being set up. In the meantime, email [hello@30adigitalmarketing.com](mailto:hello@30adigitalmarketing.com) with your business name, your website and a couple of times that suit you, and we'll confirm a time.
 {%- endif %}
 
 ## Before we talk
