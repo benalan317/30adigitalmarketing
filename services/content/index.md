@@ -13,6 +13,11 @@ related:
   - /industries/professional-services/
   - /industries/wedding-venues/
   - /industries/vacation-rentals/
+image_dir: "services"
+hero_image: "30a-content-marketing-sales-assets-hero"
+hero_alt: "Gouache illustration of a writer preparing articles and sales materials at a sunlit coastal workspace overlooking 30A."
+card_image: "30a-content-marketing-sales-assets-card"
+card_alt: "Writer preparing content and sales documents at a sunlit 30A coastal desk."
 ---
 {% comment %}
 PAGE BRIEF

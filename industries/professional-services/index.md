@@ -13,6 +13,7 @@ related:
   - /services/ai-search-visibility/
   - /industries/home-services/
   - /industries/wellness-aesthetics/
+image_dir: "industries"
 hero_image: "30a-professional-services-hero"
 hero_alt: "Gouache illustration of two professionals meeting inside an elegant coastal office overlooking a sunlit 30A-style street."
 card_image: "30a-professional-services-card"

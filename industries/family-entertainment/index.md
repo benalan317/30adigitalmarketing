@@ -12,6 +12,7 @@ order: 6
 related:
   - /industries/lifestyle-brands/
   - /industries/hotels-resorts/
+image_dir: "industries"
 hero_image: "30a-family-entertainment-attractions-hero"
 hero_alt: "Gouache illustration of a family enjoying a mini-golf attraction among pastel shops in a 30A-inspired beach town."
 card_image: "30a-family-entertainment-attractions-card"

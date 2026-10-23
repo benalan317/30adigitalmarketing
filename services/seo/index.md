@@ -14,6 +14,11 @@ related:
   - /industries/vacation-rentals/
   - /industries/hotels-resorts/
   - /industries/professional-services/
+image_dir: "services"
+hero_image: "30a-seo-search-strategy-hero"
+hero_alt: "Gouache illustration of a search magnifier and location pin highlighting a boutique on a coastal 30A street."
+card_image: "30a-seo-search-strategy-card"
+card_alt: "Search magnifier highlighting a local 30A storefront in a sunlit coastal village illustration."
 ---
 {% comment %}
 PAGE BRIEF

@@ -13,6 +13,7 @@ related:
   - /services/content/
   - /industries/hotels-resorts/
   - /industries/luxury-real-estate/
+image_dir: "industries"
 hero_image: "30a-vacation-rentals-property-management-hero"
 hero_alt: "Gouache illustration of a 30A-inspired vacation rental with luggage beside a welcoming coastal home and a path toward the Gulf."
 card_image: "30a-vacation-rentals-property-management-card"

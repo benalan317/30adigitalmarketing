@@ -14,6 +14,11 @@ related:
   - /industries/luxury-real-estate/
   - /industries/wellness-aesthetics/
   - /industries/professional-services/
+image_dir: "services"
+hero_image: "30a-ai-search-visibility-geo-aeo-hero"
+hero_alt: "Gouache illustration of a woman using an AI search assistant to discover coastal businesses along 30A."
+card_image: "30a-ai-search-visibility-geo-aeo-card"
+card_alt: "Woman using a tablet AI assistant as subtle connections lead to coastal storefronts on 30A."
 ---
 {% comment %}
 PAGE BRIEF

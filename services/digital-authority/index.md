@@ -14,6 +14,11 @@ related:
   - /industries/hotels-resorts/
   - /industries/wedding-venues/
   - /industries/home-services/
+image_dir: "services"
+hero_image: "30a-digital-pr-reputation-link-building-hero"
+hero_alt: "Gouache illustration of a journalist interviewing a business owner, with press coverage and star reviews on a coastal café table."
+card_image: "30a-digital-pr-reputation-link-building-card"
+card_alt: "Coastal business interview with press coverage and star reviews, illustrating digital authority and reputation."
 ---
 {% comment %}
 PAGE BRIEF

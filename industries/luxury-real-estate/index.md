@@ -13,6 +13,7 @@ related:
   - /services/brand-strategy/
   - /services/digital-authority/
   - /industries/vacation-rentals/
+image_dir: "industries"
 hero_image: "30a-luxury-real-estate-developers-hero"
 hero_alt: "Gouache illustration of upscale coastal homes, landscaped courtyards and a couple walking through a 30A-inspired neighborhood."
 card_image: "30a-luxury-real-estate-developers-card"

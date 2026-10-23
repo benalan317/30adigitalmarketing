@@ -13,6 +13,11 @@ related:
   - /industries/professional-services/
   - /industries/luxury-real-estate/
   - /industries/vacation-rentals/
+image_dir: "services"
+hero_image: "30a-internal-ai-assistant-systems-hero"
+hero_alt: "Gouache illustration of two coworkers using an internal AI assistant connected to business documents in a coastal office."
+card_image: "30a-internal-ai-assistant-systems-card"
+card_alt: "Coworkers consulting an internal AI assistant linked to company files and documents."
 ---
 {% comment %}
 PAGE BRIEF

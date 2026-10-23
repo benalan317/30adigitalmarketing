@@ -9,8 +9,8 @@
     <a href="{{ c.url }}">
       {%- if c.card_image %}
       <img class="card-photo"
-           src="/images/industries/{{ c.card_image }}.webp"
-           srcset="/images/industries/{{ c.card_image }}-640.webp 640w, /images/industries/{{ c.card_image }}.webp 1200w"
+           src="/images/{{ c.image_dir | default: 'industries' }}/{{ c.card_image }}.webp"
+           srcset="/images/{{ c.image_dir | default: 'industries' }}/{{ c.card_image }}-640.webp 640w, /images/{{ c.image_dir | default: 'industries' }}/{{ c.card_image }}.webp 1200w"
            sizes="(min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw"
            width="1200" height="900" loading="lazy" alt="">
       <span class="card-shade" aria-hidden="true"></span>

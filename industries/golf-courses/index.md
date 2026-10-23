@@ -13,6 +13,7 @@ related:
   - /industries/wedding-venues/
   - /services/brand-strategy/
   - /services/ai-search-visibility/
+image_dir: "industries"
 hero_image: "30a-golf-courses-clubs-hero"
 hero_alt: "Gouache illustration of a coastal golf club with a manicured putting green, a grand clubhouse and Gulf Coast scenery."
 card_image: "30a-golf-courses-clubs-card"

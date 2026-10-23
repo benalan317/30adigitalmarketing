@@ -12,6 +12,7 @@ order: 7
 related:
   - /industries/family-entertainment/
   - /industries/hotels-resorts/
+image_dir: "industries"
 hero_image: "30a-lifestyle-experience-brands-hero"
 hero_alt: "Gouache illustration of a coastal lifestyle boutique displaying clothing, surfboards and beach gear beside a walkway to the Gulf."
 card_image: "30a-lifestyle-experience-brands-card"

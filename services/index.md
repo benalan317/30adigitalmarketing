@@ -9,6 +9,9 @@ lede: "Six ways we help established businesses be found and chosen online."
 related:
   - /approach/
   - /industries/
+image_dir: "services"
+banner_image: "30a-digital-marketing-services-overview-panoramic-hero"
+banner_alt: "Gouache illustration of a Gulf Coast workspace with a laptop analytics dashboard, planning notes and 30A seaside architecture."
 ---
 {% comment %}
 PAGE BRIEF

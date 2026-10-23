@@ -13,6 +13,7 @@ related:
   - /services/seo/
   - /industries/wedding-venues/
   - /industries/vacation-rentals/
+image_dir: "industries"
 hero_image: "30a-boutique-hotels-inns-resorts-hero"
 hero_alt: "Gouache illustration of a boutique coastal inn with a grand arched entrance, flowering courtyard and Gulf view."
 card_image: "30a-boutique-hotels-inns-resorts-card"

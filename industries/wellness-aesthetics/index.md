@@ -13,6 +13,7 @@ related:
   - /services/ai-search-visibility/
   - /industries/professional-services/
   - /industries/home-services/
+image_dir: "industries"
 hero_image: "30a-health-wellness-aesthetics-hero"
 hero_alt: "Gouache illustration of a luxury coastal wellness spa with white stucco architecture, lush flowers and courtyard fountains."
 card_image: "30a-health-wellness-aesthetics-card"

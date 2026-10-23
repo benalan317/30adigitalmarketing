@@ -13,6 +13,11 @@ related:
   - /industries/lifestyle-brands/
   - /industries/luxury-real-estate/
   - /industries/golf-courses/
+image_dir: "services"
+hero_image: "30a-brand-strategy-analysis-hero"
+hero_alt: "Gouache illustration of two strategists reviewing brand positioning research and market analysis beside the Gulf Coast."
+card_image: "30a-brand-strategy-analysis-card"
+card_alt: "Two strategists comparing positioning research and planning materials in a 30A-inspired workspace."
 ---
 {% comment %}
 PAGE BRIEF

@@ -13,6 +13,7 @@ related:
   - /services/digital-authority/
   - /industries/professional-services/
   - /industries/wellness-aesthetics/
+image_dir: "industries"
 hero_image: "30a-home-services-contractors-hero"
 hero_alt: "Gouache illustration of a roofing contractor working on an upscale coastal home with a pool and landscaped courtyard."
 card_image: "30a-home-services-contractors-card"
