@@ -70,7 +70,7 @@ Either way, you own your website, your content and your accounts.
 
 ## Pair it with a monthly plan, or don't
 
-The buildout doesn't require a monthly plan, and a monthly plan doesn't require the buildout. Some clients start with the site, some add it later, some do both at once. See [plans and pricing](/plans/).
+The buildout doesn't require a monthly plan, and a monthly plan doesn't require the buildout. Some clients start with the site, some add it later, some do both at once. If you'd rather publish content yourself after launch, see [Compass](/plans/diy-seo/). For everything we offer, see [plans and pricing](/plans/).
 
 ## Common questions about the Website Buildout
 

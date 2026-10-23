@@ -2,10 +2,10 @@
 layout: page
 title: "Plans & Pricing"
 seo_title: "SEO Pricing & Monthly Retainers | 30A Digital Marketing"
-description: "Monthly SEO and digital marketing plans at $4,000, $7,000 and $10,000 a month, scoped to your business, plus a one-time Website Buildout."
+description: "Monthly SEO plans at $4,000, $7,000 and $10,000, a one-time Website Buildout, and Compass, a DIY SEO workflow at $5,000 plus $500 a month."
 eyebrow: "Plans & Pricing"
 h1: "SEO pricing and monthly plans"
-lede: "Two independent ways to work with us: a monthly plan, or a one-time Website Buildout. Start with either, or both."
+lede: "Three independent ways to work with us: a monthly plan, a one-time Website Buildout, or Compass, a DIY SEO workflow we build for you."
 related:
   - /services/
   - /industries/
@@ -14,10 +14,10 @@ related:
 PAGE BRIEF
 Primary keyword: seo pricing
 Related keywords: SEO retainer, monthly SEO packages, SEO cost per month, local SEO pricing
-Purpose: Two offers side by side: the three monthly levels ($4,000 / $7,000 / $10,000, scoped to each business, no binding contract) and the one-time Website Buildout. They are independent: neither is a required first step. Links to Approach ('how we scope each package') and the strategy call. Tier names still to decide.
+Purpose: Three offers side by side: the three monthly levels (Lantern $4,000 / Beacon $7,000 / Lighthouse $10,000, scoped to each business, no binding contract), the one-time Website Buildout, and Compass (DIY SEO workflow, $5,000 setup plus $500 a month). They are independent: none is a required first step. Links to Approach ('how we scope each package'), the Compass page and the strategy call.
 {% endcomment %}
 
-Our SEO pricing is public. Monthly plans cost $4,000, $7,000 or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000.
+Our SEO pricing is public. Monthly plans cost $4,000, $7,000 or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
 
 ## Monthly plans
 
@@ -56,6 +56,10 @@ What usually decides the right level:
 
 For service businesses that need a new site or a redesign. It includes the site, 10 optimized pages, a clear path from visitor to inquiry, and your business accounts set up. It stands on its own: buy it alone, before a monthly plan, after one, or alongside one. [See what the Website Buildout includes](/plans/website-buildout/).
 
+## Do it yourself: Compass, $5,000 setup plus $500 a month
+
+For small businesses that want to run their own SEO content. We build a workflow trained on your brand, connect your tools, train you to use it, and recalibrate it every month. You review and publish. It covers content creation, needs an existing website, and tools are billed to you separately. [See how Compass works](/plans/diy-seo/).
+
 ## Why our prices are public
 
 So you can tell whether we're a fit before you call. It also means the strategy call is spent on your business, not on negotiating a quote.
@@ -77,3 +81,5 @@ So you can tell whether we're a fit before you call. It also means the strategy 
 **What isn't included?** Graphic design, influencer content and video production. We'd rather do fewer things very well.
 
 **Can I combine the Website Buildout with a plan?** Yes, in any order. They're priced separately and neither requires the other.
+
+**What if a monthly plan is more than I can spend right now?** Compass is built for that. It costs $5,000 to set up and $500 a month, and you run the content yourself. If you later move to a monthly plan, we skip the research and setup phase.
