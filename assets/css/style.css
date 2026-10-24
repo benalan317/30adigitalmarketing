@@ -7,8 +7,8 @@
   --muted: #44565A;      /* secondary text */
   --rule: #CFC3AA;       /* thin lines */
   --accent: #C66D54;     /* used very sparingly */
-  --display: 'Cormorant Garamond', Georgia, serif;
-  --display-weight: 300;
+  --display: 'Bodoni Moda', Georgia, serif;
+  --display-weight: 500;
   --body: 'Jost', system-ui, sans-serif;
   --gutter: 40px;
 }
