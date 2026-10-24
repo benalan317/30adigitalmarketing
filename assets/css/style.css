@@ -8,8 +8,8 @@
   --rule: #CFC3AA;       /* thin lines */
   --sand: #EAE3D3;     /* soft panel */
   --accent: #C66D54;     /* used very sparingly */
-  --display: 'Bodoni Moda', Georgia, serif;
-  --display-weight: 500;
+  --display: 'DM Serif Display', Georgia, serif;
+  --display-weight: 400;
   --body: 'Jost', system-ui, sans-serif;
   --gutter: 40px;
 }
@@ -280,7 +280,7 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
 .page-body h2 { font-family: var(--display); font-weight: var(--display-weight); font-size: 34px; line-height: 1.2; margin: 56px 0 16px; }
 .page-body h3 { font-family: var(--display); font-weight: 400; font-size: 24px; margin: 36px 0 12px; }
 /* ---------- Rich page blocks (services, industries and opted-in pages) ---------- */
-.rich > p:first-of-type { font-size: clamp(19px, 2vw, 21px); line-height: 1.7; color: var(--ink); }
+.rich > p:first-of-type { font-weight: 400; font-size: clamp(19px, 2vw, 21px); line-height: 1.7; color: var(--ink); }
 .rich h2::before { content: ""; display: block; width: 40px; height: 1px; background: var(--accent); margin-bottom: 22px; }
 .rich .plan-text h2::before, .rich .callout h2::before { display: none; }
 
