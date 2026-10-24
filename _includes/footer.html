@@ -4,6 +4,7 @@
 {%- endcomment -%}
 {%- assign footer_services = site.pages | where: "group", "services" | sort: "order" -%}
 {%- assign footer_industries = site.pages | where: "group", "industries" | sort: "order" -%}
+{%- assign footer_markets = site.pages | where: "group", "markets" | sort: "order" -%}
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -30,6 +31,15 @@
       <ul>
         {%- for i in footer_industries %}
         <li><a href="{{ i.url }}">{{ i.title | escape }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Markets">
+      <h2><a href="/markets/">Markets</a></h2>
+      <ul>
+        {%- for m in footer_markets %}
+        <li><a href="{{ m.url }}">{{ m.title | escape }}</a></li>
         {%- endfor %}
       </ul>
     </nav>
