@@ -8,6 +8,9 @@ h1: "Panama City Beach SEO and digital marketing"
 lede: "Search, AI visibility and reputation for the rentals, resorts, attractions and local businesses of Panama City Beach and Bay County."
 blurb: "A family destination with a spring break past, and a year-round local economy."
 group: markets
+image_dir: "markets"
+hero_image: "panama-city-beach-lifeguard-tower-hero"
+hero_alt: "Gouache illustration of a lifeguard tower with a green flag and a family pulling a beach wagon toward the Gulf at Panama City Beach."
 order: 3
 rich: true
 schema_area: ["Panama City Beach", "Panama City", "Bay County", "Lynn Haven", "St. Andrews"]

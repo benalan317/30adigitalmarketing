@@ -8,6 +8,9 @@ h1: "Gulf Shores and Orange Beach SEO and digital marketing"
 lede: "Search, AI visibility and reputation for Alabama's beaches, where a record year of lodging sales has brought more rooms, and more competition."
 blurb: "Alabama's beaches: record lodging, new supply, and a winter season of long stays."
 group: markets
+image_dir: "markets"
+hero_image: "gulf-shores-orange-beach-pier-hero"
+hero_alt: "Gouache illustration of beachfront condo towers, a long pier and winter beach walkers on the white sand of Gulf Shores and Orange Beach."
 order: 5
 rich: true
 schema_area: ["Gulf Shores", "Orange Beach", "Fort Morgan", "Baldwin County", "Alabama"]

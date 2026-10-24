@@ -8,6 +8,9 @@ h1: "Destin SEO and digital marketing, including Miramar Beach"
 lede: "Search, AI visibility and reputation for the resorts, charters, rentals and attractions that visitors find under one name: Destin."
 blurb: "Two counties, one destination, and a harbor of businesses competing for the same searches."
 group: markets
+image_dir: "markets"
+hero_image: "destin-miramar-beach-harbor-hero"
+hero_alt: "Gouache illustration of charter fishing boats and a dolphin cruise boat moored in Destin Harbor, with the bridge behind at golden hour."
 order: 2
 rich: true
 schema_area: ["Destin", "Miramar Beach", "Sandestin", "Okaloosa County", "Walton County"]

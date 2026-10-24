@@ -8,6 +8,9 @@ h1: "Pensacola SEO and digital marketing, including Perdido Key"
 lede: "Search, AI visibility and reputation for businesses in a city that is also a beach town: downtown Pensacola, Pensacola Beach and Perdido Key."
 blurb: "A real city with festivals, air shows and a beach, and a year-round local economy."
 group: markets
+image_dir: "markets"
+hero_image: "pensacola-beach-air-show-hero"
+hero_alt: "Gouache illustration of six blue-and-gold jets flying in formation over Pensacola Beach, with umbrellas and a fishing pier below."
 order: 4
 rich: true
 schema_area: ["Pensacola", "Pensacola Beach", "Perdido Key", "Escambia County", "Gulf Breeze"]

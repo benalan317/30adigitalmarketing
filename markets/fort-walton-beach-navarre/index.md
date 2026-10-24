@@ -8,6 +8,9 @@ h1: "Fort Walton Beach and Navarre SEO and digital marketing"
 lede: "Search, AI visibility and reputation for Okaloosa Island, Fort Walton Beach and Navarre Beach, a stretch of coast that travelers are discovering."
 blurb: "Okaloosa Island to Navarre Beach: a coast that is getting noticed."
 group: markets
+image_dir: "markets"
+hero_image: "fort-walton-beach-navarre-pier-hero"
+hero_alt: "Gouache illustration of Navarre Beach Pier stretching into the Gulf, with anglers, pelicans and a dolphin near the pilings at sunset."
 order: 6
 rich: true
 schema_area: ["Fort Walton Beach", "Okaloosa Island", "Navarre", "Navarre Beach", "Okaloosa County", "Santa Rosa County"]

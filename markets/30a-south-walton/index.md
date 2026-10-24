@@ -8,6 +8,9 @@ h1: "30A SEO and digital marketing for South Walton businesses"
 lede: "Search, AI visibility and reputation for the businesses of Scenic Highway 30A, from Seaside and Rosemary Beach to Alys Beach and Santa Rosa Beach."
 blurb: "Community-by-community search for rentals, real estate, venues and hotels."
 group: markets
+image_dir: "markets"
+hero_image: "30a-south-walton-dune-walkover-hero"
+hero_alt: "Gouache illustration of a wooden dune walkover and a beach bicycle beside sea oats on 30A, with a dune lake and cottages at sunset."
 order: 1
 rich: true
 schema_area: ["30A", "South Walton", "Santa Rosa Beach", "Seaside", "Rosemary Beach", "Alys Beach", "Inlet Beach", "Grayton Beach"]

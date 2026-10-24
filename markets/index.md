@@ -6,6 +6,9 @@ description: "SEO and digital marketing for businesses across the Gulf Coast, fr
 eyebrow: "Markets"
 h1: "Gulf Coast markets we serve"
 lede: "Search, AI visibility and reputation for businesses from the Forgotten Coast to Alabama's beaches, and for national brands that want to win here."
+image_dir: "markets"
+banner_image: "gulf-coast-markets-banner"
+banner_alt: "Gouache illustration of a quiet Gulf Coast shoreline at sunset, with a pier on the left, a lighthouse on the right and open sand between them."
 related:
   - /industries/
   - /approach/

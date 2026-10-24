@@ -8,6 +8,9 @@ h1: "Forgotten Coast SEO and digital marketing"
 lede: "Search, AI visibility and reputation for the inns, rentals and independent businesses of Mexico Beach, Port St. Joe, Apalachicola and St. George Island."
 blurb: "Old Florida, rebuilt on purpose, for businesses that want to grow without becoming a resort town."
 group: markets
+image_dir: "markets"
+hero_image: "forgotten-coast-st-george-island-lighthouse-hero"
+hero_alt: "Gouache illustration of the St. George Island Lighthouse above quiet dunes, with shrimp boats anchored in the bay in golden light."
 order: 7
 rich: true
 schema_area: ["Forgotten Coast", "Mexico Beach", "Port St. Joe", "Cape San Blas", "Apalachicola", "Eastpoint", "St. George Island", "Gulf County", "Franklin County"]
