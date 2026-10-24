@@ -147,6 +147,12 @@ details sit behind "Change the details behind these numbers". Status: draft for 
 .roi-actions { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; }
 .roi-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 26px; background: var(--r-ink); color: var(--r-bg); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; border: 0; cursor: pointer; }
 .roi-btn:hover { background: var(--r-muted); color: var(--r-bg); }
+.roi-diy { display: flex; flex-direction: column; gap: 12px; padding: 22px 24px; background: var(--r-panel); border: 1px solid var(--r-rule); }
+.roi-diy[hidden] { display: none; }
+.roi-diy h3 { margin: 0; font-family: var(--r-display); font-weight: var(--r-display-weight); font-size: 24px; line-height: 1.2; }
+.roi-diy p { margin: 0; max-width: 62ch; font-size: 15px; font-weight: 300; line-height: 1.65; color: var(--r-muted); }
+.roi-btn-alt { display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; min-height: 50px; padding: 0 26px; background: transparent; color: var(--r-ink); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; border: 1px solid var(--r-ink); }
+.roi-btn-alt:hover { background: var(--r-ink); color: var(--r-bg); }
 .roi-link { background: none; border: 0; padding: 0; min-height: 44px; color: var(--r-ink); font: 500 12px var(--r-body); letter-spacing: 2.4px; text-transform: uppercase; text-decoration: underline; text-underline-offset: 6px; cursor: pointer; }
 .roi-fine { margin: 0; font-size: 12px; font-weight: 300; line-height: 1.6; color: var(--r-muted); }
 .roi-copy-area { width: 100%; min-height: 160px; font: 13px/1.5 var(--r-body); border: 1px solid var(--r-rule); background: var(--r-field); color: var(--r-ink); padding: 10px; }
@@ -257,6 +263,11 @@ details sit behind "Change the details behind these numbers". Status: draft for 
     <dl class="roi-figures" id="roi-r-figures"></dl>
     <div class="roi-table-wrap"><table class="roi-table" id="roi-r-table"></table></div>
     <p class="roi-fine" id="roi-r-tablenote" hidden>"Left over" is your profit after paying for the plan. "Back per $1" is the profit you earn for every $1 you spend.</p>
+    <div class="roi-diy" id="roi-diy" hidden>
+      <h3>Prefer a lower-cost way to start?</h3>
+      <p id="roi-diy-text"></p>
+      <a class="roi-btn-alt" href="/plans/diy-seo/">See Compass, the DIY SEO workflow</a>
+    </div>
     <div class="roi-actions">
       <a class="roi-btn" href="/strategy-call/">Check these numbers on a free call</a>
       <button type="button" class="roi-link" id="roi-copy">Copy these results</button>
@@ -691,6 +702,14 @@ details sit behind "Change the details behind these numbers". Status: draft for 
     $('roi-r-sub').textContent = sub;
     var st = $('roi-r-status'); st.className = 'roi-status ' + s.cls; st.textContent = s.text;
 
+    var diy = $('roi-diy');
+    var showDiy = (s.cls === 'is-warn' || s.cls === 'is-bad');
+    diy.hidden = !showDiy;
+    if (showDiy) {
+      var diyCost = 5000 + 500 * r.H;
+      $('roi-diy-text').textContent = 'A monthly plan may be more than your business can take on right now. Compass is a self-run SEO workflow: a one-time $5,000 setup plus $500 a month, about ' + money.format(diyCost) + ' over ' + r.H + ' months. We build it around your business, and you run it yourself. It covers content only, and SEO usually takes six months or more to show results.';
+    }
+
     var ok = r.gp > 0 && r.productive > 0;
     $('roi-r-meters').hidden = !ok || r.need === 0;
     if (ok) {
@@ -815,7 +834,7 @@ details sit behind "Change the details behind these numbers". Status: draft for 
   <h3>Should I count repeat business and referrals?</h3>
   <p>Start without them. If the plan pays for itself on first-year profit alone, repeat business and referrals are a bonus. Turn them on when your customers stay for years, as homeowners, members and long-term clients often do.</p>
   <h3>What if the result says the plan is beyond my limits?</h3>
-  <p>It means this plan asks for more than your business can handle or win today. A smaller plan, a longer time frame or more capacity changes that. Bring your numbers to a strategy call and we'll find where the gap is.</p>
+  <p>It means this plan asks for more than your business can handle or win today. A smaller plan, a longer time frame or more capacity changes that. If a monthly plan is too much right now, <a href="/plans/diy-seo/">Compass, our DIY SEO workflow</a>, is a lower-cost way to start. Bring your numbers to a strategy call and we'll find where the gap is.</p>
   <h3>Is this a forecast?</h3>
   <p>No. It is not a forecast or a guarantee. It shows what would have to be true for the work to pay off, using the numbers you enter. No one can promise rankings, AI mentions or sales. On a free strategy call, we test your numbers against real search demand and competition in your market.</p>
 </section>
