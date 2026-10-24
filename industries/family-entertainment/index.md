@@ -63,9 +63,15 @@ We work with themed and destination restaurants that people plan a trip around, 
 
 Demand follows school breaks, summer weekends and the weather. We refresh pages ahead of spring break and summer, publish a clear rainy-day plan, and promote group bookings, parties and school trips in the shoulder seasons.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free audit covers
 
 Every strategy call includes a look at how families find you: where you appear for "things to do" and local searches compared with three nearby attractions, your reviews and replies, how your site works on a phone, and how AI tools describe you. You'll also get the three changes we would make first. You keep the findings whether or not we work together.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about mini golf marketing
 
@@ -76,3 +82,5 @@ Every strategy call includes a look at how families find you: where you appear f
 **How long does it take?** Profile and listing fixes can show results within weeks. Ranking for competitive searches usually takes several months, so we start before your busy season.
 
 **What does it cost?** Our work is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

@@ -1,5 +1,6 @@
 ---
 layout: page
+rich: true
 title: "Our Approach"
 seo_title: "Our Approach to SEO and Growth | 30A Digital Marketing"
 description: "How an engagement works: an audit, a strategy, careful execution and clear reporting. Monthly plans with no binding contract."
@@ -65,6 +66,8 @@ You'll have one point of contact, a monthly report, a quarterly meeting and a sh
 - One person who can answer questions and approve work.
 - About an hour or two a month for questions and approvals, plus the quarterly meeting.
 
+<div class="faq" markdown="1">
+
 ## Common questions about how we work
 
 **What does "no binding contract" mean?** Plans run month to month. We'd rather keep clients because the work is good.
@@ -74,3 +77,5 @@ You'll have one point of contact, a monthly report, a quarterly meeting and a sh
 **Can you work with our other agencies or our developer?** Yes. We often work alongside developers, designers and ad agencies, and we share what we learn.
 
 **How soon will we see results?** The audit shows the quickest wins. Technical and listing fixes can show within weeks; rankings and authority build over months.
+
+</div>

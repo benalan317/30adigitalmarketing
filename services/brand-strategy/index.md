@@ -78,9 +78,15 @@ Every strategy call includes a short review of how your business presents itself
 
 You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/).
 
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for businesses that do excellent work but struggle to say why they're different, and for companies entering a new market, adding a service or outgrowing their old message. We're not the right fit if you need a logo, a visual identity or a full rebrand campaign. Brand strategy here is the thinking and the words; if you need a designer, we can refer you to one and write their brief.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about brand strategy services
 
@@ -95,3 +101,5 @@ We're a good fit for businesses that do excellent work but struggle to say why t
 **What does it cost?** Brand strategy is quoted as a separate project, not included in the monthly plans. We scope it after your free strategy call. For our monthly programs, see [plans and pricing](/plans/).
 
 **We already have a brand. Is this still useful?** Often, yes. Many established businesses have a logo and a reputation but no written position. We start from what already works and sharpen it.
+
+</div>

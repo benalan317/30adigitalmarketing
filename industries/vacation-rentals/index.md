@@ -76,6 +76,8 @@ Summer weeks are often researched and booked the winter before. Spring break, fa
 
 We publish and refresh pages before each window opens, and promote shoulder-season and winter stays when calendars have gaps. During hurricane season, guests want clear answers on cancellations and travel insurance, so we make those easy to find.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free vacation rental audit covers
 
 Every strategy call includes an audit of your site and your market. You'll see:
@@ -88,9 +90,13 @@ Every strategy call includes an audit of your site and your market. You'll see:
 
 You keep the findings whether or not we work together.
 
+</div>
+
 ## Who this is for
 
 Property management companies, and owners of several homes, who want a stronger direct channel alongside the platforms. We're not the right fit for a single listing that only needs a better Airbnb description, or for anyone hoping to leave the platforms in one season. Platforms still bring new guests. The goal is to keep more of the ones who come back.
+
+<div class="faq" markdown="1">
 
 ## Common questions about vacation rental marketing
 
@@ -105,3 +111,5 @@ Property management companies, and owners of several homes, who want a stronger 
 **Do you help us win new homeowners?** Yes. Owner pages, owner-focused search and a clear income estimate request are part of the program.
 
 **What does it cost?** Vacation rental marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

@@ -1,5 +1,6 @@
 ---
 layout: page
+rich: true
 title: "Website Buildout"
 seo_title: "Service Business Website Redesign | 30A Digital Marketing"
 description: "A $10,000 one-time Website Buildout for service businesses: a new or redesigned site, 10 optimized pages and a path from visitor to inquiry."
@@ -74,6 +75,8 @@ Either way, you own your website, your content and your accounts.
 
 The buildout doesn't require a monthly plan, and a monthly plan doesn't require the buildout. Some clients start with the site, some add it later, some do both at once. If you'd rather publish content yourself after launch, see [Compass](/plans/diy-seo/). For everything we offer, see [plans and pricing](/plans/).
 
+<div class="faq" markdown="1">
+
 ## Common questions about the Website Buildout
 
 **How much does a website redesign cost with you?** $10,000, one time, for a new site or a redesign. The price is the same either way.
@@ -83,3 +86,5 @@ The buildout doesn't require a monthly plan, and a monthly plan doesn't require 
 **Do I need a monthly plan first?** No. The buildout stands on its own.
 
 **Do I own the website?** Yes. The site, the content and the accounts belong to your business.
+
+</div>

@@ -72,6 +72,8 @@ Many golfers on the coast are guests at a resort or hotel. If you are part of a 
 
 On the Gulf Coast, golf demand shifts with the seasons: visitors from colder states come in winter and early spring, locals play through the year, and the heat of summer slows weekday rounds. We publish and refresh pages before each window, and promote lessons, twilight rates, gift cards and events when the tee sheet has gaps.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free golf course audit covers
 
 Every strategy call includes an audit of how golfers find your course. You'll see:
@@ -84,9 +86,17 @@ Every strategy call includes an audit of how golfers find your course. You'll se
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for public, semi-private and resort courses and clubs that want more bookings and members from their own website and from search. We're not the right fit if you want a tee-sheet system, a pro shop e-commerce store, or paid ads only. Our work is search, AI visibility and reputation.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about golf course marketing
 
@@ -101,3 +111,5 @@ We're a good fit for public, semi-private and resort courses and clubs that want
 **Do you work with our tee-sheet provider?** Yes. We don't replace it. We make sure search and tracking work with it.
 
 **What does it cost?** Golf course marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

@@ -72,6 +72,8 @@ Many resorts sell more than rooms. Golf packages, weddings and group events each
 
 Peak summer stays are planned months ahead. Spring break, fall weekends and winter each bring different guests: families, couples, golfers and longer-stay visitors. We plan pages, offers and refreshes before each window, and help fill the quieter weeks with the guests most likely to book them.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free hotel SEO audit covers
 
 Every strategy call includes an audit of your hotel's search presence. You'll see:
@@ -84,9 +86,17 @@ Every strategy call includes an audit of your hotel's search presence. You'll se
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for independent and boutique hotels, inns and resorts that want a larger share of hotel direct bookings and a clear view of what drives them, including groups with several properties. We're not the right fit if you need a revenue manager or a new booking engine. We work alongside the team and systems you already have.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about hotel SEO
 
@@ -101,3 +111,5 @@ We're a good fit for independent and boutique hotels, inns and resorts that want
 **Do you work with our booking engine?** Yes. We don't replace it. We make sure search and tracking work with it, and write clear briefs for your provider when something needs to change.
 
 **What does it cost?** Hotel SEO is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

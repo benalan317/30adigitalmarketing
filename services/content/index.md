@@ -86,9 +86,15 @@ Every strategy call includes a short review of your content. You'll see:
 
 You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/).
 
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for businesses whose customers research before they buy, and whose expertise is stronger than their website shows: firms, venues, property managers, practices and builders. We're not the right fit if you want dozens of short blog posts a month, social media management, or graphic design and video production.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about content marketing services
 
@@ -103,3 +109,5 @@ We're a good fit for businesses whose customers research before they buy, and wh
 **How do you measure results?** Inquiries and conversions from each page, rankings and AI mentions for the topics we target, and how your sales team uses the assets we write.
 
 **What does it cost?** Content is included in our monthly plans, which start at $4,000. How much we write each month depends on your business's needs and where content will earn the best return. See [plans and pricing](/plans/).
+
+</div>

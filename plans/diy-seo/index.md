@@ -1,5 +1,6 @@
 ---
 layout: page
+rich: true
 title: "Compass"
 seo_title: "DIY SEO Workflow for Small Business | 30A Digital Marketing"
 description: "Compass is a DIY SEO workflow for small businesses: a $5,000 one-time setup and $500 a month. We build it, train you and keep it tuned."
@@ -62,6 +63,8 @@ Compass stands on its own. If you later move to one of our monthly plans, we ski
 
 No website yet, or one that needs a rebuild first? Our [Website Buildout](/plans/website-buildout/) covers that for service businesses. To learn how AI answers use your content, see [AI search visibility](/services/ai-search-visibility/).
 
+<div class="faq" markdown="1">
+
 ## Common questions about DIY SEO
 
 **Can I really do SEO myself?** For content-led SEO, yes, if you have a workflow to follow. Compass is built so you don't need expert knowledge. You'll still spend time reviewing and publishing, and results take months.
@@ -77,3 +80,5 @@ No website yet, or one that needs a rebuild first? Our [Website Buildout](/plans
 **What isn't included?** Technical SEO fixes, link building, website changes, design and video. Compass covers content creation. We can scope the rest separately.
 
 **Is the strategy call really free?** Yes. It includes an audit of how your business shows up in search and AI answers, and you keep the findings.
+
+</div>

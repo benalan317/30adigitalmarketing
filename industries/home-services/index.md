@@ -79,6 +79,8 @@ We're not a full-service shop that runs your ads, social media and yard signs. W
 
 Pool and outdoor-living projects are often planned in winter and spring. HVAC demand climbs with the summer heat. Roofing peaks after storms, and second-home owners often schedule work around their visits. We publish and update pages ahead of each, so you're visible when the phone should ring.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free contractor SEO audit covers
 
 Every strategy call includes an audit of your local search presence. You'll see:
@@ -91,9 +93,17 @@ Every strategy call includes an audit of your local search presence. You'll see:
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for established contractors with steady crews who want more of the right jobs from search. We're not a fit if you need dozens of leads by next week, or want help buying reviews. The first isn't realistic, and the second breaks platform rules.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about contractor SEO
 
@@ -108,3 +118,5 @@ We're a good fit for established contractors with steady crews who want more of 
 **Do you build contractor websites?** Yes, when the current site can't carry the work. Most sites can be improved as they are, and the audit tells us which path makes sense.
 
 **What does it cost?** Contractor SEO is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

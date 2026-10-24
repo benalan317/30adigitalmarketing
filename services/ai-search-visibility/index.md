@@ -102,6 +102,8 @@ AI answers change often, so we judge progress over months, not single answers.
 
 AI search changes quickly, and anyone selling a guaranteed formula is guessing. We test, record what works and adjust. Strong [SEO](/services/seo/) stays the foundation, because Google's AI features draw on its search index.
 
+<div class="faq" markdown="1">
+
 ## Common questions about AI search visibility
 
 **Is GEO different from SEO?** They overlap heavily. SEO earns rankings; GEO and AEO earn mentions and citations inside AI answers. Most of the groundwork serves both.
@@ -115,3 +117,5 @@ AI search changes quickly, and anyone selling a guaranteed formula is guessing. 
 **What does it cost?** AI search visibility is part of our monthly plans, which start at $4,000. See [plans and pricing](/plans/).
 
 **Which businesses benefit most?** Those whose customers ask for recommendations before they buy: rentals and hotels, venues, medical and aesthetic practices, and professional firms.
+
+</div>

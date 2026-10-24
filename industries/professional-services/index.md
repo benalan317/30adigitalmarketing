@@ -72,6 +72,8 @@ Legal advertising is regulated, and rules differ by state. We write to your bar'
 
 Financial advisors and wealth managers win clients on trust and a clear point of view, and their marketing is also regulated. The approach is the same: pages for the services and client types you want, advisor profiles, reviews where your compliance rules allow them, and content that explains how you think. Your compliance team reviews all of it.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free professional services audit covers
 
 Every strategy call includes an audit of how clients find your firm. You'll see:
@@ -84,9 +86,17 @@ Every strategy call includes an audit of how clients find your firm. You'll see:
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for established firms and advisors who win clients on expertise and want that expertise to show up online. We're not the right fit if you want case-intake call centers, pay-per-lead schemes or guaranteed first-place rankings. The first two clash with how professional firms are meant to advertise, and no one can promise the third.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about law firm SEO
 
@@ -101,3 +111,5 @@ We're a good fit for established firms and advisors who win clients on expertise
 **How long does it take?** Listing and profile fixes can show results within weeks. Ranking for competitive practice-area searches usually takes several months.
 
 **What does it cost?** Professional services marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

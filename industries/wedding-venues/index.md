@@ -74,6 +74,8 @@ Many couples get engaged over the winter holidays, and venue research rises in t
 
 We publish and refresh pages before each research wave, and promote weekday, winter and short-notice dates when the calendar has gaps. Couples also want a clear weather plan, so we make yours easy to find.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free venue marketing audit covers
 
 Every strategy call includes an audit of how couples find your venue. You'll see:
@@ -86,9 +88,13 @@ Every strategy call includes an audit of how couples find your venue. You'll see
 
 You keep the findings whether or not we work together.
 
+</div>
+
 ## Who this is for
 
 Wedding and event venues, resorts with a wedding business, and planners on 30A and the Gulf Coast who want more tours from their own website and less reliance on paid directory listings. We're not the right fit if you're looking only for social media posting. Our work is search, AI visibility and reputation.
+
+<div class="faq" markdown="1">
 
 ## Common questions about wedding venue marketing
 
@@ -103,3 +109,5 @@ Wedding and event venues, resorts with a wedding business, and planners on 30A a
 **Do you work with planners too?** Yes. Planners face the same search and AI questions, and their recommendations help venues. We tailor the work to whichever side you're on.
 
 **What does it cost?** Wedding venue marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

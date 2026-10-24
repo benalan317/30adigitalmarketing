@@ -63,6 +63,8 @@ Search demand here rises and falls with the calendar. Summer stays are often res
 
 We plan your SEO around those windows. Pages are published and refreshed before demand peaks, not during it.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free SEO audit covers
 
 Every strategy call includes an audit of your site and your market. You'll see:
@@ -74,6 +76,8 @@ Every strategy call includes an audit of your site and your market. You'll see:
 - The three changes we would make first.
 
 You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/).
+
+</div>
 
 ## Built to work with your developer
 
@@ -88,9 +92,15 @@ SEO only works if the site is built to carry it. We work alongside your develope
 
 There is no binding contract. We would rather earn the next month than lock you into it.
 
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for established businesses whose website should bring in more inquiries, and who want growth that compounds. We're not a fit if you need page-one rankings in two weeks or links by the hundred. No one can promise the first honestly, and the second can get a site penalized.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about SEO services
 
@@ -105,3 +115,5 @@ We're a good fit for established businesses whose website should bring in more i
 **Do I need a new website first?** Usually not. Most sites can be improved as they are. The audit tells us which path makes sense.
 
 **Will you work with our current developer?** Yes. We write clear briefs and check the work, so your developer always knows what to change and why.
+
+</div>

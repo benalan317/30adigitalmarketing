@@ -85,9 +85,15 @@ Every strategy call can include a short look at how your team finds information.
 
 You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/).
 
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for businesses with a team of five or more, repeated questions and knowledge spread across documents and people. We're not the right fit if you need a customer-facing chatbot, custom software development or AI that makes decisions without a person checking.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about internal AI assistants
 
@@ -102,3 +108,5 @@ We're a good fit for businesses with a team of five or more, repeated questions 
 **How is this different from a website chatbot?** A website chatbot talks to customers. An internal assistant helps your own team. We focus on the internal one. It also strengthens the clear, written knowledge our [content](/services/content/) work draws on.
 
 **What does it cost?** We scope it after your free strategy call, based on the use case and the state of your documents. For our monthly programs, see [plans and pricing](/plans/).
+
+</div>

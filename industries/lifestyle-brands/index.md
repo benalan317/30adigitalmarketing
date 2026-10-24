@@ -67,6 +67,8 @@ Dive shops and outfitters sell courses, rentals and trips, each with its own sea
 
 Trips are searched for weeks before a vacation, and the species and conditions change through the year. Summer is busiest, spring and fall bring their own runs, and winter is quiet. Hurricane season, from June to November, makes weather and cancellation policy a deciding detail. We publish and refresh pages ahead of each window, and promote private charters, group trips and gift certificates when the calendar has gaps.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free audit covers
 
 Every strategy call includes an audit of how customers find you. You'll see:
@@ -79,9 +81,17 @@ Every strategy call includes an audit of how customers find you. You'll see:
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for established charters, dive shops, outfitters and coastal brands that want more direct bookings and customers from search. We're not the right fit if you need a booking system, a store build from scratch or social media posting. Our work is search, AI visibility and reputation.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about fishing charter marketing
 
@@ -96,3 +106,5 @@ We're a good fit for established charters, dive shops, outfitters and coastal br
 **Can you help an online shop or an outfitter, not only a charter?** Yes. The work is similar: pages for what customers search for, reviews and a clear path to buy or book.
 
 **What does it cost?** Fishing charter marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

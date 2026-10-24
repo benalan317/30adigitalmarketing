@@ -73,6 +73,8 @@ We never post fake reviews, and we never offer rewards for positive ones. Both b
 
 Authority strengthens your [SEO](/services/seo/), and it's one of the strongest signals behind [AI search visibility](/services/ai-search-visibility/), because AI tools lean on what other sources say about you.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free authority audit covers
 
 Your strategy call includes a look at how your business appears beyond its own website:
@@ -84,9 +86,13 @@ Your strategy call includes a look at how your business appears beyond its own w
 
 [Book a free strategy call](/strategy-call/).
 
+</div>
+
 ## What you'll see in reports
 
 Coverage earned and where it ran, new referring sites and links, reclaimed links, review count and average rating, listing accuracy, brand mentions, and the visits and inquiries this work sends you.
+
+<div class="faq" markdown="1">
 
 ## Common questions about digital PR and link building
 
@@ -103,3 +109,5 @@ Coverage earned and where it ran, new referring sites and links, reclaimed links
 **What does it cost?** Digital authority work is part of our monthly plans, which start at $4,000. See [plans and pricing](/plans/).
 
 **How long does it take?** Listing fixes and review processes improve within weeks. Coverage and links build over months.
+
+</div>

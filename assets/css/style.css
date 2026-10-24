@@ -6,6 +6,7 @@
   --ink: #1D3035;        /* text and dark sections */
   --muted: #44565A;      /* secondary text */
   --rule: #CFC3AA;       /* thin lines */
+  --sand: #EAE3D3;     /* soft panel */
   --accent: #C66D54;     /* used very sparingly */
   --display: 'Bodoni Moda', Georgia, serif;
   --display-weight: 500;
@@ -278,6 +279,43 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
 .page-body { max-width: 760px; margin: 0 auto; padding: 0 var(--gutter) 96px; font-size: 17px; font-weight: 300; line-height: 1.75; }
 .page-body h2 { font-family: var(--display); font-weight: var(--display-weight); font-size: 34px; line-height: 1.2; margin: 56px 0 16px; }
 .page-body h3 { font-family: var(--display); font-weight: 400; font-size: 24px; margin: 36px 0 12px; }
+/* ---------- Rich page blocks (services, industries and opted-in pages) ---------- */
+.rich > p:first-of-type { font-family: var(--display); font-weight: var(--display-weight); font-size: clamp(22px, 2.5vw, 27px); line-height: 1.45; color: var(--ink); }
+.rich h2::before { content: ""; display: block; width: 40px; height: 1px; background: var(--accent); margin-bottom: 22px; }
+.rich .plan-text h2::before, .rich .callout h2::before { display: none; }
+
+.rich ul { list-style: none; padding-left: 0; }
+.rich ul li { position: relative; padding-left: 24px; margin: .65em 0; }
+.rich ul li::before { content: ""; position: absolute; left: 0; top: .9em; width: 11px; height: 1px; background: var(--accent); }
+
+.rich ol { list-style: none; counter-reset: step; padding: 0; margin: 28px 0; border-top: 1px solid var(--rule); }
+.rich ol > li { counter-increment: step; position: relative; padding: 22px 0 22px 64px; border-bottom: 1px solid var(--rule); }
+.rich ol > li::before { content: counter(step); position: absolute; left: 0; top: 14px; font-family: var(--display); font-weight: var(--display-weight); font-size: 42px; line-height: 1; color: var(--accent); }
+
+.callout { margin: 56px 0; padding: 40px 36px; }
+.callout > h2 { margin-top: 0; }
+.callout > :last-child { margin-bottom: 0; }
+.callout-audit { background: var(--ink); color: var(--oyster); }
+.callout-audit a { color: var(--oyster); text-underline-offset: 4px; }
+.callout-audit a:hover { color: #fff; }
+.callout-audit h2 { color: var(--oyster); }
+.rich .callout-audit ul li::before { top: .35em; width: 7px; height: 12px; background: none; border-right: 1.5px solid #E9A58F; border-bottom: 1.5px solid #E9A58F; transform: rotate(45deg); }
+.rich .callout-audit ul li { padding-left: 30px; }
+.callout-fit { background: var(--sand); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+
+.faq { margin: 24px 0 0; }
+.faq h2 { margin-bottom: 8px; }
+.faq p { margin: 0; padding: 22px 0; border-top: 1px solid var(--rule); }
+.faq p:last-of-type { border-bottom: 1px solid var(--rule); }
+.faq p > strong:first-child { display: block; margin-bottom: 8px; font-family: var(--display); font-weight: var(--display-weight); font-size: 21px; line-height: 1.3; }
+@media (min-width: 900px) {
+  .rich .callout { margin-left: -40px; margin-right: -40px; padding: 48px 48px; }
+}
+@media (max-width: 560px) {
+  .callout { padding: 32px 22px; }
+  .rich ol > li { padding-left: 52px; }
+  .rich ol > li::before { font-size: 34px; }
+}
 .placeholder-note { margin-top: 40px; padding: 20px 24px; border: 1px solid var(--rule); color: var(--muted); font-size: 15px; }
 
 .card-list { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 48px; }

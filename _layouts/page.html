@@ -45,7 +45,7 @@ layout: default
   </div>
   {%- endif %}
 
-  <div class="page-body">
+  <div class="page-body{% if page.group == "services" or page.group == "industries" or page.rich %} rich{% endif %}">
     {%- if page.lead_image %}
     <figure class="lead-figure">
       <img src="/images/plans/{{ page.lead_image }}-640.webp"

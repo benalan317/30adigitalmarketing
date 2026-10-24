@@ -76,6 +76,8 @@ For concierge medicine and membership wellness practices, the decision is slower
 
 Demand for aesthetics follows the calendar. Many people book before summer and before holidays and events, and winter residents and seasonal visitors arrive and leave through the year. We publish and refresh treatment pages before each window, and promote seasonal treatments and memberships when the calendar has gaps.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free med spa audit covers
 
 Every strategy call includes an audit of how clients find your practice. You'll see:
@@ -88,9 +90,17 @@ Every strategy call includes an audit of how clients find your practice. You'll 
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for established med spas, aesthetic clinics and wellness practices that want to grow through trust and reputation. We're not the right fit if you want discount-led social ads, bought reviews or results promises. The first isn't our work, and the other two break platform and advertising rules.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about med spa marketing
 
@@ -105,3 +115,5 @@ We're a good fit for established med spas, aesthetic clinics and wellness practi
 **How long does it take?** Profile and listing fixes can show results within weeks. Ranking for competitive treatment searches usually takes several months.
 
 **What does it cost?** Med spa marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>

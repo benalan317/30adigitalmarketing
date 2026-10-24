@@ -72,6 +72,8 @@ Luxury buyers send few inquiries, and each is worth a great deal. We look at the
 
 Interest in coastal homes often follows a visit. Buyers tend to search after a summer vacation or a spring break trip, and again when winter sets in at home. We publish and refresh area guides and market pages ahead of those windows, and keep listings pages current.
 
+<div class="callout callout-audit" markdown="1">
+
 ## What your free real estate audit covers
 
 Every strategy call includes an audit of how buyers find your firm or community. You'll see:
@@ -84,9 +86,17 @@ Every strategy call includes an audit of how buyers find your firm or community.
 
 You keep the findings whether or not we work together.
 
+</div>
+
+<div class="callout callout-fit" markdown="1">
+
 ## Is this the right fit?
 
 We're a good fit for coastal brokerages, teams and community developers who sell on expertise and want buyers to find them before they've picked an agent. We're not the right fit if you need a listing-syndication platform, a CRM, or paid lead generation. Our work is search, AI visibility and reputation.
+
+</div>
+
+<div class="faq" markdown="1">
 
 ## Common questions about luxury real estate marketing
 
@@ -101,3 +111,5 @@ We're a good fit for coastal brokerages, teams and community developers who sell
 **How long does it take?** Technical and profile fixes can help within weeks. Ranking for competitive area searches usually takes several months.
 
 **What does it cost?** Luxury real estate marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+
+</div>
