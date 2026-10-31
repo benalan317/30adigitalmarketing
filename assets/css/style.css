@@ -264,6 +264,49 @@ a.column:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
 .plans-teaser .btn-solid:hover { background: #fff; color: var(--ink); }
 .plans-teaser .small-link { font-size: 14px; font-weight: 300; }
 
+/* Free resources (homepage): three tools in path order, quiz, calculator, audit */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.free-tools { background: var(--sand); padding: 120px var(--gutter); scroll-margin-top: 0; }
+.free-tools-inner { max-width: 1240px; margin: 0 auto; }
+.free-tools-head { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; margin-bottom: 72px; }
+.free-tools-head h2 {
+  margin: 0; max-width: 780px; font-family: var(--display); font-weight: var(--display-weight);
+  font-size: clamp(32px, 3.6vw, 48px); line-height: 1.22;
+}
+.free-tools-head p { margin: 0; max-width: 520px; font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+/* three bars that narrow toward the top, like the boardwalk in the logo */
+.steps-mark { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.steps-mark i { display: block; height: 3px; background: var(--ink); }
+.steps-mark i:nth-child(1) { width: 18px; }
+.steps-mark i:nth-child(2) { width: 36px; }
+.steps-mark i:nth-child(3) { width: 56px; }
+.free-tools-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 48px; }
+.free-tool {
+  height: 100%; padding-top: 32px; border-top: 1px solid var(--ink);
+  display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; text-decoration: none;
+}
+.free-tool .num { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; }
+.free-tool h3 { margin: 0; font-family: var(--display); font-weight: var(--display-weight); font-size: 30px; line-height: 1.15; }
+.free-tool p { margin: 0; max-width: 340px; font-size: 15px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.free-tool-time { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; color: var(--muted); }
+.free-tool-link {
+  margin-top: auto; display: inline-flex; align-items: center; min-height: 44px;
+  font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase;
+  text-decoration: underline; text-underline-offset: 6px;
+}
+.free-tool:hover h3 { text-decoration: underline; text-underline-offset: 6px; }
+@media (min-width: 900px) {
+  .free-tools-list { grid-template-columns: repeat(3, 1fr); gap: 56px; }
+}
+@media (max-width: 560px) {
+  .free-tools { padding: 80px var(--gutter); }
+  .free-tools-head { margin-bottom: 48px; }
+}
+.free-tools + .industries-strip { padding-top: 120px; }
+@media (max-width: 560px) { .free-tools + .industries-strip { padding-top: 80px; } }
+.cta-band .cta-note { font-size: 14px; max-width: 420px; }
+
 /* ---------- Inner pages ---------- */
 .page-hero {
   max-width: 900px; margin: 0 auto; padding: 120px var(--gutter) 64px;
