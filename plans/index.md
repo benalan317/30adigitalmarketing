@@ -50,7 +50,7 @@ A monthly plan is a level of effort applied to your brand and spread across the 
 
 ## How to choose your level
 
-How much fuel do you want to pour on the fire? Even our basic service produces results, but at higher engagement levels, our services synergize across platforms to create brand visibility that is hard for other companies to compete against. Read how we [scope each package](/approach/), or see how many new customers each level needs to pay for itself with the [ROI calculator](/roi-calculator/).
+How much fuel do you want to pour on the fire? Even our basic service produces results, but at higher engagement levels, our services synergize across platforms to create brand visibility that is hard for other companies to compete against. Read how we [scope each package](/approach/), or see how many new customers each level needs to pay for itself with the [ROI calculator](/roi-calculator/). Not sure where you fit? The [fit quiz](/fit-quiz/) suggests a plan in about three minutes.
 
 What usually decides the right level:
 

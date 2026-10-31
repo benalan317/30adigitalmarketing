@@ -20,7 +20,7 @@ Related keywords: DIY SEO audit, how to do an SEO audit, SEO audit checklist, fr
 Purpose: A do-it-yourself audit workflow that defends the owner's time. The visitor runs three free tools (no signup), saves the reports,
 pastes our prompt into ChatGPT or Claude with the reports attached, and gets a designed HTML/PDF report. Then they email it to us
 (we review it before the call, so the call starts at the solution) or bring it to a strategy call. We discuss reports on calls, never by email.
-Also points to Compass (DIY SEO using the report), Lantern (entry-level monthly plan, $4,000) and the fit quiz (/fit-quiz/, placeholder until built).
+Also points to Compass (DIY SEO using the report), Lantern (entry-level monthly plan, $4,000) and the fit quiz (/fit-quiz/).
 Tools checked Oct 31, 2026: Semrush SEO Checker (free, no signup, daily limit), Google PageSpeed Insights (free, no account),
 Ahrefs AI Visibility Checker (free, no signup, top-5 preview). Optional: Semrush AI Visibility Checker (3 free uses a day, no registration).
 Recheck the tool links and their no-signup status every quarter.

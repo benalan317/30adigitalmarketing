@@ -33,4 +33,4 @@ Our digital marketing services cover the whole path from being found to being ch
 
 Our services are the disciplines. Our [plans](/plans/) are how you buy them. A monthly plan is a level of effort applied to your business and spread across the services that will do the most for you. Every plan includes work across SEO, AI search visibility, digital authority and content, weighted to your market and goals. Brand strategy is quoted as a separate project, and AI systems are scoped to your business. Your free strategy call shows which services deserve the most attention.
 
-Some work is bought on its own instead of monthly. The [Website Buildout](/plans/website-buildout/) is a one-time project for a new site or a redesign, and [Compass](/plans/diy-seo/) is a do-it-yourself SEO workflow that we build for you.
+Some work is bought on its own instead of monthly. The [Website Buildout](/plans/website-buildout/) is a one-time project for a new site or a redesign, and [Compass](/plans/diy-seo/) is a do-it-yourself SEO workflow that we build for you. To see which services and plan your answers point to, take the [fit quiz](/fit-quiz/).

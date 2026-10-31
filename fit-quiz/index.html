@@ -1,0 +1,336 @@
+---
+layout: page
+rich: true
+title: "Fit Quiz"
+seo_title: "Marketing Plan Quiz: Find Your Best Fit | 30A Digital Marketing"
+description: "Take our free marketing plan quiz: 12 quick questions about your business show which of our plans and services fit you best, with prices and next steps."
+eyebrow: "Fit Quiz"
+h1: "Marketing plan quiz: find your best fit"
+lede: "Twelve quick questions about your business. You'll see the plan that fits best, a second option, and every service worth your attention."
+body_class: "page-quiz"
+related:
+  - /services/
+  - /industries/
+  - /approach/
+---
+{% comment %}
+PAGE BRIEF
+Primary keyword: marketing plan quiz
+Related keywords: which marketing services do I need, marketing agency fit, SEO plan, SEO package, DIY SEO, website redesign, AI search visibility
+Purpose: An interactive fit quiz (12 steps) that recommends a best-fit offer (Lantern, Beacon, Lighthouse, Website Buildout or Compass),
+a runner-up, and every service that fits, then points to the strategy call. Also links the ROI calculator (opened on the visitor's
+industry), the free audit, their industry page and their market pages.
+How it works: every question and answer is plain HTML below, so search engines and AI tools can read the page without running
+any script. The script in assets/js/site.js ("Fit quiz") turns the form into one question per screen, scores the answers and builds the
+result. The scoring rules are in that script, in the part marked "Scoring". If prices change, update OFFERS there too.
+Saving answers: when site.fit_quiz_endpoint is set in _config.yml, finished quizzes are saved anonymously to a Google Sheet, and
+visitors can choose to have their result emailed. The Google Apps Script that receives them is in _fit-quiz-sheet/ (not published).
+While the endpoint is empty, nothing leaves the visitor's browser and the email box is hidden.
+Built Oct 31, 2026.
+{% endcomment %}
+
+<p>This marketing plan quiz matches your business to the 30A Digital Marketing plan and services that fit it best. Answer 12 quick questions about your industry, markets, size, goals, website, current marketing and budget. In about three minutes you'll see a best-fit plan, a runner-up and every service worth your attention, with prices and links to learn more.</p>
+
+<div class="audit-glance">
+  <div class="audit-glance-item"><span class="audit-glance-num">12</span><span class="audit-glance-label">quick questions</span></div>
+  <div class="audit-glance-item"><span class="audit-glance-num">~3</span><span class="audit-glance-label">minutes, start to finish</span></div>
+  <div class="audit-glance-item"><span class="audit-glance-num">0</span><span class="audit-glance-label">signups needed</span></div>
+</div>
+
+{%- comment -%} An empty string counts as "on" in Liquid, so test the trimmed value. {%- endcomment -%}
+{%- assign quiz_saving = site.fit_quiz_endpoint | default: "" | strip -%}
+<h2 id="quiz">Take the marketing plan quiz</h2>
+
+<form class="quiz" id="fit-quiz" data-endpoint="{{ quiz_saving }}" action="#quiz-result" novalidate>
+
+  <div class="quiz-intro" data-quiz-intro>
+    <p class="quiz-intro-text">Pick the answer closest to your business. There are no wrong answers, and you can go back at any time.</p>
+    <div class="quiz-intro-actions" data-quiz-start-wrap hidden>
+      <button class="btn-solid quiz-start" type="button" data-quiz-start>Start the quiz</button>
+      <button class="link-caps quiz-resume" type="button" data-quiz-resume hidden>See my last result</button>
+    </div>
+    <noscript><p class="quiz-noscript">The quiz needs JavaScript to show your result. You can still read every question below, and what each plan is best for further down the page.</p></noscript>
+  </div>
+
+  <div class="quiz-progress" data-quiz-progress hidden>
+    <button class="quiz-back" type="button" data-quiz-back>Back</button>
+    <div class="quiz-horizon" aria-hidden="true"><span class="quiz-horizon-fill" data-quiz-fill></span><span class="quiz-sun" data-quiz-sun></span></div>
+    <span class="quiz-count" data-quiz-count aria-live="polite">Question 1 of 12</span>
+  </div>
+
+  <fieldset class="quiz-step" data-step="industry" data-kind="single">
+    <legend><span class="quiz-kicker">Question 1 of 12</span><span class="quiz-q">What kind of business do you run?</span></legend>
+    <p class="quiz-why">Customers search differently in every industry, so this shapes which services matter most.</p>
+    <div class="quiz-options quiz-options-wide">
+      <label class="quiz-option"><input type="radio" name="industry" value="vacation-rentals"><span>Vacation rentals and property management</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="luxury-real-estate"><span>Luxury real estate or a community developer</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="hotels-resorts"><span>Boutique hotel, inn or resort</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="wedding-venues"><span>Wedding or event venue, or planner</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="golf-courses"><span>Golf course or club</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="family-entertainment"><span>Family entertainment or attraction</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="lifestyle-brands"><span>Lifestyle brand, retail, charters or outfitter</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="wellness-aesthetics"><span>Health, wellness or aesthetics practice</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="professional-services"><span>Professional services, such as law or wealth management</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="home-services"><span>Home services, contractor or custom builder</span></label>
+      <label class="quiz-option"><input type="radio" name="industry" value="other"><span>Something else</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="markets" data-kind="multi">
+    <legend><span class="quiz-kicker">Question 2 of 12</span><span class="quiz-q">Where are your customers, or where do you want more of them?</span></legend>
+    <p class="quiz-why">Choose all that apply. Each stretch of the coast has its own searches and seasons, and more markets usually mean more pages to build.</p>
+    <div class="quiz-options quiz-options-wide">
+      <label class="quiz-option"><input type="checkbox" name="markets" value="30a-south-walton"><span>30A and South Walton</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="destin-miramar-beach"><span>Destin and Miramar Beach</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="panama-city-beach"><span>Panama City Beach</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="pensacola-perdido-key"><span>Pensacola and Perdido Key</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="gulf-shores-orange-beach"><span>Gulf Shores and Orange Beach</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="fort-walton-beach-navarre"><span>Fort Walton Beach and Navarre</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="forgotten-coast"><span>The Forgotten Coast</span></label>
+      <label class="quiz-option"><input type="checkbox" name="markets" value="national"><span>Mostly outside the Gulf Coast, nationally or online</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="size" data-kind="pair">
+    <legend><span class="quiz-kicker">Question 3 of 12</span><span class="quiz-q">How big is your business?</span></legend>
+    <p class="quiz-why">Size tells us how much work your team can take on and what level of effort makes sense.</p>
+    <div class="quiz-pair">
+      <fieldset class="quiz-sub">
+        <legend class="quiz-sub-label">Annual revenue</legend>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="revenue" value="u250k"><span>Under $250,000</span></label>
+          <label class="quiz-option"><input type="radio" name="revenue" value="250k-1m"><span>$250,000 to $1 million</span></label>
+          <label class="quiz-option"><input type="radio" name="revenue" value="1m-3m"><span>$1 million to $3 million</span></label>
+          <label class="quiz-option"><input type="radio" name="revenue" value="3m-10m"><span>$3 million to $10 million</span></label>
+          <label class="quiz-option"><input type="radio" name="revenue" value="10m-plus"><span>More than $10 million</span></label>
+          <label class="quiz-option"><input type="radio" name="revenue" value="private"><span>I'd rather not say</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="quiz-sub">
+        <legend class="quiz-sub-label">People on your team, including you</legend>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="team" value="1"><span>Just me</span></label>
+          <label class="quiz-option"><input type="radio" name="team" value="2-10"><span>2 to 10</span></label>
+          <label class="quiz-option"><input type="radio" name="team" value="11-50"><span>11 to 50</span></label>
+          <label class="quiz-option"><input type="radio" name="team" value="51-200"><span>51 to 200</span></label>
+          <label class="quiz-option"><input type="radio" name="team" value="200-plus"><span>More than 200</span></label>
+        </div>
+      </fieldset>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="goals" data-kind="multi" data-max="3">
+    <legend><span class="quiz-kicker">Question 4 of 12</span><span class="quiz-q">What do you most want from marketing in the next 12 months?</span></legend>
+    <p class="quiz-why">Pick up to three. Your goals decide which services we'd put first.</p>
+    <div class="quiz-options quiz-options-wide">
+      <label class="quiz-option"><input type="checkbox" name="goals" value="leads"><span>More calls, quote requests and inquiries</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="bookings"><span>More direct bookings and fewer platform fees</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="sales"><span>More online sales</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="google"><span>Rank higher on Google</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="ai"><span>Show up in AI answers, like ChatGPT and Google's AI Overviews</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="reputation"><span>More reviews and a stronger reputation</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="website"><span>A new or better website</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="brand"><span>A clearer brand and message</span></label>
+      <label class="quiz-option"><input type="checkbox" name="goals" value="ai-ops"><span>Use AI to work smarter inside the business</span></label>
+    </div>
+    <p class="quiz-limit" data-quiz-limit aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="website" data-kind="single">
+    <legend><span class="quiz-kicker">Question 5 of 12</span><span class="quiz-q">Do you already have a website?</span></legend>
+    <p class="quiz-why">Your website is where search, ads and AI answers send people. If it isn't ready, that comes first.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="website" value="none"><span>No, not yet</span></label>
+      <label class="quiz-option"><input type="radio" name="website" value="outdated"><span>Yes, but it's outdated or hard to update</span></label>
+      <label class="quiz-option"><input type="radio" name="website" value="underperforming"><span>Yes, it looks fine but doesn't bring in much business</span></label>
+      <label class="quiz-option"><input type="radio" name="website" value="strong"><span>Yes, and it brings in a good share of our business</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="buy" data-kind="single">
+    <legend><span class="quiz-kicker">Question 6 of 12</span><span class="quiz-q">How do most customers buy from you?</span></legend>
+    <p class="quiz-why">The path from first search to a sale shapes what your site and content need to do.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="buy" value="quote"><span>They call, fill in a form or ask for a quote</span></label>
+      <label class="quiz-option"><input type="radio" name="buy" value="book"><span>They book or reserve online</span></label>
+      <label class="quiz-option"><input type="radio" name="buy" value="shop"><span>They buy from our online store</span></label>
+      <label class="quiz-option"><input type="radio" name="buy" value="visit"><span>They walk in or visit in person</span></label>
+      <label class="quiz-option"><input type="radio" name="buy" value="mix"><span>A mix of these</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="marketing" data-kind="multi">
+    <legend><span class="quiz-kicker">Question 7 of 12</span><span class="quiz-q">Who handles your marketing today?</span></legend>
+    <p class="quiz-why">Choose all that apply. This tells us whether you need people to do the work, a plan for the people you have, or both.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="checkbox" name="marketing" value="owner"><span>I do it myself</span></label>
+      <label class="quiz-option"><input type="checkbox" name="marketing" value="in-house"><span>A marketing person on our team</span></label>
+      <label class="quiz-option"><input type="checkbox" name="marketing" value="team"><span>A marketing team</span></label>
+      <label class="quiz-option"><input type="checkbox" name="marketing" value="agency"><span>An agency or freelancer</span></label>
+      <label class="quiz-option"><input type="checkbox" name="marketing" value="nobody" data-exclusive><span>Nobody, really</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="channels" data-kind="pair">
+    <legend><span class="quiz-kicker">Question 8 of 12</span><span class="quiz-q">How do you use social media and paid ads?</span></legend>
+    <p class="quiz-why">This shows where customers already meet you, and how much you rely on paid traffic rather than being found on your own.</p>
+    <div class="quiz-pair">
+      <fieldset class="quiz-sub">
+        <legend class="quiz-sub-label">Social media</legend>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="social" value="none"><span>We're not really on social media</span></label>
+          <label class="quiz-option"><input type="radio" name="social" value="occasional"><span>We post now and then</span></label>
+          <label class="quiz-option"><input type="radio" name="social" value="regular"><span>We post regularly</span></label>
+          <label class="quiz-option"><input type="radio" name="social" value="engaged"><span>We post regularly and have an engaged audience</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="quiz-sub">
+        <legend class="quiz-sub-label">Paid ads (Google, Meta and others)</legend>
+        <div class="quiz-options">
+          <label class="quiz-option"><input type="radio" name="ads" value="none"><span>No paid ads</span></label>
+          <label class="quiz-option"><input type="radio" name="ads" value="stopped"><span>We tried them and stopped</span></label>
+          <label class="quiz-option"><input type="radio" name="ads" value="small"><span>Small or occasional campaigns</span></label>
+          <label class="quiz-option"><input type="radio" name="ads" value="ongoing"><span>Ongoing campaigns with a real budget</span></label>
+        </div>
+      </fieldset>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="competition" data-kind="single">
+    <legend><span class="quiz-kicker">Question 9 of 12</span><span class="quiz-q">How crowded is your market online?</span></legend>
+    <p class="quiz-why">Crowded markets take more content, more authority and more time to win.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="competition" value="low"><span>Not very. Few competitors show up when people search</span></label>
+      <label class="quiz-option"><input type="radio" name="competition" value="medium"><span>Several competitors, and we're in the mix</span></label>
+      <label class="quiz-option"><input type="radio" name="competition" value="high"><span>Very crowded, with big brands, chains or platforms ahead of us</span></label>
+      <label class="quiz-option"><input type="radio" name="competition" value="unsure"><span>Not sure</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="involve" data-kind="single">
+    <legend><span class="quiz-kicker">Question 10 of 12</span><span class="quiz-q">How involved do you want to be?</span></legend>
+    <p class="quiz-why">Some owners like to run their own SEO; others want it done for them. Both are fine.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="involve" value="diy"><span>I'd like to do it myself, with the right setup and guidance</span></label>
+      <label class="quiz-option"><input type="radio" name="involve" value="together"><span>I want an expert to lead, and my team will help</span></label>
+      <label class="quiz-option"><input type="radio" name="involve" value="handoff"><span>I'd like to hand it off and get regular reports</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="budget" data-kind="single">
+    <legend><span class="quiz-kicker">Question 11 of 12</span><span class="quiz-q">What could you invest in marketing help each month?</span></legend>
+    <p class="quiz-why">Not counting ad spend. Our prices are public, so this helps us point you to something that fits rather than something you'd have to stretch for.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="budget" value="u1k"><span>Under $1,000</span></label>
+      <label class="quiz-option"><input type="radio" name="budget" value="1k-4k"><span>$1,000 to $4,000</span></label>
+      <label class="quiz-option"><input type="radio" name="budget" value="4k-7k"><span>$4,000 to $7,000</span></label>
+      <label class="quiz-option"><input type="radio" name="budget" value="7k-10k"><span>$7,000 to $10,000</span></label>
+      <label class="quiz-option"><input type="radio" name="budget" value="10k-plus"><span>More than $10,000</span></label>
+      <label class="quiz-option"><input type="radio" name="budget" value="unsure"><span>Not sure yet</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="quiz-step" data-step="timing" data-kind="single">
+    <legend><span class="quiz-kicker">Question 12 of 12</span><span class="quiz-q">When would you like to start?</span></legend>
+    <p class="quiz-why">Search strategies usually take six months or more to mature, so it helps to plan around your busy season.</p>
+    <div class="quiz-options">
+      <label class="quiz-option"><input type="radio" name="timing" value="now"><span>As soon as possible</span></label>
+      <label class="quiz-option"><input type="radio" name="timing" value="1-3m"><span>In the next 1 to 3 months</span></label>
+      <label class="quiz-option"><input type="radio" name="timing" value="3-6m"><span>In 3 to 6 months</span></label>
+      <label class="quiz-option"><input type="radio" name="timing" value="research"><span>Just researching for now</span></label>
+    </div>
+  </fieldset>
+
+  <div class="quiz-nav" data-quiz-nav hidden>
+    <button class="btn-solid quiz-next" type="button" data-quiz-next>Next</button>
+    <span class="quiz-hint" data-quiz-hint aria-live="polite"></span>
+  </div>
+
+  <p class="quiz-privacy">{% if quiz_saving != "" %}No names or emails are needed. When you finish, your answers are saved anonymously so we can learn what businesses like yours need. <a href="#your-answers">What we keep</a>.{% else %}No names or emails needed. Your answers stay in your browser.{% endif %}</p>
+</form>
+
+<div class="quiz-result" id="quiz-result" data-quiz-result hidden></div>
+
+<h2 id="plans-best-for">What each plan is best for</h2>
+
+<p>We offer five ways to work with us. They're independent: none is a required first step, and some clients combine them, for example a Website Buildout followed by a monthly plan. Monthly plans have no binding contract. Here is who each one suits.</p>
+
+<div class="fit-guide">
+  <section class="fit-guide-item" aria-labelledby="fit-compass">
+    <img src="/images/plans/30a-plan-compass-square-320.webp" width="320" height="320" loading="lazy" alt="Gouache illustration of a brass navigation compass resting on a coastal map beside the Gulf.">
+    <div>
+      <span class="fit-guide-price">$5,000 setup, then $500 a month</span>
+      <h3 id="fit-compass">Compass, our DIY SEO workflow</h3>
+      <p><strong>Best for:</strong> small businesses with a website and a little time each week, who want to run their own SEO content. We build an AI content workflow trained on your brand and teach you to use it.</p>
+      <p><strong>Not for:</strong> technical fixes, link building or a new website. Compass covers content creation.</p>
+      <a class="link-caps" href="/plans/diy-seo/">How Compass works</a>
+    </div>
+  </section>
+  <section class="fit-guide-item" aria-labelledby="fit-lantern">
+    <img src="/images/plans/30a-plan-lantern-square-320.webp" width="320" height="320" loading="lazy" alt="Gouache illustration of a glowing lantern on a coastal porch at sunset.">
+    <div>
+      <span class="fit-guide-price">$4,000 a month</span>
+      <h3 id="fit-lantern">Lantern, our entry-level monthly plan</h3>
+      <p><strong>Best for:</strong> newer or smaller businesses that want experts to get the foundations right: a site search engines and AI understand, accurate listings, and the first searches worth winning.</p>
+      <a class="link-caps" href="/plans/">Compare the monthly plans</a>
+    </div>
+  </section>
+  <section class="fit-guide-item" aria-labelledby="fit-beacon">
+    <img src="/images/plans/30a-plan-beacon-square-320.webp" width="320" height="320" loading="lazy" alt="Gouache illustration of a nautical beacon on a white boat at sunset.">
+    <div>
+      <span class="fit-guide-price">$7,000 a month</span>
+      <h3 id="fit-beacon">Beacon</h3>
+      <p><strong>Best for:</strong> established businesses ready to compete in a busier market: more content, some off-site authority building, and visibility in AI answers as well as search results.</p>
+    </div>
+  </section>
+  <section class="fit-guide-item" aria-labelledby="fit-lighthouse">
+    <img src="/images/plans/30a-plan-lighthouse-square-320.webp" width="320" height="320" loading="lazy" alt="Gouache illustration of a tall white lighthouse shining above coastal dunes at sunset.">
+    <div>
+      <span class="fit-guide-price">$10,000 a month</span>
+      <h3 id="fit-lighthouse">Lighthouse</h3>
+      <p><strong>Best for:</strong> businesses that want to lead a crowded market or several markets at once: the full program across search, AI visibility, digital PR and reputation, at a faster pace and with more strategy time.</p>
+    </div>
+  </section>
+  <section class="fit-guide-item" aria-labelledby="fit-buildout">
+    <img src="/images/plans/30a-plan-website-buildout-square-320.webp" width="320" height="320" loading="lazy" alt="Gouache illustration of architectural blueprints and drafting tools beside a coastal home under construction.">
+    <div>
+      <span class="fit-guide-price">$10,000 one time</span>
+      <h3 id="fit-buildout">Website Buildout</h3>
+      <p><strong>Best for:</strong> service businesses that win customers through calls, quotes and forms, and need a new site or a redesign: 10 optimized pages, a clear path from visitor to inquiry, and business accounts set up properly.</p>
+      <a class="link-caps" href="/plans/website-buildout/">What the buildout includes</a>
+    </div>
+  </section>
+</div>
+
+<h2 id="how-it-decides">How the quiz decides</h2>
+
+<p>The quiz weighs your answers the way we would on a first call. It's a starting point, not a quote: every monthly plan is scoped to your business after a full audit.</p>
+
+<ul>
+  <li><strong>Budget and size set the level.</strong> What you could invest each month, your revenue and your team size point to Lantern, Beacon or Lighthouse.</li>
+  <li><strong>Your website decides the buildout.</strong> No site, or one that's outdated, and customers who call or ask for quotes, point to the Website Buildout.</li>
+  <li><strong>How involved you want to be decides Compass.</strong> If you'd like to run your own SEO and have a website, Compass is often the better fit than a monthly plan.</li>
+  <li><strong>Competition and markets raise the level.</strong> A crowded market, or several towns at once, takes more content and authority work.</li>
+  <li><strong>Your goals pick the services.</strong> Ranking on Google, appearing in AI answers, reviews, brand and using AI inside the business each point to a different service.</li>
+</ul>
+
+<h2 id="your-answers">What happens to your answers</h2>
+
+{% if quiz_saving != "" %}
+<p>The quiz doesn't ask for your name, and you don't need an email address to see your result. When you finish, we save your answers anonymously, together with your result, the page you first arrived on, the site that sent you and the type of device you used. We use this to understand which businesses find us and what they need. It isn't linked to your name or your email, and we don't sell it.</p>
+<p>If you choose to have your result emailed, we keep your email address with your result so we can send it, and we follow up only if you tick the box that says we may. Read our <a href="/privacy/">privacy policy</a>.</p>
+{% else %}
+<p>The quiz doesn't ask for your name or email address. Your answers stay in your browser, so you can come back to your result later on the same device. Read our <a href="/privacy/">privacy policy</a>.</p>
+{% endif %}
+
+<div class="faq">
+  <h2 id="faq">Common questions about the marketing plan quiz</h2>
+  <p><strong>Is the marketing plan quiz free?</strong> Yes. There's no signup, and you see your result straight away. Emailing it to yourself is optional.</p>
+  <p><strong>How long does it take?</strong> About three minutes. There are 12 questions, and you can go back and change any answer.</p>
+  <p><strong>How accurate is my result?</strong> It's a well-informed starting point, based on how each plan is built and who it usually suits. Your real plan comes from a full audit of your site, your market and your competitors. To test the numbers yourself, the <a href="/roi-calculator/">ROI calculator</a> shows how many new customers each plan needs to pay for itself.</p>
+  <p><strong>Can I combine plans?</strong> Yes. The monthly plans, the Website Buildout and Compass are independent. Some clients start with a new site and add a monthly plan later, and Compass customers who move to a monthly plan skip the research and setup phase.</p>
+  <p><strong>What if my budget is under $4,000 a month?</strong> Compass costs $5,000 to set up and $500 a month, and the <a href="/free-audit/">free SEO audit</a> costs nothing. Both are good places to start.</p>
+  <p><strong>My business isn't listed. Can I still take the quiz?</strong> Yes. Choose "Something else". We work best with businesses whose customers find them online. We focus on the Gulf Coast, and national brands based elsewhere are welcome.</p>
+  <p><strong>Do you guarantee results?</strong> No. Nobody can promise rankings or AI mentions. Search strategies usually take six months or more to mature, so plan on a long view.</p>
+  <p><strong>What should I do after the quiz?</strong> Book a free strategy call. It takes 30 minutes and includes an audit of how your business shows up in search today. Bring your quiz result, and we'll start from there.</p>
+</div>
