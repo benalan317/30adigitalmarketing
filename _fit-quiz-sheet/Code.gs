@@ -195,14 +195,25 @@ function sendResult_(to, best, runner, runnerMode, services) {
 
 // ---------- Email check: run this from the editor (Run > checkEmail) if results are not arriving ----------
 // 1. Type your own personal email address into TEST_RECIPIENT at the top of this file and save.
-// 2. Pick checkEmail in the function menu and click Run, then open View > Logs (or "Execution log").
-// The log shows which Google account sends the mail and how many emails you can still send today.
+// 2. Pick checkEmail in the function menu and click Run, then open the Execution log.
+// It sends four differently built test emails ([A] to [D]) so we can see which kind gets through.
 function checkEmail() {
   Logger.log('Sending account: ' + Session.getEffectiveUser().getEmail());
   Logger.log('Emails left today: ' + MailApp.getRemainingDailyQuota());
   if (!TEST_RECIPIENT) { Logger.log('Now type your personal email into TEST_RECIPIENT at the top, save, and run checkEmail again.'); return; }
-  sendResult_(TEST_RECIPIENT, OFFERS.beacon, OFFERS.lantern, 'alt', ['seo', 'ai-search-visibility']);
-  Logger.log('Test email sent to ' + TEST_RECIPIENT + '. Check the inbox and spam folder.');
+  var to = TEST_RECIPIENT;
+  var plain = 'Hello. This is a plain test message from the 30A fit quiz setup (version A). If you can read this, plain messages arrive.';
+  MailApp.sendEmail({ to: to, subject: '[A] 30A test: plain text only', body: plain, name: SENDER_NAME });
+  MailApp.sendEmail({ to: to, subject: '[B] 30A test: plain text with link', body: plain + '\n\n' + SITE + '/strategy-call/', name: SENDER_NAME });
+  sendResult_(to, OFFERS.beacon, OFFERS.lantern, 'alt', ['seo', 'ai-search-visibility']);   // the real email, sent with MailApp
+  Logger.log('Sent A, B and the real email (subject "Your fit quiz result: Beacon") with MailApp.');
+  try {
+    GmailApp.sendEmail(to, '[D] 30A test: sent with Gmail', plain + '\n\n' + SITE + '/strategy-call/', { name: SENDER_NAME, htmlBody: '<p>' + plain + '</p><p><a href="' + SITE + '/strategy-call/">Strategy call</a></p>' });
+    Logger.log('Sent D with GmailApp.');
+  } catch (err) {
+    Logger.log('D (GmailApp) could not send: ' + err);
+  }
+  Logger.log('Now check ' + to + ' (inbox, Promotions, Spam). Note which of A, B, real email and D arrived.');
 }
 
 // ---------- Helpers ----------
