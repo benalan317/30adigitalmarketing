@@ -1,0 +1,38 @@
+{%- comment -%}
+  Breadcrumb trail for inner pages: Home › Section › This page.
+  Builds itself from the page address, so new pages need nothing extra.
+  Optional front matter `crumb:` sets a shorter label than the page title.
+  Also prints BreadcrumbList structured data so Google can show the trail in results.
+{%- endcomment -%}
+{%- assign bc_segs = page.url | split: "/" -%}
+{%- assign bc_depth = bc_segs.size | minus: 1 -%}
+{%- assign bc_parent = nil -%}
+{%- if bc_depth >= 2 -%}
+  {%- assign bc_parent_url = "/" | append: bc_segs[1] | append: "/" -%}
+  {%- assign bc_parent = site.pages | where: "url", bc_parent_url | first -%}
+{%- endif -%}
+{%- assign bc_label = page.crumb | default: page.title -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    {%- if bc_parent %}
+    <li><a href="{{ bc_parent.url }}">{{ bc_parent.crumb | default: bc_parent.title | escape }}</a></li>
+    {%- endif %}
+    <li><span aria-current="page">{{ bc_label | escape }}</span></li>
+  </ol>
+</nav>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    {%- if bc_parent %}
+    { "@type": "ListItem", "position": 2, "name": {{ bc_parent.crumb | default: bc_parent.title | jsonify }}, "item": "{{ bc_parent.url | prepend: site.url }}" },
+    { "@type": "ListItem", "position": 3, "name": {{ bc_label | jsonify }}, "item": "{{ page.url | prepend: site.url }}" }
+    {%- else %}
+    { "@type": "ListItem", "position": 2, "name": {{ bc_label | jsonify }}, "item": "{{ page.url | prepend: site.url }}" }
+    {%- endif %}
+  ]
+}
+</script>

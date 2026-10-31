@@ -14,6 +14,7 @@ layout: default
          alt="{{ page.hero_alt | escape }}">
     <div class="page-hero-shade" aria-hidden="true"></div>
     <div class="page-hero-text">
+      {%- unless page.no_breadcrumbs %}{% include breadcrumbs.html %}{% endunless %}
       {%- if page.eyebrow %}
       <span class="eyebrow">{{ page.eyebrow }}</span>
       {%- endif %}
@@ -25,6 +26,7 @@ layout: default
   </header>
   {%- else %}
   <header class="page-hero">
+    {%- unless page.no_breadcrumbs %}{% include breadcrumbs.html %}{% endunless %}
     {%- if page.eyebrow %}
     <span class="eyebrow">{{ page.eyebrow }}</span>
     {%- endif %}
