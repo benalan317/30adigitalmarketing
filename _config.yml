@@ -17,7 +17,7 @@ google_site_verification: "KBaAAdaAzGmsn8_J8tLGFFQKIzGNaxU3mCLegUAXVl8"
 
 # Fit quiz (/fit-quiz/): the Google Apps Script web address that saves finished quizzes to a Google Sheet
 # and emails results to visitors who ask. Leave it empty ("") to save nothing. Setup steps: _fit-quiz-sheet/README.md
-fit_quiz_endpoint: ""
+fit_quiz_endpoint: "https://script.google.com/macros/s/AKfycbxvi-YL0HOCy2Fwimv36zR795ck_C5wWxOY30_lMUpBdXoP3DqBNcpFlLJf74Q0uWEn6g/exec"
 
 # Builds sitemap.xml automatically
 plugins:
