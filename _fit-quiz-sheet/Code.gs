@@ -20,6 +20,7 @@ var SITE = 'https://30adigitalmarketing.com';
 var SENDER_NAME = '30A Digital Marketing';
 var MAX_RESPONSES_PER_MINUTE = 60; // protects the sheet if someone floods the form
 var MAX_EMAILS_PER_HOUR = 30;      // protects your Gmail sending limit
+var TEST_RECIPIENT = '';           // for Run > checkEmail: type your own personal email address here, between the quotes
 
 // Keep these in step with OFFERS and SERVICES in assets/js/site.js ("Fit quiz").
 var OFFERS = {
@@ -118,20 +119,35 @@ function saveLead_(d) {
     key_(r.best), key_(r.runner), services.join(', '), key_(a.industry), keys_(a.markets), key_(a.budget)
   ]);
 
-  sendResult_(email, best, runner, key_(r.runner_mode), services);
-  cache.put(emailKey, '1', 600);
+  var sentOk = true, mailError = '';
+  try {
+    sendResult_(email, best, runner, key_(r.runner_mode), services);
+    cache.put(emailKey, '1', 120);
+  } catch (err) {
+    sentOk = false;
+    mailError = String(err && err.message || err);
+    console.error('Result email failed: ' + mailError);
+  }
 
-  MailApp.sendEmail(NOTIFY_EMAIL, 'Fit quiz: ' + email + ' (' + best.name + ')',
-    'Someone asked for their fit quiz result by email.\n\n' +
-    'Email: ' + email + '\n' +
-    'Website: ' + (website || '(not given)') + '\n' +
-    'OK to follow up: ' + (followup ? 'Yes' : 'No, only send the result') + '\n' +
-    'Best fit: ' + best.name + '\n' +
-    'Runner-up: ' + (runner ? runner.name : '') + '\n' +
-    'Services: ' + services.map(function (k) { return SERVICES[k].name; }).join(', ') + '\n' +
-    'Industry: ' + key_(a.industry) + '\n' +
-    'Budget: ' + key_(a.budget) + '\n\n' +
-    'Full answers are in the Responses tab, under Quiz ID ' + key_(d.sid) + '.');
+  // The note to you always goes out, and says whether the visitor's email worked and which account sent it.
+  try {
+    MailApp.sendEmail(NOTIFY_EMAIL, 'Fit quiz: ' + email + ' (' + best.name + ')' + (sentOk ? '' : ' - RESULT EMAIL FAILED'),
+      'Someone asked for their fit quiz result by email.\n\n' +
+      'Result email to the visitor: ' + (sentOk ? 'sent' : 'FAILED (' + mailError + ')') + '\n' +
+      'Sent from account: ' + Session.getEffectiveUser().getEmail() + '\n\n' +
+      'Email: ' + email + '\n' +
+      'Website: ' + (website || '(not given)') + '\n' +
+      'OK to follow up: ' + (followup ? 'Yes' : 'No, only send the result') + '\n' +
+      'Best fit: ' + best.name + '\n' +
+      'Runner-up: ' + (runner ? runner.name : '') + '\n' +
+      'Services: ' + services.map(function (k) { return SERVICES[k].name; }).join(', ') + '\n' +
+      'Industry: ' + key_(a.industry) + '\n' +
+      'Budget: ' + key_(a.budget) + '\n\n' +
+      'Full answers are in the Responses tab, under Quiz ID ' + key_(d.sid) + '.');
+  } catch (err) {
+    console.error('Note to owner failed: ' + err);
+  }
+  if (!sentOk) return { ok: false, error: 'mail' };
   return { ok: true };
 }
 
@@ -175,6 +191,18 @@ function sendResult_(to, best, runner, runnerMode, services) {
     name: SENDER_NAME,
     replyTo: NOTIFY_EMAIL
   });
+}
+
+// ---------- Email check: run this from the editor (Run > checkEmail) if results are not arriving ----------
+// 1. Type your own personal email address into TEST_RECIPIENT at the top of this file and save.
+// 2. Pick checkEmail in the function menu and click Run, then open View > Logs (or "Execution log").
+// The log shows which Google account sends the mail and how many emails you can still send today.
+function checkEmail() {
+  Logger.log('Sending account: ' + Session.getEffectiveUser().getEmail());
+  Logger.log('Emails left today: ' + MailApp.getRemainingDailyQuota());
+  if (!TEST_RECIPIENT) { Logger.log('Now type your personal email into TEST_RECIPIENT at the top, save, and run checkEmail again.'); return; }
+  sendResult_(TEST_RECIPIENT, OFFERS.beacon, OFFERS.lantern, 'alt', ['seo', 'ai-search-visibility']);
+  Logger.log('Test email sent to ' + TEST_RECIPIENT + '. Check the inbox and spam folder.');
 }
 
 // ---------- Helpers ----------

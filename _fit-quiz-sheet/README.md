@@ -28,3 +28,10 @@ Edit `Code.gs` in the Apps Script editor, save, then Deploy, Manage deployments,
 - Emails go out from the Google account that deployed the script, with replies going to hello@. Google limits how many emails a script can send each day; the script stops sending well before that.
 - The script limits how fast rows can be added and how many emails go out each hour, so a flood of fake submissions can't fill the sheet or use up your email limit.
 - Answers are stored as short codes (for example `4k-7k` for a $4,000 to $7,000 budget). The question each code belongs to is in the column header, and the matching words are in `fit-quiz/index.html`.
+
+## If result emails don't arrive
+
+1. Check the note that comes to hello@. Its first lines say whether the visitor's email was **sent** or **FAILED**, and which Google account sent it.
+2. In the Apps Script editor, type your own personal email address into `TEST_RECIPIENT` near the top of `Code.gs`, save, pick `checkEmail` in the function menu and click Run. Open the execution log: it shows the sending account and how many emails are left today. Check that inbox and its spam folder.
+3. Most common cause: the message lands in spam, or the sending account is not a regular Gmail or Google Workspace mailbox. Mark the test email "Not spam" and add a reply once; for a lasting fix, deploy the script from a Google Workspace mailbox on 30adigitalmarketing.com.
+4. After editing the code, deploy a **New version** (see "Changing the code later").
