@@ -131,7 +131,7 @@ function saveLead_(d) {
 
   // The note to you always goes out, and says whether the visitor's email worked and which account sent it.
   try {
-    MailApp.sendEmail(NOTIFY_EMAIL, 'Fit quiz: ' + email + ' (' + best.name + ')' + (sentOk ? '' : ' - RESULT EMAIL FAILED'),
+    GmailApp.sendEmail(NOTIFY_EMAIL, 'Fit quiz: ' + email + ' (' + best.name + ')' + (sentOk ? '' : ' - RESULT EMAIL FAILED'),
       'Someone asked for their fit quiz result by email.\n\n' +
       'Result email to the visitor: ' + (sentOk ? 'sent' : 'FAILED (' + mailError + ')') + '\n' +
       'Sent from account: ' + Session.getEffectiveUser().getEmail() + '\n\n' +
@@ -183,10 +183,8 @@ function sendResult_(to, best, runner, runnerMode, services) {
       '<p style="margin:0;font-size:13px;color:#44565A">30A Digital Marketing &middot; <a href="' + SITE + '" style="color:#44565A">30adigitalmarketing.com</a></p>' +
     '</div>';
 
-  MailApp.sendEmail({
-    to: to,
-    subject: 'Your fit quiz result: ' + best.name,
-    body: body,
+  // GmailApp (not MailApp): in testing, Gmail delivered these and silently dropped MailApp messages.
+  GmailApp.sendEmail(to, 'Your fit quiz result: ' + best.name, body, {
     htmlBody: html,
     name: SENDER_NAME,
     replyTo: NOTIFY_EMAIL

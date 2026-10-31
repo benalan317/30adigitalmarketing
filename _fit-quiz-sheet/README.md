@@ -33,5 +33,6 @@ Edit `Code.gs` in the Apps Script editor, save, then Deploy, Manage deployments,
 
 1. Check the note that comes to hello@. Its first lines say whether the visitor's email was **sent** or **FAILED**, and which Google account sent it.
 2. In the Apps Script editor, type your own personal email address into `TEST_RECIPIENT` near the top of `Code.gs`, save, pick `checkEmail` in the function menu and click Run. Open the execution log: it shows the sending account and how many emails are left today. Check that inbox and its spam folder.
-3. Most common cause: the message lands in spam, or the sending account is not a regular Gmail or Google Workspace mailbox. Mark the test email "Not spam" and add a reply once; for a lasting fix, deploy the script from a Google Workspace mailbox on 30adigitalmarketing.com.
-4. After editing the code, deploy a **New version** (see "Changing the code later").
+3. Lesson from setup: messages sent with `MailApp` were silently dropped by Gmail, while `GmailApp` messages arrived, so the script now uses `GmailApp`. `checkEmail` sends both kinds so you can compare.
+4. Other possible causes: the message lands in spam, or the sending account is not a regular Gmail or Google Workspace mailbox. Mark the test email "Not spam" and add a reply once; for a lasting fix, deploy the script from a Google Workspace mailbox on 30adigitalmarketing.com.
+5. After editing the code, deploy a **New version** (see "Changing the code later").
