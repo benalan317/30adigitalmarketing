@@ -6,12 +6,11 @@
   followed by Industries and Resources (Free SEO Audit, ROI Calculator, Fit Quiz; highlighted with an accent underline and a "Free" tag).
   Insights, About and the "Book a Strategy Call" button sit on the right.
 
-  The Services list builds itself from each service page's front matter (group: services; flagship: true for the first block; nav_group: ads-creative for the "Ads & creative" block).
+  The Services list builds itself from each service page's front matter (group: services; flagship: true for the first block; nav_group: ads-creative for the "Ads & creative" block). Do not use `and` / `or` inside where_exp: GitHub's Jekyll 3.10 rejects it and the whole build fails.
   The Plans list is written out by hand below. Update the buildout price here if it ever changes.
 {%- endcomment -%}
 {%- assign nav_services = site.pages | where: "group", "services" | sort: "order" -%}
 {%- assign nav_flagship = nav_services | where: "flagship", true -%}
-{%- assign nav_more = nav_services | where_exp: "p", "p.flagship != true and p.nav_group != 'ads-creative'" -%}
 {%- assign nav_ads = nav_services | where: "nav_group", "ads-creative" -%}
 <header class="site-header{% if page.header_style == 'overlay' or page.hero_image %} is-overlay{% endif %}" id="site-header">
   <div class="header-inner">
@@ -37,8 +36,10 @@
           </ul>
           <p class="submenu-label">Strategy &amp; systems</p>
           <ul>
-            {%- for s in nav_more %}
+            {%- for s in nav_services %}
+            {%- unless s.flagship or s.nav_group == "ads-creative" %}
             <li><a href="{{ s.url }}">{{ s.title | escape }}</a></li>
+            {%- endunless %}
             {%- endfor %}
           </ul>
           <p class="submenu-label">Ads &amp; creative</p>
