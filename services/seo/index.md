@@ -43,7 +43,7 @@ Speed, mobile experience, crawling, indexing and structured data. We fix what ho
 
 ### Site architecture
 
-How your pages are organized decides how well search engines understand what you offer. For many businesses, this is where the biggest gains are hiding.
+How your pages are organized decides how well search engines understand what you offer. For many businesses, this is where the biggest gains are.
 
 ### On-page SEO
 
@@ -51,7 +51,7 @@ Titles, headings, copy and internal links on the pages that bring in revenue, wr
 
 ### Local SEO
 
-Your Google Business Profile, local listings, reviews and location pages, so you appear in the map results and local searches for 30A, Santa Rosa Beach, Destin and the wider Emerald Coast.
+Your Google Business Profile, local listings, reviews and location pages, so you appear in the map results and local searches for 30A, Santa Rosa Beach, Destin and the other [Gulf Coast markets we serve](/markets/).
 
 ### Content and topical authority
 
@@ -90,13 +90,13 @@ SEO only works if the site is built to carry it. We work alongside your develope
 3. **Weeks 7–12: growth.** New content, local SEO and the first authority work.
 4. **Every month: reporting.** Rankings, visibility, inquiries and what we'll do next, in plain language.
 
-There is no binding contract. We would rather earn the next month than lock you into it.
+There is no long-term contract. We'd rather keep your business by doing good work.
 
 <div class="callout callout-fit" markdown="1">
 
 ## Is this the right fit?
 
-We're a good fit for established businesses whose website should bring in more inquiries, and who want growth that compounds. We're not a fit if you need page-one rankings in two weeks or links by the hundred. No one can promise the first honestly, and the second can get a site penalized.
+We're a good fit for established businesses whose website should bring in more inquiries, and who want growth that lasts. We're not a fit if you need page-one rankings in two weeks or links by the hundred. No one can promise the first honestly, and the second can get a site penalized.
 
 </div>
 

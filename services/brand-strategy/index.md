@@ -82,7 +82,7 @@ You keep the findings whether or not we work together. [Book a free strategy cal
 
 ## Is this the right fit?
 
-We're a good fit for businesses that do excellent work but struggle to say why they're different, and for companies entering a new market, adding a service or outgrowing their old message. We're not the right fit if you need a logo, a visual identity or a full rebrand campaign. Brand strategy here is the thinking and the words; if you need a designer, we can refer you to one and write their brief.
+We're a good fit for businesses that do excellent work but struggle to say why they're different, and for companies entering a new market, adding a service or outgrowing their old message. Brand strategy is the thinking and the words. If you also need a logo, graphics or a refreshed look, our [graphic design and animation](/services/graphic-design-animation/) service can take the strategy from there.
 
 </div>
 
@@ -92,7 +92,7 @@ We're a good fit for businesses that do excellent work but struggle to say why t
 
 **What do brand strategy services include?** Research into your market and competitors, interviews with your team and customers, then a positioning statement, value proposition, messaging framework and voice guide that your whole business can use.
 
-**Do you design logos or visual identities?** No. We focus on positioning and messaging. We can refer you to a designer, or brief one you choose, so the visuals match the strategy.
+**Do you design logos and visual identities?** Brand strategy covers positioning and messaging. Design is a separate project, handled by our design team or a designer you choose, working from the strategy so the visuals match it.
 
 **What is brand positioning?** Brand positioning is the place you want to hold in a customer's mind: who you're for, what you do best and why that matters to them. It decides what you say everywhere else.
 

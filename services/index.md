@@ -19,7 +19,7 @@ Primary keyword: digital marketing services (hub; the SEO page keeps seo service
 Purpose: Overview of all eight services, and how they fit into the monthly plans, the Website Buildout and Compass.
 {% endcomment %}
 
-Our digital marketing services cover the whole path from being found to being chosen: search, AI visibility, reputation, brand, content, paid ads, design and the AI systems behind your team. We run them as one program, so each one makes the others work harder.
+Our digital marketing services cover the whole path from being found to being chosen: search, AI visibility, reputation, brand, content, paid ads, design and the AI systems behind your team. One team runs them together, so the work in each one supports the rest.
 
 {% include card-list.html group="services" %}
 

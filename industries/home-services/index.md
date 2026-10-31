@@ -13,6 +13,7 @@ related:
   - /services/digital-authority/
   - /industries/professional-services/
   - /industries/wellness-aesthetics/
+  - /markets/fort-walton-beach-navarre/
 image_dir: "industries"
 hero_image: "30a-home-services-contractors-hero"
 hero_alt: "Gouache illustration of a roofing contractor working on an upscale coastal home with a pool and landscaped courtyard."
@@ -71,9 +72,9 @@ Contractor lead generation only helps if the leads fit. We aim for the jobs, tow
 
 Many contractor sites look fine but lose the call: no phone number at the top of the page, slow photo galleries, a quote form that asks for too much. Contractor website design should make the next step obvious on a phone. If your site needs rebuilding, our [Website Buildout](/plans/website-buildout/) covers the build and the SEO together.
 
-## What we do, and what we don't
+## Search first, ads where they help
 
-We're not a full-service shop that runs your ads, social media and yard signs. We do three things carefully: search, AI visibility and reputation. If someone already runs your ads, we work alongside them and share what we learn.
+Our work centers on three things done carefully: search, AI visibility and reputation. When you need calls sooner than rankings can deliver, [paid advertising](/services/paid-advertising/) on Google can fill the gap, priced separately. If someone already runs your ads, we work alongside them and share what we learn.
 
 ## Planned around the Gulf Coast year
 

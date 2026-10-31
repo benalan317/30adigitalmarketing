@@ -50,7 +50,7 @@ A monthly plan is a level of effort applied to your brand and spread across the 
 
 ## How to choose your level
 
-How much fuel do you want to pour on the fire? Even our basic service produces results, but at higher engagement levels, our services synergize across platforms to create brand visibility that is hard for other companies to compete against. Read how we [scope each package](/approach/), or see how many new customers each level needs to pay for itself with the [ROI calculator](/roi-calculator/). Not sure where you fit? The [fit quiz](/fit-quiz/) suggests a plan in about three minutes.
+Every level does real work. Higher levels add pace and reach: more pages written, more authority earned and more strategy time, so your search rankings, AI answers and reputation start to reinforce one another. That combination is hard for a competitor to catch. Read how we [scope each package](/approach/), or see how many new customers each level needs to pay for itself with the [ROI calculator](/roi-calculator/). Not sure where you fit? The [fit quiz](/fit-quiz/) suggests a plan in about three minutes.
 
 What usually decides the right level:
 
@@ -80,7 +80,7 @@ What usually decides the right level:
 
 So you can tell whether we're a fit before you call. It also means the strategy call is spent on your business, not on negotiating a quote.
 
-30A was built through intention, investment, and patience, not best-price bargaining. If you'd prefer a cheaper agency, we're happy to let you find one. Our plans are priced for strategy, senior attention, and work that compounds.
+You'll find cheaper agencies, and some of them do fine work. Our prices pay for senior attention, a written strategy and work that keeps paying off: pages that keep ranking and a reputation that keeps growing. We'd rather be clear about that up front than haggle later.
 
 ## Common questions about SEO pricing
 

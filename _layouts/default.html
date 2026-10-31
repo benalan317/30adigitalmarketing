@@ -11,7 +11,7 @@
   {%- else -%}
     <title>{{ site.title }}</title>
   {%- endif -%}
-  {%- assign page_desc = page.description | default: "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast." -%}
+  {%- assign page_desc = page.description | default: "Search, AI search visibility and reputation for established businesses on 30A and the Gulf Coast." -%}
   <meta name="description" content="{{ page_desc | escape }}">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
   {%- if page.placeholder or page.noindex %}
@@ -75,7 +75,7 @@
           "height": 512
         },
         "image": "{{ site.url }}/images/gulf-coast-sunset-share.jpg",
-        "description": "Search strategy, AI search visibility and digital authority for ambitious businesses on 30A and the Gulf Coast.",
+        "description": "Search, AI search visibility and reputation for established businesses on 30A and the Gulf Coast.",
         "founder": { "@type": "Person", "name": "Ben Slaughter" },
         "areaServed": ["30A", "Santa Rosa Beach", "Destin", "South Walton", "Emerald Coast", "Gulf Coast"],
         "hasOfferCatalog": {

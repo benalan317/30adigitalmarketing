@@ -4,8 +4,8 @@ title: "Graphic Design & Animation"
 seo_title: "Graphic Design & Motion Graphics Services | 30A Digital Marketing"
 description: "Graphic design, motion graphics and animated explainers that give your brand a polished look across search, ads and social. Free strategy call."
 eyebrow: "Services"
-h1: "Graphic design and animation for growing businesses"
-lede: "Graphics, motion graphics and animated explainers that make your brand look as considered as it is, scoped to the project and built to work across your website, ads and social."
+h1: "Graphic design and animation for Gulf Coast businesses"
+lede: "Graphics, motion graphics and animated explainers that make your business look as good as its work, scoped to the project and built to work across your website, ads and social."
 blurb: "Graphics, motion graphics and animated explainers, scoped to the project and built for your site, ads and social."
 group: services
 nav_group: ads-creative

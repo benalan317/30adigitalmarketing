@@ -225,13 +225,13 @@ Before you finish, re-check every number in the report against the attachments. 
       </div>
     </div>
 
-    <p>Either way works. We go through your report together on a free strategy call, not by email.</p>
+    <p>Either way works. We'll walk through your report with you on a free strategy call, where we can answer your questions properly.</p>
 
     <div class="choice-cards">
       <div class="choice-card choice-card-dark">
         <span class="choice-card-kicker">Option A</span>
         <h3>Email it before the call</h3>
-        <p>Send your report to hello@30adigitalmarketing.com, then book a time. We review it in advance, so the call starts at the solution instead of the diagnosis.</p>
+        <p>Send your report to hello@30adigitalmarketing.com, then book a time. We read it in advance, so we can spend the call on what to do about it.</p>
         <a class="btn-solid" href="mailto:hello@30adigitalmarketing.com?subject=Audit%20report%20for%20my%20strategy%20call&amp;body=Business%20name%3A%0AWebsite%3A%0AMy%20strategy%20call%20is%20on%3A%0A%0A(Please%20attach%20your%20report.)">Email my report</a>
       </div>
       <div class="choice-card">
@@ -334,7 +334,7 @@ It suits owners and marketing leads who want a clear first look before talking t
 
 **How often should I audit my website?** Once a quarter is a sensible rhythm for most small businesses, and again after a redesign or a big drop in inquiries.
 
-**Will you reply to my report by email?** We review any report you send ahead of your call, and we go through it with you on the call, not by email.
+**Will you reply to my report by email?** We read any report you send ahead of your call, then walk through it with you on the call, where there's time to answer your questions properly.
 
 **What's the difference between this and a full SEO audit?** This one checks a few pages with free tools. A full audit covers your whole site, your market and your competitors, and ends in decisions about what to do first. It's where every one of our monthly plans begins.
 

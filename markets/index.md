@@ -21,21 +21,21 @@ Related keywords: Gulf Coast SEO, Emerald Coast marketing agency, North Gulf Coa
 Purpose: Hub for the seven market pages (group: markets). States plainly that we work remotely and that national brands outside the region are welcome. Decision (Oct 24, 2026): service-area wording is "Gulf Coast"; national brands welcome, focus is the Gulf Coast. No office or address is implied.
 {% endcomment %}
 
-We focus on the Gulf Coast, and we work remotely. Seven markets, each with its own seasons, visitors and competitors, are covered below. The Gulf Coast is the one region we study closely, because that is where we want our clients to win.
+We focus on the Gulf Coast, and we work remotely. Below are the seven markets we cover, each with its own seasons, visitors and competitors. The Gulf Coast is the one region we study closely.
 
 {% include card-list.html group="markets" %}
 
 ## Why we write a page for each market
 
-A town is not a keyword. Destin and Miramar Beach share visitors but sit in different counties with different tourism bodies. Gulf Shores and Orange Beach sit in Alabama, with their own rules and lodging taxes. The Forgotten Coast is still recovering from a storm that changed it for good. The right search plan depends on those details, so each market page covers what is different about that place and how people search there.
+Every town searches differently. Destin and Miramar Beach share visitors but sit in different counties with different tourism bodies. Gulf Shores and Orange Beach sit in Alabama, with their own rules and lodging taxes. The Forgotten Coast is still recovering from a storm that changed it for good. The right search plan depends on those details, so each market page covers what is different about that place and how people search there.
 
 ## National brands are welcome
 
 You do not need to be based on the coast. Many of the businesses we can help sell to Gulf Coast customers from somewhere else: a national brand opening a location, a lifestyle company that ships from the coast, a developer or operator expanding into the region. Our focus is the Gulf Coast, so we know the seasons, the search landscape and the competition here. Where the work is the same elsewhere, the method carries over.
 
-## Remote, on purpose
+## How we work with you
 
-We do not run an office on the coast, and we do not claim a local address. We work with clients by video and email, and we spend our time on the work itself. Every engagement starts with a free strategy call and an audit, so you can judge the work before you commit.
+We don't keep an office on the coast or claim a local address. We work with clients by video and email, and put our time and your fee into the work rather than overhead. Every engagement starts with a free strategy call and an audit, so you can judge the work before you commit.
 
 ## Don't see your town?
 

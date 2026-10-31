@@ -56,7 +56,7 @@ A few strong, relevant links outweigh many weak ones. We report on quality, not 
 
 ## Community presence and brand mentions
 
-We take part where your customers ask questions, such as Reddit, Quora and industry forums, with real expertise and a clear identity. We also adapt your best content for LinkedIn, Facebook and other channels. AI tools often draw on these conversations, so genuine mentions there matter more than ever.
+We take part where your customers ask questions, such as Reddit, Quora and industry forums, with real expertise and a clear identity. We also adapt your best content for LinkedIn, Facebook and other channels. AI tools often draw on these conversations, so genuine mentions there carry real weight.
 
 ## Online reputation management
 

@@ -81,7 +81,7 @@ The buildout doesn't require a monthly plan, and a monthly plan doesn't require 
 
 **How much does a website redesign cost with you?** $10,000, one time, for a new site or a redesign. The price is the same either way.
 
-**Do you design logos or take photos?** No. We work with your existing logo and photos, or with a designer or photographer you choose.
+**Can you help with a logo and graphics?** Yes. Our [graphic design and animation](/services/graphic-design-animation/) service can create a logo and graphics for the new site, quoted separately. We build with the photos you have, or with new ones from a photographer you choose.
 
 **Do I need a monthly plan first?** No. The buildout stands on its own.
 
