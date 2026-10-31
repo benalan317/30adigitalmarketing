@@ -155,7 +155,7 @@ function sendResult_(to, best, runner, runnerMode, services) {
   var runnerLabel = runnerMode === 'pair' ? 'Pairs well with it' : runnerMode === 'after' ? 'Then, or at the same time' : 'Runner-up';
   var svcText = services.map(function (k) { return '- ' + SERVICES[k].name + ': ' + SITE + SERVICES[k].path; }).join('\n');
   var svcHtml = services.map(function (k) {
-    return '<li><a href="' + SITE + SERVICES[k].path + '" style="color:#1D3035">' + esc_(SERVICES[k].name) + '</a></li>';
+    return '<li><a href="' + SITE + SERVICES[k].path + '">' + esc_(SERVICES[k].name) + '</a></li>';
   }).join('');
 
   var body =
@@ -168,19 +168,19 @@ function sendResult_(to, best, runner, runnerMode, services) {
     'This result is a starting point, not a quote. Every monthly plan is scoped after a full audit, and search strategies usually take six months or more to mature.\n\n' +
     '30A Digital Marketing\n' + SITE;
 
+  // Kept deliberately plain (no buttons, banners or background colours): plain messages are the ones Gmail delivers reliably.
   var html =
-    '<div style="font-family:Helvetica,Arial,sans-serif;color:#1D3035;max-width:560px;line-height:1.6">' +
-      '<p style="font-size:12px;letter-spacing:3px;text-transform:uppercase;margin:0 0 8px">Your fit quiz result</p>' +
-      '<h1 style="font-family:Georgia,serif;font-weight:400;font-size:30px;margin:0 0 16px">Your best fit is ' + esc_(best.name) + '</h1>' +
-      '<p style="margin:0 0 4px"><strong>' + esc_(best.name) + '</strong>, ' + esc_(best.price) + '</p>' +
-      '<p style="margin:0 0 20px"><a href="' + SITE + best.path + '" style="color:#1D3035">See ' + esc_(best.name) + '</a></p>' +
-      (runner ? '<p style="margin:0 0 4px">' + esc_(runnerLabel) + ': <strong>' + esc_(runner.name) + '</strong>, ' + esc_(runner.price) + '</p>' +
-        '<p style="margin:0 0 20px"><a href="' + SITE + runner.path + '" style="color:#1D3035">See ' + esc_(runner.name) + '</a></p>' : '') +
-      '<p style="margin:0 0 4px"><strong>Services that fit you</strong></p><ul style="margin:0 0 24px;padding-left:20px">' + svcHtml + '</ul>' +
-      '<p style="margin:0 0 16px"><strong>Next step:</strong> book a free strategy call. Thirty minutes, with an audit of how your business shows up in search today.</p>' +
-      '<p style="margin:0 0 28px"><a href="' + SITE + '/strategy-call/" style="display:inline-block;background:#1D3035;color:#F4F0E7;padding:14px 24px;text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase">Book a Strategy Call</a></p>' +
-      '<p style="margin:0 0 8px;font-size:13px;color:#44565A">This result is a starting point, not a quote. Every monthly plan is scoped after a full audit, and search strategies usually take six months or more to mature.</p>' +
-      '<p style="margin:0;font-size:13px;color:#44565A">30A Digital Marketing &middot; <a href="' + SITE + '" style="color:#44565A">30adigitalmarketing.com</a></p>' +
+    '<div style="font-family:Arial,Helvetica,sans-serif;color:#1D3035;line-height:1.5">' +
+      '<p>Thanks for taking the 30A Digital Marketing fit quiz. Here is your result.</p>' +
+      '<p><strong>Best fit: ' + esc_(best.name) + '</strong> (' + esc_(best.price) + ')<br>' +
+        '<a href="' + SITE + best.path + '">' + SITE + best.path + '</a></p>' +
+      (runner ? '<p>' + esc_(runnerLabel) + ': <strong>' + esc_(runner.name) + '</strong> (' + esc_(runner.price) + ')<br>' +
+        '<a href="' + SITE + runner.path + '">' + SITE + runner.path + '</a></p>' : '') +
+      '<p>Services that fit you:</p><ul>' + svcHtml + '</ul>' +
+      '<p>Next step: book a free strategy call. Thirty minutes, with an audit of how your business shows up in search today.<br>' +
+        '<a href="' + SITE + '/strategy-call/">' + SITE + '/strategy-call/</a></p>' +
+      '<p>This result is a starting point, not a quote. Every monthly plan is scoped after a full audit, and search strategies usually take six months or more to mature.</p>' +
+      '<p>30A Digital Marketing<br>' + SITE + '</p>' +
     '</div>';
 
   // GmailApp (not MailApp): in testing, Gmail delivered these and silently dropped MailApp messages.
