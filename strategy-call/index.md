@@ -36,3 +36,5 @@ Online booking is being set up. In the meantime, email [hello@30adigitalmarketin
 ## Before we talk
 
 It helps to have your website address and a sense of what a new customer is worth to you. If you're not sure, we'll work it out together, or you can try the [ROI calculator](/roi-calculator/) first.
+
+Want to make the most of the thirty minutes? Run a [free SEO audit](/free-audit/) yourself first and email the report to hello@30adigitalmarketing.com before the call. We'll review it in advance, so the call starts at the solution.

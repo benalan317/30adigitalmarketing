@@ -75,7 +75,7 @@ Every strategy call includes an audit of your site and your market. You'll see:
 - How AI tools describe your business, a first look at your [AI search visibility](/services/ai-search-visibility/).
 - The three changes we would make first.
 
-You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/).
+You keep the findings whether or not we work together. [Book a free strategy call](/strategy-call/). Prefer to start on your own? [Run a free SEO audit yourself](/free-audit/) and bring the report.
 
 </div>
 
