@@ -90,7 +90,7 @@ You keep the findings whether or not we work together. [Book a free strategy cal
 
 ## Is this the right fit?
 
-We're a good fit for businesses whose customers research before they buy, and whose expertise is stronger than their website shows: firms, venues, property managers, practices and builders. We're not the right fit if you want dozens of short blog posts a month, social media management, or graphic design and video production.
+We're a good fit for businesses whose customers research before they buy, and whose expertise is stronger than their website shows: firms, venues, property managers, practices and builders. We're not the right fit if you want dozens of short blog posts a month, or social media management.
 
 </div>
 
@@ -104,7 +104,7 @@ We're a good fit for businesses whose customers research before they buy, and wh
 
 **Who writes the content?** Our in-house writers. Every piece is edited to the same standard and checked against your voice guide.
 
-**Do you design or film?** No. We write. Your designer and videographer, or ones we can refer you to, handle layouts and filming from our briefs and scripts.
+**Do you design or animate?** Content and sales assets covers the writing: scripts, proposals, case studies and newsletters. Layouts and animation are handled by our [graphic design and animation](/services/graphic-design-animation/) service, or by your own designer from our briefs.
 
 **How do you measure results?** Inquiries and conversions from each page, rankings and AI mentions for the topics we target, and how your sales team uses the assets we write.
 

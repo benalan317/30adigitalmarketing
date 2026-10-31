@@ -51,6 +51,3 @@ Vacation rental and property managers, real estate brokerages and developers, bo
 
 We are a remote-native agency, and we use that to your advantage. It keeps our overhead low and our attention on your account, and it gives us the freedom to travel often. Meetings happen by video, so where we are never gets in the way of the work. Read more about [how we work](/approach/).
 
-## What we don't do
-
-Graphic design, influencer content and video production. We focus on the work that gets you found and chosen, and do it well.

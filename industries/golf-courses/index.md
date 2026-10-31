@@ -92,7 +92,7 @@ You keep the findings whether or not we work together.
 
 ## Is this the right fit?
 
-We're a good fit for public, semi-private and resort courses and clubs that want more bookings and members from their own website and from search. We're not the right fit if you want a tee-sheet system, a pro shop e-commerce store, or paid ads only. Our work is search, AI visibility and reputation.
+We're a good fit for public, semi-private and resort courses and clubs that want more bookings and members from their own website and from search. We're not the right fit if you want a tee-sheet system, a pro shop e-commerce store, or paid ads on their own. We lead with search, AI visibility and reputation, and add paid advertising where it helps.
 
 </div>
 

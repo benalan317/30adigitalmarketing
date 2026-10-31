@@ -88,7 +88,7 @@ We're a good fit for established South Walton businesses that depend on guests, 
 
 **Can you help a business based outside Florida reach 30A customers?** Yes. Many of the businesses we can help sell to 30A customers from somewhere else.
 
-**What does a 30A marketing agency do differently?** We lead with organic search, AI search visibility and authority, not paid ads or photo and video production. We don't promise rankings or AI mentions.
+**What does a 30A marketing agency do differently?** We lead with organic search, AI search visibility and authority, and add [paid advertising](/services/paid-advertising/) where it speeds up results. We don't promise rankings or AI mentions.
 
 **How long does it take?** Technical and listing fixes can show results within weeks. Competitive 30A searches usually take six months or more.
 

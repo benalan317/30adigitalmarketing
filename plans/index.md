@@ -94,7 +94,7 @@ So you can tell whether we're a fit before you call. It also means the strategy 
 
 **Do you offer local SEO pricing?** Local SEO is part of every plan, not an add-on. For businesses that serve a place, it's often the first priority.
 
-**What isn't included?** Graphic design, influencer content and video production. We'd rather do fewer things very well.
+**Are paid ads and design included in the monthly plans?** No. [Paid advertising](/services/paid-advertising/) is priced separately, and your ad spend is separate from our fee. [Graphic design and animation](/services/graphic-design-animation/) are scoped project by project.
 
 **Can I combine the Website Buildout with a plan?** Yes, in any order. They're priced separately and neither requires the other.
 

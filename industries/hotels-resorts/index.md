@@ -103,7 +103,7 @@ We're a good fit for independent and boutique hotels, inns and resorts that want
 
 **What is hotel SEO?** Hotel SEO is the work that helps your hotel appear when travelers look for a place to stay, and helps them book on your own website. It covers technical fixes, room and offer pages, listings, reviews and, increasingly, AI answers.
 
-**How is hotel SEO different from hotel digital marketing?** Hotel digital marketing is the wider mix: search, paid ads, email, social media and metasearch. SEO is the part that keeps working after the spend stops. We focus on search, AI visibility and reputation, and work alongside whoever runs your ads.
+**How is hotel SEO different from hotel digital marketing?** Hotel digital marketing is the wider mix: search, paid ads, email, social media and metasearch. SEO is the part that keeps working after the spend stops. We lead with search, AI visibility and reputation, and can run your [paid ads](/services/paid-advertising/) as a separate service or work alongside whoever does.
 
 **Can SEO replace the OTAs?** Not entirely, and it shouldn't. OTAs reach travelers who don't know you yet. Good SEO wins back more of the travelers who were already considering you.
 

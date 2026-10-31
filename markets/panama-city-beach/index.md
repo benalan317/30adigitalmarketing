@@ -75,7 +75,7 @@ You keep the findings whether or not we work together.
 
 ## Is this the right fit?
 
-We're a good fit for established Panama City Beach and Bay County businesses, whether they serve visitors, locals or both, and for national brands outside the region that want to win here. We don't run paid ads or produce video. SEO usually takes six months or more to mature.
+We're a good fit for established Panama City Beach and Bay County businesses, whether they serve visitors, locals or both, and for national brands outside the region that want to win here. Paid advertising is priced separately. SEO usually takes six months or more to mature.
 
 </div>
 

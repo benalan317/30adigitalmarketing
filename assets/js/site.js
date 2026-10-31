@@ -267,7 +267,9 @@
     'digital-authority': { name: 'Digital Authority & Reputation', url: '/services/digital-authority/' },
     'brand-strategy': { name: 'Brand Strategy & Analysis', url: '/services/brand-strategy/' },
     'content': { name: 'Content & Sales Assets', url: '/services/content/' },
-    'ai-systems': { name: 'AI Systems for Business', url: '/services/ai-systems/' }
+    'ai-systems': { name: 'AI Systems for Business', url: '/services/ai-systems/' },
+    'paid-advertising': { name: 'Paid Advertising', url: '/services/paid-advertising/' },
+    'graphic-design-animation': { name: 'Graphic Design & Animation', url: '/services/graphic-design-animation/' }
   };
   var INDUSTRIES = {
     'vacation-rentals': 'vacation rentals and property management',
@@ -677,6 +679,22 @@
     if (g('ai-ops')) sv('ai-systems', 6, 'You want to use AI to work smarter inside the business.');
     if (T !== undefined && T >= 2) sv('ai-systems', 1, 'With a larger team, AI that organizes company knowledge helps everyone answer faster.');
     if (T !== undefined && T >= 3) sv('ai-systems', 1);
+
+    // Paid advertising (priced separately) and graphic design and animation (scoped per project).
+    if (a.ads === 'ongoing') sv('paid-advertising', 4, 'You already run ads with a real budget, and careful tracking and testing can make that spend work harder.');
+    else if (a.ads === 'small') sv('paid-advertising', 3, 'You run small campaigns now, and a clear setup with proper tracking can show what is worth scaling.');
+    else if (a.ads === 'stopped') sv('paid-advertising', 3, 'You tried ads and stopped, and tracking set up properly shows what went wrong and what is worth another try.');
+    if (g('leads')) sv('paid-advertising', 1, 'Ads can bring in inquiries while your search rankings build.');
+    if (g('bookings')) sv('paid-advertising', 1, 'Ads can send guests straight to your own booking page.');
+    if (g('sales')) sv('paid-advertising', 1, 'Ads can reach shoppers who are not searching for you yet.');
+    if (['professional-services', 'luxury-real-estate', 'wellness-aesthetics', 'hotels-resorts', 'wedding-venues'].indexOf(a.industry) > -1) {
+      sv('paid-advertising', 1, 'LinkedIn and Meta ads can reach affluent customers.');
+    }
+
+    if (g('brand')) sv('graphic-design-animation', 3, 'A clearer brand needs visuals that match it.');
+    if (a.social === 'regular' || a.social === 'engaged') sv('graphic-design-animation', 2, 'You post regularly, so graphics and short animations help you stand out in the feed.');
+    if (a.website === 'none' || a.website === 'outdated' || g('website')) sv('graphic-design-animation', 1, 'A new site needs strong graphics and visuals.');
+    if (a.ads === 'ongoing' || a.ads === 'small') sv('graphic-design-animation', 1, 'Fresh ad creative gives your campaigns more to test.');
 
     var svcOrder = Object.keys(S).sort(function (x, y) { return S[y].s - S[x].s; });
     var services = svcOrder.filter(function (k) { return S[k].s >= 4; });

@@ -75,7 +75,7 @@ You keep the findings whether or not we work together.
 
 ## Is this the right fit?
 
-We're a good fit for established Gulf Shores, Orange Beach and Fort Morgan businesses that want more direct bookings, and for national brands outside the region that want to win on Alabama's beaches. We don't run paid ads or produce video. SEO usually takes six months or more to mature.
+We're a good fit for established Gulf Shores, Orange Beach and Fort Morgan businesses that want more direct bookings, and for national brands outside the region that want to win on Alabama's beaches. Paid advertising is priced separately. SEO usually takes six months or more to mature.
 
 </div>
 

@@ -36,7 +36,9 @@ var SERVICES = {
   'digital-authority':    { name: 'Digital Authority & Reputation', path: '/services/digital-authority/' },
   'brand-strategy':       { name: 'Brand Strategy & Analysis', path: '/services/brand-strategy/' },
   'content':              { name: 'Content & Sales Assets', path: '/services/content/' },
-  'ai-systems':           { name: 'AI Systems for Business', path: '/services/ai-systems/' }
+  'ai-systems':           { name: 'AI Systems for Business', path: '/services/ai-systems/' },
+  'paid-advertising':     { name: 'Paid Advertising', path: '/services/paid-advertising/' },
+  'graphic-design-animation': { name: 'Graphic Design & Animation', path: '/services/graphic-design-animation/' }
 };
 
 var RESPONSE_HEADERS = [
