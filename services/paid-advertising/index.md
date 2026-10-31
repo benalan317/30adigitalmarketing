@@ -14,6 +14,11 @@ related:
   - /industries/professional-services/
   - /industries/luxury-real-estate/
   - /industries/wellness-aesthetics/
+image_dir: "services"
+hero_image: "30a-paid-advertising-google-meta-linkedin-hero"
+hero_alt: "Gouache illustration of a laptop showing a rising ad performance chart and a phone with a boutique ad, on a café table in a white-washed 30A seaside village."
+card_image: "30a-paid-advertising-google-meta-linkedin-card"
+card_alt: "Laptop with an ad performance chart and a phone showing a boutique ad, beside a sunlit seaside shop."
 ---
 {% comment %}
 PAGE BRIEF
@@ -22,7 +27,6 @@ Related keywords: paid ads, Google Ads management, Meta ads, Facebook ads, Linke
 Purpose: Paid ads on Google, Meta (Facebook and Instagram) and LinkedIn. Priced separately from the monthly plans; ad spend is separate from our fee. Supporting service, not flagship: keep the page calm and evidence-led, and position ads as working with SEO, not instead of it. LinkedIn is recommended for businesses courting affluent clients.
 Decisions (Oct 31): priced separately from the monthly plans; no prices on the page; do NOT mention live video, photography or influencer work either way.
 To confirm with owner: ad accounts stay in the client's name; ad spend is paid by the client directly to the platforms.
-Images: no hero or card image yet (add hero_image and card_image in front matter when the gouache illustrations exist).
 {% endcomment %}
 
 Our paid advertising service runs your campaigns on Google, Meta (Facebook and Instagram) and LinkedIn. We build the campaigns, set up tracking so every call, form and booking is counted, and adjust each month based on what brings in customers, not clicks alone.

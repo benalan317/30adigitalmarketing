@@ -14,6 +14,11 @@ related:
   - /industries/wedding-venues/
   - /industries/lifestyle-brands/
   - /industries/hotels-resorts/
+image_dir: "services"
+hero_image: "30a-graphic-design-animation-hero"
+hero_alt: "Gouache illustration of an animation timeline on a monitor, a drawing tablet with seagull frames and storyboards on a terrace table overlooking a white-washed 30A seaside town."
+card_image: "30a-graphic-design-animation-card"
+card_alt: "Animation timeline on a monitor beside a drawing tablet, storyboards and color swatches on a seaside terrace."
 ---
 {% comment %}
 PAGE BRIEF
@@ -21,7 +26,6 @@ Primary keyword: motion graphics services
 Related keywords: graphic design and animation services, animated explainer videos, explainer video services, animated logo, animated ad creative, kinetic typography, brand design for marketing
 Purpose: Graphic design and animation, scoped project by project (no prices on the page). Delivered by our in-house people with AI-assisted tools. Supporting service, not flagship.
 Decisions (Oct 31): scoped per project; do NOT mention live video, photography or influencer work either way (not offered for now, but we don't say so). Keep the page about graphics, motion graphics and animation only.
-Images: no hero or card image yet (add hero_image and card_image in front matter when the gouache illustrations exist).
 {% endcomment %}
 
 Our graphic design and animation service creates the visuals your marketing needs: brand graphics, social and ad creative, animated logos, motion graphics and animated explainer videos. We scope each project to your business, so you pay for what you need.
