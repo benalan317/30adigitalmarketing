@@ -3,7 +3,7 @@
   Pages with `header_style: overlay` in their front matter (the homepage) place the menu over the photo.
 
   Layout (Oct 23): Services and Plans sit side by side on the left (what we do / how you buy it),
-  followed by Industries and the ROI Calculator (highlighted with an accent underline and a "Free" tag).
+  followed by Industries and Resources (Free SEO Audit, ROI Calculator, Fit Quiz; highlighted with an accent underline and a "Free" tag).
   Insights, About and the "Book a Strategy Call" button sit on the right.
 
   The Services list builds itself from each service page's front matter (group: services, flagship: true).
@@ -59,7 +59,17 @@
 
       <a class="nav-link" href="/industries/">Industries</a>
 
-      <a class="nav-link nav-calc" href="/roi-calculator/"><span class="nav-calc-label">ROI Calculator</span><span class="nav-tag">Free</span></a>
+      <div class="nav-item has-submenu nav-calc">
+        <a href="/free-audit/"><span class="nav-calc-label">Resources</span><span class="nav-tag">Free</span></a>
+        <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-resources" aria-label="Show the free resources list"></button>
+        <div class="submenu" id="submenu-resources">
+          <ul>
+            <li><a href="/free-audit/"><span class="submenu-title">Free SEO Audit</span><span class="submenu-note">Run it yourself in about an hour.</span></a></li>
+            <li><a href="/roi-calculator/"><span class="submenu-title">ROI Calculator</span><span class="submenu-note">See what search could be worth.</span></a></li>
+            <li><a href="/fit-quiz/"><span class="submenu-title">Fit Quiz</span><span class="submenu-note">Find the plan that fits your business.</span></a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="nav-right" id="site-nav-right">

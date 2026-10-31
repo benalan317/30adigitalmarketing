@@ -129,14 +129,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .nav-right .btn-outline { padding: 0 16px; }
 }
 
-/* ROI Calculator: the highlighted item */
-.site-header .nav-calc { gap: 9px; text-decoration: none; }
+/* Resources: the highlighted item */
+.site-header .nav-calc > a { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
 .nav-calc-label {
   text-decoration: underline; text-decoration-color: var(--accent);
   text-decoration-thickness: 2px; text-underline-offset: 8px;
 }
-.site-header .nav-calc:hover { opacity: 1; }
-.site-header .nav-calc:hover .nav-calc-label { text-decoration-color: currentColor; }
+.site-header .nav-calc > a:hover { opacity: 1; }
+.site-header .nav-calc > a:hover .nav-calc-label { text-decoration-color: currentColor; }
 .nav-tag {
   display: inline-block; padding: 3px 7px 2px;
   background: var(--accent); color: #fff;
@@ -171,8 +171,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .site-header.is-open .nav-right { padding-bottom: 12px; }
   .site-header.is-open .nav-link, .site-header.is-open .nav-item > a { min-height: 48px; }
   .site-header.is-open .nav-right .btn-outline { margin-top: 8px; align-self: flex-start; }
-  /* The calculator goes first so it is the first thing in the opened menu */
-  .nav-calc { order: -1; align-self: flex-start; margin-bottom: 4px; }
   /* Lists open in place when the small arrow is tapped */
   .nav-item { flex-wrap: wrap; }
   .nav-item > a { flex: 1 1 auto; }
