@@ -12,8 +12,8 @@ permalink: /insights/:title/
 # Google Search Console ownership proof (a public code, not a password). Keep it in place.
 google_site_verification: "KBaAAdaAzGmsn8_J8tLGFFQKIzGNaxU3mCLegUAXVl8"
 
-# Google Analytics. Currently OFF. To turn on, delete the "#" and the space at the start of the next line.
-# google_analytics_id: "G-S8BG7ZJ2PZ"
+# Google Analytics. Currently ON (turned on Nov 1, 2026). To turn off, put "# " back at the start of the next line.
+google_analytics_id: "G-S8BG7ZJ2PZ"
 
 # Fit quiz (/fit-quiz/): the Google Apps Script web address that saves finished quizzes to a Google Sheet
 # and emails results to visitors who ask. Leave it empty ("") to save nothing. Setup steps: _fit-quiz-sheet/README.md
