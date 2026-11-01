@@ -15,11 +15,11 @@ Purpose: Destination for every call-to-action button. Booking method: Google Cal
 {%- capture booking_embed %}{% include booking-embed.html %}{% endcapture -%}
 {%- assign booking_embed = booking_embed | strip -%}
 
-## What happens on the call
+## What Happens on the Call
 
 We spend thirty minutes on your business. We look at how it shows up in search today, where customers are finding someone else instead, and which opportunities are worth pursuing first. There is no charge and no obligation.
 
-## Choose a time
+## Choose a Time
 
 {% if booking_embed != "" -%}
 Pick a time that suits you. You'll get a calendar invitation by email once you've booked.
@@ -33,7 +33,7 @@ Prefer to write first? Email [hello@30adigitalmarketing.com](mailto:hello@30adig
 Online booking is being set up. In the meantime, email [hello@30adigitalmarketing.com](mailto:hello@30adigitalmarketing.com) with your business name, your website and a couple of times that suit you, and we'll confirm a time.
 {%- endif %}
 
-## Before we talk
+## Before We Talk
 
 It helps to have your website address and a sense of what a new customer is worth to you. If you're not sure, we'll work it out together, or you can try the [ROI calculator](/roi-calculator/) first.
 

@@ -2,9 +2,9 @@
 layout: page
 title: "AI Systems for Business"
 seo_title: "Internal AI Assistant Services | 30A Digital Marketing"
-description: "Internal AI assistants that answer your team's questions from your own documents, policies and past work. Private, practical AI for Gulf Coast businesses."
+description: "Internal AI assistants that answer your team's questions from your own documents, policies, and past work. Private, practical AI for Gulf Coast businesses."
 eyebrow: "Services"
-h1: "Internal AI assistants built on what your company knows"
+h1: "Internal AI Assistants Built on What Your Company Knows"
 lede: "A private assistant that answers your team's questions from your own documents, so the right answer is a question away, not a phone call to the one person who knows."
 blurb: "Back-end AI that organizes what your company knows, so your team works faster and sees more."
 group: services
@@ -26,45 +26,45 @@ Related keywords: AI knowledge base, private AI assistant, business knowledge ma
 Purpose: Back-end AI systems that organize company knowledge. Open question: keep as its own page or fold into Brand Strategy / Content.
 {% endcomment %}
 
-An internal AI assistant is a private tool that answers your team's questions from your company's own documents: policies, pricing, procedures, past proposals and property or product details. We set one up for your business, organize the knowledge behind it and train your team to use it well.
+An internal AI assistant is a private tool that answers your team's questions from your company's own documents: policies, pricing, procedures, past proposals, and property, or product details. We set one up for your business, organize the knowledge behind it and train your team to use it well.
 
 In most businesses, the answers live in a few people's heads, a shared drive nobody can search and old email threads. New staff ask the same questions every week, and the people who know are interrupted all day. An assistant built on your own knowledge changes that.
 
-## What an internal AI assistant can do
+## What an Internal AI Assistant Can Do
 
 A few examples from the industries we work with:
 
-- **Property managers:** answer staff questions about each home's access, amenities, owner preferences and house rules.
-- **Real estate firms:** pull community details, HOA rules and past buyer questions in seconds.
+- **Property managers:** answer staff questions about each home's access, amenities, owner preferences, and house rules.
+- **Real estate firms:** pull community details, HOA rules, and past buyer questions in seconds.
 - **Hotels and venues:** give front desk and event staff the same answers on policies, packages and local recommendations.
-- **Contractors:** find product specifications, warranty terms and pricing rules while on site.
-- **Professional firms:** locate the right template, precedent or internal policy, with access limited to the people who should see it.
+- **Contractors:** find product specifications, warranty terms, and pricing rules while on site.
+- **Professional firms:** locate the right template, precedent, or internal policy, with access limited to the people who should see it.
 
-## What our internal AI assistant service includes
+## What Our Internal AI Assistant Service Includes
 
-### Use-case discovery
+### Use-Case Discovery
 
 We find where your team loses the most time looking for answers, and pick one use case where an assistant will pay off first.
 
-### Knowledge organization (your AI knowledge base)
+### Knowledge Organization (Your AI Knowledge Base)
 
-The assistant is only as good as what it reads. We gather, clean up and organize the documents it draws on, retire outdated versions and fill obvious gaps. This step alone often helps the whole team.
+The assistant is only as good as what it reads. We gather, clean up, and organize the documents it draws on, retire outdated versions and fill obvious gaps. This step alone often helps the whole team.
 
-### Setup on tools you already use
+### Setup on Tools You Already Use
 
-Where possible, we build on business plans of tools you may already pay for, such as ChatGPT, Claude, Microsoft Copilot or Gemini, rather than custom software you'd have to maintain. The assistant looks up answers in your documents before it responds, a method often called retrieval-augmented generation (RAG), and can show where each answer came from.
+Where possible, we build on business plans of tools you may already pay for, such as ChatGPT, Claude, Microsoft Copilot, or Gemini, rather than custom software you'd have to maintain. The assistant looks up answers in your documents before it responds, a method often called retrieval-augmented generation (RAG), and can show where each answer came from.
 
-### Testing and training
+### Testing and Training
 
 A few staff test it on real questions first. We fix what it gets wrong, then train your team on what to ask, how to check answers and when to ask a person instead.
 
-## Privacy and control
+## Privacy and Control
 
 - **Your data stays in your accounts.** We set the assistant up on business plans whose terms say your data isn't used to train their models.
 - **Access follows your permissions.** Staff see answers only from documents they're allowed to see.
 - **People stay in charge.** The assistant drafts and finds; your team decides. We make clear where it shouldn't be relied on.
 
-## How a project runs
+## How a Project Runs
 
 1. **Discover.** Interviews with your team and a look at where answers live today.
 2. **Organize.** We prepare the knowledge base for the first use case.
@@ -74,7 +74,7 @@ A few staff test it on real questions first. We fix what it gets wrong, then tra
 
 We use these tools in our own work every day. Read [how we use AI](/approach/) in our client work.
 
-## What your free AI readiness review covers
+## What Your Free AI Readiness Review Covers
 
 Every strategy call can include a short look at how your team finds information. You'll see:
 
@@ -87,7 +87,7 @@ You keep the findings whether or not we work together. [Book a free strategy cal
 
 <div class="callout callout-fit" markdown="1">
 
-## Is this the right fit?
+## Is This the Right Fit?
 
 We're a good fit for businesses with a team of five or more, repeated questions and knowledge spread across documents and people. We're not the right fit if you need a customer-facing chatbot, custom software development or AI that makes decisions without a person checking.
 
@@ -95,7 +95,7 @@ We're a good fit for businesses with a team of five or more, repeated questions 
 
 <div class="faq" markdown="1">
 
-## Common questions about internal AI assistants
+## Common Questions about Internal AI Assistants
 
 **What is an internal AI assistant?** An internal AI assistant is a private AI tool for your staff that answers questions from your company's own documents, rather than from the open internet, and can show the source for each answer.
 

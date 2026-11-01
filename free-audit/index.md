@@ -5,8 +5,8 @@ title: "Free SEO Audit"
 seo_title: "Free DIY SEO Audit & AI Visibility Check | 30A Digital Marketing"
 description: "Run a free SEO audit yourself in about an hour: three free tools, one AI prompt and a clear report to bring to a strategy call or guide your own SEO."
 eyebrow: "Free SEO Audit"
-h1: "Run a free SEO audit yourself"
-lede: "Three free tools, one AI prompt and about an hour. You finish with a clear SEO and AI visibility report to bring to a strategy call, or to guide your own SEO."
+h1: "Run a Free SEO Audit Yourself"
+lede: "Three free tools, one AI prompt, and about an hour. You finish with a clear SEO and AI visibility report to bring to a strategy call, or to guide your own SEO."
 body_class: "page-audit"
 related:
   - /approach/
@@ -29,7 +29,7 @@ All copy is plain HTML on the page, so search engines and AI tools can read it w
 Draft copy and notes: Claude Docs "Free Audit Page: Copy and Prompt (Draft 1)".
 {% endcomment %}
 
-A free SEO audit is a first look at your website's search health, speed and visibility in AI answers. You can run one yourself in about an hour: check your site with three free tools, give the results to ChatGPT or Claude with our prompt, and get back a clear, designed report. Email it to us before a strategy call, bring it with you, or use it to plan your own SEO.
+A free SEO audit is a first look at your website's search health, speed, and visibility in AI answers. You can run one yourself in about an hour: check your site with three free tools, give the results to ChatGPT or Claude with our prompt, and get back a clear, designed report. Email it to us before a strategy call, bring it with you, or use it to plan your own SEO.
 
 <div class="audit-glance">
   <div class="audit-glance-item"><span class="audit-glance-num">3</span><span class="audit-glance-label">free tools, no accounts</span></div>
@@ -37,7 +37,7 @@ A free SEO audit is a first look at your website's search health, speed and visi
   <div class="audit-glance-item"><span class="audit-glance-num">~60</span><span class="audit-glance-label">minutes, start to finish</span></div>
 </div>
 
-<h2 id="what-you-get">What you'll end up with</h2>
+<h2 id="what-you-get">What You'll End up With</h2>
 
 <p>One report, as a web page file or a PDF, that puts three tools' results in one place. It explains in plain words what matters most for your goals, ranks what to fix first, and lists the questions worth asking on a strategy call. Nothing needs to be installed, and you don't share a login with anyone.</p>
 
@@ -59,7 +59,7 @@ A free SEO audit is a first look at your website's search health, speed and visi
       <span class="audit-step-num" aria-hidden="true">1</span>
       <div>
         <span class="audit-step-time">About 20 minutes</span>
-        <h2 id="step-1-title">Step 1: Run three free SEO audit tools</h2>
+        <h2 id="step-1-title">Step 1: Run Three Free SEO Audit Tools</h2>
       </div>
     </div>
 
@@ -82,10 +82,10 @@ A free SEO audit is a first look at your website's search health, speed and visi
         <div class="tool-card-main">
           <span class="tool-card-kicker">Speed and Core Web Vitals</span>
           <h3>Google PageSpeed Insights</h3>
-          <p>Google's own test of page speed and Core Web Vitals on mobile and desktop, plus accessibility, best practices and SEO basics.</p>
+          <p>Google's own test of page speed and Core Web Vitals on mobile and desktop, plus accessibility, best practices, and SEO basics.</p>
         </div>
         <dl class="tool-card-facts">
-          <div><dt>Enter</dt><dd>Your home page, then your most important service or booking page</dd></div>
+          <div><dt>Enter</dt><dd>Your home page, then your most important service, or booking page</dd></div>
           <div><dt>Save</dt><dd>Mobile and desktop results for each page</dd></div>
         </dl>
         <a class="tool-card-link" href="https://pagespeed.web.dev/" target="_blank" rel="noopener">Open PageSpeed Insights<span class="visually-hidden"> (opens in a new tab)</span></a>
@@ -118,7 +118,7 @@ A free SEO audit is a first look at your website's search health, speed and visi
       <span class="audit-step-num" aria-hidden="true">2</span>
       <div>
         <span class="audit-step-time">About 10 minutes</span>
-        <h2 id="step-2-title">Step 2: Save each audit report</h2>
+        <h2 id="step-2-title">Step 2: Save Each Audit Report</h2>
       </div>
     </div>
 
@@ -140,7 +140,7 @@ A free SEO audit is a first look at your website's search health, speed and visi
       <span class="audit-step-num" aria-hidden="true">3</span>
       <div>
         <span class="audit-step-time">About 20 minutes</span>
-        <h2 id="step-3-title">Step 3: Turn the results into an SEO audit report with AI</h2>
+        <h2 id="step-3-title">Step 3: Turn the Results into an SEO Audit Report with AI</h2>
       </div>
     </div>
 
@@ -160,14 +160,14 @@ WHAT I HAVE ATTACHED
 Free audit reports for my website from three tools: an SEO checker, Google PageSpeed Insights (mobile and/or desktop), and an AI visibility checker. They may be PDFs or screenshots. Before anything else, list each attachment, say which tool it appears to come from, and tell me if anything is unreadable, cut off or missing.
 
 STEP 1: ASK ME QUESTIONS FIRST
-Before analyzing anything, ask me these questions in one numbered message, then wait for my answers. If I answer "not sure", carry on. Never ask for passwords, logins or private customer data.
+Before analyzing anything, ask me these questions in one numbered message, then wait for my answers. If I answer "not sure", carry on. Never ask for passwords, logins, or private customer data.
 1. Business name, website address, and what you sell.
 2. Which towns or markets you serve, and whether you also sell outside the Gulf Coast.
 3. Your main goal for the next 12 months (for example more direct bookings, more qualified inquiries, more calls, more event or tour bookings).
 4. Roughly what a new customer is worth to you.
 5. Your top 2 to 3 competitors by name.
 6. Your rough monthly marketing budget range.
-7. What you have already tried for search, SEO or AI visibility.
+7. What you have already tried for search, SEO, or AI visibility.
 8. Anything on your site you already know is a problem.
 
 STEP 2: ANALYZE
@@ -179,25 +179,25 @@ Group findings under these headings, and skip any heading with no evidence:
 - Speed and mobile experience
 - AI visibility (mentions, citations, which platforms, which topics)
 - Trust and authority signals (links, mentions, reviews), only if the reports show them
-- Conversion path (can a visitor easily book, call or inquire?), only if the reports show it
+- Conversion path (can a visitor easily book, call, or inquire?), only if the reports show it
 
-For each finding give: what the report shows, why it matters for MY goal, a suggested next step in plain words, and a rough effort (low, medium or high) and impact (low, medium or high).
+For each finding give: what the report shows, why it matters for MY goal, a suggested next step in plain words, and a rough effort (low, medium, or high), and impact (low, medium, or high).
 
-Then separate two groups: (1) simple fixes I could hand to a web developer or do myself, and (2) decisions that need a strategy, such as which markets, customers, pages or topics to prioritize. Do not pretend the second group can be solved from a free report.
+Then separate two groups: (1) simple fixes I could hand to a web developer or do myself, and (2) decisions that need a strategy, such as which markets, customers, pages, or topics to prioritize. Do not pretend the second group can be solved from a free report.
 
-Do not promise rankings, traffic or AI mentions. Do not recommend specific paid tools or vendors. Use plain English. If you must use a technical term, explain it in a few words.
+Do not promise rankings, traffic, or AI mentions. Do not recommend specific paid tools or vendors. Use plain English. If you must use a technical term, explain it in a few words.
 
 STEP 3: BUILD THE REPORT
-Create one self-contained HTML file: inline CSS, no external images, scripts or fonts, system fonts only. It must print cleanly to PDF on US Letter and A4, with page-break rules so that no heading or table row splits across pages.
+Create one self-contained HTML file: inline CSS, no external images, scripts, or fonts, system fonts only. It must print cleanly to PDF on US Letter and A4, with page-break rules so that no heading or table row splits across pages.
 If you can create downloadable files, give me the .html file, and a PDF as well if you can. If you cannot create files, output the complete HTML in one code block and tell me how to save it as report.html and use my browser's Print command to save it as a PDF.
 
-Design: calm and professional. White background, light sand panels, deep navy or charcoal text, and one muted accent color for highlights. Clear headings, generous spacing, simple tables, and plain bars or badges for scores. No stock photos, no logos, no decorative clutter, and do not imply that 30A Digital Marketing produced the report.
+Design: calm and professional. White background, light sand panels, deep navy, or charcoal text, and one muted accent color for highlights. Clear headings, generous spacing, simple tables, and plain bars or badges for scores. No stock photos, no logos, no decorative clutter, and do not imply that 30A Digital Marketing produced the report.
 
 Structure:
-1. Cover: "Search &amp; AI Visibility Snapshot", my business name and website, today's date, and "Prepared for a strategy call with 30A Digital Marketing".
+1. Cover: "Search &amp; AI Visibility Snapshot", my business name, and website, today's date, and "Prepared for a strategy call with 30A Digital Marketing".
 2. One-page summary: the three findings that matter most for my goal, and what to fix first.
 3. Scorecard table: area, what was measured, result, which report it came from.
-4. Findings: each with what the report shows, why it matters, a suggested step, effort and impact.
+4. Findings: each with what the report shows, why it matters, a suggested step, effort, and impact.
 5. Priority table: simple fixes versus strategic decisions.
 6. What this snapshot cannot tell us: the limits of free tools, and anything I should confirm.
 7. Questions for the strategy call: 5 to 8 specific questions based on my goal and the findings.
@@ -221,7 +221,7 @@ Before you finish, re-check every number in the report against the attachments. 
       <span class="audit-step-num" aria-hidden="true">4</span>
       <div>
         <span class="audit-step-time">About 5 minutes</span>
-        <h2 id="step-4-title">Step 4: Email your report or bring it to a strategy call</h2>
+        <h2 id="step-4-title">Step 4: Email Your Report or Bring It to a Strategy Call</h2>
       </div>
     </div>
 
@@ -230,13 +230,13 @@ Before you finish, re-check every number in the report against the attachments. 
     <div class="choice-cards">
       <div class="choice-card choice-card-dark">
         <span class="choice-card-kicker">Option A</span>
-        <h3>Email it before the call</h3>
+        <h3>Email It before the Call</h3>
         <p>Send your report to hello@30adigitalmarketing.com, then book a time. We read it in advance, so we can spend the call on what to do about it.</p>
         <a class="btn-solid" href="mailto:hello@30adigitalmarketing.com?subject=Audit%20report%20for%20my%20strategy%20call&amp;body=Business%20name%3A%0AWebsite%3A%0AMy%20strategy%20call%20is%20on%3A%0A%0A(Please%20attach%20your%20report.)">Email my report</a>
       </div>
       <div class="choice-card">
         <span class="choice-card-kicker">Option B</span>
-        <h3>Bring it to the call</h3>
+        <h3>Bring It to the Call</h3>
         <p>Book a time and open the report on screen when we talk. We'll go through it with you and agree what to do first.</p>
         <a class="btn-solid" href="/strategy-call/">Book a strategy call</a>
       </div>
@@ -251,7 +251,7 @@ Before you finish, re-check every number in the report against the attachments. 
 
 </div>
 
-<h2 id="free-audit-vs-strategy">What a free SEO audit can and can't tell you</h2>
+<h2 id="free-audit-vs-strategy">What a Free SEO Audit Can and Can't Tell You</h2>
 
 <p>A free audit is a good place to start. It shows the obvious problems and gives you the words for a better conversation about your site. It isn't a strategy, and the tools behind it have real limits.</p>
 
@@ -259,14 +259,14 @@ Before you finish, re-check every number in the report against the attachments. 
   <li><strong>They take a snapshot.</strong> Free versions check one page or a handful of pages, and often show only a preview of the data.</li>
   <li><strong>The numbers move.</strong> Speed scores shift by a few points between runs, and AI answers differ each time. One report can't tell you whether a number is a pattern or a one-off.</li>
   <li><strong>Their access is limited.</strong> Free tools have limited crawling, limited browser testing and limited access to real SEO data compared with a full professional review.</li>
-  <li><strong>They don't know your business.</strong> A tool can tell you a page is slow. It can't tell you whether that page matters to your customers, your goals or your season.</li>
+  <li><strong>They don't know your business.</strong> A tool can tell you a page is slow. It can't tell you whether that page matters to your customers, your goals, or your season.</li>
 </ul>
 
-<h3 id="what-we-do-differently">What we do differently</h3>
+<h3 id="what-we-do-differently">What We Do Differently</h3>
 
-<p>When we build a strategy for your company, we don't download reports from free tools and hand them back. We start from your business goals: who you want to reach, what a customer is worth, where you're strong and where competitors are ahead. Then we work back to what to do, and in what order.</p>
+<p>When we build a strategy for your company, we don't download reports from free tools and hand them back. We start from your business goals: who you want to reach, what a customer is worth, where you're strong, and where competitors are ahead. Then we work back to what to do, and in what order.</p>
 
-<p>Past a basic set of fixes, the real work is strategic: which customers and markets come first, which pages and topics to build, how to earn trust and mentions beyond your own site, and what to leave alone. That judgment is what our <a href="/services/seo/">SEO services</a>, <a href="/services/ai-search-visibility/">AI search visibility</a> work and <a href="/services/digital-authority/">digital authority</a> work are built on.</p>
+<p>Past a basic set of fixes, the real work is strategic: which customers and markets come first, which pages and topics to build, how to earn trust and mentions beyond your own site, and what to leave alone. That judgment is what our <a href="/services/seo/">SEO services</a>, <a href="/services/ai-search-visibility/">AI search visibility</a> work, and <a href="/services/digital-authority/">digital authority</a> work are built on.</p>
 
 <div class="compare-wrap">
 <table class="compare-table">
@@ -276,14 +276,14 @@ Before you finish, re-check every number in the report against the attachments. 
   </thead>
   <tbody>
     <tr><th scope="row">Starting point</th><td>A web address</td><td>Your business goals</td></tr>
-    <tr><th scope="row">What it sees</th><td>A snapshot from limited free tools</td><td>A full review of your site, your market and your competitors</td></tr>
+    <tr><th scope="row">What it sees</th><td>A snapshot from limited free tools</td><td>A full review of your site, your market, and your competitors</td></tr>
     <tr><th scope="row">What you get</th><td>A list of issues</td><td>Prioritized decisions tied to your goals</td></tr>
     <tr><th scope="row">Who decides what matters</th><td>The tool's defaults</td><td>You and us, together</td></tr>
   </tbody>
 </table>
 </div>
 
-<h2 id="where-next">Where to go from your report</h2>
+<h2 id="where-next">Where to Go from Your Report</h2>
 
 <p>Your report is useful whichever way you go next.</p>
 
@@ -303,22 +303,22 @@ Before you finish, re-check every number in the report against the attachments. 
   <a class="path-card path-card-accent" href="/fit-quiz/">
     <span class="path-card-kicker">Not sure yet?</span>
     <span class="path-card-title">Take the fit quiz</span>
-    <span class="path-card-text">Answer a few questions about your business size, growth goals, industry and markets, and see which of our services fit you best.</span>
+    <span class="path-card-text">Answer a few questions about your business size, growth goals, industry, and markets, and see which of our services fit you best.</span>
     <span class="path-card-more">Find your fit</span>
   </a>
 </div>
 
 <div class="callout callout-fit" markdown="1">
 
-## Is this audit right for you?
+## Is This Audit Right for You?
 
-It suits owners and marketing leads who want a clear first look before talking to an agency. It works best for businesses whose customers find them online, like the [industries we serve](/industries/): vacation rentals, hotels, venues, golf, real estate, wellness, professional services and home services. We focus on the Gulf Coast, and national brands based elsewhere are welcome.
+It suits owners and marketing leads who want a clear first look before talking to an agency. It works best for businesses whose customers find them online, like the [industries we serve](/industries/): vacation rentals, hotels, venues, golf, real estate, wellness, professional services, and home services. We focus on the Gulf Coast, and national brands based elsewhere are welcome.
 
 </div>
 
 <div class="faq" markdown="1">
 
-## Common questions about a free SEO audit
+## Common Questions about a Free SEO Audit
 
 **Is this free SEO audit really free?** Yes. The tools are free to use, and so is the strategy call. Free tools limit how many checks you can run in a day, and some show only a preview of their data.
 
@@ -336,7 +336,7 @@ It suits owners and marketing leads who want a clear first look before talking t
 
 **Will you reply to my report by email?** We read any report you send ahead of your call, then walk through it with you on the call, where there's time to answer your questions properly.
 
-**What's the difference between this and a full SEO audit?** This one checks a few pages with free tools. A full audit covers your whole site, your market and your competitors, and ends in decisions about what to do first. It's where every one of our monthly plans begins.
+**What's the difference between this and a full SEO audit?** This one checks a few pages with free tools. A full audit covers your whole site, your market, and your competitors, and ends in decisions about what to do first. It's where every one of our monthly plans begins.
 
 **Does a good report guarantee better rankings?** No. A free audit finds issues. It doesn't guarantee results, and search strategies usually take six months or more to mature.
 

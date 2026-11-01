@@ -2,10 +2,10 @@
 layout: page
 title: "Brand Strategy & Analysis"
 seo_title: "Brand Strategy Services | 30A Digital Marketing"
-description: "Brand strategy services for Gulf Coast businesses: positioning, competitor analysis and messaging that set you apart. Start with a free brand review."
+description: "Brand strategy services for Gulf Coast businesses: positioning, competitor analysis, and messaging that set you apart. Start with a free brand review."
 eyebrow: "Services"
-h1: "Brand strategy services for Gulf Coast businesses"
-lede: "Positioning, competitor analysis and messaging that give your website, listings and sales conversations one clear point of view."
+h1: "Brand Strategy Services for Gulf Coast Businesses"
+lede: "Positioning, competitor analysis, and messaging that give your website, listings and sales conversations one clear point of view."
 blurb: "Positioning, competitor analysis and messaging that give every channel a clear point of view."
 group: services
 order: 4
@@ -30,49 +30,49 @@ Our brand strategy services help Gulf Coast businesses decide what they stand fo
 
 Most businesses on the coast compete in a crowded field. Customers compare several options, often from far away, and they choose the one that explains itself best. If your message sounds like everyone else's, price becomes the only difference.
 
-## What our brand strategy services include
+## What Our Brand Strategy Services Include
 
-### Competitor analysis and competitive research
+### Competitor Analysis and Competitive Research
 
 We study the businesses your customers compare you with: what they promise, how they price, what their reviews praise and complain about, and how search engines and AI tools describe them. You'll see where the market is crowded and where there's room.
 
-### SWOT analysis
+### SWOT Analysis
 
-Your strengths, weaknesses, opportunities and threats, set out plainly and backed by what we found. It's the honest starting point for every decision that follows.
+Your strengths, weaknesses, opportunities, and threats, set out plainly, and backed by what we found. It's the honest starting point for every decision that follows.
 
-### Customer and team interviews
+### Customer and Team Interviews
 
-We talk to owners, staff and a few of your best customers. They tell us why people really choose you, in words no internal brainstorm would find.
+We talk to owners, staff, and a few of your best customers. They tell us why people really choose you, in words no internal brainstorm would find.
 
-### Brand positioning and value proposition
+### Brand Positioning and Value Proposition
 
 A short positioning statement and value proposition: who you serve, what you do better than anyone nearby, and the proof behind it.
 
-### Brand messaging framework
+### Brand Messaging Framework
 
 Key messages for each audience, for example guests and homeowners, or buyers and sellers, with the proof points and phrases that support them. Your team gets one source to write from.
 
-### Voice and tone
+### Voice and Tone
 
 How your business sounds, with examples of what to say and what to avoid, so your website, emails and review replies all sound like the same company.
 
-## How a brand strategy project runs
+## How a Brand Strategy Project Runs
 
 1. **Listen.** Interviews with your team and customers, and a look at your sales and reviews.
 2. **Research.** Competitor analysis, a SWOT and a review of how search engines and AI tools describe you today.
-3. **Define.** Positioning, value proposition, messaging framework and voice, reviewed with you in a working session.
+3. **Define.** Positioning, value proposition, messaging framework, and voice, reviewed with you in a working session.
 4. **Apply.** We put the strategy to work on the pages and listings that matter most, and hand your team a short guide.
 
-## Why brand strategy matters for search and AI
+## Why Brand Strategy Matters for Search and AI
 
 Search engines and AI tools describe businesses from what they find. When your website, listings and reviews tell one consistent story, they repeat it accurately. When the story changes from page to page, they guess. A clear position makes your [AI search visibility](/services/ai-search-visibility/) work stronger, and gives every page we write a point of view. It's also the brief our [content and sales assets](/services/content/) work starts from.
 
-## What your free brand review covers
+## What Your Free Brand Review Covers
 
 Every strategy call includes a short review of how your business presents itself. You'll see:
 
 - How your positioning and messaging compare with three competitors.
-- How your website, listings and AI tools describe you today, and where they disagree.
+- How your website, listings, and AI tools describe you today, and where they disagree.
 - The claims customers repeat in your reviews, which often make the strongest messages.
 - The three changes we would make first.
 
@@ -80,7 +80,7 @@ You keep the findings whether or not we work together. [Book a free strategy cal
 
 <div class="callout callout-fit" markdown="1">
 
-## Is this the right fit?
+## Is This the Right Fit?
 
 We're a good fit for businesses that do excellent work but struggle to say why they're different, and for companies entering a new market, adding a service or outgrowing their old message. Brand strategy is the thinking and the words. If you also need a logo, graphics or a refreshed look, our [graphic design and animation](/services/graphic-design-animation/) service can take the strategy from there.
 
@@ -88,7 +88,7 @@ We're a good fit for businesses that do excellent work but struggle to say why t
 
 <div class="faq" markdown="1">
 
-## Common questions about brand strategy services
+## Common Questions about Brand Strategy Services
 
 **What do brand strategy services include?** Research into your market and competitors, interviews with your team and customers, then a positioning statement, value proposition, messaging framework and voice guide that your whole business can use.
 

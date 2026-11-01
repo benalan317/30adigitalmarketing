@@ -2,16 +2,16 @@
 layout: page
 title: "Services"
 seo_title: "Digital Marketing Services | 30A Digital Marketing"
-description: "Eight services for established Gulf Coast businesses: SEO, AI search visibility, digital authority, brand strategy, content, AI systems, paid ads and design."
+description: "Eight services for established Gulf Coast businesses: SEO, AI search visibility, digital authority, brand strategy, content, AI systems, paid ads, and design."
 eyebrow: "Services"
-h1: "Digital marketing services for the Gulf Coast"
+h1: "Digital Marketing Services for the Gulf Coast"
 lede: "Eight ways we help established businesses be found and chosen online."
 related:
   - /approach/
   - /industries/
 image_dir: "services"
 banner_image: "30a-digital-marketing-services-overview-panoramic-hero"
-banner_alt: "Gouache illustration of a Gulf Coast workspace with a laptop analytics dashboard, planning notes and 30A seaside architecture."
+banner_alt: "Gouache illustration of a Gulf Coast workspace with a laptop analytics dashboard, planning notes, and 30A seaside architecture."
 ---
 {% comment %}
 PAGE BRIEF
@@ -19,19 +19,19 @@ Primary keyword: digital marketing services (hub; the SEO page keeps seo service
 Purpose: Overview of all eight services, and how they fit into the monthly plans, the Website Buildout and Compass.
 {% endcomment %}
 
-Our digital marketing services cover the whole path from being found to being chosen: search, AI visibility, reputation, brand, content, paid ads, design and the AI systems behind your team. One team runs them together, so the work in each one supports the rest.
+Our digital marketing services cover the whole path from being found to being chosen: search, AI visibility, reputation, brand, content, paid ads, design, and the AI systems behind your team. One team runs them together, so the work in each one supports the rest.
 
 {% include card-list.html group="services" %}
 
-## How our digital marketing services fit together
+## How Our Digital Marketing Services Fit Together
 
 - **Be found.** SEO and AI search visibility put you in front of customers when they search or ask an AI tool.
 - **Be trusted.** Digital authority and reputation earn the reviews, coverage and links that make people believe you. Brand strategy makes sure everyone hears one clear message.
 - **Be chosen.** Content and sales assets help a ready buyer decide, and AI systems help your team answer faster and more consistently.
-- **Be seen sooner.** Paid advertising puts you in front of customers on Google, Meta and LinkedIn while your rankings build, and graphic design and animation give your site, ads and social a polished, consistent look.
+- **Be seen sooner.** Paid advertising puts you in front of customers on Google, Meta, and LinkedIn while your rankings build, and graphic design, and animation give your site, ads, and social a polished, consistent look.
 
-## How our services and plans fit together
+## How Our Services and Plans Fit Together
 
-Our services are the disciplines. Our [plans](/plans/) are how you buy them. A monthly plan is a level of effort applied to your business and spread across the services that will do the most for you. Every plan includes work across SEO, AI search visibility, digital authority and content, weighted to your market and goals. Brand strategy is quoted as a separate project, and AI systems are scoped to your business. Paid advertising is priced separately, and graphic design and animation are scoped project by project. Your free strategy call shows which services deserve the most attention.
+Our services are the disciplines. Our [plans](/plans/) are how you buy them. A monthly plan is a level of effort applied to your business and spread across the services that will do the most for you. Every plan includes work across SEO, AI search visibility, digital authority, and content, weighted to your market, and goals. Brand strategy is quoted as a separate project, and AI systems are scoped to your business. Paid advertising is priced separately, and graphic design and animation are scoped project by project. Your free strategy call shows which services deserve the most attention.
 
 Some work is bought on its own instead of monthly. The [Website Buildout](/plans/website-buildout/) is a one-time project for a new site or a redesign, and [Compass](/plans/diy-seo/) is a do-it-yourself SEO workflow that we build for you. To see which services and plan your answers point to, take the [fit quiz](/fit-quiz/).

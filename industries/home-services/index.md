@@ -4,9 +4,9 @@ title: "Home Services & Contractors"
 seo_title: "Contractor SEO & Roofer Marketing | 30A Digital Marketing"
 description: "Contractor SEO and marketing for roofers, builders and home-service trades: more quote requests, calls and reviews from local search."
 eyebrow: "Industries"
-h1: "Contractor SEO for roofers, builders and home-service trades on the Gulf Coast"
+h1: "Contractor SEO for Roofers, Builders and Home-Service Trades on the Gulf Coast"
 lede: "Local search, reviews and AI visibility that bring more quote requests and calls for the jobs you actually want."
-blurb: "Roofing, HVAC, pool, landscaping, remodeling and custom builders: more quote requests and calls."
+blurb: "Roofing, HVAC, pool, landscaping, remodeling, and custom builders: more quote requests, and calls."
 group: industries
 order: 10
 related:
@@ -31,63 +31,63 @@ Our contractor SEO helps roofers, HVAC companies, pool builders, landscapers, re
 
 When a homeowner needs a roof checked after a storm, or a builder for a second home, they search, read the reviews and call one of the first few names they trust. Many of your clients own homes here but live elsewhere, so they hire from a screen.
 
-## Where your next job is decided
+## Where Your Next Job Is Decided
 
 - **The map results.** Local searches usually show a map with a few businesses. Your Google Business Profile, reviews and service areas decide whether you are one of them.
 - **Your reviews.** Homeowners read recent reviews, and your replies, before they pick up the phone.
 - **Your service pages.** A clear page for each service and area, with real project photos, license and insurance details and an obvious way to ask for a quote.
 - **AI answers.** "Who is the best roofer in Santa Rosa Beach?" is now asked of AI tools, which name only a few companies.
 
-## What our contractor SEO covers
+## What Our Contractor SEO Covers
 
-### Local SEO and your Google Business Profile
+### Local SEO and Your Google Business Profile
 
-Categories, services, service areas, photos and updates kept accurate, plus consistent listings across the directories homeowners and AI tools check. This sits on the same foundations as our [SEO services](/services/seo/).
+Categories, services, service areas, photos, and updates kept accurate, plus consistent listings across the directories homeowners and AI tools check. This sits on the same foundations as our [SEO services](/services/seo/).
 
-### Service and service-area pages
+### Service and Service-Area Pages
 
 A page for each job you want more of, from roof replacement and AC installs to pool builds and outdoor kitchens. Area pages are written for each town you serve, not copied from one to the next.
 
-### Roofing SEO and storm readiness
+### Roofing SEO and Storm Readiness
 
-Roofing searches jump after storms and through hurricane season, which runs from June to November. We prepare inspection, storm-damage and insurance-claim pages before the season starts, so they're ready when homeowners search. Good roofer marketing after a storm is calm and factual, never alarming.
+Roofing searches jump after storms and through hurricane season, which runs from June to November. We prepare inspection, storm-damage, and insurance-claim pages before the season starts, so they're ready when homeowners search. Good roofer marketing after a storm is calm and factual, never alarming.
 
-### Reviews and reputation
+### Reviews and Reputation
 
 A steady, policy-compliant way to ask happy customers for reviews, help replying to every one, and alerts when new reviews appear.
 
-### Visibility in AI answers
+### Visibility in AI Answers
 
-AI tools recommend contractors whose details are clear and confirmed in several places: licensing, services, areas and reviews. Our [AI search visibility](/services/ai-search-visibility/) work tracks how each tool describes you and fixes what it gets wrong.
+AI tools recommend contractors whose details are clear and confirmed in several places: licensing, services, areas, and reviews. Our [AI search visibility](/services/ai-search-visibility/) work tracks how each tool describes you and fixes what it gets wrong.
 
-### Call and quote-request tracking
+### Call and Quote-Request Tracking
 
 Call and form tracking that shows which searches and pages produce real jobs.
 
-## Contractor lead generation that fits your crews
+## Contractor Lead Generation That Fits Your Crews
 
-Contractor lead generation only helps if the leads fit. We aim for the jobs, towns and project sizes you want, and say plainly on your site what you don't take on. A shorter list of good quote requests is worth more than a full inbox of jobs you would turn down.
+Contractor lead generation only helps if the leads fit. We aim for the jobs, towns, and project sizes you want, and say plainly on your site what you don't take on. A shorter list of good quote requests is worth more than a full inbox of jobs you would turn down.
 
-## Contractor website design that earns the call
+## Contractor Website Design That Earns the Call
 
 Many contractor sites look fine but lose the call: no phone number at the top of the page, slow photo galleries, a quote form that asks for too much. Contractor website design should make the next step obvious on a phone. If your site needs rebuilding, our [Website Buildout](/plans/website-buildout/) covers the build and the SEO together.
 
-## Search first, ads where they help
+## Search First, Ads Where They Help
 
-Our work centers on three things done carefully: search, AI visibility and reputation. When you need calls sooner than rankings can deliver, [paid advertising](/services/paid-advertising/) on Google can fill the gap, priced separately. If someone already runs your ads, we work alongside them and share what we learn.
+Our work centers on three things done carefully: search, AI visibility, and reputation. When you need calls sooner than rankings can deliver, [paid advertising](/services/paid-advertising/) on Google can fill the gap, priced separately. If someone already runs your ads, we work alongside them and share what we learn.
 
-## Planned around the Gulf Coast year
+## Planned around the Gulf Coast Year
 
 Pool and outdoor-living projects are often planned in winter and spring. HVAC demand climbs with the summer heat. Roofing peaks after storms, and second-home owners often schedule work around their visits. We publish and update pages ahead of each, so you're visible when the phone should ring.
 
 <div class="callout callout-audit" markdown="1">
 
-## What your free contractor SEO audit covers
+## What Your Free Contractor SEO Audit Covers
 
 Every strategy call includes an audit of your local search presence. You'll see:
 
 - Where you appear in the map results across the towns you serve, compared with three competitors.
-- Your review count, rating and reply record against the same competitors.
+- Your review count, rating, and reply record against the same competitors.
 - The services and areas with missing or thin pages.
 - How AI tools describe your company, and who they recommend instead.
 - The three changes we would make first.
@@ -98,7 +98,7 @@ You keep the findings whether or not we work together.
 
 <div class="callout callout-fit" markdown="1">
 
-## Is this the right fit?
+## Is This the Right Fit?
 
 We're a good fit for established contractors with steady crews who want more of the right jobs from search. We're not a fit if you need dozens of leads by next week, or want help buying reviews. The first isn't realistic, and the second breaks platform rules.
 
@@ -106,11 +106,11 @@ We're a good fit for established contractors with steady crews who want more of 
 
 <div class="faq" markdown="1">
 
-## Common questions about contractor SEO
+## Common Questions about Contractor SEO
 
 **What is contractor SEO?** Contractor SEO is the work that helps homeowners find and call your company when they search for your trade in your area. It covers your Google Business Profile, service and area pages, reviews, technical fixes and, increasingly, AI answers.
 
-**Which trades do you work with?** Roofing, HVAC, pools, landscaping, remodeling and custom building.
+**Which trades do you work with?** Roofing, HVAC, pools, landscaping, remodeling, and custom building.
 
 **How long does it take?** Profile and listing fixes can show results within weeks. Competitive map rankings usually take several months, so we start before your busy season.
 

@@ -2,10 +2,10 @@
 layout: page
 title: "Content & Sales Assets"
 seo_title: "Content Marketing Services | 30A Digital Marketing"
-description: "Content marketing services that win business: SEO content strategy, case studies, proposals, newsletters and thought leadership, written for your buyers."
+description: "Content marketing services that win business: SEO content strategy, case studies, proposals, newsletters, and thought leadership, written for your buyers."
 eyebrow: "Services"
-h1: "Content marketing services that help buyers say yes"
-lede: "SEO content, case studies, proposals, newsletters and thought leadership, written in your voice for the moments when a customer is deciding."
+h1: "Content Marketing Services That Help Buyers Say Yes"
+lede: "SEO content, case studies, proposals, newsletters, and thought leadership, written in your voice for the moments when a customer is deciding."
 blurb: "Case studies, proposals, newsletters and thought leadership that help serious buyers say yes."
 group: services
 order: 5
@@ -26,41 +26,41 @@ Related keywords: SEO content strategy, case study marketing, content optimizati
 Purpose: Case studies, proposals, sales collateral, email and newsletters, executive thought leadership, text-based video scripts.
 {% endcomment %}
 
-Our content marketing services produce the writing that wins business: pages that bring customers in from search, and the case studies, proposals and newsletters that help them say yes. Every piece is planned around a buying decision, not a publishing calendar.
+Our content marketing services produce the writing that wins business: pages that bring customers in from search, and the case studies, proposals, and newsletters that help them say yes. Every piece is planned around a buying decision, not a publishing calendar.
 
 Most businesses don't lack content. They lack the right piece at the right moment: an answer to the question a buyer asks before calling, a case study that proves you've done it before, a proposal that reads as well as your work looks.
 
-## What our content marketing services include
+## What Our Content Marketing Services Include
 
-### SEO content strategy
+### SEO Content Strategy
 
 We map the questions your customers ask at each stage, check what already ranks, and plan the pages and articles worth writing first. Priorities follow revenue: the pieces closest to an inquiry come before the ones that only bring traffic.
 
-### Content optimization
+### Content Optimization
 
 Many sites already have pages that almost work. We rewrite and restructure them so search engines and AI tools understand them and readers act on them. It's often the fastest win.
 
-### Case studies
+### Case Studies
 
 Short, specific stories of work you've done: the problem, what you did and what changed. They're the proof buyers look for, and the pages AI tools can quote when someone asks who's good at what you do.
 
-### Proposals and sales collateral
+### Proposals and Sales Collateral
 
 Proposal templates, capability statements, service sheets and follow-up emails that make your team's job easier and your offer clearer.
 
-### Email and newsletters
+### Email and Newsletters
 
 Newsletters and email sequences for past guests, clients and prospects, so the people who already know you hear from you when it matters.
 
-### Thought leadership
+### Thought Leadership
 
 Articles and LinkedIn posts in an owner's or partner's voice, built from interviews, so your expertise shows up where clients and journalists look.
 
-### Video scripts
+### Video Scripts
 
-Scripts for property tours, explainers and short social videos. We write the words; your videographer, or one we can refer you to, films them.
+Scripts for property tours, explainers, and short social videos. We write the words; your videographer, or one we can refer you to, films them.
 
-## Content built around the sale
+## Content Built around the Sale
 
 We plan content in three layers:
 
@@ -70,11 +70,11 @@ We plan content in three layers:
 
 Every piece starts from your positioning. If that isn't written down yet, our [brand strategy](/services/brand-strategy/) work comes first.
 
-## How we use AI in content
+## How We Use AI in Content
 
-We use AI tools for research, outlines and first drafts, so more of your budget goes to interviews, expertise and editing. A writer and an editor shape every piece, facts are checked, and nothing is published without your approval.
+We use AI tools for research, outlines, and first drafts, so more of your budget goes to interviews, expertise and editing. A writer and an editor shape every piece, facts are checked, and nothing is published without your approval.
 
-## What your free content review covers
+## What Your Free Content Review Covers
 
 Every strategy call includes a short review of your content. You'll see:
 
@@ -88,23 +88,23 @@ You keep the findings whether or not we work together. [Book a free strategy cal
 
 <div class="callout callout-fit" markdown="1">
 
-## Is this the right fit?
+## Is This the Right Fit?
 
-We're a good fit for businesses whose customers research before they buy, and whose expertise is stronger than their website shows: firms, venues, property managers, practices and builders. We're not the right fit if you want dozens of short blog posts a month, or social media management.
+We're a good fit for businesses whose customers research before they buy, and whose expertise is stronger than their website shows: firms, venues, property managers, practices, and builders. We're not the right fit if you want dozens of short blog posts a month, or social media management.
 
 </div>
 
 <div class="faq" markdown="1">
 
-## Common questions about content marketing services
+## Common Questions about Content Marketing Services
 
-**What are content marketing services?** Content marketing services plan, write and improve the content that brings customers to you and helps them decide: website pages, articles, case studies, guides, emails and sales materials.
+**What are content marketing services?** Content marketing services plan, write and improve the content that brings customers to you and helps them decide: website pages, articles, case studies, guides, emails, and sales materials.
 
-**Do you use AI to write?** We use AI for research, outlines and first drafts. A writer and an editor shape every piece, and you approve everything before it's published.
+**Do you use AI to write?** We use AI for research, outlines, and first drafts. A writer and an editor shape every piece, and you approve everything before it's published.
 
 **Who writes the content?** Our in-house writers. Every piece is edited to the same standard and checked against your voice guide.
 
-**Do you design or animate?** Content and sales assets covers the writing: scripts, proposals, case studies and newsletters. Layouts and animation are handled by our [graphic design and animation](/services/graphic-design-animation/) service, or by your own designer from our briefs.
+**Do you design or animate?** Content and sales assets covers the writing: scripts, proposals, case studies, and newsletters. Layouts and animation are handled by our [graphic design and animation](/services/graphic-design-animation/) service, or by your own designer from our briefs.
 
 **How do you measure results?** Inquiries and conversions from each page, rankings and AI mentions for the topics we target, and how your sales team uses the assets we write.
 
