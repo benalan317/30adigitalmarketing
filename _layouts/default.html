@@ -47,7 +47,7 @@
     Structured data (schema.org). The homepage carries the full description of the business;
     every other page carries a short reference to the same organization.
     Deliberately "Organization", not "LocalBusiness": we are a remote agency with no public street address.
-    [OPEN] Add "sameAs" (LinkedIn and other profile URLs) to the Organization when those profiles exist.
+    "sameAs" lists the LinkedIn company page. Add other profile URLs there as they are created.
   {%- endcomment -%}
   {%- if page.url == "/" %}
   {%- assign schema_services = site.pages | where: "group", "services" | sort: "order" %}
@@ -76,6 +76,7 @@
         },
         "image": "{{ site.url }}/images/gulf-coast-sunset-share.jpg",
         "description": "Search, AI search visibility and reputation for established businesses on 30A and the Gulf Coast.",
+        "sameAs": ["https://www.linkedin.com/company/30a-digital-marketing"],
         "founder": { "@type": "Person", "name": "Ben Slaughter" },
         "areaServed": ["30A", "Santa Rosa Beach", "Destin", "South Walton", "Emerald Coast", "Gulf Coast"],
         "hasOfferCatalog": {
