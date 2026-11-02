@@ -27,7 +27,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
   <div class="hero-content">
     <span class="eyebrow">Search, reputation, and AI visibility</span>
     <h1>Be found.<br><em>Be chosen.</em></h1>
-    <p>A digital marketing agency for established businesses on 30A and the Gulf Coast. We help the right customers find you on Google and in AI answers, and give them good reason to call.</p>
+    <p>You've spent years building a business people on 30A and the Gulf Coast trust. As a digital marketing agency, we make sure the people looking for what you do find that name first, on Google and in AI answers, and see good reason to call.</p>
     <div class="hero-actions">
       <a class="btn-solid" href="/strategy-call/">Book a Strategy Call</a>
       <a class="link-caps" href="#free-tools">Start with a free tool</a>
@@ -38,7 +38,8 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
 <section class="statement">
   <span class="rule" aria-hidden="true"></span>
   <span class="eyebrow">Our point of view</span>
-  <h2>You've built a good business and a good name. We make sure the people searching for what you do find that name first: on Google, in AI answers, and in the reviews they read before they call.</h2>
+  <h2>Your good name already exists. Search should reflect it.</h2>
+  <p>It's there in your repeat guests, your referrals, and your reviews. Our work is to make the online picture match the real one, so that when someone searches, asks an AI tool, or reads your reviews before they call, they meet the business you've actually built.</p>
   <a class="link-caps" href="/approach/">Our approach</a>
 </section>
 
@@ -48,7 +49,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
     <a class="column" href="{{ s.url }}">
       <span class="num">0{{ forloop.index }}</span>
       <h3>{{ s.title | escape }}</h3>
-      <p>{{ s.blurb }}</p>
+      <p>{{ s.home_blurb | default: s.blurb }}</p>
     </a>
     {%- endfor %}
   </div>
@@ -60,14 +61,14 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
       <span class="steps-mark" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="eyebrow">Free resources</span>
       <h2 id="free-tools-title">Start on Your Own Terms.</h2>
-      <p>No signup, no sales pitch. Use them before we ever talk, then bring your results to the call.</p>
+      <p>No signup. Three tools you can use before we ever talk. The results are yours to keep, and if you do call, bring them along.</p>
     </div>
     <ol class="free-tools-list">
       <li>
         <a class="free-tool" href="/fit-quiz/">
           <span class="num">01</span>
           <h3>Find Your Fit</h3>
-          <p>Twelve quick questions. You get a best-fit plan, a runner-up, and the services that matter most.</p>
+          <p>Twelve quick questions. You'll see the plan that fits your business best, a runner-up, and the services that would matter most.</p>
           <span class="free-tool-time">About 3 minutes</span>
           <span class="free-tool-link">Take the marketing plan quiz</span>
         </a>
@@ -76,7 +77,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
         <a class="free-tool" href="/roi-calculator/">
           <span class="num">02</span>
           <h3>See What It Takes to Pay Off</h3>
-          <p>Enter your prices and margins to see how many new customers a plan needs to pay for itself.</p>
+          <p>Enter your prices and margins and see how many new customers a plan needs to pay for itself. Check the math before you spend a dollar.</p>
           <span class="free-tool-time">A few minutes</span>
           <span class="free-tool-link">Open the ROI calculator</span>
         </a>
@@ -85,7 +86,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
         <a class="free-tool" href="/free-audit/">
           <span class="num">03</span>
           <h3>See Where Your Site Stands</h3>
-          <p>Run three free tools and our AI prompt to get a full search and AI visibility report.</p>
+          <p>Three free tools and our AI prompt give you a full search and AI visibility report.</p>
           <span class="free-tool-time">About an hour</span>
           <span class="free-tool-link">Run the free SEO audit</span>
         </a>
@@ -107,7 +108,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
 <section class="plans-teaser" aria-label="Plans">
   <span class="eyebrow">Plans &amp; pricing</span>
   <h2>Published Prices. Month to Month.</h2>
-  <p>Three monthly levels: $4,000, $7,000, and $10,000. We recommend one after we've looked at your business, and it runs month to month.</p>
+  <p>Three monthly levels: Lantern at $4,000, Beacon at $7,000, and Lighthouse at $10,000. We recommend one after we've looked at your business, sometimes the smaller one, and it runs month to month, so you stay because it's working.</p>
   <ul class="plans-levels">
     <li><a href="/plans/"><img src="/images/plans/30a-plan-lantern-square-320.webp" srcset="/images/plans/30a-plan-lantern-square-320.webp 320w, /images/plans/30a-plan-lantern-square.webp 1086w" sizes="(min-width: 640px) 160px, 28vw" width="1086" height="1086" loading="lazy" alt=""><span>Lantern</span></a></li>
     <li><a href="/plans/"><img src="/images/plans/30a-plan-beacon-square-320.webp" srcset="/images/plans/30a-plan-beacon-square-320.webp 320w, /images/plans/30a-plan-beacon-square.webp 1086w" sizes="(min-width: 640px) 160px, 28vw" width="1086" height="1086" loading="lazy" alt=""><span>Beacon</span></a></li>
@@ -121,7 +122,7 @@ Links out to: three flagship services, Industries hub, Plans, Approach, the thre
 <section class="cta-band" aria-label="Book a strategy call">
   <span class="rule" aria-hidden="true"></span>
   <h2>Start with a Free Strategy Call.</h2>
-  <p>Thirty minutes on your business: how it shows up in search and AI answers today, and what we would do first. No charge and no pressure.</p>
+  <p>Thirty minutes on your business: how it shows up in search and AI answers today, and what we'd do first. It's free, and you'll leave with something useful whichever way you decide.</p>
   <a class="btn-solid" href="/strategy-call/">Book a Strategy Call</a>
   <p class="cta-note">Ran the free audit? Email us the report and we'll read it before we talk.</p>
 </section>

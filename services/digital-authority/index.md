@@ -7,6 +7,7 @@ eyebrow: "Services"
 h1: "Digital PR Services and Link Building for Gulf Coast Businesses"
 lede: "Earned media, editorial backlinks, credible listings, and a strong review reputation: the off-site SEO that gives people, search engines and AI tools reasons to choose you."
 blurb: "Earned media, credible listings and community presence that give people reasons to choose you."
+home_blurb: "Earned press, accurate listings, and real community presence: the reasons people choose you, made easy to find."
 group: services
 order: 3
 flagship: true
