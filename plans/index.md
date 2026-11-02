@@ -2,10 +2,10 @@
 layout: page
 title: "Plans & Pricing"
 seo_title: "SEO Pricing & Monthly Retainers | 30A Digital Marketing"
-description: "Monthly SEO plans at $4,000, $7,000, and $10,000, a one-time Website Buildout, and Compass, a DIY SEO workflow at $5,000 plus $500 a month."
+description: "Monthly SEO plans at $4,000, $7,000, and $10,000, a Website Buildout, Compass DIY SEO, and a fractional CMO starting at $5,000 a month."
 eyebrow: "Plans & Pricing"
 h1: "SEO Pricing and Monthly Plans"
-lede: "Three independent ways to work with us: a monthly plan, a one-time Website Buildout, or Compass, a DIY SEO workflow we build for you."
+lede: "Four independent ways to work with us: a monthly plan, a one-time Website Buildout, a fractional CMO, or Compass, a DIY SEO workflow we build for you."
 related:
   - /industries/
   - /about/
@@ -14,10 +14,10 @@ related:
 PAGE BRIEF
 Primary keyword: seo pricing
 Related keywords: SEO retainer, monthly SEO packages, SEO cost per month, local SEO pricing
-Purpose: Three offers side by side: the three monthly levels (Lantern $4,000 / Beacon $7,000 / Lighthouse $10,000, scoped to each business, no binding contract), the one-time Website Buildout, and Compass (DIY SEO workflow, $5,000 setup plus $500 a month). They are independent: none is a required first step. Links to Approach ('how we scope each package'), the Compass page and the strategy call.
+Purpose: Four offers side by side: the three monthly levels (Lantern $4,000 / Beacon $7,000 / Lighthouse $10,000, scoped to each business, no binding contract), the one-time Website Buildout, the fractional CMO (from $5,000 a month, custom quote, on its own or bundled), and Compass (DIY SEO workflow, $5,000 setup plus $500 a month). They are independent: none is a required first step. Links to Approach ('how we scope each package'), the Compass page and the strategy call.
 {% endcomment %}
 
-Our SEO pricing is public. Monthly plans cost $4,000, $7,000, or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
+Our SEO pricing is public. Monthly plans cost $4,000, $7,000, or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000, a fractional CMO from $5,000 a month, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
 
 ## Monthly Plans
 
@@ -69,6 +69,14 @@ What usually decides the right level:
 </div>
 
 <div class="plan-row">
+<img src="/images/services/30a-fractional-cmo-service-card-640.webp" srcset="/images/services/30a-fractional-cmo-service-card-640.webp 640w, /images/services/30a-fractional-cmo-service-card.webp 1200w" sizes="(min-width: 640px) 240px, 92vw" width="1200" height="900" loading="lazy" alt="Gouache illustration of rising bars and an upward arrow against a Gulf Coast beach, representing business growth.">
+<div class="plan-text">
+<h2>Leadership: Fractional CMO, from $5,000 a Month</h2>
+<p>For mid-sized businesses that need their marketing orchestrated but not a full-time executive. A part-time marketing director sets the plan, leads your vendors and staff, and reports to you monthly. Each client receives a custom quote, and the service runs on its own or alongside any plan. <a href="/services/fractional-cmo/">See the fractional CMO service</a>.</p>
+</div>
+</div>
+
+<div class="plan-row">
 <img src="/images/plans/30a-plan-compass-4x3-640.webp" srcset="/images/plans/30a-plan-compass-4x3-640.webp 640w, /images/plans/30a-plan-compass-4x3.webp 1448w" sizes="(min-width: 640px) 240px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a brass navigation compass resting on a coastal map with the Gulf in the background.">
 <div class="plan-text">
 <h2>Do It Yourself: Compass, $5,000 Setup Plus $500 a Month</h2>
@@ -97,5 +105,7 @@ You'll find cheaper agencies, and some of them do fine work. Our prices pay for 
 **Are paid ads and design included in the monthly plans?** No. [Paid advertising](/services/paid-advertising/) is priced separately, and your ad spend is separate from our fee. [Graphic design and animation](/services/graphic-design-animation/) are scoped project by project.
 
 **Can I combine the Website Buildout with a plan?** Yes, in any order. They're priced separately and neither requires the other.
+
+**Can I add a fractional CMO to a monthly plan?** Yes. A [fractional CMO](/services/fractional-cmo/) starts at $5,000 a month and can run on its own or alongside Lantern, Beacon, or Lighthouse. When you bundle, you receive one combined quote and one monthly invoice.
 
 **What if a monthly plan is more than I can spend right now?** Compass is built for that. It costs $5,000 to set up and $500 a month, and you run the content yourself. If you later move to a monthly plan, we skip the research and setup phase.

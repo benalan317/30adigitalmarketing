@@ -9,7 +9,7 @@ lede: "Campaigns on the three platforms where your customers search, scroll, and
 blurb: "Google, Meta and LinkedIn campaigns built around real inquiries and bookings, and run alongside your SEO."
 group: services
 nav_group: ads-creative
-order: 7
+order: 8
 related:
   - /industries/professional-services/
   - /industries/luxury-real-estate/
