@@ -19,15 +19,11 @@ Purpose: Blog index. Leads with a grid of posts (newest first), then supplementa
 
 {% include post-grid.html %}
 
-## About These Articles
+## Topics We Cover
 
-Plain-language articles on how coastal businesses get found and chosen: search, AI answers, reviews, and reputation. Each one is written to be useful on its own, whether or not you ever work with us.
+Our articles explain SEO, AI search, and online reputation in plain English for established businesses on 30A and across the Gulf Coast. Each one stands on its own, and none of them requires working with us.
 
-## What We Write About
-
-- **Search:** what's changing in Google, local results, and the map, and what it means for a seasonal business. More on our [SEO services](/services/seo/).
-- **AI answers:** how ChatGPT, Gemini and Google's AI features choose who to mention, and how to check what they say about you. More on [AI search visibility](/services/ai-search-visibility/).
-- **Reputation and authority:** reviews, press and links, earned honestly. More on [digital authority](/services/digital-authority/).
-- **The coastal calendar:** when your customers start researching, and what to publish before each season.
+- **SEO:** Google rankings, the map, and seasonal demand. See our [SEO services](/services/seo/).
+- **AI search:** how ChatGPT, Gemini, and Google's AI answers choose which businesses to name. See [AI search visibility](/services/ai-search-visibility/).
+- **Reputation and authority:** reviews, press, and links earned honestly. See [digital authority](/services/digital-authority/).
 - **Industry notes:** short pieces for rentals, venues, builders, practices, and firms.
-

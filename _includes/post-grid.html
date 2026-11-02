@@ -14,7 +14,7 @@
       <img class="post-card-img"
            src="/images/insights/{{ p.card_image }}.webp"
            srcset="/images/insights/{{ p.card_image }}-640.webp 640w, /images/insights/{{ p.card_image }}.webp 1200w"
-           sizes="(min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw"
+           sizes="(min-width: 561px) 260px, 46vw"
            width="1200" height="900"{% if forloop.index > 3 %} loading="lazy"{% endif %}
            alt="{{ p.card_alt | escape }}"{% if p.card_title %} title="{{ p.card_title | escape }}"{% endif %}>
       {%- endif %}
