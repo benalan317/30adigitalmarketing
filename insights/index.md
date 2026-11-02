@@ -2,10 +2,11 @@
 layout: page
 title: "Insights"
 seo_title: "SEO and AI Search Insights | 30A Digital Marketing"
-description: "Practical writing on search, AI visibility and digital authority for businesses on 30A and the Gulf Coast."
+description: "Practical articles on search, AI visibility, and digital authority for businesses on 30A and the Gulf Coast, written in plain English."
 eyebrow: "Insights"
 h1: "SEO and AI Search Insights"
 lede: "Practical notes on search, AI visibility, and digital authority."
+rich: true
 related:
   - /services/
   - /industries/
@@ -13,8 +14,12 @@ related:
 {% comment %}
 PAGE BRIEF
 Primary keyword: (blog index)
-Purpose: Blog index. Posts live at /insights/post-name/. Once there are posts, replace the body with a post list.
+Purpose: Blog index. Leads with a grid of posts (newest first), then supplemental content. Posts live at /insights/post-name/ and appear in the grid automatically when their front matter has group: insights. See the post front matter in /insights/30a-vacation-rental-seo/ for the fields.
 {% endcomment %}
+
+{% include post-grid.html %}
+
+## About These Articles
 
 Plain-language articles on how coastal businesses get found and chosen: search, AI answers, reviews, and reputation. Each one is written to be useful on its own, whether or not you ever work with us.
 
@@ -26,8 +31,3 @@ Plain-language articles on how coastal businesses get found and chosen: search, 
 - **The coastal calendar:** when your customers start researching, and what to publish before each season.
 - **Industry notes:** short pieces for rentals, venues, builders, practices, and firms.
 
-## Latest Articles
-
-- [30A Vacation Rental SEO: Winning Direct Bookings When Guests Ask Google and ChatGPT](/insights/30a-vacation-rental-seo/): how 30A guests plan trips, what Google and AI search need from rental websites, and where Google's AI Overview gets it wrong.
-
-More articles are on the way.

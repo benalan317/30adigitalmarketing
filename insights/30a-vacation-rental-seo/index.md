@@ -7,6 +7,12 @@ eyebrow: "Insights"
 h1: "30A Vacation Rental SEO: Winning Direct Bookings When Guests Ask Google and ChatGPT"
 lede: "How 30A guests plan trips, what Google and AI search require from rental websites, and where Google's AI Overview gives misleading advice."
 rich: true
+group: insights
+post_date: 2026-11-02
+blurb: "How 30A guests plan trips, what Google and AI search need from rental websites, and where Google's AI Overview gets it wrong."
+card_image: "30a-vacation-rental-seo-card"
+card_alt: "Gouache illustration of a 30A beach house at dusk, with a hand holding a phone that shows blurred search results and a map pin."
+card_title: "30A vacation rental SEO: a beach house at dusk and a phone showing search results"
 image_dir: "insights"
 hero_image: "30a-vacation-rental-seo-hero"
 hero_alt: "Gouache illustration of a 30A beach house at dusk, with a hand holding a phone that shows blurred search results and a map pin."

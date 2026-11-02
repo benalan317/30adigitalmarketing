@@ -1,0 +1,32 @@
+{%- comment -%}
+  Grid of blog posts for /insights/, newest first. Every card is one clickable link: image, date, title, summary.
+  A post appears here when its front matter has:  group: insights
+  Also needed: post_date (YYYY-MM-DD), blurb, card_image (filename without .webp), card_alt, card_title (optional).
+  Card images live in /images/insights/ as NAME.webp (1200x900) and NAME-640.webp (640x480).
+  Use:  {% include post-grid.html %}
+{%- endcomment -%}
+{%- assign posts = site.pages | where: "group", "insights" | sort: "post_date" | reverse -%}
+<ul class="post-grid">
+  {%- for p in posts %}
+  <li>
+    <a href="{{ p.url }}">
+      {%- if p.card_image %}
+      <img class="post-card-img"
+           src="/images/insights/{{ p.card_image }}.webp"
+           srcset="/images/insights/{{ p.card_image }}-640.webp 640w, /images/insights/{{ p.card_image }}.webp 1200w"
+           sizes="(min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw"
+           width="1200" height="900"{% if forloop.index > 3 %} loading="lazy"{% endif %}
+           alt="{{ p.card_alt | escape }}"{% if p.card_title %} title="{{ p.card_title | escape }}"{% endif %}>
+      {%- endif %}
+      <span class="post-card-body">
+        <time class="post-card-date" datetime="{{ p.post_date | date: '%Y-%m-%d' }}">{{ p.post_date | date: "%B %-d, %Y" }}</time>
+        <span class="post-card-title">{{ p.h1 | default: p.title | escape }}</span>
+        {%- if p.blurb %}
+        <span class="post-card-blurb">{{ p.blurb }}</span>
+        {%- endif %}
+        <span class="post-card-more">Read the article</span>
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

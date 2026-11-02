@@ -1051,7 +1051,9 @@ html { scroll-behavior: smooth; }
 .table-wrap table tbody td:first-child { font-weight: 500; color: var(--ink); }
 @media (max-width: 720px) { .table-wrap table { min-width: 620px; } }
 
-.rich .sources { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 15px; }
+.rich .sources { margin-top: 24px; font-size: 15px; }
+/* One divider only: the FAQ's last rule is dropped when References follows, and References adds no rule of its own */
+.rich .faq:has(+ .sources) p:last-of-type { border-bottom: 0; }
 .rich .sources h2 { font-size: 26px; }
 .rich .sources .ref-intro { margin: 0 0 6px; color: var(--muted); }
 .rich .sources ol { margin: 12px 0 0; border-top: 0; counter-reset: none; list-style: decimal; padding-left: 1.6em; }
@@ -1061,3 +1063,23 @@ html { scroll-behavior: smooth; }
 .rich .sources ol > li:target { background: #FBF9F4; outline: 8px solid #FBF9F4; }
 .rich sup.cite, .rich .cite { font-size: 0.8em; }
 @media (max-width: 560px) { .rich .quick-links ul { columns: 1; } .rich .quick-links { padding: 22px 20px; } }
+
+/* ---------- Insights index: blog post grid ---------- */
+.page-body:has(.post-grid) { max-width: 1200px; }
+.post-grid { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 48px 36px; }
+.rich .post-grid li { padding: 0; margin: 0; }
+.rich .post-grid li::before { content: none; }
+.post-grid a { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; }
+.post-card-img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--rule); transition: transform .6s ease; }
+.post-grid li > a { overflow: hidden; }
+.post-grid a:hover .post-card-img { transform: scale(1.03); }
+.post-card-body { display: flex; flex-direction: column; gap: 10px; padding: 22px 0 0; }
+.post-card-date { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; color: var(--accent); }
+.post-card-title { font-family: var(--display); font-weight: 400; font-size: 26px; line-height: 1.2; }
+.post-card-blurb { font-size: 15px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.post-card-more { margin-top: 4px; font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; }
+.post-grid a:hover .post-card-title, .post-grid a:hover .post-card-more { text-decoration: underline; text-underline-offset: 6px; }
+.post-grid a:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+.rich .post-grid + h2 { margin-top: 96px; }
+@media (prefers-reduced-motion: reduce) { .post-card-img { transition: none; } .post-grid a:hover .post-card-img { transform: none; } }
+.page-body:has(.post-grid) > :not(.post-grid) { max-width: 760px; }
