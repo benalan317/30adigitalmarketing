@@ -26,4 +26,8 @@ Plain-language articles on how coastal businesses get found and chosen: search, 
 - **The coastal calendar:** when your customers start researching, and what to publish before each season.
 - **Industry notes:** short pieces for rentals, venues, builders, practices, and firms.
 
-The first articles are on the way.
+## Latest Articles
+
+- [30A Vacation Rental SEO: Winning Direct Bookings When Guests Ask Google and ChatGPT](/insights/30a-vacation-rental-seo/): how 30A guests plan trips, what Google and AI search need from rental websites, and where Google's AI Overview gets it wrong.
+
+More articles are on the way.

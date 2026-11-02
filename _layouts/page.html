@@ -11,7 +11,7 @@ layout: default
          srcset="/images/{{ img_dir }}/{{ page.hero_image }}-900.webp 900w, /images/{{ img_dir }}/{{ page.hero_image }}.webp 1672w"
          sizes="100vw" width="1672" height="941"
          fetchpriority="high"
-         alt="{{ page.hero_alt | escape }}">
+         alt="{{ page.hero_alt | escape }}"{% if page.hero_title %} title="{{ page.hero_title | escape }}"{% endif %}>
     <div class="page-hero-shade" aria-hidden="true"></div>
     <div class="page-hero-text">
       {%- unless page.no_breadcrumbs %}{% include breadcrumbs.html %}{% endunless %}
