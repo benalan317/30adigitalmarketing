@@ -56,7 +56,7 @@ The full results are in [What Our Prompt Test Found](#prompt-test).
 <li><a href="#run-a-test">A Controlled Prompt Test You Can Run Yourself</a></li>
 <li><a href="#improve">The Work That Improves AI Visibility</a></li>
 <li><a href="#ai-slop">AI Content vs. AI Slop: The Difference Is the Editor</a></li>
-<li><a href="#90-day-plan">A 90-Day AI SEO Plan for a Small Business</a></li>
+<li><a href="#plan-90-day">A 90-Day AI SEO Plan for a Small Business</a></li>
 <li><a href="#faq">Common Questions about AI SEO for Small Businesses</a></li>
 </ul>
 </nav>
@@ -216,23 +216,23 @@ Pair the test with data you own. Search Console now offers generative AI perform
 
 ## The Work That Improves AI Visibility {#improve}
 
-There are no tricks. The same work that builds a good name builds AI visibility, and it keeps its value whatever the algorithms do. The examples below follow a roofing contractor in Destin, a fictional business.
+There are no tricks. The same work that builds a good name builds AI visibility, and it keeps its value whatever the algorithms do. It applies to any small business, whether you run a restaurant, a law office, or a rental company.
 
 ### Your Website and Profiles
 
-AI answers repeat the facts they can find, so state them clearly and keep them identical everywhere. Our test showed what goes wrong otherwise: one roofer's license number appeared under a different company, and one business was placed in two different towns.
+AI answers repeat the facts they can find, so state them clearly and keep them identical everywhere. Our test showed what goes wrong otherwise: one business's license number appeared under a different company, and another business was placed in two different towns.
 
 <div class="table-wrap" markdown="1">
 
-| Fact | What to state on the page |
-| --- | --- |
-| Service area | Every town you serve, by name |
-| Roof types and materials | Metal, shingle, tile, and flat roofs, and the brands you install |
-| Storm and insurance-claim help | What you document and how you work with adjusters |
-| Licensing and insurance | License number and coverage, written the same way on every site |
-| Warranty | What is covered, for how long, and who backs it |
-| Response time | How quickly you inspect after a storm |
-| Financing | Whether you offer it and on what terms |
+| Fact | What to state on the page | Example: a roofing company |
+| --- | --- | --- |
+| Name, address, and phone | Written the same way on every site | Matching on your site, Google Business Profile, and directories |
+| Service area | Every town or neighborhood you serve, by name | Each beach town from Destin to Santa Rosa Beach |
+| Services and specialties | What you offer, and what you do best | Metal, shingle, and tile roofs |
+| Credentials | Licenses, certifications, insurance, and awards | State license number and manufacturer certifications |
+| Prices and terms | Price ranges, minimums, financing, or booking rules | Whether financing is offered |
+| Guarantees and policies | Warranties, refunds, and cancellation terms | What the warranty covers and for how long |
+| Hours and response time | When customers can reach you and how fast you reply | How quickly you inspect after a storm |
 
 </div>
 
@@ -242,9 +242,9 @@ Pages with specific facts and cited sources are easier for AI to use. In a 2024 
 
 The same way we ask friends and family for referrals in real life, AI answers about a named business lean on what other sites say about it. Build your record honestly:
 
-- Ask recent customers for detailed reviews that name the job and the neighborhood.
-- Earn local press coverage, and keep listings current with your chamber of commerce and trade associations.
-- Join manufacturer certified-contractor directories and list yourself on supplier and partner pages.
+- Ask recent customers for detailed reviews that name the service they received and where.
+- Earn local press coverage, and keep listings current with your chamber of commerce and trade or professional associations.
+- Get listed in the directories your industry uses, such as certification programs, supplier and partner pages, or booking platforms.
 - Sponsor community events that publish a sponsor page.
 
 ### Technical Access
@@ -259,7 +259,7 @@ Let Googlebot crawl your site. Allow OAI-SearchBot as well if you want to appear
 - One page per town with only the town name swapped
 - Tools that promise guaranteed AI placement
 
-Google defines scaled content abuse as generating many pages mainly to manipulate rankings, and its spam policies now cover AI answers too [[10]](#ref-10)[[11]](#ref-11). Our [digital authority and reputation](/services/digital-authority/), [AI search visibility](/services/ai-search-visibility/), and [Website Buildout](/plans/website-buildout/) pages explain how we handle this work for clients, including [home services companies](/industries/home-services/) like roofers.
+Google defines scaled content abuse as generating many pages mainly to manipulate rankings, and its spam policies now cover AI answers too [[10]](#ref-10)[[11]](#ref-11). Our [digital authority and reputation](/services/digital-authority/), [AI search visibility](/services/ai-search-visibility/), and [Website Buildout](/plans/website-buildout/) pages explain how we handle this work for clients, including [home services companies](/industries/home-services/).
 
 ## AI Content vs. AI Slop: The Difference Is the Editor {#ai-slop}
 
@@ -280,7 +280,7 @@ The starting point is easy to spot. You could open any answer with "14 billion y
 
 Volume is easy to produce with AI, and usefulness is the hard part. Marketing and promotions is already the most common AI use among small businesses, at 41% [[1]](#ref-1), so a page that only restates the basics adds little. Google's position is about purpose and scale, not the tool: generating many pages without adding value for users can violate its scaled content policy [[10]](#ref-10). A page that earns its place passes that test, regardless of how it was written.
 
-## A 90-Day AI SEO Plan for a Small Business {#90-day-plan}
+## A 90-Day AI SEO Plan for a Small Business {#plan-90-day}
 
 1. **Days 1 to 30: Set the baseline.** Build the question list and run the first test. Check crawler access, Search Console, and analytics. List every fact customers check before they hire you.
 2. **Days 31 to 60: Fix your own spaces.** Rewrite the top service pages, correct your Google Business Profile, and align directory listings so every fact matches.
