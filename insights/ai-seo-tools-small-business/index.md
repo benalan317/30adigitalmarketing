@@ -107,7 +107,7 @@ Asking AI about your own business costs nothing and shows you what a customer mi
 
 ### Ask AI to Describe Your Business
 
-Ask each AI tool what it knows about you. Then check every fact: your name, phone number, service area, services, licenses, hours, and reviews. In our own prompt test, ChatGPT showed one Destin roofer with 4 reviews, while Google's AI Mode showed the same company with 59. ChatGPT then ranked it lower for having "only 4 reviews." Mixed-up facts like these usually trace back to listings you can fix.
+Ask each AI tool what it knows about you. Then check every fact: your name, phone number, service area, services, licenses, hours, and reviews. In our own prompt test, ChatGPT showed one Destin roofer with 4 reviews, while Google's AI Mode showed the same company with 59. ChatGPT then ranked it lower for having "only 4 reviews." Mixed-up facts like these usually trace back to listings you can fix. Our guide to [AI SEO for small businesses](/insights/ai-seo-small-business/) shares the full prompt test and the method behind it.
 
 ### Ask the Questions Your Customers Ask
 
