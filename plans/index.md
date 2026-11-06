@@ -14,10 +14,10 @@ related:
 PAGE BRIEF
 Primary keyword: seo pricing
 Related keywords: SEO retainer, monthly SEO packages, SEO cost per month, local SEO pricing
-Purpose: Four offers side by side: the three monthly levels (Lantern $4,000 / Beacon $7,000 / Lighthouse $10,000, scoped to each business, no binding contract), the one-time Website Buildout, the fractional CMO (from $5,000 a month, custom quote, on its own or bundled), and Compass (DIY SEO workflow, $5,000 setup plus $500 a month). They are independent: none is a required first step. Links to Approach ('how we scope each package'), the Compass page and the strategy call.
+Purpose: Four offers side by side: the three monthly levels (Lantern $4,000 / Beacon $7,000 / Lighthouse $10,000, scoped to each business; three months month to month, then a nine-month contract and six-month contracts after that), the one-time Website Buildout, the fractional CMO (from $5,000 a month, custom quote, on its own or bundled), and Compass (DIY SEO workflow, $5,000 setup plus $500 a month). They are independent: none is a required first step. Links to Approach ('how we scope each package'), the Compass page and the strategy call.
 {% endcomment %}
 
-Our SEO pricing is public. Monthly plans cost $4,000, $7,000, or $10,000 a month, each a retainer scoped to your business without a binding contract. Separately, we offer a one-time Website Buildout for $10,000, a fractional CMO from $5,000 a month, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
+Our SEO pricing is public. Monthly plans cost $4,000, $7,000, or $10,000 a month, each a retainer scoped to your business. The first three months run month to month, so you can judge the work before signing a contract. Separately, we offer a one-time Website Buildout for $10,000, a fractional CMO from $5,000 a month, and Compass, a DIY SEO workflow for $5,000 to set up and $500 a month.
 
 ## Monthly Plans
 
@@ -27,7 +27,7 @@ A monthly plan is a level of effort applied to your brand and spread across the 
 <div class="plan-card">
 <img src="/images/plans/30a-plan-lantern-4x3-640.webp" srcset="/images/plans/30a-plan-lantern-4x3-640.webp 640w, /images/plans/30a-plan-lantern-4x3.webp 1448w" sizes="(min-width: 640px) 230px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a glowing lantern on a white coastal porch overlooking the Gulf at sunset.">
 <h3>Lantern: $4,000 a Month</h3>
-<p>For newer or smaller businesses getting the foundations right: a site search engines and AI understand, accurate listings and services, and the first searches worth winning.</p>
+<p>For new or established small businesses looking to move upmarket: a site search engines and AI understand, accurate listings and services, and the first searches worth winning.</p>
 </div>
 <div class="plan-card">
 <img src="/images/plans/30a-plan-beacon-4x3-640.webp" srcset="/images/plans/30a-plan-beacon-4x3-640.webp 640w, /images/plans/30a-plan-beacon-4x3.webp 1448w" sizes="(min-width: 640px) 230px, 92vw" width="1448" height="1086" loading="lazy" alt="Textured gouache illustration of a medium-sized glowing nautical beacon mounted on a white wooden boat at sunset along the Florida Gulf Coast.">
@@ -46,7 +46,7 @@ A monthly plan is a level of effort applied to your brand and spread across the 
 - A strategy written for your business, built from a full audit.
 - Work across SEO, AI search visibility, digital authority, and content, weighted to what your business needs most.
 - A monthly report and quarterly meeting to discuss progress and next steps.
-- Month-to-month terms, with no binding contract.
+- A three-month trial period, month to month, before any contract.
 
 ## How to Choose Your Level
 
@@ -94,7 +94,7 @@ You'll find cheaper agencies, and some of them do fine work. Our prices pay for 
 
 **How much does SEO cost per month?** With us, $4,000, $7,000 or $10,000 a month, depending on the level. Across the industry, prices vary widely with scope and quality, so compare what each retainer actually includes.
 
-**Is there a contract?** No binding contract. Plans run month to month.
+**Is there a contract?** Not at first. We work month to month for the first three months. If you're happy with our work, we sign a nine-month contract to finish the first year, then continue with six-month contracts after that.
 
 **Can I change levels later?** Yes. You can move up or down as your needs change.
 

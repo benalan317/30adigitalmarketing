@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 seo_title: "About Us | 30A Digital Marketing"
-description: "30A Digital Marketing helps established Gulf Coast businesses get found in search and AI answers. Led by Ben Slaughter. Published prices, month-to-month plans."
+description: "30A Digital Marketing helps established Gulf Coast businesses get found in search and AI answers. Led by Ben Slaughter. Published prices and a three-month trial."
 eyebrow: "About"
 h1: "About 30A Digital Marketing"
 lede: "We help established Gulf Coast businesses get found by the customers already looking for them."
@@ -41,7 +41,7 @@ Many coastal businesses sell to customers who live hundreds of miles away, and c
 - **Straight answers.** We tell you what we would do, what it costs, and what nobody can promise. Search engines decide rankings, and we won't pretend otherwise.
 - **Your good name comes first.** No bought links, no fake reviews and no shortcuts that put the reputation you've built at risk.
 - **Nothing goes live without your approval.** Changes to your website or your brand are yours to sign off.
-- **Month to month.** No long-term contract. We'd rather keep your business by doing good work.
+- **A three-month trial.** We work month to month for the first three months, so you can judge the work before signing a contract.
 - **Published prices.** You know what each plan costs before you ever pick up the phone.
 - **One point of contact.** One person who knows your business and answers your questions.
 

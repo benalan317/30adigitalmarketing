@@ -111,6 +111,6 @@ Property management companies, and owners of several homes, who want a stronger 
 
 **Do you help us win new homeowners?** Yes. Owner pages, owner-focused search and a clear income estimate request are part of the program.
 
-**What does it cost?** Vacation rental marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Vacation rental marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

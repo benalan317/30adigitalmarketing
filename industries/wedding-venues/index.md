@@ -109,6 +109,6 @@ Wedding and event venues, resorts with a wedding business, and planners on 30A a
 
 **Do you work with planners too?** Yes. Planners face the same search and AI questions, and their recommendations help venues. We tailor the work to whichever side you're on.
 
-**What does it cost?** Wedding venue marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Wedding venue marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

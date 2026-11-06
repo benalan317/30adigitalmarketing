@@ -111,6 +111,6 @@ We're a good fit for public, semi-private and resort courses and clubs that want
 
 **Do you work with our tee-sheet provider?** Yes. We don't replace it. We make sure search and tracking work with it.
 
-**What does it cost?** Golf course marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Golf course marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

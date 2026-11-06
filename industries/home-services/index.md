@@ -118,6 +118,6 @@ We're a good fit for established contractors with steady crews who want more of 
 
 **Do you build contractor websites?** Yes, when the current site can't carry the work. Most sites can be improved as they are, and the audit tells us which path makes sense.
 
-**What does it cost?** Contractor SEO is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Contractor SEO is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

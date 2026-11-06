@@ -956,7 +956,94 @@
     if (!state.sid) state.sid = newId();
     writeAnswers(state.answers || {});
   }
+  // Arriving from the homepage quiz starter (/fit-quiz/?industry=...): start a fresh quiz with the industry
+  // already answered and open question 2. The address is then cleaned so a page refresh keeps their progress.
+  var preset = '';
+  try { preset = new URLSearchParams(window.location.search).get('industry') || ''; } catch (e) { /* old browser */ }
+  var presetInput = null;
+  Array.prototype.forEach.call(form.querySelectorAll('input[name="industry"]'), function (i) { if (i.value === preset) presetInput = i; });
+  if (presetInput) {
+    reset();
+    presetInput.checked = true;
+    state.answers = readAnswers();
+    save();
+    try { window.history.replaceState(null, '', window.location.pathname + window.location.hash); } catch (e) { /* ignore */ }
+  }
   startWrap.hidden = false;
   showIntro();
-  if (window.location.hash === '#quiz-result' && state.done) finish({ revisit: true });
+  if (presetInput) show(1);
+  else if (window.location.hash === '#quiz-result' && state.done) finish({ revisit: true });
+})();
+
+// Click and section tracking (Google Analytics). Any link or button with data-track="event_name" sends that event
+// when clicked, with its data-loc (where on the page) and data-label (which one). A <details> with data-track sends
+// its event when opened. Sections with data-track-view="name" send "view_name" once, the first time half of the section
+// is on screen. Nothing is sent when Google Analytics is off (no gtag on the page).
+(function () {
+  function send(name, params) {
+    if (typeof window.gtag !== 'function' || !name) return;
+    params = params || {};
+    params.transport_type = 'beacon';
+    try { window.gtag('event', name, params); } catch (e) { /* ignore */ }
+  }
+  function info(el) {
+    return { location: el.getAttribute('data-loc') || '', label: el.getAttribute('data-label') || '', page_path: window.location.pathname };
+  }
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('[data-track]') : null;
+    if (!el || el.tagName === 'DETAILS') return;
+    var p = info(el);
+    if (el.getAttribute('href')) p.link_url = el.getAttribute('href');
+    send(el.getAttribute('data-track'), p);
+  });
+  // "toggle" doesn't bubble, so listen during the capture phase.
+  document.addEventListener('toggle', function (e) {
+    var el = e.target;
+    if (el && el.tagName === 'DETAILS' && el.open && el.hasAttribute('data-track')) send(el.getAttribute('data-track'), info(el));
+  }, true);
+
+  var views = document.querySelectorAll('[data-track-view]');
+  if (!views.length || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      var name = en.target.getAttribute('data-track-view');
+      send('view_' + name.replace(/-/g, '_'), { section: name, page_path: window.location.pathname });
+      io.unobserve(en.target);
+    });
+  }, { threshold: 0.5 });
+  Array.prototype.forEach.call(views, function (v) { io.observe(v); });
+})();
+
+// Homepage industries and markets: turns the two lists into tabs. Without scripts both lists show, each with a label.
+(function () {
+  var strip = document.querySelector('[data-tabs]');
+  if (!strip) return;
+  var list = strip.querySelector('[role="tablist"]');
+  var tabs = Array.prototype.slice.call(strip.querySelectorAll('[role="tab"]'));
+  if (!list || tabs.length < 2) return;
+  function select(i, focus) {
+    tabs.forEach(function (t, n) {
+      var on = n === i;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
+    });
+    if (focus) tabs[i].focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(i, false); });
+    t.addEventListener('keydown', function (e) {
+      var n = null;
+      if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+      else if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === 'Home') n = 0;
+      else if (e.key === 'End') n = tabs.length - 1;
+      if (n !== null) { e.preventDefault(); select(n, true); }
+    });
+  });
+  strip.classList.add('is-tabbed');
+  list.hidden = false;
+  select(0, false);
 })();

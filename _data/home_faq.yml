@@ -1,0 +1,32 @@
+# Homepage "Common Questions". Edit the wording here; the page and its FAQ structured data both read this file.
+# Fields: key (short label used for click tracking), q (question), a (plain-text answer, no HTML),
+# link and link_label (optional link shown after the answer).
+- key: contract
+  q: "Is there a contract?"
+  a: "We work month to month for the first three months. If you're happy with our work, we sign a nine-month contract to finish the first year, then continue with six-month contracts after that."
+  link: "/plans/"
+  link_label: "See the plans."
+- key: results
+  q: "When will we see results?"
+  a: "Most of this work takes six months or more to show its full effect. We can't promise specific rankings or AI mentions, but most businesses see significant long-term visibility improvements. Your monthly report tracks clicks, impressions, and trends, and sets out next month's work plan."
+- key: ads
+  q: "Do you run paid ads?"
+  a: "Yes, as a separate service with its own pricing. The monthly plans don't include ads, and your ad spend is separate from our fee."
+  link: "/services/paid-advertising/"
+  link_label: "About paid advertising."
+- key: outside
+  q: "Do you only work with businesses on 30A?"
+  a: "No. Our focus is the Gulf Coast, from the Forgotten Coast to Gulf Shores and Orange Beach, so we can meet our clients face-to-face. National brands based elsewhere are welcome too."
+  link: "/markets/"
+  link_label: "See the markets."
+- key: office
+  q: "Do you have an office on the coast?"
+  a: "No. We work remotely, but we have Gulf Coast roots and spend time in the region each year."
+- key: ai
+  q: "Will AI be writing for my business?"
+  a: "We use AI tools and strict editorial standards. A human researches, drafts, edits, and reviews everything we deliver."
+- key: call
+  q: "Is the strategy call free?"
+  a: "Yes, and you keep the findings whatever you decide."
+  link: "/strategy-call/"
+  link_label: "Book a strategy call."

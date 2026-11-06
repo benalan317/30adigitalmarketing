@@ -91,7 +91,7 @@ We're a good fit for established Destin and Miramar Beach businesses that want m
 
 **How long does it take?** Listing and technical fixes can show results within weeks. Competitive Destin searches usually take six months or more.
 
-**What does it cost?** Monthly plans start at $4,000 with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Monthly plans start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>
 

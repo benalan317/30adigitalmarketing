@@ -24,7 +24,7 @@ card_alt: "Gouache illustration of rising bars and an upward arrow against a Gul
 PAGE BRIEF
 Primary keyword: fractional cmo
 Related keywords: fractional marketing director, part-time CMO, outsourced marketing leadership
-Purpose: A part-time marketing director for mid-sized businesses that need their marketing orchestrated but do not need or cannot afford a full-time C-level executive. Starts at $5,000 a month, custom quote for each client. Sold on its own or bundled with any service or plan. Month one is research, onboarding, access, and a team and program inventory, ending in a findings report and recommendations. Same engagement terms as the other offers: three months without a contract, then a nine-month agreement, then yearly agreements. No guarantees of results.
+Purpose: A part-time marketing director for mid-sized businesses that need their marketing orchestrated but do not need or cannot afford a full-time C-level executive. Starts at $5,000 a month, custom quote for each client. Sold on its own or bundled with any service or plan. Month one is research, onboarding, access, and a team and program inventory, ending in a findings report and recommendations. Same engagement terms as the other offers: three months without a contract, then a nine-month contract, then six-month contracts. No guarantees of results.
 Decisions: The H1 uses "Marketing Director" and leaves out the primary keyword on purpose (owner's choice); the keyword sits in the eyebrow, title tag, URL, first sentence, an H2, and an FAQ question.
 {% endcomment %}
 
@@ -94,7 +94,7 @@ We lead the plan, direct the work, and meet with you monthly. Each meeting begin
 
 ### Terms
 
-The first three months run without a contract, so you can see the work and the effort before you commit. After that, a nine-month agreement follows, and yearly agreements after that.
+The first three months run without a contract, so you can see the work and the effort before you commit. After that, a nine-month contract finishes the first year, and six-month contracts follow.
 
 <div class="callout callout-fit" markdown="1">
 
@@ -158,7 +158,7 @@ You leave with an honest read on your marketing, whether or not we work together
 
 **Will you replace our current vendors?** Only if you decide to. We start by working with the vendors you have. If one is falling short, we show you the numbers and recommend a course of action, and the choice stays with you.
 
-**Is there a contract?** Not at first. The first three months run without one, so you can see the work and the effort before you commit. After that, a nine-month agreement follows, and yearly agreements after that.
+**Is there a contract?** Not at first. The first three months run without one, so you can see the work and the effort before you commit. After that, a nine-month contract finishes the first year, and six-month contracts follow.
 
 **Do you work on-site?** We work remotely. We don't keep an office on the coast, so your fee goes into the work rather than overhead. Meetings happen by video call at times that suit your team.
 

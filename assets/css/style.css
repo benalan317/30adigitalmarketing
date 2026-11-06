@@ -308,6 +308,102 @@ html { scroll-behavior: smooth; }
 @media (max-width: 560px) { .free-tools + .industries-strip { padding-top: 80px; } }
 .cta-band .cta-note { font-size: 14px; max-width: 420px; }
 
+/* ---------- Homepage additions (Nov 6, 2026) ---------- */
+/* What happens after you book: three numbered steps with thin top rules, like the services columns */
+.after-book { padding: 0 var(--gutter) 152px; }
+.after-book-inner { max-width: 1240px; margin: 0 auto; }
+.after-book-head { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; margin-bottom: 64px; }
+.after-book-head h2 { margin: 0; max-width: 780px; font-family: var(--display); font-weight: var(--display-weight); font-size: clamp(32px, 3.6vw, 48px); line-height: 1.22; }
+.after-book-head p { margin: 0; max-width: 520px; font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.after-book-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 48px; }
+.after-book-list li { padding-top: 32px; border-top: 1px solid var(--rule); display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.after-book-list .num { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; color: var(--accent); }
+.after-book-list h3 { margin: 0; font-family: var(--display); font-weight: var(--display-weight); font-size: 28px; line-height: 1.15; }
+.after-book-list p { margin: 0; max-width: 340px; font-size: 15px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+@media (min-width: 900px) { .after-book-list { grid-template-columns: repeat(3, 1fr); gap: 56px; } }
+@media (max-width: 560px) { .after-book { padding-bottom: 96px; } .after-book-head { margin-bottom: 40px; } }
+
+/* Quiz starter row under the three free tools */
+.quiz-starter { margin: 80px auto 0; padding-top: 48px; border-top: 1px solid var(--rule); max-width: 960px; text-align: center; }
+.quiz-starter h3 { margin: 0 0 10px; font-family: var(--display); font-weight: var(--display-weight); font-size: 26px; line-height: 1.2; }
+.quiz-starter > p { margin: 0 0 28px; font-size: 15px; font-weight: 300; color: var(--muted); }
+.quiz-starter-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.quiz-starter-list a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px;
+  border: 1px solid var(--ink); font-size: 14px; font-weight: 400; text-decoration: none; color: var(--ink);
+  transition: background .2s ease, color .2s ease;
+}
+.quiz-starter-list a:hover { background: var(--ink); color: var(--oyster); }
+@media (max-width: 560px) { .quiz-starter { margin-top: 56px; padding-top: 40px; } .quiz-starter-list a { padding: 0 14px; font-size: 13px; } }
+
+/* Plans as three cards on the dark band */
+.plan-tiles { list-style: none; margin: 8px 0 0; padding: 0; width: 100%; max-width: 1080px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+.plan-tile {
+  height: 100%; padding: 32px 28px; border: 1px solid rgba(244, 240, 231, .28);
+  display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; text-decoration: none; color: var(--oyster);
+  transition: border-color .2s ease, background .2s ease;
+}
+.plan-tile:hover { border-color: var(--oyster); background: rgba(244, 240, 231, .04); color: var(--oyster); }
+.plan-tile img { display: block; width: 120px; height: 120px; object-fit: cover; margin-bottom: 8px; }
+.plan-tile-name { font-family: var(--display); font-weight: var(--display-weight); font-size: 30px; line-height: 1.1; }
+.plan-tile-price { font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; }
+.plan-tile-for { margin-top: 6px; font-size: 15px; font-weight: 400; font-style: italic; }
+.plan-tile-text { font-size: 15px; font-weight: 300; line-height: 1.7; opacity: .85; }
+.plan-tile:hover .plan-tile-name { text-decoration: underline; text-underline-offset: 6px; }
+.plans-teaser .plans-includes { font-size: 15px; }
+@media (min-width: 900px) { .plan-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } }
+@media (max-width: 400px) { .plan-tile { grid-template-columns: 64px minmax(0, 1fr); column-gap: 14px; padding: 24px 16px; } .plan-tile img { width: 64px; height: 64px; } }
+@media (max-width: 899px) { .plan-tile { display: grid; grid-template-columns: 96px minmax(0, 1fr); column-gap: 20px; row-gap: 6px; text-align: left; align-items: start; } .plan-tile img { grid-row: 1 / 6; width: 96px; height: 96px; margin: 0; } }
+
+/* Industries and markets: two tabs (the labels show instead when scripts are off) */
+.plans-teaser + .industries-strip { padding-top: 152px; }
+@media (max-width: 560px) { .plans-teaser + .industries-strip { padding-top: 96px; } }
+.strip-tabs { display: flex; justify-content: center; gap: 8px; margin: -12px 0 36px; }
+.strip-tabs[hidden] { display: none; }
+.strip-tabs button {
+  min-height: 44px; padding: 0 20px; border: 1px solid var(--rule); background: transparent; color: var(--ink); cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase;
+}
+.strip-tabs button[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--oyster); }
+.strip-label { margin: 0 0 16px; font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; }
+.strip-panel + .strip-panel { margin-top: 56px; }
+.industries-strip.is-tabbed .strip-label { display: none; }
+.industries-strip.is-tabbed .strip-panel + .strip-panel { margin-top: 0; }
+.strip-note { margin: 0 auto 24px; max-width: 520px; font-size: 15px; font-weight: 300; color: var(--muted); }
+
+/* Latest from Insights: the three newest posts */
+.home-insights { padding: 0 var(--gutter) 152px; }
+.home-insights-inner { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 48px; }
+.home-insights-head { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; }
+.home-insights-head h2 { margin: 0; font-family: var(--display); font-weight: var(--display-weight); font-size: clamp(32px, 3.6vw, 48px); line-height: 1.22; }
+.home-insights-head p { margin: 0; max-width: 520px; font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.home-insights .post-grid { width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 32px; }
+@media (max-width: 760px) {
+  .home-insights { padding-bottom: 96px; }
+  .home-insights .post-grid { grid-template-columns: 1fr; gap: 36px; }
+  .home-insights .post-card-img { aspect-ratio: 4 / 3; }
+  .home-insights .post-card-blurb { display: -webkit-box; }
+}
+
+/* Common questions: open and close with no script (details/summary) */
+.home-faq { padding: 120px var(--gutter); background: var(--sand); }
+.home-faq-inner { max-width: 820px; margin: 0 auto; }
+.home-faq-head { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; margin-bottom: 48px; }
+.home-faq-head h2 { margin: 0; font-family: var(--display); font-weight: var(--display-weight); font-size: clamp(32px, 3.6vw, 48px); line-height: 1.22; }
+.home-faq-list details { border-top: 1px solid var(--rule); }
+.home-faq-list details:last-child { border-bottom: 1px solid var(--rule); }
+.home-faq-list summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px;
+  min-height: 44px; padding: 22px 0; font-size: 18px; font-weight: 500; line-height: 1.4;
+}
+.home-faq-list summary::-webkit-details-marker { display: none; }
+.home-faq-list summary::after { content: "+"; flex: none; font-size: 24px; font-weight: 300; line-height: 1; }
+.home-faq-list details[open] summary::after { content: "\2212"; }
+.home-faq-list summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.home-faq-list details p { margin: 0; padding: 0 40px 24px 0; font-size: 16px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.home-faq-list details p a { color: var(--ink); }
+@media (max-width: 560px) { .home-faq { padding: 80px var(--gutter); } .home-faq-list summary { font-size: 16px; padding: 18px 0; } .home-faq-list details p { padding-right: 0; } }
+
 /* ---------- Inner pages ---------- */
 .page-hero {
   max-width: 900px; margin: 0 auto; padding: 120px var(--gutter) 64px;

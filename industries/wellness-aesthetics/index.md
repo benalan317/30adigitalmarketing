@@ -115,6 +115,6 @@ We're a good fit for established med spas, aesthetic clinics and wellness practi
 
 **How long does it take?** Profile and listing fixes can show results within weeks. Ranking for competitive treatment searches usually takes several months.
 
-**What does it cost?** Med spa marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Med spa marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

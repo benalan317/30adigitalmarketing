@@ -82,6 +82,6 @@ Every strategy call includes a look at how families find you: where you appear f
 
 **How long does it take?** Profile and listing fixes can show results within weeks. Ranking for competitive searches usually takes several months, so we start before your busy season.
 
-**What does it cost?** Our work is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Our work is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

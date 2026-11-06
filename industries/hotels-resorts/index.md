@@ -111,6 +111,6 @@ We're a good fit for independent and boutique hotels, inns and resorts that want
 
 **Do you work with our booking engine?** Yes. We don't replace it. We make sure search and tracking work with it, and write clear briefs for your provider when something needs to change.
 
-**What does it cost?** Hotel SEO is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Hotel SEO is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

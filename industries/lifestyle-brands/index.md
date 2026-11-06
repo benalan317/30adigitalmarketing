@@ -106,6 +106,6 @@ We're a good fit for established charters, dive shops, outfitters and coastal br
 
 **Can you help an online shop or an outfitter, not only a charter?** Yes. The work is similar: pages for what customers search for, reviews and a clear path to buy or book.
 
-**What does it cost?** Fishing charter marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Fishing charter marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

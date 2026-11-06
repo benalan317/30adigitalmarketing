@@ -93,7 +93,7 @@ We're a good fit for established Panama City Beach and Bay County businesses, wh
 
 **How long does it take?** Listing and review work can show results within weeks. Competitive searches usually take six months or more.
 
-**What does it cost?** Monthly plans start at $4,000 with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Monthly plans start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>
 

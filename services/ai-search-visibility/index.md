@@ -7,7 +7,7 @@ eyebrow: "Services"
 h1: "AI Search Visibility Services for Gulf Coast Businesses"
 lede: "Generative engine optimization (GEO) and answer engine optimization (AEO) that help ChatGPT, Google AI Overviews and Perplexity find, trust and recommend you."
 blurb: "Clear, consistent information that AI-assisted search can understand, trust and reference."
-home_blurb: "Clear, consistent information about your business, so AI-assisted search understands it and can recommend it with confidence."
+home_blurb: "Clear, consistent information about your business, so AI tools describe it accurately and have the right reasons to recommend it."
 group: services
 order: 2
 flagship: true

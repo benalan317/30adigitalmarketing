@@ -4,12 +4,14 @@
   Also needed: post_date (YYYY-MM-DD), blurb, card_image (filename without .webp), card_alt, card_title (optional).
   Card images live in /images/insights/ as NAME.webp (1200x900) and NAME-640.webp (640x480).
   Use:  {% include post-grid.html %}
+  Optional:  {% include post-grid.html limit=3 track="home_insight_click" %}  shows only the newest 3 and tags each card for click tracking.
 {%- endcomment -%}
 {%- assign posts = site.pages | where: "group", "insights" | sort: "post_date" | reverse -%}
 <ul class="post-grid">
   {%- for p in posts %}
+  {%- if include.limit and forloop.index > include.limit %}{% break %}{% endif %}
   <li>
-    <a href="{{ p.url }}">
+    <a href="{{ p.url }}"{% if include.track %} data-track="{{ include.track }}" data-loc="home" data-label="{{ p.url | split: '/' | last }}"{% endif %}>
       {%- if p.card_image %}
       <img class="post-card-img"
            src="/images/insights/{{ p.card_image }}.webp"

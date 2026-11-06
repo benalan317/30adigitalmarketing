@@ -111,6 +111,6 @@ We're a good fit for established firms and advisors who win clients on expertise
 
 **How long does it take?** Listing and profile fixes can show results within weeks. Ranking for competitive practice-area searches usually takes several months.
 
-**What does it cost?** Professional services marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Professional services marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

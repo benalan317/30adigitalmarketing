@@ -48,7 +48,7 @@ We are remote. Never imply an office, an address, or a local presence. The appro
 ## Messaging Priorities
 
 1. Search, AI visibility, and authority as one strategy-led program
-2. Plain pricing and no binding contract
+2. Plain pricing and a three-month trial before any contract
 3. Understanding of the Gulf Coast's seasons, customers, and search habits
 4. Experience growing regional and national brands
 5. Work scoped to each business, with the owner approving every change

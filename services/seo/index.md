@@ -7,7 +7,7 @@ eyebrow: "Services"
 h1: "SEO Services for Businesses on 30A and the Gulf Coast"
 lede: "Technical SEO, site architecture and content built around what your customers search for, measured by the inquiries and bookings it brings in."
 blurb: "Site architecture, technical SEO and content built around what your customers actually search for."
-home_blurb: "A site built around the words your customers actually use, with the technical groundwork done properly."
+home_blurb: "A site built around the words your customers use, with proper technical groundwork and strategy for competitive niches."
 group: services
 order: 1
 flagship: true
@@ -91,7 +91,7 @@ SEO only works if the site is built to carry it. We work alongside your develope
 3. **Weeks 7–12: growth.** New content, local SEO, and the first authority work.
 4. **Every month: reporting.** Rankings, visibility, inquiries, and what we'll do next, in plain language.
 
-There is no long-term contract. We'd rather keep your business by doing good work.
+The first three months run month to month, so you can judge the work before signing a contract. After that, we sign a nine-month contract to finish the first year, then six-month contracts.
 
 <div class="callout callout-fit" markdown="1">
 
@@ -105,7 +105,7 @@ We're a good fit for established businesses whose website should bring in more i
 
 ## Common Questions about SEO Services
 
-**How much do SEO services cost?** Our monthly plans start at $4,000, scoped to your business, with no binding contract. See [plans and pricing](/plans/).
+**How much do SEO services cost?** Our monthly plans start at $4,000, scoped to your business, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 **How long does SEO take to work?** Technical fixes can show results within weeks. Rankings for competitive searches usually take several months. The audit sets realistic expectations for your market.
 

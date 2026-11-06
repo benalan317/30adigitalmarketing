@@ -111,6 +111,6 @@ We're a good fit for coastal brokerages, teams and community developers who sell
 
 **How long does it take?** Technical and profile fixes can help within weeks. Ranking for competitive area searches usually takes several months.
 
-**What does it cost?** Luxury real estate marketing is part of our monthly plans, which start at $4,000, with no binding contract. See [plans and pricing](/plans/).
+**What does it cost?** Luxury real estate marketing is part of our monthly plans, which start at $4,000, with a three-month trial before any contract. See [plans and pricing](/plans/).
 
 </div>

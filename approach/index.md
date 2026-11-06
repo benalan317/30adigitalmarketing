@@ -3,7 +3,7 @@ layout: page
 rich: true
 title: "Our Approach"
 seo_title: "Our Approach to SEO and Growth | 30A Digital Marketing"
-description: "How an engagement works: an audit, a strategy, careful execution, and clear reporting. Monthly plans with no binding contract."
+description: "How an engagement works: an audit, a strategy, careful execution, and clear reporting. Monthly plans start with a three-month trial."
 eyebrow: "Approach"
 h1: "Our Approach to SEO and Digital Growth"
 lede: "An audit, a written plan, careful work, and plain reporting."
@@ -14,10 +14,10 @@ related:
 {% comment %}
 PAGE BRIEF
 Primary keyword: seo strategy
-Purpose: How an engagement works: audit, strategy, execution, reporting; no binding contract. Explains how each package is scoped.
+Purpose: How an engagement works: audit, strategy, execution, reporting; three-month trial before any contract. Explains how each package is scoped.
 {% endcomment %}
 
-Every engagement follows those four steps. Plans run month to month, because we'd rather keep your business by doing good work than by holding you to a contract.
+Every engagement follows those four steps. The first three months run month to month, because we'd rather earn your business with good work than ask you to sign before you've seen it.
 
 ## What We Believe
 
@@ -70,7 +70,7 @@ One point of contact, a monthly report, a quarterly meeting, and a shared plan y
 
 ## Common Questions about How We Work
 
-**What does "no long-term contract" mean?** Plans run month to month. You stay because the work is good, and you're free to leave in any month.
+**Is there a contract?** Not at first. We work month to month for the first three months. If you're happy with our work, we sign a nine-month contract to finish the first year, then continue with six-month contracts after that.
 
 **Will you change our website without asking?** No. Every change to your site or brand is approved by you first.
 
