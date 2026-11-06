@@ -61,10 +61,10 @@ The Fort Walton Beach off-season is real, but it is shallower on the mainland th
 
 Okaloosa County's tourist-tax records show that in the Fort Walton Beach and Mary Esther district, lodging receipts were about $58.27 million for FY2024. The January collection period brought in about $2.12 million and August about $9.34 million, roughly 4.4 times as much [[1]](#ref-1). Collection periods trail the stays they report by one month, and the district covers more than the city limits.
 
-<figure class="chart" aria-labelledby="chart-season-title">
+<figure class="chart chart-scaled" aria-labelledby="chart-season-title">
 <figcaption class="chart-title" id="chart-season-title">Lodging Receipts, Fort Walton Beach and Mary Esther District</figcaption>
 <div class="chart-row"><span class="chart-label">August collection period</span><span class="chart-track"><span class="chart-bar" style="width:100%"></span></span><span class="chart-value">$9.34M</span></div>
-<div class="chart-row"><span class="chart-label">January collection period</span><span class="chart-track"><span class="chart-bar is-focus" style="width:23%"></span></span><span class="chart-value">$2.12M</span></div>
+<div class="chart-row"><span class="chart-label">January collection period</span><span class="chart-track"><span class="chart-bar is-focus" style="width:22.7%"></span></span><span class="chart-value">$2.12M</span></div>
 <p class="chart-note">FY2024 gross lodging receipts, Okaloosa County Clerk of Court [<a href="#ref-1">1</a>]. Each collection month reports the previous month's stays.</p>
 </figure>
 
@@ -76,10 +76,10 @@ The good news is the destination's profile. Expedia named Fort Walton Beach one 
 
 Okaloosa Island reported about $218.49 million in FY2024 lodging receipts from 4,105 reporting units. The mainland district reported $58.27 million from 2,485 units [[1]](#ref-1). The island depends far more on summer beach stays. Mainland businesses lean on residents, business travel, and the bases. Know which side of the bridge your customers come from before you set a winter budget.
 
-<figure class="chart" aria-labelledby="chart-district-title">
+<figure class="chart chart-scaled" aria-labelledby="chart-district-title">
 <figcaption class="chart-title" id="chart-district-title">FY2024 Lodging Receipts by Tax District</figcaption>
 <div class="chart-row"><span class="chart-label">Okaloosa Island</span><span class="chart-track"><span class="chart-bar" style="width:100%"></span></span><span class="chart-value">$218.49M</span></div>
-<div class="chart-row"><span class="chart-label">Fort Walton Beach and Mary Esther</span><span class="chart-track"><span class="chart-bar is-focus" style="width:27%"></span></span><span class="chart-value">$58.27M</span></div>
+<div class="chart-row"><span class="chart-label">Fort Walton Beach and Mary Esther</span><span class="chart-track"><span class="chart-bar is-focus" style="width:26.7%"></span></span><span class="chart-value">$58.27M</span></div>
 <p class="chart-note">Gross lodging receipts, Okaloosa County Clerk of Court [<a href="#ref-1">1</a>]. The districts differ in size, so compare the pattern, not the productivity of any one property.</p>
 </figure>
 
