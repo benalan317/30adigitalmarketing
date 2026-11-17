@@ -72,7 +72,7 @@ We never post fake reviews, and we never offer rewards for positive ones. Both b
 
 ## How Authority Supports Everything Else
 
-Authority strengthens your [SEO](/services/seo/), and it's one of the strongest signals behind [AI search visibility](/services/ai-search-visibility/), because AI tools lean on what other sources say about you.
+Authority strengthens your [SEO](/services/seo/), and it's one of the strongest signals behind [AI search visibility](/services/ai-search-visibility/), because AI tools lean on what other sources say about you. Our guide explains [why reviews and third-party mentions shape AI answers](/insights/ai-seo-small-business/).
 
 <div class="callout callout-audit" markdown="1">
 

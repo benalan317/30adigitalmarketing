@@ -27,6 +27,8 @@ The Website Buildout is a one-time, $10,000 package that gives a service busines
 
 Service businesses that win customers through quotes, calls, and forms rather than a shopping cart: contractors and home services, professional firms, medical and aesthetic practices, and real estate. It suits a new business with no site yet, or an established one whose site no longer reflects the quality of its work.
 
+Roofers need storm pages and a clear path for out-of-state owners, which we describe in [storm pages and out-of-state owner paths for roofing sites](/insights/roofing-seo/).
+
 ## What's Included
 
 ### A Website Built to Bring in Inquiries

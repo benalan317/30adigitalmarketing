@@ -262,6 +262,8 @@ Before you finish, re-check every number in the report against the attachments. 
   <li><strong>They don't know your business.</strong> A tool can tell you a page is slow. It can't tell you whether that page matters to your customers, your goals, or your season.</li>
 </ul>
 
+<p>To see how much AI answers vary, read <a href="/insights/ai-seo-small-business/">what our prompt test found about small businesses in AI answers</a>.</p>
+
 <h3 id="what-we-do-differently">What We Do Differently</h3>
 
 <p>When we build a strategy for your company, we don't download reports from free tools and hand them back. We start from your business goals: who you want to reach, what a customer is worth, where you're strong, and where competitors are ahead. Then we work back to what to do, and in what order.</p>

@@ -30,6 +30,8 @@ Small businesses that win customers through organic content and want to run thei
 
 Compass covers content creation. Technical fixes, link building, site changes, and design aren't part of it. If you need those, see our [plans and pricing](/plans/).
 
+Roofers can see a sample of the self-run tasks in [roofing SEO tasks you can do yourself this month](/insights/roofing-seo/).
+
 ## What the $5,000 Setup Includes
 
 Setup takes about a month. You get:
@@ -51,7 +53,7 @@ We recommend publishing fewer than 10 pieces a month. How many depends on how mu
 
 ## Tools and Costs
 
-You pay for every tool directly: your AI subscription and any SEO software. The accounts are yours, and we tell you during setup which ones you need. Tool costs are separate from the $5,000 and the $500.
+You pay for every tool directly: your AI subscription and any SEO software. The accounts are yours, and we tell you during setup which ones you need. Tool costs are separate from the $5,000 and the $500. To decide what is worth buying, read [which AI SEO tools are worth paying for](/insights/ai-seo-tools-small-business/).
 
 ## What to Expect
 

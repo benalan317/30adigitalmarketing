@@ -71,7 +71,7 @@ Many resorts sell more than rooms. Golf packages, weddings and group events each
 
 ## Built for Coastal Seasons
 
-Peak summer stays are planned months ahead. Spring break, fall weekends, and winter each bring different guests: families, couples, golfers, and longer-stay visitors. We plan pages, offers, and refreshes before each window, and help fill the quieter weeks with the guests most likely to book them.
+Peak summer stays are planned months ahead. Spring break, fall weekends, and winter each bring different guests: families, couples, golfers, and longer-stay visitors. We plan pages, offers, and refreshes before each window, and help fill the quieter weeks with the guests most likely to book them. For a worked example, see our [off-season marketing for Okaloosa Island hotels and inns](/insights/fort-walton-beach-off-season-marketing/).
 
 <div class="callout callout-audit" markdown="1">
 

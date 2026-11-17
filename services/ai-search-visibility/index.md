@@ -41,7 +41,7 @@ Open ChatGPT, Gemini or Perplexity and ask the question your best customer would
 - "Who is the best roofer in Santa Rosa Beach?"
 - "Recommend a med spa in Destin."
 
-Are you named? Is the description right? Are competitors there instead? Your free strategy call starts with a full version of this test across every major AI tool. [Book a free strategy call](/strategy-call/).
+Are you named? Is the description right? Are competitors there instead? For a controlled version you can repeat at home, follow our guide to [run the same prompt test on your own business](/insights/ai-seo-small-business/). Your free strategy call starts with a full version of this test across every major AI tool. [Book a free strategy call](/strategy-call/).
 
 ## GEO, AEO, and AI SEO: What the Terms Mean
 
@@ -97,7 +97,7 @@ Each month you'll see:
 - **Cited sources:** which pages and sites the answers rely on.
 - **AI referrals:** visits and inquiries arriving from AI tools.
 
-AI answers change often, so we judge progress over months, not single answers.
+AI answers change often, so we judge progress over months, not single answers. Scores from AI visibility software are estimates as well, as we explain in [why AI visibility scores are estimates, not measurements](/insights/ai-seo-tools-small-business/).
 
 ## A Young Field, Handled Carefully
 

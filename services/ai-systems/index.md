@@ -48,7 +48,7 @@ We find where your team loses the most time looking for answers, and pick one us
 
 ### Knowledge Organization (Your AI Knowledge Base)
 
-The assistant is only as good as what it reads. We gather, clean up, and organize the documents it draws on, retire outdated versions and fill obvious gaps. This step alone often helps the whole team.
+The assistant is only as good as what it reads. We gather, clean up, and organize the documents it draws on, retire outdated versions and fill obvious gaps. This step alone often helps the whole team. To start on your own, read [free ways to use AI to organize what your business already knows](/insights/ai-seo-tools-small-business/).
 
 ### Setup on Tools You Already Use
 

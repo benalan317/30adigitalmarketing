@@ -55,6 +55,8 @@ Before any ad runs, we set up conversion tracking so you can see which campaigns
 
 Ads and search results answer the same question from different directions. We use ad data to learn which searches turn into customers, and SEO to make sure the pages those visitors land on are worth landing on. Ads cover the gaps while rankings build. Search strategies usually take six months or more to mature, so many clients use ads to stay visible in the meantime.
 
+Some trades face extra rules for ads. Roofers in particular should read our [Florida rules for storm and insurance-claim advertising](/insights/roofing-seo/) before running ads in storm season.
+
 ## How We Price Paid Advertising
 
 Paid advertising is priced separately from our [monthly plans](/plans/), and your ad spend is separate from our fee. After a short review of your goals, market and current ad accounts, we quote the work based on how many platforms and campaigns you need. There is no binding contract.

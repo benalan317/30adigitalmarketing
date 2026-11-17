@@ -46,6 +46,8 @@ Our 30A digital marketing work helps South Walton businesses be found, trusted, 
 - **On maps first.** For many searches, Google shows listings, photos, and reviews before any website. A complete, current Google Business Profile matters as much as a page.
 - **In AI answers.** Travelers now ask tools for plans, such as "where to stay on 30A with toddlers." The answer names a handful of businesses, and those are the ones whose facts match everywhere the tool looks.
 
+For rentals specifically, see [how 30A rental guests plan trips and search](/insights/30a-vacation-rental-seo/).
+
 ## Where We Work on 30A
 
 - **[Vacation rentals and property management](/industries/vacation-rentals/).** Community and property-type pages, accurate registration details and a direct-booking path that gives guests a reason to skip the platform fee.

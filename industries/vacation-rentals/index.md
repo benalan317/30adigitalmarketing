@@ -44,6 +44,8 @@ Platforms are good at helping guests find you. They are expensive at helping gue
 
 Guests search the place before they search the house: "30A rental with a private pool", "Rosemary Beach house that sleeps 12", "pet-friendly cottage in Seaside". We build vacation rental SEO on the same foundations as our [SEO services](/services/seo/): neighborhood pages, collections by property type and listing pages search engines can read.
 
+Google also runs a separate vacation rental channel with its own eligibility rules. Our guide covers [Google Vacation Rentals eligibility and fixes for 30A rental sites](/insights/30a-vacation-rental-seo/).
+
 ### Property Pages That Sell the Stay
 
 Photos, sleeping arrangements, the walk to the beach, parking, pool heating, house rules and the questions guests ask before they book, answered on the page. Clear facts help guests decide, and help search engines and AI tools describe each home correctly.

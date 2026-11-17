@@ -40,7 +40,7 @@ We decide which searches are worth winning before we touch the site. That means 
 
 ### Technical SEO
 
-Speed, mobile experience, crawling, indexing, and structured data. We fix what holds your site back, or write plain instructions for your developer.
+Speed, mobile experience, crawling, indexing, and structured data. We fix what holds your site back, or write plain instructions for your developer. Vacation rental sites have their own version of these problems, covered in [technical issues that keep rental sites out of Google](/insights/30a-vacation-rental-seo/).
 
 ### Site Architecture
 
@@ -62,7 +62,7 @@ Pages and articles that cover the subjects your business should be known for, so
 
 Search demand here rises and falls with the calendar. Summer stays are often researched the winter before. Wedding venues are compared a year or more ahead. Roofing searches jump after a storm.
 
-We plan your SEO around those windows. Pages are published and refreshed before demand peaks, not during it.
+We plan your SEO around those windows. Pages are published and refreshed before demand peaks, not during it. Our [90-day off-season marketing calendar](/insights/fort-walton-beach-off-season-marketing/) shows how this works for Fort Walton Beach businesses.
 
 <div class="callout callout-audit" markdown="1">
 
