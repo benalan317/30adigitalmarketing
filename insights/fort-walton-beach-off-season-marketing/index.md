@@ -212,6 +212,8 @@ The same 10 tasks apply to every business, but each industry leans on different 
 
 Golf deserves a note. Nearby Walton County's winter visitors rated golf, tennis, spas, and shopping as more appealing in winter than in other seasons [[3]](#ref-3). Rental managers can find more in our guide to [30A vacation rental SEO](/insights/30a-vacation-rental-seo/).
 
+Contractors can plan storm season on the same calendar; see [building storm pages before hurricane season](/insights/roofing-seo/).
+
 ## A 90-Day Off-Season Marketing Calendar {#calendar}
 
 Start this week and finish before spring bookings pick up. A plan started in mid-November wraps up in mid-February.

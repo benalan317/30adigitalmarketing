@@ -216,7 +216,7 @@ Pair the test with data you own. Search Console now offers generative AI perform
 
 ## The Work That Improves AI Visibility {#improve}
 
-There are no tricks. The same work that builds a good name builds AI visibility, and it keeps its value whatever the algorithms do. It applies to any small business, whether you run a restaurant, a law office, or a rental company.
+There are no tricks. The same work that builds a good name builds AI visibility, and it keeps its value whatever the algorithms do. It applies to any small business, whether you run a restaurant, a law office, or a rental company. Rental companies can see the work applied in our guide to [Google and ChatGPT visibility for 30A vacation rentals](/insights/30a-vacation-rental-seo/).
 
 ### Your Website and Profiles
 
@@ -287,6 +287,8 @@ Volume is easy to produce with AI, and usefulness is the hard part. Marketing an
 3. **Days 61 to 90: Earn outside proof and retest.** Ask recent customers for detailed reviews, pursue one local mention, rerun the test, and compare it with the baseline.
 
 Fixes to facts and crawler access can show up in answers within weeks. Lasting visibility takes six months or more, and no one can guarantee a placement.
+
+Seasonal businesses can time these 90 days to their slow weeks. [A 90-day plan built around slow weeks](/insights/fort-walton-beach-off-season-marketing/) shows one way.
 
 <div class="callout callout-audit" markdown="1">
 

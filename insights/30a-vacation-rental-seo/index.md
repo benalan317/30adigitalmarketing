@@ -199,6 +199,8 @@ The AIO also claimed that mentions on other websites "train" AI to associate you
 3. Answer guest questions clearly on the relevant property and neighborhood pages.
 4. Earn genuine mentions in local guides and publications through [digital authority](/services/digital-authority/) work.
 
+To see what AI tools say about your company today, follow our [step-by-step AI prompt test for small businesses](/insights/ai-seo-small-business/).
+
 Our [AI search visibility service](/services/ai-search-visibility/) helps rental companies with all four.
 
 ## How to Measure Direct Bookings from Google and ChatGPT {#measure-bookings}
@@ -220,7 +222,7 @@ Rankings and mentions show whether people can find you. Direct bookings show whe
 
 </div>
 
-For the monthly AI test, record which companies appear, which sources are cited, and whether the property details are accurate. Individual answers vary, so compare results over three or four months rather than treating one response as a trend.
+For the monthly AI test, record which companies appear, which sources are cited, and whether the property details are accurate. Individual answers vary, so compare results over three or four months rather than treating one response as a trend. Paid trackers estimate this too, and our guide to [what AI visibility tools can and cannot measure](/insights/ai-seo-tools-small-business/) explains what to expect before you buy one.
 
 To estimate the financial return from better search visibility, use our [ROI calculator](/roi-calculator/).
 
@@ -231,6 +233,8 @@ Here's the sequence we'd use. Competitive search improvements often take six mon
 1. **Days 1–30: Fix the foundations.** Set up the tracking above. Review crawler access, booking widget content, and filter-generated pages. Start the monthly AI question log and check whether your booking software connects to Google Vacation Rentals.
 2. **Days 31–60: Improve key pages.** Rewrite your 10 highest-priority property pages using the details table. Improve one neighborhood page for every community where you manage homes. Update the Google Business Profile for your staffed office.
 3. **Days 61–90: Build credibility and review results.** Ask recent guests for detailed reviews. Pitch one local guide or publication. Compare search visibility, AI mentions, and bookings against your starting figures, then plan the next quarter.
+
+Slower months need their own plan. Our [10 off-season marketing tasks for Fort Walton Beach businesses](/insights/fort-walton-beach-off-season-marketing/) show how a neighboring Gulf Coast market handles winter.
 
 To attract homeowners as well as guests, apply the same approach to owner-focused pages instead of property pages. Our [vacation rental marketing page for 30A property managers](/industries/vacation-rentals/) covers both audiences.
 

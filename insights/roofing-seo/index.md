@@ -307,7 +307,7 @@ You can handle these basics without an agency. Each removes a common obstacle be
 - Show your Florida contractor license number where people can find it.
 - Have a qualified person review your storm and insurance pages against Florida Statute 489.147.
 
-If you want a broader starting point, try the [free SEO audit](/free-audit/).
+If you want a broader starting point, try the [free SEO audit](/free-audit/). Before you pay for software, see [what free AI tools can check on your business](/insights/ai-seo-tools-small-business/).
 
 ## The Limits of DIY Roofing SEO {#limits}
 
