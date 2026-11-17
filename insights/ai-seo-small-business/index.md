@@ -135,7 +135,7 @@ The rule of thumb is to treat a single answer as one sample and to look for patt
 
 ## What Our Prompt Test Found {#prompt-test}
 
-We asked six roofing questions about Destin and nearby towns, twice each, and compared the answers. The lists changed between runs, some facts changed with them, and a few errors came with full confidence.
+We asked six roofing questions about Destin and nearby towns, twice each, and compared the answers. The lists changed between runs, some facts changed with them, and a few errors came with full confidence. For the search side of the same trade, see our guide to [roofing SEO for Florida roofing companies](/insights/roofing-seo/).
 
 <figure class="article-figure">
 <img src="/images/insights/ai-seo-small-business-prompt-test-desk-900.webp"

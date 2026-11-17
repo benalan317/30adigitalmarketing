@@ -50,7 +50,7 @@ A page for each job you want more of, from roof replacement and AC installs to p
 
 ### Roofing SEO and Storm Readiness
 
-Roofing searches jump after storms and through hurricane season, which runs from June to November. We prepare inspection, storm-damage, and insurance-claim pages before the season starts, so they're ready when homeowners search. Good roofer marketing after a storm is calm and factual, never alarming.
+Roofing searches jump after storms and through hurricane season, which runs from June to November. We prepare inspection, storm-damage, and insurance-claim pages before the season starts, so they're ready when homeowners search. Good roofer marketing after a storm is calm and factual, never alarming. Our guide to [roofing SEO for Florida roofing companies](/insights/roofing-seo/) covers storm pages, Florida's claim-advertising rules, and the math on one more signed roof a month.
 
 ### Reviews and Reputation
 
