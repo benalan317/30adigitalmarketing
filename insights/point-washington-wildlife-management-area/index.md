@@ -71,7 +71,7 @@ Two things surprise first-time visitors. The forest has no beach, and its trails
 <nav class="quick-links" aria-label="Quick links">
 <p>Quick Links</p>
 <ul>
-<li><a href="#what-it-is">What Point Washington Wildlife Management Area Is</a></li>
+<li><a href="#what-it-is">What Is Point Washington Wildlife Management Area?</a></li>
 <li><a href="#trailheads">Trailheads, Parking, and Directions</a></li>
 <li><a href="#choose-your-trail">Choose Your Trail</a></li>
 <li><a href="#activities">Activities Allowed on Each Trail</a></li>
@@ -87,7 +87,7 @@ Two things surprise first-time visitors. The forest has no beach, and its trails
 </ul>
 </nav>
 
-## What Point Washington Wildlife Management Area Is {#what-it-is}
+## What Is Point Washington Wildlife Management Area? {#what-it-is}
 
 Point Washington has two names because it's managed by two agencies. The Florida Forest Service takes care of the trails, roads, timber, prescribed burns, fees, and camping. And the Florida Fish and Wildlife Conservation Commission (FWC) sets the hunting, fishing, and wildlife rules for the wildlife management area (WMA) [[1]](#ref-1) [[3]](#ref-3).
 
@@ -105,7 +105,6 @@ The WMA covers more than 12,000 acres of the state forest, including sandhill, t
 <text x="70" y="158" class="pw-svg-head">Wildlife Management Area</text>
 <text x="70" y="184" class="pw-svg-sub">More than 12,000 acres · FWC</text>
 <text x="70" y="206" class="pw-svg-sub">Hunting, fishing, wildlife rules</text>
-<text x="70" y="276" class="pw-svg-note">Not to scale</text>
 </svg>
 <figcaption>The WMA covers most of the state forest. Check both agencies' rules before you go.</figcaption>
 </figure>
@@ -282,7 +281,7 @@ Point Washington mixes 10 natural communities, so a single walk can cross dry sa
 <button type="button" class="pw-dot" style="left:71%" data-zone="cypress" aria-label="Cypress swamp">5</button>
 <button type="button" class="pw-dot" style="left:92%" data-zone="lake" aria-label="Coastal dune lake">6</button>
 </div>
-<figcaption>Tap a number to read about that habitat. Illustration, AI-generated; not to scale.</figcaption>
+<figcaption>Tap a number to read about that habitat. Illustration, not to scale.</figcaption>
 </figure>
 
 <ul class="pw-zones">
@@ -349,7 +348,7 @@ Longleaf pine forests evolved with frequent fire. Low fires clear shrubs, return
      sizes="(min-width: 900px) 840px, 92vw" width="1448" height="1086" loading="lazy"
      alt="Illustration of a low prescribed fire burning through wiregrass under tall longleaf pines at dusk (AI-generated image)."
      title="Prescribed fire in a longleaf pine forest">
-<figcaption>A low, slow burn clears the ground layer and leaves the pines standing. AI-generated illustration.</figcaption>
+<figcaption>A low, slow burn clears the ground layer and leaves the pines standing.</figcaption>
 </figure>
 
 ### Turpentine Scars on Old Longleaf Pines
@@ -362,7 +361,7 @@ The Longleaf Greenway passes a stand of old-growth longleaf pines that shows how
      sizes="(min-width: 900px) 840px, 92vw" width="1448" height="1086" loading="lazy"
      alt="Illustration of an old longleaf pine trunk with a long, healed V-shaped scar of gray, weathered wood (AI-generated image)."
      title="Healed turpentine scar on an old longleaf pine">
-<figcaption>What to look for: a flat, gray face of old wood edged by thick, regrown bark. AI-generated illustration.</figcaption>
+<figcaption>What to look for: a flat, gray face of old wood edged by thick, regrown bark.</figcaption>
 </figure>
 
 ### From Timber Land to State Forest
@@ -420,7 +419,7 @@ After heavy rain or a storm, the lake rises until water cuts a channel, called a
      sizes="(min-width: 900px) 840px, 92vw" width="1448" height="1086" loading="lazy"
      alt="Illustration of a tea-colored coastal dune lake draining through a narrow channel across white sand into the Gulf at dusk (AI-generated image)."
      title="Coastal dune lake outfall open to the Gulf">
-<figcaption>A coastal dune lake with its outfall open to the Gulf. AI-generated illustration, not Eastern Lake itself.</figcaption>
+<figcaption>A coastal dune lake with its outfall open to the Gulf. An illustration, not Eastern Lake itself.</figcaption>
 </figure>
 
 <details class="pw-curious">
@@ -453,7 +452,7 @@ You can camp at Point Washington only at the primitive tent sites on Eastern Lak
      sizes="(min-width: 900px) 840px, 92vw" width="1448" height="1086" loading="lazy"
      alt="Illustration of a small tent, water jug, cooler, and camp chair under longleaf pines beside a calm lake at dusk (AI-generated image)."
      title="Primitive camping at Eastern Lake">
-<figcaption>Primitive means you bring your own water, shelter, and food storage. AI-generated illustration.</figcaption>
+<figcaption>Primitive means you bring your own water, shelter, and food storage.</figcaption>
 </figure>
 
 "Primitive" means you bring nearly everything:
@@ -560,7 +559,7 @@ Run through this list the night before. Your checks save in this browser, and yo
      sizes="(min-width: 900px) 840px, 92vw" width="1448" height="1086" loading="lazy"
      alt="Illustration of a water bottle, folded paper map, bug spray, sun hat, dog leash, and phone laid out on pale sand (AI-generated image)."
      title="What to bring to Point Washington State Forest">
-<figcaption>Water, a map, bug spray, sun protection, and a leash cover most visits. AI-generated illustration.</figcaption>
+<figcaption>Water, a map, bug spray, sun protection, and a leash cover most visits.</figcaption>
 </figure>
 
 <div class="pw-checklist" data-pw-checklist="go">
