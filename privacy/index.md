@@ -26,6 +26,8 @@ This policy explains how 30A Digital Marketing LLC ("we", "us") handles informat
 
 **Information collected automatically.** When analytics is switched on, we use Google Analytics to understand how visitors use the site. It records things such as the pages you view, how you arrived, your approximate location, your device, and browser type, and your IP address, and it uses cookies, or similar technologies to do so. We use this to improve the site, not to identify you personally.
 
+**Embedded maps and checklists.** Some guides offer a Google Map. The map loads from Google only after you choose to open it, and Google then receives your IP address and may set cookies. Checklists on our guides remember your ticks in your own browser; that information stays on your device.
+
 **Fit quiz answers.** When you finish the fit quiz, we save your answers anonymously, together with your result, the first page of this site you visited, the site that sent you (its domain only), any campaign tags in that first web address, and whether you used a phone, tablet or computer. The quiz doesn't ask for your name, and these answers aren't linked to you unless you choose to have your result emailed. Your browser also remembers your answers so you can see your result again later on the same device.
 
 This site does not have accounts or payment forms.
@@ -38,7 +40,7 @@ We use what we collect to reply to you, schedule, and hold calls, send fit quiz 
 
 We rely on a few providers to run the site and the booking process, and they handle some information on our behalf:
 
-- **Google**, for Google Calendar bookings, Gmail, Google Sheets, and Google Apps Script (which store fit quiz answers and send quiz results), and Google Analytics. See [Google's privacy policy](https://policies.google.com/privacy).
+- **Google**, for Google Calendar bookings, Gmail, Google Sheets, and Google Apps Script (which store fit quiz answers and send quiz results), Google Analytics, and Google Maps embeds on some guides. See [Google's privacy policy](https://policies.google.com/privacy).
 - **GitHub**, which hosts this site and may log visitor IP addresses as part of operating its service. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 We may also share information if the law requires it.

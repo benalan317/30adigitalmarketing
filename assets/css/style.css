@@ -1246,3 +1246,156 @@ html { scroll-behavior: smooth; }
 }
 @media (prefers-reduced-motion: reduce) { .post-card-img { transition: none; } .post-grid a:hover .post-card-img { transform: none; } }
 .page-body:has(.post-grid) > :not(.post-grid) { max-width: 760px; }
+
+/* ---------- Visitor guide components (first used on /insights/point-washington-wildlife-management-area/) ----------
+   Prefix pw- . Script: assets/js/point-washington.js (loaded only by pages with page_script set). */
+.rich .pw-byline { margin: 8px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--muted); }
+.rich ul.pw-trails li::before, .rich ul.pw-trailheads li::before, .rich ul.pw-zones li::before,
+.rich ul.pw-species li::before, .rich ul.pw-seasons li::before, .rich .pw-checklist li::before,
+.rich .pw-map-tabs::before { content: none; }
+.rich ul.pw-trails li, .rich ul.pw-trailheads li, .rich ul.pw-zones li, .rich ul.pw-species li, .rich ul.pw-seasons li, .rich .pw-checklist li { padding-left: 0; }
+
+/* Quick facts */
+.pw-facts { margin: 32px 0; padding: 26px 30px; background: var(--ink); color: var(--oyster); }
+.pw-facts-title { margin: 0 0 14px; font-size: 11px; font-weight: 500; letter-spacing: 3.2px; text-transform: uppercase; color: #E9A58F; }
+.pw-facts dl { margin: 0; display: grid; gap: 0; }
+.pw-facts dl > div { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 10px 0; border-top: 1px solid rgba(244,240,231,.18); }
+.pw-facts dt { font-size: 11px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; padding-top: 4px; }
+.pw-facts dd { margin: 0; font-size: 15.5px; line-height: 1.55; }
+.pw-facts a { color: var(--oyster); }
+@media (max-width: 560px) { .pw-facts { padding: 22px 20px; } .pw-facts dl > div { grid-template-columns: 1fr; gap: 2px; } }
+
+/* Diagrams (inline SVG) */
+.pw-diagram { margin: 36px 0; }
+.pw-diagram svg { display: block; width: 100%; height: auto; }
+.pw-diagram figcaption { margin-top: 10px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.pw-svg-head { font-family: var(--display); font-size: 22px; fill: var(--ink); }
+.pw-svg-sub { font-family: var(--body); font-size: 14px; fill: var(--muted); }
+.pw-svg-note { font-family: var(--body); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; fill: var(--accent); }
+
+/* Map */
+.pw-map { margin: 28px 0 12px; }
+.pw-map-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.pw-map-tabs button { min-height: 40px; padding: 0 14px; border: 1px solid var(--rule); background: #FBF9F4; color: var(--ink); font: 500 12px/1 var(--body); letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer; }
+.pw-map-tabs button:hover { border-color: var(--ink); }
+.pw-map-tabs button.is-active { background: var(--ink); color: var(--oyster); border-color: var(--ink); }
+.pw-map-frame { position: relative; aspect-ratio: 16 / 10; background: var(--sand) url('/images/insights/point-washington-wildlife-management-area-hero-900.webp') center / cover; border: 1px solid var(--rule); }
+.pw-map-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pw-map-cover { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; text-align: center; background: rgba(29,48,53,.62); color: var(--oyster); }
+.pw-map-cover p { margin: 0; font-size: 15px; }
+.pw-map-cover .btn-solid { background: var(--oyster); color: var(--ink); border: 0; cursor: pointer; }
+.pw-map-cover .btn-solid:hover { background: #fff; color: var(--ink); }
+@media (max-width: 560px) { .pw-map-frame { aspect-ratio: 4 / 5; } .pw-map-tabs button { letter-spacing: 1px; padding: 0 10px; } }
+
+.pw-trailheads { list-style: none; margin: 20px 0 28px; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.rich ul.pw-trailheads li { margin: 0; padding: 20px 22px; background: #FBF9F4; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+.pw-trailheads h3 { margin: 0 0 4px; font-size: 21px; }
+.pw-trailheads p { margin: 0 0 8px; font-size: 15px; line-height: 1.55; }
+.pw-trailheads .pw-th-where { color: var(--muted); font-size: 14px; }
+.pw-trailheads .link-caps { margin-top: auto; min-height: 40px; font-size: 11px; color: var(--ink); }
+@media (max-width: 640px) { .pw-trailheads { grid-template-columns: 1fr; } }
+
+/* Trail chooser and trail cards */
+.pw-chooser { margin: 28px 0 20px; padding: 24px 26px; background: var(--sand); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); border-left: 4px solid var(--accent); }
+.pw-chooser-title { margin: 0 0 6px; font-family: var(--display); font-size: 24px; line-height: 1.2; }
+.pw-chooser fieldset { margin: 14px 0 0; padding: 0; border: 0; }
+.pw-chooser legend { padding: 0; margin-bottom: 8px; font-size: 11px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; }
+.pw-chooser label { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; margin: 0 6px 6px 0; padding: 0 14px; background: #FBF9F4; border: 1px solid var(--rule); font-size: 15px; font-weight: 400; cursor: pointer; }
+.pw-chooser label:has(input:checked) { background: var(--ink); color: var(--oyster); border-color: var(--ink); }
+.pw-chooser input { accent-color: var(--accent); margin: 0; }
+.pw-chooser label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pw-chooser-result { margin: 14px 0 0; font-weight: 500; }
+.pw-chooser-note { margin: 4px 0 0; font-size: 13.5px; color: var(--muted); }
+
+.pw-trails { list-style: none; margin: 16px 0 28px; padding: 0; }
+.rich ul.pw-trails li { margin: 0 0 14px; padding: 22px 24px; background: #FBF9F4; border: 1px solid var(--rule); transition: opacity .3s ease; }
+.pw-trails h3 { margin: 0 0 4px; font-size: 22px; }
+.pw-trails p { margin: 0; }
+.pw-trails p + p { margin-top: 8px; }
+.pw-trail-stats { font-size: 13px; font-weight: 500; letter-spacing: 1.4px; text-transform: uppercase; color: var(--accent); }
+.pw-trail-match { font-weight: 500; color: var(--ink); }
+.rich ul.pw-trails li.is-match { border-color: var(--ink); box-shadow: inset 4px 0 0 var(--accent); }
+.rich ul.pw-trails li.is-dim { opacity: .55; }
+@media (max-width: 560px) { .pw-chooser { padding: 20px 18px; } .rich ul.pw-trails li { padding: 18px; } }
+@media (prefers-reduced-motion: reduce) { .rich ul.pw-trails li { transition: none; } }
+
+/* Activity matrix */
+.pw-matrix td:not(:first-child) { white-space: nowrap; }
+
+/* Habitat cross-section */
+.pw-habitat { margin: 24px 0 8px; }
+.pw-habitat-img { position: relative; }
+.pw-habitat-img img { width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
+.pw-dot { position: absolute; top: 34%; transform: translate(-50%, -50%); width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--oyster); background: var(--ink); color: var(--oyster); font: 500 14px/1 var(--body); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.pw-dot:hover, .pw-dot.is-active { background: var(--accent); }
+.pw-habitat figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
+@media (min-width: 900px) { .pw-habitat { margin-left: -40px; margin-right: -40px; } }
+@media (max-width: 560px) { .pw-dot { width: 28px; height: 28px; font-size: 12px; } }
+.pw-zones { list-style: none; margin: 16px 0 24px; padding: 0; }
+.rich ul.pw-zones li { margin: 0; padding: 12px 14px 12px 52px; position: relative; border-bottom: 1px solid var(--rule); transition: background .25s ease; }
+.pw-zone-num { position: absolute; left: 10px; top: 12px; width: 28px; height: 28px; border-radius: 50%; background: var(--ink); color: var(--oyster); font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center; }
+.rich ul.pw-zones li.is-active { background: var(--sand); }
+.rich ul.pw-zones li.is-active .pw-zone-num { background: var(--accent); }
+
+/* Species cards */
+.pw-species { list-style: none; margin: 24px 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+.rich ul.pw-species li { margin: 0; padding: 18px 20px; background: #FBF9F4; border: 1px solid var(--rule); border-top: 3px solid var(--accent); }
+.pw-species p { margin: 0; font-size: 15px; line-height: 1.55; }
+.pw-species .pw-sp-name { font-family: var(--display); font-size: 19px; line-height: 1.25; margin-bottom: 6px; }
+.pw-species .pw-sp-meta { margin-top: 8px; font-size: 11px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
+
+/* Timeline */
+.rich ol.pw-timeline { list-style: none; counter-reset: none; margin: 28px 0; padding: 0 0 0 26px; border-top: 0; border-left: 2px solid var(--rule); }
+.rich ol.pw-timeline > li { counter-increment: none; position: relative; padding: 0 0 22px 18px; border-bottom: 0; }
+.rich ol.pw-timeline > li::before { content: ""; position: absolute; left: -33px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); font-size: 0; }
+.pw-tl-when { display: block; font-size: 11px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; color: var(--accent); }
+
+/* For the curious */
+.pw-curious { margin: 32px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.pw-curious summary { cursor: pointer; padding: 18px 0; font-family: var(--display); font-size: 21px; list-style-position: outside; }
+.pw-curious summary::marker { color: var(--accent); }
+.pw-curious-body { padding-bottom: 12px; }
+.pw-curious .chart { margin-top: 24px; }
+.pw-curious .chart-row { grid-template-columns: 200px 1fr 120px; }
+@media (max-width: 560px) { .pw-curious .chart-row { grid-template-columns: 1fr 104px; } }
+
+/* Seasons */
+.pw-seasons { list-style: none; margin: 24px 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.rich ul.pw-seasons li { margin: 0; display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: start; padding: 16px; background: #FBF9F4; border: 1px solid var(--rule); }
+.pw-seasons img { width: 120px; height: 120px; object-fit: cover; }
+.pw-seasons p { margin: 0; font-size: 15px; line-height: 1.55; }
+.pw-season-name { font-family: var(--display); font-size: 21px !important; margin-bottom: 4px !important; }
+@media (max-width: 640px) { .pw-seasons { grid-template-columns: 1fr; } .rich ul.pw-seasons li { grid-template-columns: 96px 1fr; } .pw-seasons img { width: 96px; height: 96px; } }
+
+/* Checklists */
+.pw-checklist { margin: 28px 0; padding: 24px 26px; background: #FBF9F4; border: 1px solid var(--rule); }
+.pw-checklist-title { margin: 0 0 10px; font-family: var(--display); font-size: 22px; }
+.pw-checklist ul { list-style: none; margin: 0; padding: 0; }
+.rich .pw-checklist li { margin: 0; border-top: 1px solid var(--rule); }
+.pw-checklist label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; font-size: 16px; line-height: 1.5; }
+.pw-checklist input { width: 20px; height: 20px; margin: 3px 0 0; flex: 0 0 auto; accent-color: var(--accent); }
+.pw-checklist label:has(input:checked) { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--rule); }
+.pw-checklist-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.pw-checklist-actions button { background: transparent; color: var(--ink); cursor: pointer; font-family: var(--body); }
+@media (max-width: 560px) { .pw-checklist { padding: 20px 18px; } }
+@media print {
+  body.pw-print-checklist * { visibility: hidden; }
+  body.pw-print-checklist .pw-checklist.is-printing, body.pw-print-checklist .pw-checklist.is-printing * { visibility: visible; }
+  body.pw-print-checklist .pw-checklist.is-printing { position: absolute; left: 0; top: 0; width: 100%; border: 0; }
+  body.pw-print-checklist .pw-checklist-actions { display: none; }
+}
+.pw-matrix table thead th { white-space: normal; }
+/* Hero with the trail sign on the left: text sits on the right half on wider screens */
+@media (min-width: 900px) {
+  .pw-guide .page-hero-photo .page-hero-shade { background: linear-gradient(90deg, rgba(18,26,30,0) 30%, rgba(18,26,30,.45) 55%, rgba(18,26,30,.78) 100%), linear-gradient(180deg, rgba(18,26,30,.5) 0%, rgba(18,26,30,0) 20%, rgba(18,26,30,0) 70%, rgba(18,26,30,.55) 100%); }
+  .pw-guide .page-hero-photo .page-hero-text { align-items: flex-end; }
+  .pw-guide .page-hero-photo .page-hero-text > * { width: min(560px, 46%); }
+  .pw-guide .page-hero-photo h1 { font-size: clamp(34px, 3.6vw, 52px); }
+}
+@media (max-width: 899px) {
+  .pw-guide .page-hero-photo .page-hero-img { object-position: 74% 50%; }
+  .pw-guide .page-hero-photo .page-hero-shade { background: linear-gradient(180deg, rgba(18,26,30,.6) 0%, rgba(18,26,30,.35) 30%, rgba(18,26,30,.7) 60%, rgba(18,26,30,.9) 100%); }
+}
+.pw-names svg { max-width: 520px; }
+.pw-outfall-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 560px) { .pw-outfall-pair { grid-template-columns: 1fr; } }

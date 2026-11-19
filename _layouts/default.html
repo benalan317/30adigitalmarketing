@@ -134,6 +134,35 @@
   }
   </script>
   {%- endif %}
+  {%- if page.author and page.group == "insights" %}
+  {%- comment -%} Articles with a named author. schema_about (optional) names the place or thing the article is about. {%- endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "{{ page.url | prepend: site.url }}#article",
+    "headline": {{ page.h1 | default: page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "url": "{{ page.url | prepend: site.url }}",
+    "mainEntityOfPage": "{{ page.url | prepend: site.url }}",
+    {%- if page.post_date %}
+    "datePublished": "{{ page.post_date | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.last_modified | default: page.post_date | date: '%Y-%m-%d' }}",
+    {%- endif %}
+    {%- if page.hero_image %}
+    "image": "{{ site.url }}/images/{{ page.image_dir | default: 'industries' }}/{{ page.hero_image }}.webp",
+    {%- endif %}
+    "author": { "@type": "Person", "name": {{ page.author | jsonify }} },
+    "publisher": { "@id": "{{ site.url }}/#organization" }{% if page.schema_about %},
+    "about": {
+      "@type": "Place",
+      "name": {{ page.schema_about.name | jsonify }}{% if page.schema_about.contained_in %},
+      "containedInPlace": { "@type": "Place", "name": {{ page.schema_about.contained_in | jsonify }} }{% endif %}{% if page.schema_about.same_as %},
+      "sameAs": {{ page.schema_about.same_as | jsonify }}{% endif %}
+    }{% endif %}
+  }
+  </script>
+  {%- endif %}
   {%- if site.google_analytics_id %}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
@@ -153,5 +182,8 @@
   </main>
   {% include footer.html %}
   <script src="/assets/js/site.js" defer></script>
+  {%- if page.page_script %}
+  <script src="/assets/js/{{ page.page_script }}.js" defer></script>
+  {%- endif %}
 </body>
 </html>
