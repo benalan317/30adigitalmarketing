@@ -1399,3 +1399,38 @@ html { scroll-behavior: smooth; }
 .pw-names svg { max-width: 520px; }
 .pw-outfall-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 @media (max-width: 560px) { .pw-outfall-pair { grid-template-columns: 1fr; } }
+
+/* ---------- Grayton Beach guide additions (/insights/grayton-beach-state-park/) ----------
+   Prefix gb- . Uses the pw- visitor guide components above; script: assets/js/grayton-beach.js. */
+.gb-guide .pw-map-frame { background-image: url('/images/insights/grayton-beach-state-park-hero-900.webp'); }
+.gb-guide .pw-trailheads { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gb-guide .pw-trailheads .link-caps + .link-caps { margin-top: 0; }
+@media (max-width: 640px) { .gb-guide .pw-trailheads { grid-template-columns: 1fr; } }
+.gb-locator svg { max-width: 640px; }
+
+/* Arrival steps: compact numbers */
+.rich ol.gb-steps > li { padding: 16px 0 16px 52px; }
+.rich ol.gb-steps > li::before { font-size: 30px; top: 12px; }
+
+/* Visit planner: plan cards hold a short numbered list (undo the trail-card box on the inner steps) */
+.rich ul.gb-plans ol { margin: 12px 0 4px; border-top: 0; }
+.rich ul.gb-plans ol > li { margin: 0; padding: 8px 0 8px 34px; background: none; border: 0; box-shadow: none; font-size: 16px; line-height: 1.55; }
+.rich ul.gb-plans ol > li::before { content: counter(step); width: auto; height: auto; background: none; font-size: 22px; top: 6px; }
+.rich ul.gb-plans > li > p.pw-trail-match { margin-top: 6px; }
+
+/* Notes for your group */
+.gb-notes { list-style: none; margin: 16px 0 28px; padding: 0; }
+.rich ul.gb-notes li { margin: 0; padding: 14px 16px; border-bottom: 1px solid var(--rule); transition: background .25s ease; }
+.rich ul.gb-notes li::before { content: none; }
+.rich ul.gb-notes li.is-active { background: var(--sand); box-shadow: inset 4px 0 0 var(--accent); }
+@media (prefers-reduced-motion: reduce) { .rich ul.gb-notes li { transition: none; } }
+
+/* Beach flag legend */
+.gb-flags { list-style: none; margin: 20px 0 28px; padding: 0; }
+.rich ul.gb-flags li { display: flex; gap: 14px; align-items: flex-start; margin: 0; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.rich ul.gb-flags li::before { content: none; }
+.gb-flag { flex: 0 0 auto; position: relative; width: 30px; height: 26px; margin-top: 2px; border-left: 2px solid var(--ink); }
+.gb-flag::after { content: ""; position: absolute; left: 0; top: 0; width: 24px; height: 15px; background: var(--flag); }
+.gb-flag-double::before { content: ""; position: absolute; left: 0; top: 0; width: 24px; height: 15px; background: var(--flag); transform: translateY(0); }
+.gb-flag-double { width: 30px; height: 34px; }
+.gb-flag-double::after { top: 18px; }

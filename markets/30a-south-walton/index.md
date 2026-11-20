@@ -46,7 +46,7 @@ Our 30A digital marketing work helps South Walton businesses be found, trusted, 
 - **On maps first.** For many searches, Google shows listings, photos, and reviews before any website. A complete, current Google Business Profile matters as much as a page.
 - **In AI answers.** Travelers now ask tools for plans, such as "where to stay on 30A with toddlers." The answer names a handful of businesses, and those are the ones whose facts match everywhere the tool looks.
 
-For rentals specifically, see [how 30A rental guests plan trips and search](/insights/30a-vacation-rental-seo/).
+For rentals specifically, see [how 30A rental guests plan trips and search](/insights/30a-vacation-rental-seo/). Guests also research what to do once they arrive. Our [Grayton Beach State Park visitor guide](/insights/grayton-beach-state-park/) shows the park, beach, and trail details they look for.
 
 ## Where We Work on 30A
 

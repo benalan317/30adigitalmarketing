@@ -543,7 +543,7 @@ The 30A Trailhead is the easiest place to start for visitors who want a short, f
 
 ## Nearby Paddling and Beaches {#paddling-beaches}
 
-The state forest has no beach of its own [[7]](#ref-7), but three state parks with Gulf beaches sit close by: Grayton Beach State Park, Deer Lake State Park, and Topsail Hill Preserve State Park [[2]](#ref-2). The forest's trail system also connects to Grayton Beach State Park [[6]](#ref-6). Each park sets its own fees and hours.
+The state forest has no beach of its own [[7]](#ref-7), but three state parks with Gulf beaches sit close by: Grayton Beach State Park, Deer Lake State Park, and Topsail Hill Preserve State Park [[2]](#ref-2). The forest's trail system also connects to Grayton Beach State Park [[6]](#ref-6), and our [Grayton Beach State Park guide](/insights/grayton-beach-state-park/) covers its beach, Western Lake, and trails. Each park sets its own fees and hours.
 
 To get out on Eastern Lake, use Walton County's public boat ramp on the lake. The county lists it for kayaking, boating, fishing, and birding [[12]](#ref-12). Check the county's current parking and launch rules before you go. Fishing follows FWC rules [[1]](#ref-1).
 

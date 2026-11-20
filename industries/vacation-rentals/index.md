@@ -52,7 +52,7 @@ Photos, sleeping arrangements, the walk to the beach, parking, pool heating, hou
 
 ### Local Guides That Reach Guests Early
 
-Beach access, bike routes, restaurants, events, and rainy-day plans. Good guides reach travelers while they are still choosing where to stay, and give past guests a reason to come back to your site.
+Beach access, bike routes, restaurants, events, and rainy-day plans. Good guides reach travelers while they are still choosing where to stay, and give past guests a reason to come back to your site. For an example of the format, see our guide to [Grayton Beach State Park's fees, trails, and Western Lake](/insights/grayton-beach-state-park/).
 
 ### Visibility in AI Travel Answers
 
