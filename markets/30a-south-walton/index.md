@@ -32,7 +32,7 @@ Our 30A digital marketing work helps South Walton businesses be found, trusted, 
 
 **Communities are brands.** Guests and buyers search for Rosemary Beach, Alys Beach, Seaside, Grayton Beach, or Blue Mountain Beach by name, often before they ever type "30A." A site that treats the corridor as one place misses those searches. Each community has its own look, price range, and kind of guest, and each needs pages of its own.
 
-**Demand comes in a wave.** The 5% bed tax collected south of Choctawhatchee Bay is the standard gauge of visitation in South Walton. June 2025 collections were about $11.1 million. December 2025 collections were about $576,000. Guests choose their summer weeks months ahead, so pages published in May are already late.
+**Demand comes in a wave.** The 5% bed tax collected south of Choctawhatchee Bay is the standard gauge of visitation in South Walton. June 2025 collections were about $11.1 million. December 2025 collections were about $576,000. Guests choose their summer weeks months ahead, so pages published in May are already late. See [how trip-planning windows change when to market](/insights/best-marketing-channels-by-industry/#gulf-coast) for the timing by business type.
 
 **The competition is deep.** Walton County's own count showed more than 20,000 active rental units in the South Walton district in early 2026. A rental company competes for every search with hundreds of others, and with the booking platforms.
 

@@ -31,6 +31,8 @@ We work with ten kinds of business on 30A and the Gulf Coast. Each has its own s
 - **Reputation decides.** Reviews, listings and what others say often settle the choice before anyone calls.
 - **Expensive middlemen.** Booking platforms, directories and lead sites take a share of every sale. Your own visibility reduces what you pay them.
 
+The channels that work differ by industry. Our guide to [which marketing channels fit each kind of Gulf Coast business](/insights/best-marketing-channels-by-industry/) compares them side by side, with lead costs and the research behind each recommendation.
+
 ## Don't See Your Industry?
 
 If your customers research before they buy, the same approach usually applies. Each plan is scoped to the business in front of us. Read [how we scope each plan](/approach/).

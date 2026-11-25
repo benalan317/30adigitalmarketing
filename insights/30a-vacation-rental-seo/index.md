@@ -75,7 +75,7 @@ Google still plays a role. Guests may search for a destination or type of home b
 
 <div class="note" markdown="1">
 
-**Don't confuse booking channels with direct website bookings.** A survey response of "booked through a rental company" doesn't necessarily mean someone booked directly on that company's website. Check your reservation records for that figure.
+**Don't confuse booking channels with direct website bookings.** A survey response of "booked through a rental company" doesn't necessarily mean someone booked directly on that company's website. Check your reservation records for that figure. Before you drop a listing to save its commission, see [booking sites as a discovery channel for rentals and hotels](/insights/best-marketing-channels-by-industry/#planned).
 
 </div>
 

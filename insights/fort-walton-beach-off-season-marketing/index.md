@@ -185,7 +185,7 @@ Winter light and quiet beaches make good material. Shoot photos and short clips 
 
 ### 9. Trim Paid Search Before You Cut It
 
-Pause the ad groups that brought clicks but no customers. Test ads in drive markets, since 71% of nearby winter visitors drove in [[3]](#ref-3). Alabama, Georgia, Mississippi, and Tennessee are natural places to start. **You end up with** a smaller budget that works harder. **Watch** cost per qualified lead. See how we manage [paid search](/services/paid-advertising/).
+Pause the ad groups that brought clicks but no customers. Test ads in drive markets, since 71% of nearby winter visitors drove in [[3]](#ref-3). Alabama, Georgia, Mississippi, and Tennessee are natural places to start. **You end up with** a smaller budget that works harder. **Watch** cost per qualified lead. See how we manage [paid search](/services/paid-advertising/), and read [why ad dashboards can overstate returns](/insights/best-marketing-channels-by-industry/#dashboards) before you judge a campaign by its report.
 
 ### 10. Track Your Calls, Forms, and Bookings
 
